@@ -295,3 +295,4 @@ meetowl###In general, it's not in human nature to understand the concept of "sho
 Victor###There was a thing called Heaven; but all the same they used to drink enormous quantities of alcohol. ~Aldous Huxley, Brave New World
 segfault###When you mix politics with science, you get politics. ~TheSeeker, twitter
 Victor###Nothing is so permanent as a temporary government program. ~Milton Friedman
+Victor###As you will see below, the number of features will make your head spin! ~curl(1) manual page

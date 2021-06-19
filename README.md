@@ -1,8 +1,8 @@
-# QuoteBot-Quote-Repo
+# QuoteBotRepo
 
-A repository for storing quotes for a QOTD bot on a Discord server.
+A repository for storing quotes for a QOTD bot on the swan_hack Discord server.
 
-To add a quote, make a pull request.
+To add a quote, fork and make a pull request. (to branches other than dev!)
 
 Formatting:
 
@@ -12,7 +12,7 @@ NAME = the name of who submitted it, ideally a Discord tag, remember the case!
 
 DELIM = ###
 
-QUOTE = the quote, two spaces after a full stop, a space before a ~ if adding a reference, and then no full stop at the end.
+QUOTE = the quote, two spaces after a full stop, a space before a ~ if adding a reference, then no full stop after that.
 
 Like so:
 

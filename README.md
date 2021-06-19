@@ -1,8 +1,8 @@
 # QuoteBotRepo
 
-A repository for storing quotes for a QOTD bot on the swan_hack Discord server.
+A repository for the QOTD bot on the swan_hack Discord server.
 
-To add a quote, fork and make a pull request. (to branches other than dev!)
+To add a quote, fork and make a pull request.. hopefully it provides you less pain than it did me!
 
 Formatting:
 

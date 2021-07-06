@@ -271,7 +271,7 @@ Gnome###In C++ an exception was thrown during the destructor so a broken skeleto
 Gnome###Life would be so much easier if there is nice documentation with what is going on in the code ~Apple
 Gnome###The universe is running on Go and God gave the heap infinite memory.  Your corpse is just dead code, forever lying in the heap ~Artemis
 Gnome###Two possibilities exist: either we are alone in the Universe or we are not.  Both are equally terrifying. ~Authur C. Clarke
-Gnome###I think one of the reasons why anthropogenic climate thange is so difficult for a certain type of person to accept is that atmospheres seem ethereal and tenuous and incapable of trapping enough heat to modify the temperature on a planet significantly.  For such people I suggest a trip to Venus, where they will be squashed and boiled and dissolved on the surface of Earth's twin. ~Professor Brian Cox
+Gnome###I think one of the reasons why anthropogenic climate change is so difficult for a certain type of person to accept is that atmospheres seem ethereal and tenuous and incapable of trapping enough heat to modify the temperature on a planet significantly.  For such people I suggest a trip to Venus, where they will be squashed and boiled and dissolved on the surface of Earth's twin. ~Professor Brian Cox
 Gnome###We need to shift our focus.  We live in a solar system of wonders, of planets of storms and moons of ice, of landscapes and vistas that stir the imagination and enrich the soul - a system of limitless resources, limitless beauty, and limitless potential.  If we don't go there, we'll never go anywhere.  And if we go nowhere, then we'll have no future at all. ~Professor Brian Cox
 segfault###PHP is a minor evil perpetrated and created by incompetent amateurs, whereas Perl is a great and insidious evil perpetrated by skilled but perverted professionals. ~Jon Ribbens
 Gnome###The good thing about science is that it's true whether or not you believe in it. ~Neil DeGrasse Tyson
@@ -296,3 +296,4 @@ Victor###There was a thing called Heaven; but all the same they used to drink en
 segfault###When you mix politics with science, you get politics. ~TheSeeker, twitter
 Victor###Nothing is so permanent as a temporary government program. ~Milton Friedman
 Victor###As you will see below, the number of features will make your head spin! ~curl(1) manual page
+segfault###Aristotle said a bunch of stuff that was wrong.  Galileo and Newton fixed things up.  Then Einstein broke everything again.  Now we've basically got it all worked out, excpept for small stuff, big stuff, hot stuff, cold stuff, fast stuff, heavy stuff, dark stuff, turbulence and the concept of time. ~Physics Textbook #17,389,243

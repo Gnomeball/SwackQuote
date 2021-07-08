@@ -3,10 +3,10 @@ import random
 def pull_random_quote():
 
     with open("quotes.txt", "r") as file:
-        all_q = {q for q in range(1, len(file.read().splitlines()) +1)}
+        all_q = set(range(1, len(file.read().splitlines()) +1))
 
     with open("quote_history.txt", "r") as file:
-        good_q = [q for q in all_q.difference({i for i in file.read().splitlines()[-100:]})]
+        good_q = sorted(all_q - map(int, set(file.read().splitlines()[-100:])))
 
     random.seed()
     random.seed(random.getrandbits(128))
@@ -18,6 +18,6 @@ def pull_random_quote():
     quote = random.choice(shortlist)
 
     with open("quote_history.txt", "a") as file:
-        file.write(str(quote) + "\n")
+        file.write(f"{quote}\n")
 
     return quote

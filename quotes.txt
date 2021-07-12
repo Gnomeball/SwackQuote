@@ -300,3 +300,4 @@ segfault###Aristotle said a bunch of stuff that was wrong.  Galileo and Newton f
 segfault###```py def isprime(n): return not re.match(r"^1?$|^(11+?)\1+$", "1"*n)```
 Gnome###In the beginning the Universe was created.  This made a lot of people very angry, and has been widely regarded as a bad move. ~Douglas Adams, The Restaurant at the End of the Universe
 Amethyst###If you wish to make an apple pie from scratch, you must first invent the Universe. ~Carl Sagan
+segfault###जो सो रहा हो उसे तो जगा सकते हैं, लेकिन जो आँखे मूँद कर सोने का अभिनय कर रहा हो उसे कैसे जगाएंगे | You can wake the one who is sleeping, but how will you wake the one who is pretending to sleep with his eyes closed? ~The Mahabharata (Ancient Sanskrit Epic)

@@ -12,7 +12,7 @@ MINUTE = 60
 # Quotes
 
 with open("quotes.txt", "r") as file:
-    quotes = [quote.split("###") for quote in file.read().splitlines()]
+    quotes = [quote.split("###", maxsplit=1) for quote in file.read().splitlines()]
 
 # Client events
 

@@ -6,7 +6,7 @@ def pull_random_quote():
         all_q = set(range(1, len(file.read().splitlines()) +1))
 
     with open("quote_history.txt", "r") as file:
-        good_q = sorted(all_q - map(int, set(file.read().splitlines()[-100:])))
+        good_q = sorted(all_q - set(map(int, file.read().splitlines()[-100:])))
 
     random.shuffle(good_q)
     shortlist = random.sample(good_q, 50)

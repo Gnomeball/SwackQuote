@@ -4,7 +4,7 @@ from quotes import pull_random_quote, pull_quotes_from_repo, pull_quotes_from_fi
 
 # logging boilerplate
 fmt = '[%(asctime)s: %(name)s %(levelname)s]: %(message)s'
-logging.basicConfig(level=logging.INFO, stream=sys.stdout, format=fmt)
+logging.basicConfig(level = logging.INFO, stream = sys.stdout, format = fmt)
 
 # Variables and stuff
 client = discord.Client()
@@ -14,7 +14,10 @@ logger = logging.getLogger("QuoteBot")
 colours = [0xc27c0e, 0x992d22, 0xad1457, 0x71368a, 0x206694, 0x11806a]
 MINUTE = 60
 
+REPO_LINK = "https://github.com/Gnomeball/QuoteBotRepo"
+
 # Quotes
+
 quotes = pull_quotes_from_file()
 
 # Client events
@@ -26,9 +29,12 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.author.id == gnome and message.channel.id == sandbox:
-        if message.content == "#reroll":
-            await send_quote("Re-rolled Quote")
+    if message.channel.id == sandbox:
+        if message.author.id == gnome:
+            if message.content == "#reroll":
+                await send_quote("Re-rolled Quote")
+        if message.content == "#repo":
+            await client.get_channel(sandbox).send(content = REPO_LINK)
     else: pass
 
 @client.event

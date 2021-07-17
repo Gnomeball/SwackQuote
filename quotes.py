@@ -39,17 +39,16 @@ def pull_quotes_from_repo():
         # error codes don't throw exceptions, for some reason
         if req.status_code != 200:
             logger.error(f"Failed to get {QUOTE_FILE_ADDRESS} with status: {req.status_code}")
-        else:
-            updated_quotes = req.text
+        else: updated_quotes = req.text
     except Exception:
         logger.exception("Exception while getting updated quotes:")
-    return [quote.split("###", maxsplit=1) for quote in updated_quotes.splitlines()]
+    return [quote.split("###", maxsplit = 1) for quote in updated_quotes.splitlines()]
 
 
 def pull_quotes_from_file():
     quotes = []
     with open("quotes.txt", "r") as file:
-        quotes = [quote.split("###", maxsplit=1) for quote in file.read().splitlines()]
+        quotes = [quote.split("###", maxsplit = 1) for quote in file.read().splitlines()]
     return quotes
 
 

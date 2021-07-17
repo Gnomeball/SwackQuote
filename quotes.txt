@@ -296,7 +296,7 @@ Victor###There was a thing called Heaven; but all the same they used to drink en
 segfault###When you mix politics with science, you get politics. ~TheSeeker, twitter
 Victor###Nothing is so permanent as a temporary government program. ~Milton Friedman
 Victor###As you will see below, the number of features will make your head spin! ~curl(1) manual page
-segfault###Aristotle said a bunch of stuff that was wrong.  Galileo and Newton fixed things up.  Then Einstein broke everything again.  Now we've basically got it all worked out, excpept for small stuff, big stuff, hot stuff, cold stuff, fast stuff, heavy stuff, dark stuff, turbulence and the concept of time. ~Physics Textbook #17,389,243
+segfault###Aristotle said a bunch of stuff that was wrong.  Galileo and Newton fixed things up.  Then Einstein broke everything again.  Now we've basically got it all worked out, except for small stuff, big stuff, hot stuff, cold stuff, fast stuff, heavy stuff, dark stuff, turbulence and the concept of time. ~Physics Textbook #17,389,243
 segfault###```py def isprime(n): return not re.match(r"^1?$|^(11+?)\1+$", "1"*n)```
 Gnome###In the beginning the Universe was created.  This made a lot of people very angry, and has been widely regarded as a bad move. ~Douglas Adams, The Restaurant at the End of the Universe
 Amethyst###If you wish to make an apple pie from scratch, you must first invent the Universe. ~Carl Sagan

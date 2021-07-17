@@ -1,6 +1,6 @@
 import time, discord, asyncio, random, logging, sys
 from datetime import datetime
-from quotes import pull_random_quote, pull_quotes_from_repo, refresh_quotes
+from quotes import pull_random_quote, pull_quotes_from_repo, pull_quotes_from_file, refresh_quotes
 
 # logging boilerplate
 fmt = '[%(asctime)s: %(name)s %(levelname)s]: %(message)s'
@@ -15,9 +15,7 @@ colours = [0xc27c0e, 0x992d22, 0xad1457, 0x71368a, 0x206694, 0x11806a]
 MINUTE = 60
 
 # Quotes
-
-with open("quotes.txt", "r") as file:
-    quotes = [quote.split("###", maxsplit=1) for quote in file.read().splitlines()]
+quotes = pull_quotes_from_file()
 
 # Client events
 
@@ -42,7 +40,7 @@ async def quote_loop():
         await asyncio.sleep(MINUTE)
         now = datetime.now()
         if previous.hour != now.now().hour and now.hour == 12:
-            await refresh_quotes(quotes)
+            await refresh_quotes()
             await asyncio.sleep(15)
             await send_quote()
 

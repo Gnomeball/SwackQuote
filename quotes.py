@@ -29,7 +29,7 @@ def pull_quotes_from_repo():
     Pulls updated quotes from the repository.
     :returns: An updated quotes.txt as a list of strings.
               On error, returns an empty string and logs exception.
-    :rtype: List[str]
+    :rtype: List[List[str]]
     """
     logger = logging.getLogger("pull_from_repo")
     updated_quotes: str = ''
@@ -46,16 +46,23 @@ def pull_quotes_from_repo():
     return [quote.split("###", maxsplit=1) for quote in updated_quotes.splitlines()]
 
 
-async def refresh_quotes(quotes=None):
+def pull_quotes_from_file():
+    quotes = []
+    with open("quotes.txt", "r") as file:
+        quotes = [quote.split("###", maxsplit=1) for quote in file.read().splitlines()]
+    return quotes
+
+
+async def refresh_quotes():
     """
-    Refreshes quotes with potentially updated ones.
-    Edits quotes in-place.
+    Overwrites quotes.txt with potentially updated ones.
     Probably don't call this one from two different threads.
     :param quotes: Reference to an existing list of quotes
-    :type quotes: List[str]
+    :type updated_quotes: List[List[str]]
     :returns: None
     """
     logger = logging.getLogger("refresh_quotes")
+    quotes = pull_quotes_from_file()
     updated_quotes = pull_quotes_from_repo()
     if not updated_quotes:
         return
@@ -66,4 +73,9 @@ async def refresh_quotes(quotes=None):
         logger.info(f"+ {' '.join(a)}")
     for r in removals:
         logger.info(f"- {' '.join(r)}")
-    quotes = updated_quotes
+
+    if quotes != updated_quotes:
+        flattened_quotes = '\n'.join([f'{author}###{quote}' for author,quote in updated_quotes])
+        with open("quotes.txt", "w") as f:
+            f.write(flattened_quotes)
+    return updated_quotes

@@ -46,12 +46,12 @@ async def quote_loop():
         await asyncio.sleep(MINUTE)
         now = datetime.now()
         if previous.hour != now.now().hour and now.hour == 12:
-            await refresh_quotes()
             await asyncio.sleep(15)
             await send_quote()
 
 @client.event
 async def send_quote(pre: str="Quote"):
+    quotes = await refresh_quotes() # This way we have access to the latest quotes
     logger = logging.getLogger("send_quote")
     quote = pull_random_quote(quotes)
     embedVar = discord.Embed(title = "Maximum Swack!", description = quote[1], colour = random.choice(colours))

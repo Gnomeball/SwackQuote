@@ -50,13 +50,13 @@ async def quote_loop():
             await send_quote()
 
 @client.event
-async def send_quote(pre: str="Quote"):
+async def send_quote(pre = "Quote"):
     quotes = await refresh_quotes() # This way we have access to the latest quotes
     logger = logging.getLogger("send_quote")
-    quote = pull_random_quote(quotes)
-    embedVar = discord.Embed(title = "Maximum Swack!", description = quote[1], colour = random.choice(colours))
-    embedVar.set_footer(text = f"{pre} for {datetime.now().strftime('%A %-d %B %Y')}\nSubmitted by {quote[0]}")
-    logger.info(f"Sending quote: {quote}")
+    submitter, quote = pull_random_quote(quotes)
+    embedVar = discord.Embed(title = "Maximum Swack!", description = quote, colour = random.choice(colours))
+    embedVar.set_footer(text = f"{pre} for {datetime.now().strftime('%A %-d %B %Y')}\nSubmitted by {submitter}")
+    logger.info(f"Sending quote from {submitter}: {quote}")
     await client.get_channel(sandbox).send(embed = embedVar)
 
 # Run the thing

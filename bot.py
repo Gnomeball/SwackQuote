@@ -53,7 +53,7 @@ async def quote_loop():
 @client.event
 async def send_quote(pre: str="Quote"):
     logger = logging.getLogger("send_quote")
-    quote = quotes[pull_random_quote()]
+    quote = pull_random_quote(quotes)
     embedVar = discord.Embed(title = "Maximum Swack!", description = quote[1], colour = random.choice(colours))
     embedVar.set_footer(text = f"{pre} for {datetime.now().strftime('%A %-d %B %Y')}\nSubmitted by {quote[0]}")
     logger.info(f"Sending quote: {quote}")

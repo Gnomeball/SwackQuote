@@ -207,7 +207,7 @@ Gnome###Never trust a computer you can’t throw out a window. ~Steve Wozniak
 Gnome###Never let a computer know you're in a hurry.
 Gnome###The attention span of a computer is only as long as its power cord.
 Gnome###The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.
-Gnome###Everyone is born a genius, but the process of living de-geniuses them.”
+Gnome###Everyone is born a genius, but the process of living de-geniuses them.
 Gnome###Once a new technology rolls over you, if you're not part of the steamroller, you're part of the road.
 Gnome###A computer lets you make more mistakes faster than any invention in human history -- with the possible exceptions of handguns and tequila.
 Gnome###The real danger is not that computers will begin to think like people, but that people will begin to think like computers.

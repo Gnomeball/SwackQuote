@@ -4,6 +4,7 @@ import requests
 import logging
 import asyncio
 import tomli
+import tomli_w
 
 
 QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/QuoteBotRepo/main/quotes.toml'
@@ -86,14 +87,14 @@ async def refresh_quotes():
     changed   = [(Quote(**q),Quote(**quotes[k])) for k,q in updated_quotes.items() if k in quotes and Quote(**q)!=Quote(**quotes[k])]
 
     for submitter,quote,*opt in additions:
-        logger.info(f"+ {submitter} ({' '.join(opt)}) {quote}")
+        logger.info(f"+ {submitter} ({' '.join(map(str,opt))}) {quote}")
     for submitter,quote,*opt in removals:
-        logger.info(f"- {submitter} ({' '.join(opt)}) {quote}")
+        logger.info(f"- {submitter} ({' '.join(map(str,opt))}) {quote}")
     for (submitter,quote,*opt), (old_s,old_q,*old_opt) in changed:
-        logger.info(f"+ {submitter} ({' '.join(opt)}) {quote}")
-        logger.info(f"- {old_s} ({' '.join(old_opt)}) {old_q}")
-
-    # if quotes != updated_quotes:
-    #     with open("quotes.txt", "w", encoding="utf8") as f:
-            # tomli.dump(updated_quotes, f)
+        logger.info(f"+ {submitter} ({' '.join(map(str,opt))}) {quote}")
+        logger.info(f"- {old_s} ({' '.join(map(str,old_opt))}) {old_q}")
+    
+    if quotes != updated_quotes:
+        with open("quotes.txt", "w", encoding="utf8") as f:
+            tomli_w.dump(updated_quotes, f)
     return updated_quotes

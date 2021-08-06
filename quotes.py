@@ -17,14 +17,14 @@ def pull_random_quote(quotes: dict):
     :returns: A Quote(submitter, quote, attribution=None, source=None).
     :rtype: Quote
     """
-    with open("quote_history.txt", "r") as f:
+    with open("quote_history.txt", "r", encoding="utf8") as f:
         recent = set(map(str.strip, f.readlines()[-100:]))
         good_q = [k for k in quotes.keys() if k not in recent]
 
     random.shuffle(good_q)
     quote = random.choice(good_q)
 
-    with open("quote_history.txt", "a") as f:
+    with open("quote_history.txt", "a", encoding="utf8") as f:
         f.write(f"{quote}\n")
 
     return Quote(**quotes[quote])
@@ -85,6 +85,6 @@ async def refresh_quotes():
         logger.info(f"- {old_s} ({' '.join(old_opt)}) {old_q}")
 
     if quotes != updated_quotes:
-        with open("quotes.txt", "w") as f:
+        with open("quotes.txt", "w", encoding="utf8") as f:
             toml.dump(updated_quotes, f)
     return updated_quotes

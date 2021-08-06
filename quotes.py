@@ -4,7 +4,7 @@ import requests
 import logging
 import asyncio
 import tomli
-
+import tomli_w
 
 QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/QuoteBotRepo/main/quotes.toml'
 
@@ -93,7 +93,7 @@ async def refresh_quotes():
         logger.info(f"+ {submitter} ({' '.join(opt)}) {quote}")
         logger.info(f"- {old_s} ({' '.join(old_opt)}) {old_q}")
 
-    # if quotes != updated_quotes:
-    #     with open("quotes.txt", "w", encoding="utf8") as f:
-            # tomli.dump(updated_quotes, f)
+    if quotes != updated_quotes:
+        with open("quotes.txt", "w", encoding="utf8") as f:
+            tomli_w.dump(updated_quotes, f)
     return updated_quotes

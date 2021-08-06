@@ -51,7 +51,7 @@ async def quote_loop():
 @client.event
 async def current_date_time():
     day_n = datetime.now().day
-    day_ord = "th" if 4 <= day_n % 100 <= 20 else {1:"st", 2:"nd", 3:"rd"}.get(day_n % 10, "th")
+    day_ord = "th" if 4 <= day_n % 100 <= 20 else {1:"st", 2:"nd", 3:"rd", 7:"nth"}.get(day_n % 10, "th")
     return datetime.now().strftime('%A %-d# %B %Y').replace("#", day_ord)
 
 @client.event
@@ -61,7 +61,7 @@ async def send_quote(pre = "Quote"):
     quote = pull_random_quote(quotes)
     quote_text = quote.quote
     if quote.attribution is not None:
-      quote_text += f" ~{quote.attribution}"
+        quote_text += f" ~{quote.attribution}"
     embedVar = discord.Embed(title = "Maximum Swack!", description = quote_text, colour = random.choice(colours))
     embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nSubmitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
@@ -74,7 +74,7 @@ async def test_quote(which = "pre-toml-255"):
     quote = pull_specific_quote(which, quotes)
     quote_text = quote.quote
     if quote.attribution is not None:
-      quote_text += f" ~{quote.attribution}"
+        quote_text += f" ~{quote.attribution}"
     embedVar = discord.Embed(title = "Maximum Swack!", description = quote_text, colour = random.choice(colours))
     embedVar.set_footer(text = f"Test for {await current_date_time()}\nSubmitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")

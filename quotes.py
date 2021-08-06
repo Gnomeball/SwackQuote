@@ -6,7 +6,6 @@ import asyncio
 import tomli
 import tomli_w
 
-
 QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/QuoteBotRepo/main/quotes.toml'
 
 # Our Quote type, has optional attribution & source, requires submitter & quote

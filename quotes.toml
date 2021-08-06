@@ -1378,3 +1378,8 @@ quote = "जो सो रहा हो उसे तो जगा सकते 
 submitter = "segfault"
 attribution = "Some comment on slashdot"
 quote = "Destroying the privacy of several billion people is not an adequate price to pay for capturing a dozen or even a hundred bad guys.  Sure it did get them some.  So would carpet-bombing New York City.  Success alone is a worthless measure without taking cost into account."
+
+[2021-08-06]
+submitter = "segfault"
+attribution = "Edsger Dijkstra"
+quote = "Computer Science is no more about computers than Astronomy is about telescopes."

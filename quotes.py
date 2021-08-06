@@ -3,7 +3,7 @@ import random
 import requests
 import logging
 import asyncio
-import toml
+import tomli as toml
 
 QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/QuoteBotRepo/main/quotes.toml'
 

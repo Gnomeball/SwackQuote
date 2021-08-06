@@ -3,7 +3,7 @@ import random
 import requests
 import logging
 import asyncio
-import toml
+import tomli
 
 QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/QuoteBotRepo/main/quotes.toml'
 
@@ -36,7 +36,7 @@ def pull_quotes_from_file(path="quotes.toml"):
     :rtype: Dict
     """
     with open(path, "r", encoding="utf8") as f:
-        return toml.load(f)
+        return tomli.load(f)
 
 def pull_quotes_from_repo():
     """
@@ -56,8 +56,8 @@ def pull_quotes_from_repo():
         else: updated_quotes = req.text
     except Exception:
         logger.exception("Exception while getting updated quotes:")
-    
-    return toml.loads(updated_quotes)
+
+    return tomli.loads(updated_quotes)
 
 async def refresh_quotes():
     """
@@ -71,11 +71,11 @@ async def refresh_quotes():
     quotes = pull_quotes_from_file()
     updated_quotes = pull_quotes_from_repo()
     if updated_quotes == {}: return quotes
-    
+
     additions = [Quote(**q) for k,q in updated_quotes.items() if k not in quotes]
     removals  = [Quote(**q) for k,q in quotes.items() if k not in updated_quotes]
     changed   = [(Quote(**q),Quote(**quotes[k])) for k,q in updated_quotes.items() if k in quotes and Quote(**q)!=Quote(**quotes[k])]
-    
+
     for submitter,quote,*opt in additions:
         logger.info(f"+ {submitter} ({' '.join(opt)}) {quote}")
     for submitter,quote,*opt in removals:
@@ -84,7 +84,7 @@ async def refresh_quotes():
         logger.info(f"+ {submitter} ({' '.join(opt)}) {quote}")
         logger.info(f"- {old_s} ({' '.join(old_opt)}) {old_q}")
 
-    if quotes != updated_quotes:
-        with open("quotes.txt", "w", encoding="utf8") as f:
-            toml.dump(updated_quotes, f)
+    # if quotes != updated_quotes:
+    #     with open("quotes.txt", "w", encoding="utf8") as f:
+            # tomli.dump(updated_quotes, f)
     return updated_quotes

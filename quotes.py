@@ -1,55 +1,49 @@
+from collections import namedtuple
 import random
 import requests
 import logging
 import asyncio
+import toml
 
-QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/QuoteBotRepo/main/quotes.txt'
+QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/QuoteBotRepo/main/quotes.toml'
 
-def pull_random_quote(quotes):
+# Our Quote type, has optional attribution & source, requires submitter & quote
+Quote = namedtuple("Quote", "submitter quote attribution source", defaults=(None, None))
+
+def pull_random_quote(quotes: dict):
     """
-    Selects a random quote from the given list.
-    Currently, ignores the last 100 quotes that appear in "quote_history.txt".
-    :returns: A (submitter, quote) pair.
-    :rtype: Tuple[str,str]
+    Selects a random quote from the given dictionary.
+    Currently, ignores the last 100 quotes logged in "quote_history.txt".
+    :returns: A Quote(submitter, quote, attribution=None, source=None).
+    :rtype: Quote
     """
-    all_q = set(range(1, len(quotes)+1)) # This way the index stuff is entirely internal.
-
     with open("quote_history.txt", "r") as f:
-        good_q = sorted(all_q - set(map(int, f.read().splitlines()[-100:])))
+        recent = set(map(str.strip, f.readlines()[-100:]))
+        good_q = [k for k in quotes.keys() if k not in recent]
 
-    random.shuffle(good_q) # shortlisting has no effect since we always pick one successfully
+    random.shuffle(good_q)
     quote = random.choice(good_q)
 
     with open("quote_history.txt", "a") as f:
         f.write(f"{quote}\n")
 
-    return quotes[quote]
+    return Quote(**quotes[quote])
 
-def parse_quotes(lst):
+def pull_quotes_from_file(path="quotes.toml"):
     """
-    Parse (submitter, quote) pairs from a given list of strings.
-    The format is currently `submitter###quote`.
-    TODO: Multiline quote support.
-    :returns: A list of parsed (submitter, quote) pairs.
-    :rtype: List[Tuple[str,str]]
+    Pulls the quotes from a local file (default: "quotes.toml").
+    :returns: The dictionary of quotes (use Quote(**dict[k])).
+    :rtype: Dict
     """
-    return [tuple(quote.split("###", maxsplit = 1)) for quote in lst]
-
-def pull_quotes_from_file(path="quotes.txt"):
-    """
-    Pulls the quotes from a local file (default: "quotes.txt").
-    :returns: The list of (submitter, quote) pairs from the file.
-    :rtype: List[Tuple[str,str]]
-    """
-    with open(path, "r") as f:
-        return parse_quotes(f.read().splitlines())
+    with open(path, "r", encoding="utf8") as f:
+        return toml.load(f)
 
 def pull_quotes_from_repo():
     """
     Pulls updated quotes from the repository.
-    :returns: Updated quotes as a list of (submitter, quote) pairs.
+    :returns: Updated quotes as a dictionary of quotes (use Quote(**dict[k])).
               On error, returns an empty list and logs exception.
-    :rtype: List[Tuple[str,str]]
+    :rtype: Dict
     """
     logger = logging.getLogger("pull_from_repo")
     updated_quotes = ""
@@ -62,31 +56,35 @@ def pull_quotes_from_repo():
         else: updated_quotes = req.text
     except Exception:
         logger.exception("Exception while getting updated quotes:")
-    return parse_quotes(updated_quotes.splitlines())
+    
+    return toml.loads(updated_quotes)
 
 async def refresh_quotes():
     """
-    Overwrites quotes.txt with potentially updated ones.
+    Overwrites quotes.txt with any updates.
     If we cannot reach the repo, we always fallback to local.
     Probably don't call this one from two different threads.
-    :returns: The most up-to-date set of quotes we can access.
-    :rtype: List[Tuple[str,str]]
+    :returns: The most up-to-date dict of quotes we can access.
+    :rtype: Dict
     """
     logger = logging.getLogger("refresh_quotes")
     quotes = pull_quotes_from_file()
     updated_quotes = pull_quotes_from_repo()
-    if updated_quotes == []:
-        return quotes
-    # calc & pretty-print diff to log in a horrible way; cpu go brrr
-    additions = [q for q in updated_quotes if q not in quotes]
-    removals  = [q for q in quotes if q not in updated_quotes]
-    for submitter,quote in additions:
-        logger.info(f"+ {submitter} {quote}")
-    for submitter,quote in removals:
-        logger.info(f"- {submitter} {quote}")
+    if updated_quotes == {}: return quotes
+    
+    additions = [Quote(**q) for k,q in updated_quotes.items() if k not in quotes]
+    removals  = [Quote(**q) for k,q in quotes.items() if k not in updated_quotes]
+    changed   = [(Quote(**q),Quote(**quotes[k])) for k,q in updated_quotes.items() if k in quotes and Quote(**q)!=Quote(**quotes[k])]
+    
+    for submitter,quote,*opt in additions:
+        logger.info(f"+ {submitter} ({' '.join(opt)}) {quote}")
+    for submitter,quote,*opt in removals:
+        logger.info(f"- {submitter} ({' '.join(opt)}) {quote}")
+    for (submitter,quote,*opt), (old_s,old_q,*old_opt) in changed:
+        logger.info(f"+ {submitter} ({' '.join(opt)}) {quote}")
+        logger.info(f"- {old_s} ({' '.join(old_opt)}) {old_q}")
 
     if quotes != updated_quotes:
-        flattened_quotes = "\n".join([f"{submitter}###{quote}" for submitter,quote in updated_quotes])
         with open("quotes.txt", "w") as f:
-            f.write(flattened_quotes)
+            toml.dump(updated_quotes, f)
     return updated_quotes

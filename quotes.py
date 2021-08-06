@@ -11,6 +11,14 @@ QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/QuoteBotRepo/m
 # Our Quote type, has optional attribution & source, requires submitter & quote
 Quote = namedtuple("Quote", "submitter quote attribution source", defaults=(None, None))
 
+def pull_specific_quote(quote: str, quotes: dict):
+    """
+    Selects a given quote from the given dictionary.
+    :returns: A Quote(submitter="Tester", quote="Testing", attribution=None, source=None).
+    :rtype: Quote
+    """
+    return Quote(**quotes[quote]) if quote in quotes else Quote("Tester", "Testing")
+
 def pull_random_quote(quotes: dict):
     """
     Selects a random quote from the given dictionary.

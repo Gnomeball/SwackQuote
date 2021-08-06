@@ -1030,11 +1030,9 @@ quote = "'tis the way of the world now, everyone thinks everything is a quick fi
 
 [pre-toml-239]
 submitter = "segfault"
-quote = '''
-```python
+quote = '''```python
 with open("data/day4.txt") as o: print(len([p for p in [eval("{\""+s.replace("\n", ",").replace(" ", ",").replace(":",'":"').replace(",",'","').strip()+"\"}") for s in map(str.strip, o.read().strip().split("\n\n"))] if (len(p)==8 or (len(p)==7 and "cid" not in p)) and (1920<=int(p["byr"])<=2002) and (2010<=int(p["iyr"])<=2020) and (2020<=int(p["eyr"])<=2030) and (len(p["hgt"])>2 and ((150<=int(p["hgt"][:-2])<=193) if p["hgt"][-2:]=="cm" else (59<=int(p["hgt"][:-2])<=76))) and (len(p["hcl"])==7 and p["hcl"][0]=="#" and int(p["hcl"][1:],16)) and (p["ecl"] in set(["amb", "blu", "brn", "gry", "grn", "hzl", "oth"])) and (len(p["pid"])==9 and int(p["pid"]))]))
-```
-'''
+```'''
 
 [pre-toml-240]
 submitter = "IrrelevantSwack"
@@ -1150,11 +1148,9 @@ quote = "Linux poses a real challenge for those with a taste for late-night hack
 
 [pre-toml-261]
 submitter = "Gnome"
-quote = '''
-```
+quote = '''```java
 ls = File.read("history").split("\n"); m = ARGV.length; t = Array.new(m, 0); ls.each { |li| (0..m-1).each { |i| t[i] += 1 if li.start_with?(ARGV[i]) } }; puts "total\t#{ls.length}"; (0..m-1).each { |i| puts "#{ARGV[i]}\t#{t[i]}"}
-```
-'''
+```'''
 
 [pre-toml-262]
 submitter = "Gnome"
@@ -1183,8 +1179,7 @@ quote = "It was great to meet those folks and work with them for a while.  It’
 
 [pre-toml-267]
 submitter = "Gnome"
-quote = """
-There was an Indian Chief, and he had three squaws, and kept them in three teepees.  When he would come home late from hunting, he would not know which teepee contained which squaw, being dark and all.  He went hunting one day, and killed a hippopotamus, a bear, and a buffalo.  He put the a hide from each animal into a different teepee, so that when he came home late, he could feel inside the teepee and he would know which squaw was inside.
+quote = """There was an Indian Chief, and he had three squaws, and kept them in three teepees.  When he would come home late from hunting, he would not know which teepee contained which squaw, being dark and all.  He went hunting one day, and killed a hippopotamus, a bear, and a buffalo.  He put the a hide from each animal into a different teepee, so that when he came home late, he could feel inside the teepee and he would know which squaw was inside.
 
 Well after about a year, all three squaws had children.  The squaw on the bear had a baby boy, the squaw on the buffalo hide had a baby girl.  But the squaw on the hippopotamus had a girl and a boy.  So what is the moral of the story?
 
@@ -1353,11 +1348,9 @@ quote = "Aristotle said a bunch of stuff that was wrong.  Galileo and Newton fix
 
 [pre-toml-300]
 submitter = "segfault"
-quote = '''
-```python
+quote = '''```python
 def isprime(n): return not re.match(r"^1?$|^(11+?)\1+$", "1"*n)
-```
-'''
+```'''
 
 [pre-toml-301]
 submitter = "Gnome"

@@ -1,6 +1,6 @@
 import time, discord, asyncio, random, logging, sys
 from datetime import datetime
-from quotes import pull_random_quote, pull_quotes_from_repo, pull_quotes_from_file, refresh_quotes
+from quotes import pull_random_quote, refresh_quotes
 
 # logging boilerplate
 fmt = '[%(asctime)s: %(name)s %(levelname)s]: %(message)s'
@@ -15,10 +15,6 @@ colours = [0xc27c0e, 0x992d22, 0xad1457, 0x71368a, 0x206694, 0x11806a]
 MINUTE = 60
 
 REPO_LINK = "https://github.com/Gnomeball/QuoteBotRepo"
-
-# Quotes
-
-quotes = pull_quotes_from_file()
 
 # Client events
 
@@ -53,10 +49,10 @@ async def quote_loop():
 async def send_quote(pre = "Quote"):
     quotes = await refresh_quotes() # This way we have access to the latest quotes
     logger = logging.getLogger("send_quote")
-    submitter, quote = pull_random_quote(quotes)
-    embedVar = discord.Embed(title = "Maximum Swack!", description = quote, colour = random.choice(colours))
-    embedVar.set_footer(text = f"{pre} for {datetime.now().strftime('%A %-d %B %Y')}\nSubmitted by {submitter}")
-    logger.info(f"Sending quote from {submitter}: {quote}")
+    quote = pull_random_quote(quotes)
+    embedVar = discord.Embed(title = "Maximum Swack!", description = quote.quote, colour = random.choice(colours))
+    embedVar.set_footer(text = f"{pre} for {datetime.now().strftime('%A %-d %B %Y')}\nSubmitted by {quote.submitter}")
+    logger.info(f"Sending quote from {quote.submitter}: {quote.quote}")
     await client.get_channel(sandbox).send(embed = embedVar)
 
 # Run the thing

@@ -57,9 +57,12 @@ async def send_quote(pre = "Quote"):
     quotes = await refresh_quotes() # This way we have access to the latest quotes
     logger = logging.getLogger("send_quote")
     quote = pull_random_quote(quotes)
-    embedVar = discord.Embed(title = "Maximum Swack!", description = quote.quote, colour = random.choice(colours))
+    quote_text = quote.quote
+    if quote.attribution is not None: 
+      quote_text += f" ~{quote.attribution}"
+    embedVar = discord.Embed(title = "Maximum Swack!", description = quote_text, colour = random.choice(colours))
     embedVar.set_footer(text = f"{pre} for {current_date_time()}\nSubmitted by {quote.submitter}")
-    logger.info(f"Sending quote from {quote.submitter}: {quote.quote}")
+    logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
     await client.get_channel(sandbox).send(embed = embedVar)
 
 # Run the thing

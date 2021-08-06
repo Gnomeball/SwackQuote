@@ -61,11 +61,11 @@ def pull_quotes_from_repo():
 
 async def refresh_quotes():
     """
-    Overwrites quotes.txt with potentially updated ones.
+    Overwrites quotes.txt with any updates.
     If we cannot reach the repo, we always fallback to local.
     Probably don't call this one from two different threads.
-    :returns: The most up-to-date set of quotes we can access.
-    :rtype: List[Tuple[str,str]]
+    :returns: The most up-to-date dict of quotes we can access.
+    :rtype: Dict
     """
     logger = logging.getLogger("refresh_quotes")
     quotes = pull_quotes_from_file()

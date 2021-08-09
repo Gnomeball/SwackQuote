@@ -4,6 +4,13 @@ A repository for the QOTD bot on the swan_hack Discord server.
 
 To add a quote, fork, add it to `quotes.toml`, and make a pull request... hopefully it provides you less pain than it did me!
 
+Requirements:
+- discord.py
+- tomli
+- tomli-w
+
+We have a [poetry](https://python-poetry.org/) `pyproject.toml` setup for easy installation. Just run `poetry install`!
+
 Formatting:
 
 ```toml

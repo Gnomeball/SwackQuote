@@ -11,6 +11,14 @@ QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/QuoteBotRepo/m
 # Our Quote type, has optional attribution & source, requires submitter & quote
 Quote = namedtuple("Quote", "submitter quote attribution source", defaults=(None, None))
 
+def format_quote_text(quote: Quote):
+    quote_text = quote.quote
+    if quote.attribution is not None:
+        quote_text += f" ~{quote.attribution}"
+    if "'''" not in quote_text:
+        quote_text = quote_text.replace(". ", ".  ").replace(".   ", ".  ")
+    return quote_text
+
 def pull_specific_quote(quote: str, quotes: dict):
     """
     Selects a given quote from the given dictionary.

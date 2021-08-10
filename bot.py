@@ -1,6 +1,6 @@
 import time, discord, asyncio, random, logging, sys
 from datetime import datetime
-from quotes import pull_random_quote, pull_specific_quote, refresh_quotes
+from quotes import pull_random_quote, pull_specific_quote, refresh_quotes, format_quote_text
 
 # Logging boilerplate
 fmt = '[%(asctime)s: %(name)s %(levelname)s]: %(message)s'
@@ -59,9 +59,7 @@ async def send_quote(pre = "Quote"):
     quotes = await refresh_quotes() # This way we have access to the latest quotes
     logger = logging.getLogger("send_quote")
     quote = pull_random_quote(quotes)
-    quote_text = quote.quote
-    if quote.attribution is not None:
-        quote_text += f" ~{quote.attribution}"
+    quote_text = format_quote_text(quote)
     embedVar = discord.Embed(title = "Maximum Swack!", description = quote_text, colour = random.choice(colours))
     embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nSubmitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
@@ -72,9 +70,7 @@ async def test_quote(which = "pre-toml-255"):
     quotes = await refresh_quotes() # This way we have access to the latest quotes
     logger = logging.getLogger("test_quote")
     quote = pull_specific_quote(which, quotes)
-    quote_text = quote.quote
-    if quote.attribution is not None:
-        quote_text += f" ~{quote.attribution}"
+    quote_text = format_quote_text(quote)
     embedVar = discord.Embed(title = "Maximum Swack!", description = quote_text, colour = random.choice(colours))
     embedVar.set_footer(text = f"Test for {await current_date_time()}\nSubmitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")

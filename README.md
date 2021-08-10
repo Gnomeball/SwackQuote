@@ -16,7 +16,7 @@ Formatting:
 ```toml
 [identifier] # some stable identifier, such as a date, and perhaps a number to prevent duplicates
 submitter = "the name of who submitted it, ideally a Discord tag, remember the case!"
-quote = "the quote.  two spaces after a full stop"
+quote = "the quote you're adding!"
 attribution = "Whoever said it, if it wasn't the submitter, and if you know"
 source = "url link to where it was said (currently not displayed)"
 ```

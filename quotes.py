@@ -7,6 +7,7 @@ import tomli
 import tomli_w
 
 QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/QuoteBotRepo/main/quotes.toml'
+QUOTE_FILE_PATH = "quotes.toml"
 
 # Our Quote type, has optional attribution & source, requires submitter & quote
 Quote = namedtuple("Quote", "submitter quote attribution source", defaults=(None, None))
@@ -46,7 +47,7 @@ def pull_random_quote(quotes: dict):
 
     return Quote(**quotes[quote])
 
-def pull_quotes_from_file(path="quotes.toml"):
+def pull_quotes_from_file(path=QUOTE_FILE_PATH):
     """
     Pulls the quotes from a local file (default: "quotes.toml").
     :returns: The dictionary of quotes (use Quote(**dict[k])).
@@ -102,6 +103,6 @@ async def refresh_quotes():
         logger.info(f"- {old_s} ({' '.join(map(str,old_opt))}) {old_q}")
     
     if quotes != updated_quotes:
-        with open("quotes.txt", "w", encoding="utf8") as f:
+        with open(QUOTE_FILE_PATH, "wb") as f:
             tomli_w.dump(updated_quotes, f)
     return updated_quotes

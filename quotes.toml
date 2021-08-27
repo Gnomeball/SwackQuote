@@ -1354,7 +1354,8 @@ def isprime(n): return not re.match(r"^1?$|^(11+?)\1+$", "1"*n)
 
 [pre-toml-301]
 submitter = "Gnome"
-attribution = "Douglas Adams, The Restaurant at the End of the Universe"
+attribution = "Douglas Adams"
+source = "The Restaurant at the End of the Universe"
 quote = "In the beginning the Universe was created.  This made a lot of people very angry, and has been widely regarded as a bad move."
 
 [pre-toml-302]
@@ -1426,3 +1427,21 @@ submitter="segfault"
 attribution="Alisa Tao"
 source="https://twitter.com/alisa_tao/status/1181193451330768897"
 quote="OH: the two hardest problems in computer science are cache invalidation and rampant misogyny."
+
+[2021-08-27-1]
+submitter="segfault"
+attribution="""Charles "Tony" Hoare"""
+source="The Emperor's Old Clothes, 1980 Turing Award Lecture"
+quote="There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies. The other way is to make it so complicated that there are no obvious deficiencies."
+
+[2021-08-27-2]
+submitter="segfault"
+attribution="Ken Thompson"
+source="Reflections on Trusting Trust, 1984 Turing Award Lecture"
+quote="To what extent should one trust a statement that a program is free of Trojan horses? Perhaps it is more important to trust the people who wrote the software."
+
+[2021-08-27-3]
+submitter="segfault"
+attribution="Douglas Adams"
+source="Last Chance to See"
+quote="I am rarely happier than when spending an entire day programming my computer to perform automatically a task that would otherwise take me a good ten seconds to do by hand."

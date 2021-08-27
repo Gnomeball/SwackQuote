@@ -1328,7 +1328,7 @@ quote = "There was a thing called Heaven; but all the same they used to drink en
 
 [pre-toml-296]
 submitter = "segfault"
-attribution = "TheSeeker, twitter"
+attribution = "John M. Barry"
 quote = "When you mix politics with science, you get politics."
 
 [pre-toml-297]
@@ -1365,7 +1365,8 @@ quote = "If you wish to make an apple pie from scratch, you must first invent th
 [pre-toml-303]
 submitter = "segfault"
 attribution = "The Mahabharata (Ancient Sanskrit Epic)"
-quote = "जो सो रहा हो उसे तो जगा सकते हैं, लेकिन जो आँखे मूँद कर सोने का अभिनय कर रहा हो उसे कैसे जगाएंगे | You can wake the one who is sleeping, but how will you wake the one who is pretending to sleep with his eyes closed?"
+quote = """जो सो रहा हो उसे तो जगा सकते हैं, लेकिन जो आँखे मूँद कर सोने का अभिनय कर रहा हो उसे कैसे जगाएंगे
+You can wake the one who is sleeping, but how will you wake the one who is pretending to sleep with his eyes closed?"""
 
 [pre-toml-304]
 submitter = "segfault"

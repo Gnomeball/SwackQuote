@@ -1,3 +1,20 @@
+# Swack Quote Bot Format:
+#
+# [unique-id-for-the-quote-such-as-date-and-number]
+# submitter = "Your Discord Name/Nickname Here"
+# attribution = "Who Said It (Optional)"
+# source = "Where it was said, ie. book or url (Optional)"
+# quote = "The reason you were filling this out. Put it here. Use triple speechmarks to get multi-line support and to be able to include speechmarks within the quote without escaping. See the TOML spec for escape sequences etc."
+
+# Template for you to copy. A (unique) id, submitter, and quote are required.
+# 
+# []
+# submitter = ""
+# quote = ""
+# attribution = ""
+# source = ""
+
+
 [pre-toml-1]
 submitter = "segfault"
 attribution = "Mosher’s Law of Software Engineering."
@@ -1445,3 +1462,9 @@ submitter="segfault"
 attribution="Douglas Adams"
 source="Last Chance to See"
 quote="I am rarely happier than when spending an entire day programming my computer to perform automatically a task that would otherwise take me a good ten seconds to do by hand."
+
+[2021-08-30-1]
+submitter="segfault"
+attribution="A Cypherpunk's Manifesto, 1993"
+source="https://www.activism.net/cypherpunk/manifesto.html"
+quote="Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world."

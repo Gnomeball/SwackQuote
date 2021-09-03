@@ -179,6 +179,7 @@ quote = "I can’t go to a restaurant and order food because I keep looking at t
 
 [pre-toml-40]
 submitter = "Gnome"
+attribution = "Donald E. Knuth"
 quote = "Any inaccuracies in this index may be explained by the fact that it has been sorted with the help of a computer."
 
 [pre-toml-41]

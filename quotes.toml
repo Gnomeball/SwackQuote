@@ -179,6 +179,7 @@ quote = "I can’t go to a restaurant and order food because I keep looking at t
 
 [pre-toml-40]
 submitter = "Gnome"
+attribution = "Donald E. Knuth"
 quote = "Any inaccuracies in this index may be explained by the fact that it has been sorted with the help of a computer."
 
 [pre-toml-41]
@@ -1468,3 +1469,31 @@ submitter="segfault"
 attribution="A Cypherpunk's Manifesto, 1993"
 source="https://www.activism.net/cypherpunk/manifesto.html"
 quote="Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world."
+
+[2021-09-03-1]
+submitter = "segfault"
+attribution = "HTTP 451 Unavailable For Legal Reasons"
+source = "https://en.wikipedia.org/wiki/HTTP_451"
+quote="""```http
+HTTP/1.1 451 Unavailable For Legal Reasons
+Link: <https://search.example.net/legal>; rel="blocked-by"
+Content-Type: text/html
+
+<html>
+ <head><title>Unavailable For Legal Reasons</title></head>
+ <body>
+  <h1>Unavailable For Legal Reasons</h1>
+  <p>This request may not be serviced in the Roman Province
+  of Judea due to the Lex Julia Majestatis, which disallows
+  access to resources hosted on servers deemed to be
+  operated by the People's Front of Judea.</p>
+ </body>
+</html>
+```
+"""
+
+[2021-09-08-1]
+submitter = "segfault"
+quote = "I have two kinds of problems, the urgent and the important. The urgent are not important, and the important are never urgent."
+attribution = "Dwight D. Eisenhower"
+source = "The Eisenhower Matrix"

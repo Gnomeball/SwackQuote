@@ -1492,3 +1492,8 @@ Content-Type: text/html
 ```
 """
 
+[2021-09-08-1]
+submitter = "segfault"
+quote = "I have two kinds of problems, the urgent and the important. The urgent are not important, and the important are never urgent."
+attribution = "Dwight D. Eisenhower"
+source = "The Eisenhower Matrix"

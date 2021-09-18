@@ -1429,52 +1429,52 @@ Z is for zcat, which handles compression.
 -- THE ABC'S OF UNIX"""
 
 [2021-08-10-1]
-submitter="segfault"
-attribution="David L. Goodstein"
-source="States of Matter (1985 edition)"
-quote="Ludwig Boltzmann, who spent much of his life studying statistical mechanics, died in 1906, by his own hand.  Paul Ehrenfest, carryong on the work, died similarly in 1933.  Now it is our turn to study statistical mechanics."
+submitter = "segfault"
+attribution = "David L. Goodstein"
+source = "States of Matter (1985 edition)"
+quote = "Ludwig Boltzmann, who spent much of his life studying statistical mechanics, died in 1906, by his own hand.  Paul Ehrenfest, carryong on the work, died similarly in 1933.  Now it is our turn to study statistical mechanics."
 
 [2021-08-21-1]
-submitter="segfault"
-attribution="Tom Forsyth"
-source="https://twitter.com/tom_forsyth/status/1427395128755294218"
-quote="Use the simplest thing, then let the profiler convince you otherwise."
+submitter = "segfault"
+attribution = "Tom Forsyth"
+source = "https://twitter.com/tom_forsyth/status/1427395128755294218"
+quote = "Use the simplest thing, then let the profiler convince you otherwise."
 
 [2021-08-21-2]
-submitter="segfault"
-attribution="Alisa Tao"
-source="https://twitter.com/alisa_tao/status/1181193451330768897"
-quote="OH: the two hardest problems in computer science are cache invalidation and rampant misogyny."
+submitter = "segfault"
+attribution = "Alisa Tao"
+source = "https://twitter.com/alisa_tao/status/1181193451330768897"
+quote = "OH: the two hardest problems in computer science are cache invalidation and rampant misogyny."
 
 [2021-08-27-1]
-submitter="segfault"
-attribution="""Charles "Tony" Hoare"""
-source="The Emperor's Old Clothes, 1980 Turing Award Lecture"
-quote="There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies. The other way is to make it so complicated that there are no obvious deficiencies."
+submitter = "segfault"
+attribution = """Charles "Tony" Hoare"""
+source = "The Emperor's Old Clothes, 1980 Turing Award Lecture"
+quote = "There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies. The other way is to make it so complicated that there are no obvious deficiencies."
 
 [2021-08-27-2]
-submitter="segfault"
-attribution="Ken Thompson"
-source="Reflections on Trusting Trust, 1984 Turing Award Lecture"
-quote="To what extent should one trust a statement that a program is free of Trojan horses? Perhaps it is more important to trust the people who wrote the software."
+submitter = "segfault"
+attribution = "Ken Thompson"
+source = "Reflections on Trusting Trust, 1984 Turing Award Lecture"
+quote = "To what extent should one trust a statement that a program is free of Trojan horses? Perhaps it is more important to trust the people who wrote the software."
 
 [2021-08-27-3]
-submitter="segfault"
-attribution="Douglas Adams"
-source="Last Chance to See"
-quote="I am rarely happier than when spending an entire day programming my computer to perform automatically a task that would otherwise take me a good ten seconds to do by hand."
+submitter = "segfault"
+attribution = "Douglas Adams"
+source = "Last Chance to See"
+quote = "I am rarely happier than when spending an entire day programming my computer to perform automatically a task that would otherwise take me a good ten seconds to do by hand."
 
 [2021-08-30-1]
-submitter="segfault"
-attribution="A Cypherpunk's Manifesto, 1993"
-source="https://www.activism.net/cypherpunk/manifesto.html"
-quote="Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world."
+submitter = "segfault"
+attribution = "A Cypherpunk's Manifesto, 1993"
+source = "https://www.activism.net/cypherpunk/manifesto.html"
+quote = "Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world."
 
 [2021-09-03-1]
 submitter = "segfault"
 attribution = "HTTP 451 Unavailable For Legal Reasons"
 source = "https://en.wikipedia.org/wiki/HTTP_451"
-quote="""```http
+quote = """```http
 HTTP/1.1 451 Unavailable For Legal Reasons
 Link: <https://search.example.net/legal>; rel="blocked-by"
 Content-Type: text/html
@@ -1497,3 +1497,56 @@ submitter = "segfault"
 quote = "I have two kinds of problems, the urgent and the important. The urgent are not important, and the important are never urgent."
 attribution = "Dwight D. Eisenhower"
 source = "The Eisenhower Matrix"
+
+[2021-09-10-1]
+submitter = "segfault"
+quote = """What does it mean to have a human brain?
+
+I act on impulse most of the time, and otherwise do what I can to design a life that rewards my impulses with beautiful outcomes. I think designing games is like that: designing little spaces that reward my avatar’s impulses with beautiful outcomes. Only, when I make a game I can share the experience with you; you can inhabit the same space, embody the same avatar, perhaps act on the same impulses, and – if serendipity allows – behold the same beautiful outcomes.
+
+Through making and playing with games and other art, I hope to come to some deeper understanding of not the science of my brain, but the experience and meaning of being some specific person.
+"""
+attribution = "droqen"
+source = "https://www.droqen.com/1112/"
+
+[2021-09-10-2]
+submitter = "segfault"
+quote = "Human beings face ever more complex and urgent problems, and their effectiveness in dealing with these problems is a matter that is critical to the stability and continued progress of society."
+attribution = "Douglas Engelbart"
+
+[2021-09-10-3]
+submitter = "segfault"
+quote = "For a successful technology, honesty must take precedence over public relations, for nature cannot be fooled."
+attribution = "Richard Feynman"
+
+[2021-09-10-4]
+submitter = "segfault"
+quote = "English uses a lot of idioms, it's almost like the whole lanugage is an inside joke."
+attribution = "Anna Kipnis"
+source = "The Double Fine Adventure Documentary"
+
+[2021-09-10-5]
+submitter = "segfault"
+quote = "For evil to flourish, it only requires good men to do nothing."
+attribution = "Simon Wiesenthal"
+
+[2021-09-10-6]
+submitter = "segfault"
+quote = """
+The road to wisdom? - Well, it's plain 
+and simple to express: 
+> Err 
+> and err 
+> and err again 
+> but less 
+> and less 
+> and less.
+"""
+attribution = "Piet Hein"
+source = "http://www.sophilos.net/GrooksofPietHein"
+
+[2021-09-10-7]
+submitter = "segfault"
+quote = "Problems worthy of attack prove their worth by fighting back!"
+attribution = "Piet Hein"
+source = "http://www.sophilos.net/GrooksofPietHein"

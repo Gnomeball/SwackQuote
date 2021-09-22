@@ -1550,3 +1550,17 @@ submitter = "segfault"
 quote = "Problems worthy of attack prove their worth by fighting back!"
 attribution = "Piet Hein"
 source = "http://www.sophilos.net/GrooksofPietHein"
+
+[2021-09-22-1]
+submitter = "segfault"
+attribution = "Eliza Weisman"
+source = "https://twitter.com/mycoliza/status/1440702345168388101"
+quote = """data structure optimization protips:
+- constant factors are always bigger than you think they are
+- _n_ will always be smaller than you think it’s gonna be
+- arrays stay winning
+- the hardest problem in computer science is “how to malloc just the right amount of array”
+- malloc is the second-biggest constant factor
+- but the constant factor that matters the most is bounds checking
+- the only thing worse than doing a lot of bounds checking is doing an OOB read/write
+"""

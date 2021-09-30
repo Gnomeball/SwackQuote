@@ -7,7 +7,7 @@
 # quote = "The reason you were filling this out. Put it here. Use triple speechmarks to get multi-line support and to be able to include speechmarks within the quote without escaping. See the TOML spec for escape sequences etc."
 
 # Template for you to copy. A (unique) id, submitter, and quote are required.
-# 
+#
 # []
 # submitter = ""
 # quote = ""
@@ -1533,13 +1533,13 @@ attribution = "Simon Wiesenthal"
 [2021-09-10-6]
 submitter = "segfault"
 quote = """
-The road to wisdom? - Well, it's plain 
-and simple to express: 
-> Err 
-> and err 
-> and err again 
-> but less 
-> and less 
+The road to wisdom? - Well, it's plain
+and simple to express:
+> Err
+> and err
+> and err again
+> but less
+> and less
 > and less.
 """
 attribution = "Piet Hein"
@@ -1550,3 +1550,13 @@ submitter = "segfault"
 quote = "Problems worthy of attack prove their worth by fighting back!"
 attribution = "Piet Hein"
 source = "http://www.sophilos.net/GrooksofPietHein"
+
+[2021-09-30]
+submitter = "Gnome"
+quotn = "turns out finding the average internal volume of a sheep is pretty hard"
+attribution = "Amethyst"
+
+[2021-09-30-1]
+submitter = "Gnome"
+quotn = "If you cooked a whole Ram, how many bites would it take to eat the edible parts, and hence, how many rams do you need to have 16 Giga bites of Ram?"
+attribution = "GalaxyShark"

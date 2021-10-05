@@ -7,7 +7,7 @@
 # quote = "The reason you were filling this out. Put it here. Use triple speechmarks to get multi-line support and to be able to include speechmarks within the quote without escaping. See the TOML spec for escape sequences etc."
 
 # Template for you to copy. A (unique) id, submitter, and quote are required.
-# 
+#
 # []
 # submitter = ""
 # quote = ""
@@ -1600,6 +1600,11 @@ as the name is changed.
      as long as you APPRECIATE CIRNO AS THE STRONGEST IN GENSOKYO.
 
 This program is distributed in the hope that it will be THE STRONGEST,
-but WITHOUT ANY WARRANTYL without even the implied warranty of
+but WITHOUT ANY WARRANTY; without even the implied warranty of
 USEFULNESS or FITNESS FOR A PARTICULAR PURPOSE.
 ```"""
+
+[2021-10-5-2]
+submitter = "Gnome"
+attribution = "Amethyst"
+quote = "Two things in this universe are infinite - The universe, and the amount of people willing to pay for an overpriced phone contract."

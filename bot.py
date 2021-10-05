@@ -51,7 +51,7 @@ async def quote_loop():
 @client.event
 async def current_date_time():
     day_n = datetime.now().day
-    day_ord = "th" if 4 <= day_n % 100 <= 20 else {1:"st", 2:"nd", 3:"rd", 7:"nth"}.get(day_n % 10, "th")
+    day_ord = {1:"st", 21:"st", 31:"st", 2:"nd", 22:"nd", 3:"rd", 23:"rd", 7:"nth", 17:"nth", 27:"nth"}.get(day_n, "th")
     return datetime.now().strftime('%A %-d# %B %Y').replace("#", day_ord)
 
 @client.event

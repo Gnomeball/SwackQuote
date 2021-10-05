@@ -7,7 +7,7 @@
 # quote = "The reason you were filling this out. Put it here. Use triple speechmarks to get multi-line support and to be able to include speechmarks within the quote without escaping. See the TOML spec for escape sequences etc."
 
 # Template for you to copy. A (unique) id, submitter, and quote are required.
-#
+# 
 # []
 # submitter = ""
 # quote = ""
@@ -1157,6 +1157,7 @@ quote = '''Monads are easy to understand, they're just the crystallisation of: "
 [pre-toml-259]
 submitter = "segfault"
 attribution = "Dawson's First Law of Computing"
+source = "https://twitter.com/BruceDawson0xB/status/1120381406700429312"
 quote = "O(n^2) is the sweet spot of badly scaling algorithms: fast enough to make it into production, but slow enough to make things fall down once it gets there."
 
 [pre-toml-260]
@@ -1301,7 +1302,8 @@ quote = "I literally borked the autograder with a puny infinite loop."
 
 [pre-toml-287]
 submitter = "segfault"
-attribution = "Leah Velleman, twitter"
+attribution = "Leah Velleman"
+source = "https://twitter.com/leahvelleman/status/1377829865504833536"
 quote = "Honestly, a lot of free software is free as in piano -- It's right there. Nobody is stopping you.  You could totally spend hours of painstaking labor getting it carried up your front steps or built from a clusterfuck of diffs and patches or whatever.  Everyone knows you won't."
 
 [pre-toml-288]
@@ -1551,6 +1553,20 @@ quote = "Problems worthy of attack prove their worth by fighting back!"
 attribution = "Piet Hein"
 source = "http://www.sophilos.net/GrooksofPietHein"
 
+[2021-09-22-1]
+submitter = "segfault"
+attribution = "Eliza Weisman"
+source = "https://twitter.com/mycoliza/status/1440702345168388101"
+quote = """data structure optimization protips:
+- constant factors are always bigger than you think they are
+- _n_ will always be smaller than you think it’s gonna be
+- arrays stay winning
+- the hardest problem in computer science is “how to malloc just the right amount of array”
+- malloc is the second-biggest constant factor
+- but the constant factor that matters the most is bounds checking
+- the only thing worse than doing a lot of bounds checking is doing an OOB read/write
+"""
+
 [2021-09-30]
 submitter = "Gnome"
 quote = "turns out finding the average internal volume of a sheep is pretty hard"
@@ -1565,3 +1581,25 @@ attribution = "Galaxyshark"
 submitter = "Gnome"
 quote = "Goose hacked socks"
 attribution = "segfault"
+
+[2021-10-05-1]
+submitter = "segfault"
+attribution = "THE CIRNO LICENSE"
+source = "https://twitter.com/ablative_sasha/status/1428084447879081985"
+quote = """```               THE STRONGEST PUBLIC LICENSE
+                 Draft 1, November 2010
+
+Everyone is permitted to copy and distribute verbatim or modified
+copies of this license document, and changing it is allowed as long
+as the name is changed.
+
+                 THE STRONGEST PUBLIC LICENSE
+  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  ⑨. This licence document permits you to DO WHAT THE FUCK YOU WANT TO
+     as long as you APPRECIATE CIRNO AS THE STRONGEST IN GENSOKYO.
+
+This program is distributed in the hope that it will be THE STRONGEST,
+but WITHOUT ANY WARRANTYL without even the implied warranty of
+USEFULNESS or FITNESS FOR A PARTICULAR PURPOSE.
+```"""

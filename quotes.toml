@@ -1157,6 +1157,7 @@ quote = '''Monads are easy to understand, they're just the crystallisation of: "
 [pre-toml-259]
 submitter = "segfault"
 attribution = "Dawson's First Law of Computing"
+source = "https://twitter.com/BruceDawson0xB/status/1120381406700429312"
 quote = "O(n^2) is the sweet spot of badly scaling algorithms: fast enough to make it into production, but slow enough to make things fall down once it gets there."
 
 [pre-toml-260]
@@ -1301,7 +1302,8 @@ quote = "I literally borked the autograder with a puny infinite loop."
 
 [pre-toml-287]
 submitter = "segfault"
-attribution = "Leah Velleman, twitter"
+attribution = "Leah Velleman"
+source = "https://twitter.com/leahvelleman/status/1377829865504833536"
 quote = "Honestly, a lot of free software is free as in piano -- It's right there. Nobody is stopping you.  You could totally spend hours of painstaking labor getting it carried up your front steps or built from a clusterfuck of diffs and patches or whatever.  Everyone knows you won't."
 
 [pre-toml-288]
@@ -1533,13 +1535,13 @@ attribution = "Simon Wiesenthal"
 [2021-09-10-6]
 submitter = "segfault"
 quote = """
-The road to wisdom? - Well, it's plain 
-and simple to express: 
-> Err 
-> and err 
-> and err again 
-> but less 
-> and less 
+The road to wisdom? - Well, it's plain
+and simple to express:
+> Err
+> and err
+> and err again
+> but less
+> and less
 > and less.
 """
 attribution = "Piet Hein"

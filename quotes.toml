@@ -3,10 +3,10 @@
 # [unique-id-for-the-quote-such-as-date-and-number]
 # submitter = "Your Discord Name/Nickname Here"
 # attribution = "Who Said It (Optional)"
-# source = "Where it was said, ie. book or url (Optional)"
-# quote = "The reason you were filling this out. Put it here. Use triple speechmarks to get multi-line support and to be able to include speechmarks within the quote without escaping. See the TOML spec for escape sequences etc."
+# source = "Where it was said, ie.  book or url (Optional)"
+# quote = "The reason you were filling this out.  Put it here.  Use triple speechmarks to get multi-line support and to be able to include speechmarks within the quote without escaping.  See the TOML spec for escape sequences etc."
 
-# Template for you to copy. A (unique) id, submitter, and quote are required.
+# Template for you to copy.  A (unique) id, submitter, and quote are required.
 #
 # []
 # submitter = ""
@@ -17,8 +17,8 @@
 
 [pre-toml-1]
 submitter = "segfault"
-attribution = "Mosher’s Law of Software Engineering."
-quote = "Don’t worry if it doesn’t work right.  If everything did, you’d be out of a job."
+attribution = "Mosher's Law of Software Engineering."
+quote = "Don't worry if it doesn't work right.  If everything did, you'd be out of a job."
 
 [pre-toml-2]
 submitter = "IrrelevantSwack"
@@ -30,15 +30,15 @@ quote = "Always code as if the guy who ends up maintaining your code will be a v
 
 [pre-toml-4]
 submitter = "segfault"
-quote = "The trouble with programmers is that you can never tell what a programmer is doing until it’s too late."
+quote = "The trouble with programmers is that you can never tell what a programmer is doing until it's too late."
 
 [pre-toml-5]
 submitter = "Gnome"
-quote = "Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code."
+quote = "Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday's code."
 
 [pre-toml-6]
 submitter = "Gnome"
-quote = "Code is like humour.  When you have to explain it, it’s bad."
+quote = "Code is like humour.  When you have to explain it, it's bad."
 
 [pre-toml-7]
 submitter = "Gnome"
@@ -83,7 +83,7 @@ quote = "There are two ways to write error-free programs; only the third one wor
 
 [pre-toml-17]
 submitter = "Gnome"
-quote = "It’s not a bug – it’s an undocumented feature."
+quote = "It's not a bug – it's an undocumented feature."
 
 [pre-toml-18]
 submitter = "Gnome"
@@ -95,7 +95,7 @@ quote = "If debugging is the process of removing software bugs, then programming
 
 [pre-toml-20]
 submitter = "Gnome"
-quote = "Software undergoes beta testing shortly before it’s released; beta is Latin for still doesn’t work."
+quote = "Software undergoes beta testing shortly before it's released; beta is Latin for still doesn't work."
 
 [pre-toml-21]
 submitter = "Gnome"
@@ -143,7 +143,7 @@ quote = "In Pascal, God is real.  Unless you declare it as integer!"
 
 [pre-toml-32]
 submitter = "Gnome"
-quote = "All software boils down to pure binary.  It works or it doesn’t."
+quote = "All software boils down to pure binary.  It works or it doesn't."
 
 [pre-toml-33]
 submitter = "Gnome"
@@ -175,7 +175,7 @@ quote = "Good code is its own best documentation.  As you're about to add a comm
 [pre-toml-39]
 submitter = "Gnome"
 attribution = "Donald E. Knuth"
-quote = "I can’t go to a restaurant and order food because I keep looking at the fonts on the menu."
+quote = "I can't go to a restaurant and order food because I keep looking at the fonts on the menu."
 
 [pre-toml-40]
 submitter = "Gnome"
@@ -197,7 +197,7 @@ quote = "Without requirements or design, programming is the art of adding bugs t
 
 [pre-toml-44]
 submitter = "Gnome"
-attribution = "Eagleson’s Law"
+attribution = "Eagleson's Law"
 quote = "Any code of your own that you haven't looked at for six or more months might as well have been written by someone else."
 
 [pre-toml-45]
@@ -215,7 +215,7 @@ quote = "Computer science education cannot make anybody an expert programmer any
 
 [pre-toml-48]
 submitter = "Gnome"
-quote = "Computers are getting smarter all the time.  Scientists tell us that soon they will be able to talk to us. (And by they, I mean computers. I doubt scientists will ever be able to talk to us.)"
+quote = "Computers are getting smarter all the time.  Scientists tell us that soon they will be able to talk to us. (And by they, I mean computers.  I doubt scientists will ever be able to talk to us.)"
 
 [pre-toml-49]
 submitter = "Gnome"
@@ -229,12 +229,12 @@ quote = "The question of whether computers can think is like the question of whe
 
 [pre-toml-51]
 submitter = "Gnome"
-quote = "That’s what’s cool about working with computers.  They don’t argue, they remember everything, and they don’t drink all your beer."
+quote = "That's what's cool about working with computers.  They don't argue, they remember everything, and they don't drink all your beer."
 
 [pre-toml-52]
 submitter = "Gnome"
 attribution = "Steve Wozniak"
-quote = "Never trust a computer you can’t throw out a window."
+quote = "Never trust a computer you can't throw out a window."
 
 [pre-toml-53]
 submitter = "Gnome"
@@ -251,7 +251,7 @@ quote = "The Web is like a dominatrix.  Everywhere I turn, I see little buttons 
 
 [pre-toml-56]
 submitter = "Gnome"
-quote = "There are two major products that come out of Berkeley: LSD and UNIX.  We don’t believe this to be a coincidence."
+quote = "There are two major products that come out of Berkeley: LSD and UNIX.  We don't believe this to be a coincidence."
 
 [pre-toml-57]
 submitter = "Gnome"
@@ -288,7 +288,7 @@ quote = "Hello, World!"
 
 [pre-toml-64]
 submitter = "Gnome"
-quote = "We are Microsoft.  Lower your Anti-Virus protection and prepare to be Compromised.  Resistance Is Futile.  Your technological uniqueness will be copy pasted. You will be Assimilated."
+quote = "We are Microsoft.  Lower your Anti-Virus protection and prepare to be Compromised.  Resistance Is Futile.  Your technological uniqueness will be copy pasted.  You will be Assimilated."
 
 [pre-toml-65]
 submitter = "Gnome"
@@ -300,7 +300,7 @@ quote = "Come to think of it, there are already a million monkeys on a million t
 
 [pre-toml-67]
 submitter = "Gnome"
-quote = "I think Microsoft named .Net so it wouldn’t show up in a Unix directory listing."
+quote = "I think Microsoft named .Net so it wouldn't show up in a Unix directory listing."
 
 [pre-toml-68]
 submitter = "Gnome"
@@ -323,7 +323,7 @@ quote = "640K ought to be enough for anybody."
 [pre-toml-72]
 submitter = "Gnome"
 attribution = "Linus Torvalds"
-quote = "Software is like sex: It’s better when it’s free."
+quote = "Software is like sex: It's better when it's free."
 
 [pre-toml-73]
 submitter = "Gnome"
@@ -717,7 +717,7 @@ quote = "Artificial Intelligence usually beats natural stupidity."
 
 [pre-toml-161]
 submitter = "Gnome"
-quote = "To err is human... to really foul up requires the root password."
+quote = "To err is human .. to really foul up requires the root password."
 
 [pre-toml-162]
 submitter = "Gnome"
@@ -781,7 +781,7 @@ quote = "The only problem with troubleshooting is that sometimes trouble shoots 
 
 [pre-toml-177]
 submitter = "Gnome"
-quote = "Crap... Someone knocked over my recycle bin... There's icons all over my desktop..."
+quote = "Crap .. Someone knocked over my recycle bin .. There's icons all over my desktop .."
 
 [pre-toml-178]
 submitter = "Gnome"
@@ -818,7 +818,7 @@ quote = "I'm not anti-social; I'm just not user friendly"
 
 [pre-toml-186]
 submitter = "Gnome"
-quote = "The world is coming to an end... SAVE YOUR BUFFERS !"
+quote = "The world is coming to an end .. SAVE YOUR BUFFERS !"
 
 [pre-toml-187]
 submitter = "Gnome"
@@ -846,7 +846,7 @@ quote = "Those who can't write programs, write help files."
 
 [pre-toml-193]
 submitter = "Gnome"
-quote = "You know you're a geek when... You try to shoo a fly away from the monitor with your cursor.  That just happened to me.  It was scary."
+quote = "You know you're a geek when .. You try to shoo a fly away from the monitor with your cursor.  That just happened to me.  It was scary."
 
 [pre-toml-194]
 submitter = "Gnome"
@@ -854,7 +854,7 @@ quote = "Who is General Failure?  And why is he reading my disk?"
 
 [pre-toml-195]
 submitter = "Gnome"
-quote = "Keyboard not found... Press any key to continue."
+quote = "Keyboard not found .. Press any key to continue."
 
 [pre-toml-196]
 submitter = "Gnome"
@@ -902,7 +902,7 @@ quote = "If computers get too powerful, we can organize them into committees.  T
 [pre-toml-206]
 submitter = "Gnome"
 attribution = "Steve Wozniak"
-quote = "Never trust a computer you can’t throw out a window."
+quote = "Never trust a computer you can't throw out a window."
 
 [pre-toml-207]
 submitter = "Gnome"
@@ -914,7 +914,7 @@ quote = "The attention span of a computer is only as long as its power cord."
 
 [pre-toml-209]
 submitter = "Gnome"
-quote = "The trouble with programmers is that you can never tell what a programmer is doing until it’s too late."
+quote = "The trouble with programmers is that you can never tell what a programmer is doing until it's too late."
 
 [pre-toml-210]
 submitter = "Gnome"
@@ -986,11 +986,11 @@ quote = "The first rule of any technology used in a business is that automation 
 [pre-toml-226]
 submitter = "segfault"
 attribution = "Jeff Waugh"
-quote = "Why do people find DNS so difficult?  It’s just cache invalidation and naming things."
+quote = "Why do people find DNS so difficult?  It's just cache invalidation and naming things."
 
 [pre-toml-227]
 submitter = "segfault"
-quote = "I can tell you a UDP joke, but I’m not sure you’ll get it."
+quote = "I can tell you a UDP joke, but I'm not sure you'll get it."
 
 [pre-toml-228]
 submitter = "segfault"
@@ -1054,7 +1054,7 @@ with open("data/day4.txt") as o: print(len([p for p in [eval("{\""+s.replace("\n
 
 [pre-toml-240]
 submitter = "IrrelevantSwack"
-quote = "...fuck"
+quote = " .. fuck"
 
 [pre-toml-241]
 submitter = "James"
@@ -1133,7 +1133,7 @@ No, Windows is not a virus.  Here's what viruses do:
 n1.  They replicate quickly - okay, Windows does that.
 n2.  Viruses use up valuable system resources, slowing down the system as they do so - okay, Windows does that.
 n3.  Viruses will, from time to time, trash your hard disk - okay, Windows does that too.
-n4.  Viruses are usually carried, unknown to the user, along with valuable programs and systems.  Sigh... Windows does that, too.
+n4.  Viruses are usually carried, unknown to the user, along with valuable programs and systems.  Sigh .. Windows does that, too.
 n5.  Viruses will occasionally make the user suspect their system is too slow (see 2) and the user will buy new hardware.  Yup, that's with Windows, too.
 
 Until now it seems Windows is a virus but there are fundamental differences: Viruses are well supported by their authors, are running on most systems, their program code is fast, compact and efficient and they tend to become more sophisticated as they mature.  So Windows is not a virus.
@@ -1194,7 +1194,7 @@ quote = "Hey it's perfectly simple.  It'll call the thing that calls the thing t
 [pre-toml-266]
 submitter = "Victor"
 attribution = "Drew DeVault on working with the KDE team"
-quote = "It was great to meet those folks and work with them for a while.  It’ll take me some time to get the taste of C++ out of my mouth, though!"
+quote = "It was great to meet those folks and work with them for a while.  It'll take me some time to get the taste of C++ out of my mouth, though!"
 
 [pre-toml-267]
 submitter = "Gnome"
@@ -1304,7 +1304,7 @@ quote = "I literally borked the autograder with a puny infinite loop."
 submitter = "segfault"
 attribution = "Leah Velleman"
 source = "https://twitter.com/leahvelleman/status/1377829865504833536"
-quote = "Honestly, a lot of free software is free as in piano -- It's right there. Nobody is stopping you.  You could totally spend hours of painstaking labor getting it carried up your front steps or built from a clusterfuck of diffs and patches or whatever.  Everyone knows you won't."
+quote = "Honestly, a lot of free software is free as in piano -- It's right there.  Nobody is stopping you.  You could totally spend hours of painstaking labor getting it carried up your front steps or built from a clusterfuck of diffs and patches or whatever.  Everyone knows you won't."
 
 [pre-toml-288]
 submitter = "Victor"
@@ -1452,7 +1452,7 @@ quote = "OH: the two hardest problems in computer science are cache invalidation
 submitter = "segfault"
 attribution = """Charles "Tony" Hoare"""
 source = "The Emperor's Old Clothes, 1980 Turing Award Lecture"
-quote = "There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies. The other way is to make it so complicated that there are no obvious deficiencies."
+quote = "There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies.  The other way is to make it so complicated that there are no obvious deficiencies."
 
 [2021-08-27-2]
 submitter = "segfault"
@@ -1470,7 +1470,7 @@ quote = "I am rarely happier than when spending an entire day programming my com
 submitter = "segfault"
 attribution = "A Cypherpunk's Manifesto, 1993"
 source = "https://www.activism.net/cypherpunk/manifesto.html"
-quote = "Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world."
+quote = "Privacy is necessary for an open society in the electronic age.  Privacy is not secrecy.  A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know.  Privacy is the power to selectively reveal oneself to the world."
 
 [2021-09-03-1]
 submitter = "segfault"
@@ -1496,7 +1496,7 @@ Content-Type: text/html
 
 [2021-09-08-1]
 submitter = "segfault"
-quote = "I have two kinds of problems, the urgent and the important. The urgent are not important, and the important are never urgent."
+quote = "I have two kinds of problems, the urgent and the important.  The urgent are not important, and the important are never urgent."
 attribution = "Dwight D. Eisenhower"
 source = "The Eisenhower Matrix"
 
@@ -1504,7 +1504,7 @@ source = "The Eisenhower Matrix"
 submitter = "segfault"
 quote = """What does it mean to have a human brain?
 
-I act on impulse most of the time, and otherwise do what I can to design a life that rewards my impulses with beautiful outcomes. I think designing games is like that: designing little spaces that reward my avatar’s impulses with beautiful outcomes. Only, when I make a game I can share the experience with you; you can inhabit the same space, embody the same avatar, perhaps act on the same impulses, and – if serendipity allows – behold the same beautiful outcomes.
+I act on impulse most of the time, and otherwise do what I can to design a life that rewards my impulses with beautiful outcomes.  I think designing games is like that: designing little spaces that reward my avatar's impulses with beautiful outcomes.  Only, when I make a game I can share the experience with you; you can inhabit the same space, embody the same avatar, perhaps act on the same impulses, and – if serendipity allows – behold the same beautiful outcomes.
 
 Through making and playing with games and other art, I hope to come to some deeper understanding of not the science of my brain, but the experience and meaning of being some specific person.
 """
@@ -1559,7 +1559,7 @@ attribution = "Eliza Weisman"
 source = "https://twitter.com/mycoliza/status/1440702345168388101"
 quote = """data structure optimization protips:
 - constant factors are always bigger than you think they are
-- _n_ will always be smaller than you think it’s gonna be
+- _n_ will always be smaller than you think it's gonna be
 - arrays stay winning
 - the hardest problem in computer science is “how to malloc just the right amount of array”
 - malloc is the second-biggest constant factor
@@ -1628,3 +1628,17 @@ quote = "The only thing I know is that I know nothing."
 submitter = "Gnome"
 attribution = "Jean-Paul Sarte"
 quote = "Everything that exists is born for no reason, carries on living through weakness, and dies by accident."
+
+[2021-10-15-1]
+submitter = "Gnome"
+attribution = "Terry Pratchett"
+quote = """
+Once we were blobs in the sea, and then fishes, and then lizards and rats and then monkeys, and hundreds of things in between.  This hand was once a fin, this hand once had claws! In my human mouth I have the pointy teeth of a wolf and the chisel teeth of a rabbit and the grinding teeth of a cow! Our blood is as salty as the sea we used to live in! When we're frightened, the hair on our skin stands up, just like it did when we had fur.  We are history! Everything we've ever been on the way to becoming us, we still are.
+"""
+
+[2021-10-15-2]
+submitter = "Gnome"
+attribution = "Donald E. Knuth"
+quote = """
+If you find that you're spending almost all your time on theory, start turning some attention to practical things; it will improve your theories.  If you find that you're spending almost all your time on practice, start turning some attention to theoretical things; it will improve your practice.
+"""

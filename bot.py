@@ -58,10 +58,10 @@ async def current_date_time():
 async def send_quote(pre = "Quote"):
     quotes = await refresh_quotes() # This way we have access to the latest quotes
     logger = logging.getLogger("send_quote")
-    quote = pull_random_quote(quotes)
+    quote, quote_index = pull_random_quote(quotes)
     quote_text = format_quote_text(quote)
     embedVar = discord.Embed(title = "Maximum Swack!", description = quote_text, colour = random.choice(colours))
-    embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nSubmitted by {quote.submitter}")
+    embedVar.set_footer(text = f"{pre} {quote_index}/{len(quotes)} for {await current_date_time()}\nSubmitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
     await client.get_channel(sandbox).send(embed = embedVar)
 

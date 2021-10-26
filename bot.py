@@ -22,7 +22,9 @@ REPO_LINK = "https://github.com/Gnomeball/QuoteBotRepo"
 @client.event
 async def on_ready():
     logging.info(f"We have logged in as {client.user}")
-    await client.change_presence(activity = discord.CustomActivity("Blah"))
+    # await client.change_presence(activity = discord.CustomActivity("Blah"))
+    await client.change_presence(activity = discord.Game(name = "Selecting a quote!"))
+
 
 @client.event
 async def on_message(message):
@@ -61,7 +63,7 @@ async def send_quote(pre = "Quote"):
     quote, quote_index = pull_random_quote(quotes)
     quote_text = format_quote_text(quote)
     embedVar = discord.Embed(title = "Maximum Swack!", description = quote_text, colour = random.choice(colours))
-    embedVar.set_footer(text = f"{pre} {quote_index}/{len(quotes)} for {await current_date_time()}\nSubmitted by {quote.submitter}")
+    embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nQuote {quote_index}/{len(quotes)}, Submitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
     await client.get_channel(sandbox).send(embed = embedVar)
 
@@ -72,7 +74,7 @@ async def test_quote(which = "pre-toml-255"):
     quote = pull_specific_quote(which, quotes)
     quote_text = format_quote_text(quote)
     embedVar = discord.Embed(title = "Maximum Swack!", description = quote_text, colour = random.choice(colours))
-    embedVar.set_footer(text = f"Test for {await current_date_time()}\nSubmitted by {quote.submitter}")
+    embedVar.set_footer(text = f"Test for {await current_date_time()}\nQuote Test/{len(quotes)}, Submitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
     await client.get_channel(sandbox).send(embed = embedVar)
 

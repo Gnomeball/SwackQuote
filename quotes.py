@@ -32,20 +32,20 @@ def pull_random_quote(quotes: dict):
     """
     Selects a random quote from the given dictionary.
     Currently, ignores the last 100 quotes logged in "quote_history.txt".
-    :returns: A Quote(submitter, quote, attribution=None, source=None).
-    :rtype: Quote
+    :returns: A Quote(submitter, quote, attribution=None, source=None) and its position in the full list.
+    :rtype: Quote, int
     """
     with open("quote_history.txt", "r", encoding="utf8") as f:
         recent = set(map(str.strip, f.readlines()[-100:]))
-        good_q = [k for k in quotes.keys() if k not in recent]
-
+        good_q = [(i,k) for i,k in enumerate(quotes.keys(),1) if k not in recent]
+    
     random.shuffle(good_q)
-    quote = random.choice(good_q)
+    quote_index, quote = random.choice(good_q)
 
     with open("quote_history.txt", "a", encoding="utf8") as f:
         f.write(f"{quote}\n")
 
-    return Quote(**quotes[quote])
+    return Quote(**quotes[quote]), quote_index
 
 def pull_quotes_from_file(path=QUOTE_FILE_PATH):
     """

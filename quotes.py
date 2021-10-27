@@ -45,7 +45,7 @@ def pull_random_quote(quotes: dict):
     with open("quote_history.txt", "a", encoding="utf8") as f:
         f.write(f"{quote}\n")
 
-    return Quote(**quotes[quote]), quote_index
+    return (Quote(**quotes[quote]), quote_index)
 
 def pull_quotes_from_file(path=QUOTE_FILE_PATH):
     """

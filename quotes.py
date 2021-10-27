@@ -40,7 +40,7 @@ def pull_random_quote(quotes: dict):
         good_q = [(i,k) for i,k in enumerate(quotes.keys(),1) if k not in recent]
     
     random.shuffle(good_q)
-    quote_index, quote = *random.choice(good_q)
+    quote_index, quote = random.choice(good_q)
 
     with open("quote_history.txt", "a", encoding="utf8") as f:
         f.write(f"{quote}\n")

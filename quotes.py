@@ -38,7 +38,7 @@ def pull_random_quote(quotes: dict):
     with open("quote_history.txt", "r", encoding="utf8") as f:
         recent = set(map(str.strip, f.readlines()[-100:]))
         good_q = [(i,k) for i,k in enumerate(quotes.keys(),1) if k not in recent]
-    
+
     random.shuffle(good_q)
     quote_index, quote = random.choice(good_q)
 
@@ -101,7 +101,7 @@ async def refresh_quotes():
     for (submitter,quote,*opt), (old_s,old_q,*old_opt) in changed:
         logger.info(f"+ {submitter} ({' '.join(map(str,opt))}) {quote}")
         logger.info(f"- {old_s} ({' '.join(map(str,old_opt))}) {old_q}")
-    
+
     if quotes != updated_quotes:
         with open(QUOTE_FILE_PATH, "wb") as f:
             tomli_w.dump(updated_quotes, f)

@@ -115,7 +115,7 @@ quote = "C makes it easy to shoot yourself in the foot; C++ makes it harder, but
 
 [pre-toml-25]
 submitter = "Gnome"
-quote = "To err is human but to really foul things up you need a computer."
+quote = "human but to really foul things up you need a computer.To err is "
 
 [pre-toml-26]
 submitter = "Gnome"
@@ -1662,3 +1662,8 @@ Welcome to Meeting Room 212
 Maximum Capcity is 1
 
 Enjoy the space!"""
+
+[2021-11-9-1]
+submitter = "Gnome"
+attribution = "Dwight D Eisenhower"
+quote = "Plans are useless, but planning is indispensable."

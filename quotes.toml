@@ -1698,7 +1698,8 @@ quote = "I didn't say cheese wasnt science"
 submitter = "segfault"
 attribution = "Linus Torvalds"
 source = "https://lkml.org/lkml/2020/5/29/1038"
-quote = """Longer lines are simply useful. Part of that is that we aren't
+quote = """
+Longer lines are simply useful. Part of that is that we aren't
 programming in the 80's any more, and our source code is fundamentally
 wider as a result.
 
@@ -1712,3 +1713,19 @@ But still - it's entirely reasonable to have variable names that are
 out instead of using abbreviations etc.
 """
 
+[2021-11-28-2]
+submitter = "segfault"
+attribution = "Linus Torvalds"
+source = "https://lkml.org/lkml/2020/5/29/1038"
+quote = """
+I find it completely irrelevant if
+somebody says that their kernel compile takes 10 hours because they
+are doing kernel development on a Raspberry PI with 4GB of RAM.
+
+People with restrictive hardware shouldn't make it more inconvenient
+for people who have better resources. Yes, we'll accommodate things to
+within reasonable limits. But no, 80-column terminals in 2020 isn't
+"reasonable" any more as far as I'm concerned. People commonly used
+132-column terminals even back in the 80's, for chrissake, don't try
+to make 80 columns some immovable standard.
+"""

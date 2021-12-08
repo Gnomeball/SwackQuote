@@ -1746,3 +1746,34 @@ submitter = "unreturnable"
 attribution = "Praxideke Meng"
 source = "The Expanse: Caliban's war"
 quote = "It had been a failure, but it was a failure he understood, and that made it a victory."
+
+[2021-12-08-1]
+submitter = "Gnome"
+attribution = "Kurzgesagt"
+quote = "We became self aware only to realise this story is not about us."
+source = "https://www.youtube.com/watch?v=JXeJANDKwDc"
+
+[2021-12-08-2]
+submitter = "Gnome"
+attribution = "Kurzgesagt"
+quote = "Close your eyes, count to 1.  That's how long forever feels."
+source = "https://www.youtube.com/watch?v=JXeJANDKwDc"
+
+[2021-12-08-3]
+submitter = "Gnome"
+attribution = "The Doctor"
+quote = "Immortality isn't living forever.  Immortality is everybody else dying."
+source = "The Girl Who Died, 2015"
+
+[2021-12-08-4]
+submitter = "Gnome"
+attribution = "The Doctor"
+quote = """How many seconds in eternity?
+
+There's this mountain of pure diamond.  It takes an hour to climb it and an hour to go around it.  Every hundred years.  A little bird comes and sharpens its beak on the mountain.  And within time, the mountain is chiselled away.  The first second of eternity has passed.
+
+You might think that's one hell of a long time.
+
+Personally, I think that's one hell of a bird.
+"""
+source = "Heavens Sent, 2015"

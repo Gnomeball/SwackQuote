@@ -1777,3 +1777,9 @@ You might think that's one hell of a long time.
 Personally, I think that's one hell of a bird.
 """
 source = "Heavens Sent, 2015"
+
+[2021-12-22-1]
+submitter = "Victor"
+attribution = "Steve Bagley"
+quote = "I don't understand why this is even part of Java, but for some reason it is."
+source = "https://www.youtube.com/watch?v=Opqgwn8TdlM"

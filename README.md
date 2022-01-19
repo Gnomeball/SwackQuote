@@ -15,13 +15,17 @@ Formatting:
 
 ```toml
 [identifier] # some stable identifier, such as a date, and perhaps a number to prevent duplicates
-submitter = "the name of who submitted it, ideally a Discord tag, remember the case!"
+submitter = "the name of who submitted it (aka, your discord handle/nickname)"
 quote = "the quote you're adding!"
-attribution = "Whoever said it, if it wasn't the submitter, and if you know"
-source = "url link to where it was said (currently not displayed)"
+attribution = "whoever said it, if it wasn't the submitter (if you know, it's optional)"
+source = "where it was said, a url is nice if you have it (optional, currently not displayed)"
 ```
 
-Currently, `attribution` and `source` are optional tags. If the quote spans multiple lines, use `"""` at the beginning and end. If the quote contains code, use `'''` for raw multi-line strings, and then use ` ``` ` to create a code block. Any discord-accepted markdown should be parsed properly.
+**You must include your name as the `submitter` and the `quote`, these are _required_.**
+Currently, `attribution` and `source` are optional fields.
+If the quote spans multiple lines, use `"""` at the beginning and end.
+If the quote contains code, use `'''` for raw multi-line strings, and then use ` ``` ` to create a code block.
+Any discord-accepted markdown should be parsed properly.
 
 For further reading, see:
 - [The TOML documentation for how strings work](https://toml.io/en/)

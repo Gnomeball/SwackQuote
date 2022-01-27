@@ -1732,7 +1732,7 @@ to make 80 columns some immovable standard.
 
 [2021-12-1-1]
 submitter = "Gnome"
-attribution ="Gnome, after incorrectly fixing (adding) a typo to this file, then revmoving it again, because they're dumb"
+attribution = "Gnome, after incorrectly fixing (adding) a typo to this file, then revmoving it again, because they're dumb"
 quote = "Even with requirements and design, Gnome is still capable of adding bugs to an empty text file, as well as to text that did not have any."
 
 [2021-12-02-1]
@@ -1788,6 +1788,12 @@ source = "https://www.youtube.com/watch?v=Opqgwn8TdlM"
 submitter = "Gnome"
 attribution = "Ernest Rutherford"
 quote = "All science is either physics or stamp collecting."
+
+[2022-01-18-1]
+submitter = "segfault"
+attribution = "Jonathan Blow"
+quote = "When you're solving a specific problem you can often be very efficient, and when you're solving a general problem you often can't be very efficient, because efficiency requires assumptions, sometimes, or invariants you can guarantee, and the more general you are trying to be, the fewer invariants you can guarantee."
+source = "https://www.youtube.com/watch?v=bMMOesLMWXs"
 
 [2022-01-20-1]
 submitter = "Gnome"

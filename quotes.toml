@@ -1806,3 +1806,8 @@ submitter = "segfault"
 quote = 'Antoine de Saint-Exupery, the French writer and aircraft designer, said that, "A designer knows he has arrived at perfection not when there is no longer anything to add, but when there is no longer anything to take away." More programmers should judge their work by this criterion. Simple programs are usually more reliable, secure, robust and efficient than their complex cousins, and easier to build and to maintain.'
 attribution = "Jon Bentley"
 source = "Programming Pearls (2nd Edition)"
+
+[2022-02-03-1]
+submitter = "segfault"
+quote = "Everything should be built top-down, except the first time."
+attribution = "Alan Perlis"

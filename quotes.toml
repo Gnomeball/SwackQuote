@@ -1828,3 +1828,14 @@ submitter = "Gnome"
 quote = "We are in the process of inadvertently altering our climate through exhaustion of fossil fuels."
 attribution = "Carl Sagan, 1978"
 source = "The Tonight Show with Johnny Carson, March 2nd 1978"
+
+[2022-02-16]
+submitter = "Gnome"
+quote = """
+Consider the following declarations.
+
+The North Star is the brightest star in the nighttime sky. The Sun is a yellow star. What goes up must come down. On a dark night you can see millions of stars with the unaided eye. In space there is no gravity. A compass points north. Days get shorter in the winter and longer in the summer. Total solar eclipses are rare. At high noon, the Sun is directly overhead. The Sun rises in the east and sets in the west. The Moon comes out at night. On the equinox there are 12 hours of day and 12 hours of night. The Southern Cross is a beautiful constellation.
+
+Every statement in the above paragraph is false.
+"""
+attribution = "Neil DeGrasse Tyson"

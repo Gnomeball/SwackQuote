@@ -1816,3 +1816,26 @@ attribution = "Alan Perlis"
 submitter = "Victor"
 quote = "I understand that scissors can beat paper, and I get how rock can beat scissors, but there's no way paper can beat rock. Paper is supposed to magically wrap around rock leaving it immobile? Why can't paper do this to scissors? Screw scissors, why can't paper do this to people? Why aren't sheets of college ruled notebook paper constantly suffocating students as they attempt to take notes in class? I'll tell you why. Because paper can't beat anybody, a rock would tear it up in two seconds. When I play rock paper scissors, I always choose rock. Then when somebody claims to have beaten me with their paper I can punch them in the face with my already clenched fist and say, oh sorry, I thought paper would protect you."
 attribution = "Unknown"
+
+[2022-02-13]
+submitter = "Gnome"
+quote = "You can be creative, or productive, but not both."
+attribution = "Various"
+
+
+[2022-02-15]
+submitter = "Gnome"
+quote = "We are in the process of inadvertently altering our climate through exhaustion of fossil fuels."
+attribution = "Carl Sagan, 1978"
+source = "The Tonight Show with Johnny Carson, March 2nd 1978"
+
+[2022-02-16]
+submitter = "Gnome"
+quote = """
+Consider the following declarations.
+
+The North Star is the brightest star in the nighttime sky. The Sun is a yellow star. What goes up must come down. On a dark night you can see millions of stars with the unaided eye. In space there is no gravity. A compass points north. Days get shorter in the winter and longer in the summer. Total solar eclipses are rare. At high noon, the Sun is directly overhead. The Sun rises in the east and sets in the west. The Moon comes out at night. On the equinox there are 12 hours of day and 12 hours of night. The Southern Cross is a beautiful constellation.
+
+Every statement in the above paragraph is false.
+"""
+attribution = "Neil DeGrasse Tyson"

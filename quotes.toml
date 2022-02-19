@@ -1839,3 +1839,46 @@ The North Star is the brightest star in the nighttime sky. The Sun is a yellow s
 Every statement in the above paragraph is false.
 """
 attribution = "Neil DeGrasse Tyson"
+
+[2022-02-19-1]
+submitter = "Gnome"
+quote = "There cannot be a language more universal and more simple, more free from errors and from obscurities, that is to say more worthy to express the invariable relations of natural things .. [Mathematics] seems to be a faculty of the human mind destined to supplement the shortness of life and the imperfection of the senses."
+attribution = "Joseph Fourier"
+source = "Analytic Theory of Heat, 1822"
+
+[2022-02-19-2]
+submitter = "Gnome"
+quote = """
+When you are risen on the eastern horizon
+You have filled every land with your beauty ..
+Though you are far away, your rays are on Earth
+"""
+attribution = "Akhnaton, 1370 BCE"
+
+[2022-02-19-3]
+submitter = "Gnome"
+quote = """
+When on high the heaven had not been named,
+Firm ground below had not been called by name ..
+No reed hut had been matted, no marsh land had appeared,
+When no god whatever had been brought into being,
+Uncalled by name, their destinations undetermined -
+Then it was the gods were formed ..
+"""
+attribution = "Enuma Elish - the Babylonian creation myth, late 3rd millenium BCE"
+
+[2022-02-19-4]
+submitter = "Gnome"
+quote = "It takes courage to be afraid."
+attribution = "Montaigne"
+source = "Essays, III, 6, 1588"
+
+[2022-02-19-5]
+submitter = "Gnome"
+quote = "The first day or so, we all pointed to our countries.  The third or fourth day, we were pointing to our continents.  By the fifth day, we were aware of only one Earth."
+attribution = "Prince Sultan Bin Salmon Al-Suad"
+
+[2022-02-19-6]
+submitter = "Gnome"
+quote = "I am not a pessimist.  To percieve evil where it exists is, in my opinion, a form of optimism."
+attribution = "Roberto Rossellini"

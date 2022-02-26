@@ -1153,9 +1153,10 @@ quote = "Linux poses a real challenge for those with a taste for late-night hack
 
 [pre-toml-261]
 submitter = "Gnome"
-quote = '''```java
+quote = """```ruby
 ls = File.read("history").split("\n"); m = ARGV.length; t = Array.new(m, 0); ls.each { |li| (0..m-1).each { |i| t[i] += 1 if li.start_with?(ARGV[i]) } }; puts "total\t#{ls.length}"; (0..m-1).each { |i| puts "#{ARGV[i]}\t#{t[i]}"}
-```'''
+```
+"""
 
 [pre-toml-262]
 submitter = "Gnome"

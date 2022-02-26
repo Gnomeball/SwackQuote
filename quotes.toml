@@ -1037,7 +1037,7 @@ with open(\"data/day4.txt\") as o: print(len([p for p in [eval(\"{\\\"\"+s.repla
 \", \",\").replace(\" \", \",\").replace(\":\",'\":\"').replace(\",\",'\",\"').strip()+\"\\\"}\") for s in map(str.strip, o.read().strip().split(\"\
 \
 \"))] if (len(p)==8 or (len(p)==7 and \"cid\" not in p)) and (1920<=int(p[\"byr\"])<=2002) and (2010<=int(p[\"iyr\"])<=2020) and (2020<=int(p[\"eyr\"])<=2030) and (len(p[\"hgt\"])>2 and ((150<=int(p[\"hgt\"][:-2])<=193) if p[\"hgt\"][-2:]==\"cm\" else (59<=int(p[\"hgt\"][:-2])<=76))) and (len(p[\"hcl\"])==7 and p[\"hcl\"][0]==\"#\" and int(p[\"hcl\"][1:],16)) and (p[\"ecl\"] in set([\"amb\", \"blu\", \"brn\", \"gry\", \"grn\", \"hzl\", \"oth\"])) and (len(p[\"pid\"])==9 and int(p[\"pid\"]))]))
-``
+```
 """
 
 [pre-toml-240]
@@ -1127,7 +1127,7 @@ n5.  Viruses will occasionally make the user suspect their system is too slow (s
 
 Until now it seems Windows is a virus but there are fundamental differences: Viruses are well supported by their authors, are running on most systems, their program code is fast, compact and efficient and they tend to become more sophisticated as they mature.  So Windows is not a virus.
 
-It's a bug
+It's a bug.
 """
 
 [pre-toml-256]
@@ -1160,7 +1160,7 @@ quote = """
 ```java
 ls = File.read(\"history\").split(\"\
 \"); m = ARGV.length; t = Array.new(m, 0); ls.each { |li| (0..m-1).each { |i| t[i] += 1 if li.start_with?(ARGV[i]) } }; puts \"total\\t#{ls.length}\"; (0..m-1).each { |i| puts \"#{ARGV[i]}\\t#{t[i]}\"}
-``
+```
 """
 
 [pre-toml-262]
@@ -1195,7 +1195,7 @@ There was an Indian Chief, and he had three squaws, and kept them in three teepe
 
 Well after about a year, all three squaws had children.  The squaw on the bear had a baby boy, the squaw on the buffalo hide had a baby girl.  But the squaw on the hippopotamus had a girl and a boy.  So what is the moral of the story?
 
-The squaw on the hippopotamus is equal to the sum of the squaws on the other two hides
+The squaw on the hippopotamus is equal to the sum of the squaws on the other two hides.
 """
 
 [pre-toml-268]
@@ -1383,7 +1383,7 @@ submitter = "segfault"
 attribution = "The Mahabharata (Ancient Sanskrit Epic)"
 quote = """
 जो सो रहा हो उसे तो जगा सकते हैं, लेकिन जो आँखे मूँद कर सोने का अभिनय कर रहा हो उसे कैसे जगाएंगे
-You can wake the one who is sleeping, but how will you wake the one who is pretending to sleep with his eyes closed
+You can wake the one who is sleeping, but how will you wake the one who is pretending to sleep with his eyes closed?
 """
 
 [pre-toml-304]
@@ -1426,7 +1426,7 @@ X is, well, X, of dubious fame.
 Y is for yes, which makes an impression, and
 Z is for zcat, which handles compression.
 
--- THE ABC'S OF UNI
+-- THE ABC'S OF UNIX
 """
 
 [2021-08-10-1]
@@ -1491,7 +1491,7 @@ Content-Type: text/html
   operated by the People's Front of Judea.</p>
  </body>
 </html>
-``
+```
 """
 
 [2021-09-08-1]
@@ -1507,7 +1507,7 @@ What does it mean to have a human brain?
 
 I act on impulse most of the time, and otherwise do what I can to design a life that rewards my impulses with beautiful outcomes.  I think designing games is like that: designing little spaces that reward my avatar's impulses with beautiful outcomes.  Only, when I make a game I can share the experience with you; you can inhabit the same space, embody the same avatar, perhaps act on the same impulses, and – if serendipity allows – behold the same beautiful outcomes.
 
-Through making and playing with games and other art, I hope to come to some deeper understanding of not the science of my brain, but the experience and meaning of being some specific person
+Through making and playing with games and other art, I hope to come to some deeper understanding of not the science of my brain, but the experience and meaning of being some specific person.
 """
 attribution = "droqen"
 source = "https://www.droqen.com/1112/"
@@ -1543,7 +1543,7 @@ and simple to express:
 > and err again
 > but less
 > and less
-> and less
+> and less.
 """
 attribution = "Piet Hein"
 source = "http://www.sophilos.net/GrooksofPietHein"
@@ -1566,7 +1566,7 @@ data structure optimization protips:
 - the hardest problem in computer science is “how to malloc just the right amount of array”
 - malloc is the second-biggest constant factor
 - but the constant factor that matters the most is bounds checking
-- the only thing worse than doing a lot of bounds checking is doing an OOB read/writ
+- the only thing worse than doing a lot of bounds checking is doing an OOB read/write
 """
 
 [2021-09-30]
@@ -1605,7 +1605,7 @@ as the name is changed.
 This program is distributed in the hope that it will be THE STRONGEST,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 USEFULNESS or FITNESS FOR A PARTICULAR PURPOSE.
-``
+```
 """
 
 [2021-10-5-2]
@@ -1661,7 +1661,7 @@ Welcome to Meeting Room 212
 
 Maximum Capcity is 1
 
-Enjoy the space
+Enjoy the space!
 """
 
 [2021-11-9-1]
@@ -1711,7 +1711,7 @@ better.
 
 But still - it's entirely reasonable to have variable names that are
 10-15 characters and it makes the code more legible. Writing things
-out instead of using abbreviations etc
+out instead of using abbreviations etc.
 """
 
 [2021-11-28-2]
@@ -1721,7 +1721,7 @@ source = "https://lkml.org/lkml/2020/5/29/1038"
 quote = """
 I find it completely irrelevant if somebody says that their kernel compile takes 10 hours because they are doing kernel development on a Raspberry PI with 4GB of RAM.
 
-People with restrictive hardware shouldn't make it more inconvenient for people who have better resources. Yes, we'll accommodate things to within reasonable limits. But no, 80-column terminals in 2020 isn't \"reasonable\" any more as far as I'm concerned. People commonly used 132-column terminals even back in the 80's, for chrissake, don't try to make 80 columns some immovable standard
+People with restrictive hardware shouldn't make it more inconvenient for people who have better resources. Yes, we'll accommodate things to within reasonable limits. But no, 80-column terminals in 2020 isn't \"reasonable\" any more as far as I'm concerned. People commonly used 132-column terminals even back in the 80's, for chrissake, don't try to make 80 columns some immovable standard.
 """
 
 [2021-12-1-1]
@@ -1769,7 +1769,7 @@ There's this mountain of pure diamond.  It takes an hour to climb it and an hour
 
 You might think that's one hell of a long time.
 
-Personally, I think that's one hell of a bird
+Personally, I think that's one hell of a bird.
 """
 source = "Heavens Sent, 2015"
 
@@ -1830,7 +1830,7 @@ Consider the following declarations.
 
 The North Star is the brightest star in the nighttime sky. The Sun is a yellow star. What goes up must come down. On a dark night you can see millions of stars with the unaided eye. In space there is no gravity. A compass points north. Days get shorter in the winter and longer in the summer. Total solar eclipses are rare. At high noon, the Sun is directly overhead. The Sun rises in the east and sets in the west. The Moon comes out at night. On the equinox there are 12 hours of day and 12 hours of night. The Southern Cross is a beautiful constellation.
 
-Every statement in the above paragraph is false
+Every statement in the above paragraph is false.
 """
 attribution = "Neil DeGrasse Tyson"
 
@@ -1845,7 +1845,7 @@ submitter = "Gnome"
 quote = """
 When you are risen on the eastern horizon
 You have filled every land with your beauty ..
-Though you are far away, your rays are on Eart
+Though you are far away, your rays are on Earth
 """
 attribution = "Akhnaton, 1370 BCE"
 
@@ -1857,7 +1857,7 @@ Firm ground below had not been called by name ...
 No reed hut had been matted, no marsh land had appeared,
 When no god whatever had been brought into being,
 Uncalled by name, their destinations undetermined -
-Then it was the gods were formed ..
+Then it was the gods were formed ...
 """
 attribution = "Enuma Elish - the Babylonian creation myth, late 3rd millenium BCE"
 
@@ -1884,7 +1884,7 @@ When you fire that first shot, no matter how right you feel, you have no idea wh
 
 You don't know whose children are going to scream and burn. How many hearts will be broken. How mnay lives shattered. How much blood will spill until everybody does what they were always going to have to do from the very beginning: sit down and talk.
 
-Listen to me. Listen. I just want you to think. Do you know what thinking is? It's just a fancy word for changing your mind
+Listen to me. Listen. I just want you to think. Do you know what thinking is? It's just a fancy word for changing your mind.
 """
 attribution = "The Doctor"
 source = "The Zygon Inversion (2015)"
@@ -1918,7 +1918,7 @@ It wouldn’t be as good. It's hard to talk about the importance of an imaginary
 
 And a lot of our heroes depress me. But when they made this particular hero, they didn't give him a gun; they gave him a screwdriver, to fix things. They didn't give him a tank or a warship or an x-wing fighter; they gave him a box, from which you can call for help. And they didn't give him a superpower or pointy ears or a heat-ray, they gave him an extra heart. They gave him two hearts! And that's an extraordinary thing.
 
-There will never come a time when we don't need a hero like the Doctor
+There will never come a time when we don't need a hero like the Doctor.
 """
 attribution = "Steven Moffat"
 

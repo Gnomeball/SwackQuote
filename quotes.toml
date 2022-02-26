@@ -1031,7 +1031,13 @@ quote = "'tis the way of the world now, everyone thinks everything is a quick fi
 
 [pre-toml-239]
 submitter = "segfault"
-quote = "```python\nwith open(\"data/day4.txt\") as o: print(len([p for p in [eval(\"{\\\"\"+s.replace(\"\\n\", \",\").replace(\" \", \",\").replace(\":\",'\":\"').replace(\",\",'\",\"').strip()+\"\\\"}\") for s in map(str.strip, o.read().strip().split(\"\\n\\n\"))] if (len(p)==8 or (len(p)==7 and \"cid\" not in p)) and (1920<=int(p[\"byr\"])<=2002) and (2010<=int(p[\"iyr\"])<=2020) and (2020<=int(p[\"eyr\"])<=2030) and (len(p[\"hgt\"])>2 and ((150<=int(p[\"hgt\"][:-2])<=193) if p[\"hgt\"][-2:]==\"cm\" else (59<=int(p[\"hgt\"][:-2])<=76))) and (len(p[\"hcl\"])==7 and p[\"hcl\"][0]==\"#\" and int(p[\"hcl\"][1:],16)) and (p[\"ecl\"] in set([\"amb\", \"blu\", \"brn\", \"gry\", \"grn\", \"hzl\", \"oth\"])) and (len(p[\"pid\"])==9 and int(p[\"pid\"]))]))\n```"
+quote = """
+```python
+with open(\"data/day4.txt\") as o: print(len([p for p in [eval(\"{\\\"\"+s.replace(\"\
+\", \",\").replace(\" \", \",\").replace(\":\",'\":\"').replace(\",\",'\",\"').strip()+\"\\\"}\") for s in map(str.strip, o.read().strip().split(\"\
+\
+\"))] if (len(p)==8 or (len(p)==7 and \"cid\" not in p)) and (1920<=int(p[\"byr\"])<=2002) and (2010<=int(p[\"iyr\"])<=2020) and (2020<=int(p[\"eyr\"])<=2030) and (len(p[\"hgt\"])>2 and ((150<=int(p[\"hgt\"][:-2])<=193) if p[\"hgt\"][-2:]==\"cm\" else (59<=int(p[\"hgt\"][:-2])<=76))) and (len(p[\"hcl\"])==7 and p[\"hcl\"][0]==\"#\" and int(p[\"hcl\"][1:],16)) and (p[\"ecl\"] in set([\"amb\", \"blu\", \"brn\", \"gry\", \"grn\", \"hzl\", \"oth\"])) and (len(p[\"pid\"])==9 and int(p[\"pid\"]))]))
+```"""
 
 [pre-toml-240]
 submitter = "IrrelevantSwack"
@@ -1108,7 +1114,19 @@ quote = "The amount of energy needed to refute bullshit is an order of magnitude
 
 [pre-toml-255]
 submitter = "Victor"
-quote = "Is Windows a Virus?\n\nNo, Windows is not a virus.  Here's what viruses do:\nn1.  They replicate quickly - okay, Windows does that.\nn2.  Viruses use up valuable system resources, slowing down the system as they do so - okay, Windows does that.\nn3.  Viruses will, from time to time, trash your hard disk - okay, Windows does that too.\nn4.  Viruses are usually carried, unknown to the user, along with valuable programs and systems.  Sigh .. Windows does that, too.\nn5.  Viruses will occasionally make the user suspect their system is too slow (see 2) and the user will buy new hardware.  Yup, that's with Windows, too.\n\nUntil now it seems Windows is a virus but there are fundamental differences: Viruses are well supported by their authors, are running on most systems, their program code is fast, compact and efficient and they tend to become more sophisticated as they mature.  So Windows is not a virus.\n\nIt's a bug."
+quote = """
+Is Windows a Virus?
+
+No, Windows is not a virus.  Here's what viruses do:
+n1.  They replicate quickly - okay, Windows does that.
+n2.  Viruses use up valuable system resources, slowing down the system as they do so - okay, Windows does that.
+n3.  Viruses will, from time to time, trash your hard disk - okay, Windows does that too.
+n4.  Viruses are usually carried, unknown to the user, along with valuable programs and systems.  Sigh .. Windows does that, too.
+n5.  Viruses will occasionally make the user suspect their system is too slow (see 2) and the user will buy new hardware.  Yup, that's with Windows, too.
+
+Until now it seems Windows is a virus but there are fundamental differences: Viruses are well supported by their authors, are running on most systems, their program code is fast, compact and efficient and they tend to become more sophisticated as they mature.  So Windows is not a virus.
+
+It's a bug."""
 
 [pre-toml-256]
 submitter = "IrrelevantSwack"
@@ -1136,7 +1154,11 @@ quote = "Linux poses a real challenge for those with a taste for late-night hack
 
 [pre-toml-261]
 submitter = "Gnome"
-quote = "```java\nls = File.read(\"history\").split(\"\\n\"); m = ARGV.length; t = Array.new(m, 0); ls.each { |li| (0..m-1).each { |i| t[i] += 1 if li.start_with?(ARGV[i]) } }; puts \"total\\t#{ls.length}\"; (0..m-1).each { |i| puts \"#{ARGV[i]}\\t#{t[i]}\"}\n```"
+quote = """
+```java
+ls = File.read(\"history\").split(\"\
+\"); m = ARGV.length; t = Array.new(m, 0); ls.each { |li| (0..m-1).each { |i| t[i] += 1 if li.start_with?(ARGV[i]) } }; puts \"total\\t#{ls.length}\"; (0..m-1).each { |i| puts \"#{ARGV[i]}\\t#{t[i]}\"}
+```"""
 
 [pre-toml-262]
 submitter = "Gnome"
@@ -1165,7 +1187,12 @@ quote = "It was great to meet those folks and work with them for a while.  It'll
 
 [pre-toml-267]
 submitter = "Gnome"
-quote = "There was an Indian Chief, and he had three squaws, and kept them in three teepees.  When he would come home late from hunting, he would not know which teepee contained which squaw, being dark and all.  He went hunting one day, and killed a hippopotamus, a bear, and a buffalo.  He put the a hide from each animal into a different teepee, so that when he came home late, he could feel inside the teepee and he would know which squaw was inside.\n\nWell after about a year, all three squaws had children.  The squaw on the bear had a baby boy, the squaw on the buffalo hide had a baby girl.  But the squaw on the hippopotamus had a girl and a boy.  So what is the moral of the story?\n\nThe squaw on the hippopotamus is equal to the sum of the squaws on the other two hides."
+quote = """
+There was an Indian Chief, and he had three squaws, and kept them in three teepees.  When he would come home late from hunting, he would not know which teepee contained which squaw, being dark and all.  He went hunting one day, and killed a hippopotamus, a bear, and a buffalo.  He put the a hide from each animal into a different teepee, so that when he came home late, he could feel inside the teepee and he would know which squaw was inside.
+
+Well after about a year, all three squaws had children.  The squaw on the bear had a baby boy, the squaw on the buffalo hide had a baby girl.  But the squaw on the hippopotamus had a girl and a boy.  So what is the moral of the story?
+
+The squaw on the hippopotamus is equal to the sum of the squaws on the other two hides."""
 
 [pre-toml-268]
 submitter = "Gnome"
@@ -1330,7 +1357,11 @@ quote = "Aristotle said a bunch of stuff that was wrong.  Galileo and Newton fix
 
 [pre-toml-300]
 submitter = "segfault"
-quote = "```python\ndef isprime(n): return not re.match(r\"^1?$|^(11+?)\\1+$\", \"1\"*n)\n```"
+quote = """
+```python
+def isprime(n): return not re.match(r\"^1?$|^(11+?)\\1+$\", \"1\"*n)
+```
+"""
 
 [pre-toml-301]
 submitter = "Gnome"
@@ -1346,7 +1377,9 @@ quote = "If you wish to make an apple pie from scratch, you must first invent th
 [pre-toml-303]
 submitter = "segfault"
 attribution = "The Mahabharata (Ancient Sanskrit Epic)"
-quote = "जो सो रहा हो उसे तो जगा सकते हैं, लेकिन जो आँखे मूँद कर सोने का अभिनय कर रहा हो उसे कैसे जगाएंगे\nYou can wake the one who is sleeping, but how will you wake the one who is pretending to sleep with his eyes closed?"
+quote = """
+जो सो रहा हो उसे तो जगा सकते हैं, लेकिन जो आँखे मूँद कर सोने का अभिनय कर रहा हो उसे कैसे जगाएंगे
+You can wake the one who is sleeping, but how will you wake the one who is pretending to sleep with his eyes closed?"""
 
 [pre-toml-304]
 submitter = "segfault"
@@ -1360,7 +1393,35 @@ quote = "Computer Science is no more about computers than Astronomy is about tel
 
 [2021-08-06-1]
 submitter = "Victor"
-quote = "A is for awk, which runs like a snail, and\nB is for biff, which reads all your mail.\nC is for cc, as hackers recall, while\nD is for dd, the command that does all.\nE is for emacs, which rebinds your keys, and\nF is for fsck, which rebuilds your trees.\nG is for grep, a clever detective, while\nH is for halt, which may seem defective.\nI is for indent, which rarely amuses, and\nJ is for join, which nobody uses.\nK is for kill, which makes you the boss, while\nL is for lex, which is missing from DOS.\nM is for more, from which less was begot, and\nN is for nice, which it really is not.\nO is for od, which prints out things nice, while\nP is for passwd, which reads in strings twice.\nQ is for quota, a Berkeley-type fable, and\nR is for ranlib, for sorting ar table.\nS is for spell, which attempts to belittle, while\nT is for true, which does very little.\nU is for uniq, which is used after sort, and\nV is for vi, which is hard to abort.\nW is for whoami, which tells you your name, while\nX is, well, X, of dubious fame.\nY is for yes, which makes an impression, and\nZ is for zcat, which handles compression.\n\n-- THE ABC'S OF UNIX"
+quote = """
+A is for awk, which runs like a snail, and
+B is for biff, which reads all your mail.
+C is for cc, as hackers recall, while
+D is for dd, the command that does all.
+E is for emacs, which rebinds your keys, and
+F is for fsck, which rebuilds your trees.
+G is for grep, a clever detective, while
+H is for halt, which may seem defective.
+I is for indent, which rarely amuses, and
+J is for join, which nobody uses.
+K is for kill, which makes you the boss, while
+L is for lex, which is missing from DOS.
+M is for more, from which less was begot, and
+N is for nice, which it really is not.
+O is for od, which prints out things nice, while
+P is for passwd, which reads in strings twice.
+Q is for quota, a Berkeley-type fable, and
+R is for ranlib, for sorting ar table.
+S is for spell, which attempts to belittle, while
+T is for true, which does very little.
+U is for uniq, which is used after sort, and
+V is for vi, which is hard to abort.
+W is for whoami, which tells you your name, while
+X is, well, X, of dubious fame.
+Y is for yes, which makes an impression, and
+Z is for zcat, which handles compression.
+
+-- THE ABC'S OF UNIX"""
 
 [2021-08-10-1]
 submitter = "segfault"
@@ -1408,7 +1469,23 @@ quote = "Privacy is necessary for an open society in the electronic age.  Privac
 submitter = "segfault"
 attribution = "HTTP 451 Unavailable For Legal Reasons"
 source = "https://en.wikipedia.org/wiki/HTTP_451"
-quote = "```http\nHTTP/1.1 451 Unavailable For Legal Reasons\nLink: <https://search.example.net/legal>; rel=\"blocked-by\"\nContent-Type: text/html\n\n<html>\n <head><title>Unavailable For Legal Reasons</title></head>\n <body>\n  <h1>Unavailable For Legal Reasons</h1>\n  <p>This request may not be serviced in the Roman Province\n  of Judea due to the Lex Julia Majestatis, which disallows\n  access to resources hosted on servers deemed to be\n  operated by the People's Front of Judea.</p>\n </body>\n</html>\n```"
+quote = """
+```http
+HTTP/1.1 451 Unavailable For Legal Reasons
+Link: <https://search.example.net/legal>; rel=\"blocked-by\"
+Content-Type: text/html
+
+<html>
+ <head><title>Unavailable For Legal Reasons</title></head>
+ <body>
+  <h1>Unavailable For Legal Reasons</h1>
+  <p>This request may not be serviced in the Roman Province
+  of Judea due to the Lex Julia Majestatis, which disallows
+  access to resources hosted on servers deemed to be
+  operated by the People's Front of Judea.</p>
+ </body>
+</html>
+```"""
 
 [2021-09-08-1]
 submitter = "segfault"
@@ -1418,7 +1495,12 @@ source = "The Eisenhower Matrix"
 
 [2021-09-10-1]
 submitter = "segfault"
-quote = "What does it mean to have a human brain?\n\nI act on impulse most of the time, and otherwise do what I can to design a life that rewards my impulses with beautiful outcomes.  I think designing games is like that: designing little spaces that reward my avatar's impulses with beautiful outcomes.  Only, when I make a game I can share the experience with you; you can inhabit the same space, embody the same avatar, perhaps act on the same impulses, and – if serendipity allows – behold the same beautiful outcomes.\n\nThrough making and playing with games and other art, I hope to come to some deeper understanding of not the science of my brain, but the experience and meaning of being some specific person."
+quote = """
+What does it mean to have a human brain?
+
+I act on impulse most of the time, and otherwise do what I can to design a life that rewards my impulses with beautiful outcomes.  I think designing games is like that: designing little spaces that reward my avatar's impulses with beautiful outcomes.  Only, when I make a game I can share the experience with you; you can inhabit the same space, embody the same avatar, perhaps act on the same impulses, and – if serendipity allows – behold the same beautiful outcomes.
+
+Through making and playing with games and other art, I hope to come to some deeper understanding of not the science of my brain, but the experience and meaning of being some specific person."""
 attribution = "droqen"
 source = "https://www.droqen.com/1112/"
 
@@ -1445,7 +1527,15 @@ attribution = "Simon Wiesenthal"
 
 [2021-09-10-6]
 submitter = "segfault"
-quote = "The road to wisdom? - Well, it's plain\nand simple to express:\n> Err\n> and err\n> and err again\n> but less\n> and less\n> and less."
+quote = """
+The road to wisdom? - Well, it's plain
+and simple to express:
+> Err
+> and err
+> and err again
+> but less
+> and less
+> and less."""
 attribution = "Piet Hein"
 source = "http://www.sophilos.net/GrooksofPietHein"
 
@@ -1459,7 +1549,15 @@ source = "http://www.sophilos.net/GrooksofPietHein"
 submitter = "segfault"
 attribution = "Eliza Weisman"
 source = "https://twitter.com/mycoliza/status/1440702345168388101"
-quote = "data structure optimization protips:\n- constant factors are always bigger than you think they are\n- _n_ will always be smaller than you think it's gonna be\n- arrays stay winning\n- the hardest problem in computer science is “how to malloc just the right amount of array”\n- malloc is the second-biggest constant factor\n- but the constant factor that matters the most is bounds checking\n- the only thing worse than doing a lot of bounds checking is doing an OOB read/write"
+quote = """
+data structure optimization protips:
+- constant factors are always bigger than you think they are
+- _n_ will always be smaller than you think it's gonna be
+- arrays stay winning
+- the hardest problem in computer science is “how to malloc just the right amount of array”
+- malloc is the second-biggest constant factor
+- but the constant factor that matters the most is bounds checking
+- the only thing worse than doing a lot of bounds checking is doing an OOB read/write"""
 
 [2021-09-30]
 submitter = "Gnome"
@@ -1480,7 +1578,24 @@ attribution = "segfault"
 submitter = "segfault"
 attribution = "THE CIRNO LICENSE"
 source = "https://twitter.com/ablative_sasha/status/1428084447879081985"
-quote = "```               THE STRONGEST PUBLIC LICENSE\n                 Draft 1, November 2010\n\nEveryone is permitted to copy and distribute verbatim or modified\ncopies of this license document, and changing it is allowed as long\nas the name is changed.\n\n                 THE STRONGEST PUBLIC LICENSE\n  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  ⑨. This licence document permits you to DO WHAT THE FUCK YOU WANT TO\n     as long as you APPRECIATE CIRNO AS THE STRONGEST IN GENSOKYO.\n\nThis program is distributed in the hope that it will be THE STRONGEST,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nUSEFULNESS or FITNESS FOR A PARTICULAR PURPOSE.\n```"
+quote = """
+```               THE STRONGEST PUBLIC LICENSE
+                 Draft 1, November 2010
+
+Everyone is permitted to copy and distribute verbatim or modified
+copies of this license document, and changing it is allowed as long
+as the name is changed.
+
+                 THE STRONGEST PUBLIC LICENSE
+  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  ⑨. This licence document permits you to DO WHAT THE FUCK YOU WANT TO
+     as long as you APPRECIATE CIRNO AS THE STRONGEST IN GENSOKYO.
+
+This program is distributed in the hope that it will be THE STRONGEST,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+USEFULNESS or FITNESS FOR A PARTICULAR PURPOSE.
+```"""
 
 [2021-10-5-2]
 submitter = "Gnome"
@@ -1530,7 +1645,12 @@ quote = "And all because I'm an idiot, essentially"
 [2021-10-18-2]
 submitter = "Victor"
 attribution = "Swansea University"
-quote = "Welcome to Meeting Room 212\n\nMaximum Capcity is 1\n\nEnjoy the space!"
+quote = """
+Welcome to Meeting Room 212
+
+Maximum Capcity is 1
+
+Enjoy the space!"""
 
 [2021-11-9-1]
 submitter = "Gnome"
@@ -1567,13 +1687,28 @@ quote = "I didn't say cheese wasnt science"
 submitter = "segfault"
 attribution = "Linus Torvalds"
 source = "https://lkml.org/lkml/2020/5/29/1038"
-quote = "Longer lines are simply useful. Part of that is that we aren't\nprogramming in the 80's any more, and our source code is fundamentally\nwider as a result.\n\nYes, local iteration variables are still called 'i', because more\ncontext just isn't helpful for some anonymous counter. Being concise\nis still a good thing, and overly verbose names are not inherently\nbetter.\n\nBut still - it's entirely reasonable to have variable names that are\n10-15 characters and it makes the code more legible. Writing things\nout instead of using abbreviations etc."
+quote = """
+Longer lines are simply useful. Part of that is that we aren't
+programming in the 80's any more, and our source code is fundamentally
+wider as a result.
+
+Yes, local iteration variables are still called 'i', because more
+context just isn't helpful for some anonymous counter. Being concise
+is still a good thing, and overly verbose names are not inherently
+better.
+
+But still - it's entirely reasonable to have variable names that are
+10-15 characters and it makes the code more legible. Writing things
+out instead of using abbreviations etc."""
 
 [2021-11-28-2]
 submitter = "segfault"
 attribution = "Linus Torvalds"
 source = "https://lkml.org/lkml/2020/5/29/1038"
-quote = "I find it completely irrelevant if\nsomebody says that their kernel compile takes 10 hours because they\nare doing kernel development on a Raspberry PI with 4GB of RAM.\n\nPeople with restrictive hardware shouldn't make it more inconvenient\nfor people who have better resources. Yes, we'll accommodate things to\nwithin reasonable limits. But no, 80-column terminals in 2020 isn't\n\"reasonable\" any more as far as I'm concerned. People commonly used\n132-column terminals even back in the 80's, for chrissake, don't try\nto make 80 columns some immovable standard."
+quote = """
+I find it completely irrelevant if somebody says that their kernel compile takes 10 hours because they are doing kernel development on a Raspberry PI with 4GB of RAM.
+
+People with restrictive hardware shouldn't make it more inconvenient for people who have better resources. Yes, we'll accommodate things to within reasonable limits. But no, 80-column terminals in 2020 isn't \"reasonable\" any more as far as I'm concerned. People commonly used 132-column terminals even back in the 80's, for chrissake, don't try to make 80 columns some immovable standard."""
 
 [2021-12-1-1]
 submitter = "Gnome"
@@ -1613,7 +1748,14 @@ source = "The Girl Who Died, 2015"
 [2021-12-08-4]
 submitter = "Gnome"
 attribution = "The Doctor"
-quote = "How many seconds in eternity?\n\nThere's this mountain of pure diamond.  It takes an hour to climb it and an hour to go around it.  Every hundred years.  A little bird comes and sharpens its beak on the mountain.  And within time, the mountain is chiselled away.  The first second of eternity has passed.\n\nYou might think that's one hell of a long time.\n\nPersonally, I think that's one hell of a bird."
+quote = """
+How many seconds in eternity?
+
+There's this mountain of pure diamond.  It takes an hour to climb it and an hour to go around it.  Every hundred years.  A little bird comes and sharpens its beak on the mountain.  And within time, the mountain is chiselled away.  The first second of eternity has passed.
+
+You might think that's one hell of a long time.
+
+Personally, I think that's one hell of a bird."""
 source = "Heavens Sent, 2015"
 
 [2021-12-22-1]
@@ -1668,7 +1810,12 @@ source = "The Tonight Show with Johnny Carson, March 2nd 1978"
 
 [2022-02-16]
 submitter = "Gnome"
-quote = "Consider the following declarations.\n\nThe North Star is the brightest star in the nighttime sky. The Sun is a yellow star. What goes up must come down. On a dark night you can see millions of stars with the unaided eye. In space there is no gravity. A compass points north. Days get shorter in the winter and longer in the summer. Total solar eclipses are rare. At high noon, the Sun is directly overhead. The Sun rises in the east and sets in the west. The Moon comes out at night. On the equinox there are 12 hours of day and 12 hours of night. The Southern Cross is a beautiful constellation.\n\nEvery statement in the above paragraph is false."
+quote = """
+Consider the following declarations.
+
+The North Star is the brightest star in the nighttime sky. The Sun is a yellow star. What goes up must come down. On a dark night you can see millions of stars with the unaided eye. In space there is no gravity. A compass points north. Days get shorter in the winter and longer in the summer. Total solar eclipses are rare. At high noon, the Sun is directly overhead. The Sun rises in the east and sets in the west. The Moon comes out at night. On the equinox there are 12 hours of day and 12 hours of night. The Southern Cross is a beautiful constellation.
+
+Every statement in the above paragraph is false."""
 attribution = "Neil DeGrasse Tyson"
 
 [2022-02-19-1]
@@ -1679,12 +1826,21 @@ source = "Analytic Theory of Heat, 1822"
 
 [2022-02-19-2]
 submitter = "Gnome"
-quote = "When you are risen on the eastern horizon\nYou have filled every land with your beauty ..\nThough you are far away, your rays are on Earth"
+quote = """
+When you are risen on the eastern horizon
+You have filled every land with your beauty ..
+Though you are far away, your rays are on Earth"""
 attribution = "Akhnaton, 1370 BCE"
 
 [2022-02-19-3]
 submitter = "Gnome"
-quote = "When on high the heaven had not been named,\nFirm ground below had not been called by name ...\nNo reed hut had been matted, no marsh land had appeared,\nWhen no god whatever had been brought into being,\nUncalled by name, their destinations undetermined -\nThen it was the gods were formed ..."
+quote = """
+When on high the heaven had not been named,
+Firm ground below had not been called by name ...
+No reed hut had been matted, no marsh land had appeared,
+When no god whatever had been brought into being,
+Uncalled by name, their destinations undetermined -
+Then it was the gods were formed ..."""
 attribution = "Enuma Elish - the Babylonian creation myth, late 3rd millenium BCE"
 
 [2022-02-19-4]
@@ -1705,7 +1861,12 @@ attribution = "Roberto Rossellini"
 
 [2022-02-26-1]
 submitter = "segfault"
-quote = "When you fire that first shot, no matter how right you feel, you have no idea who's going to die.\n\nYou don't know whose children are going to scream and burn. How many hearts will be broken. How mnay lives shattered. How much blood will spill until everybody does what they were always going to have to do from the very beginning: sit down and talk.\n\nListen to me. Listen. I just want you to think. Do you know what thinking is? It's just a fancy word for changing your mind."
+quote = """
+When you fire that first shot, no matter how right you feel, you have no idea who's going to die.
+
+You don't know whose children are going to scream and burn. How many hearts will be broken. How mnay lives shattered. How much blood will spill until everybody does what they were always going to have to do from the very beginning: sit down and talk.
+
+Listen to me. Listen. I just want you to think. Do you know what thinking is? It's just a fancy word for changing your mind."""
 attribution = "The Doctor"
 source = "The Zygon Inversion (2015)"
 
@@ -1733,7 +1894,12 @@ attribution = "The Doctor"
 
 [2022-02-26-6]
 submitter = "Gnome"
-quote = "It wouldn’t be as good. It's hard to talk about the importance of an imaginary hero. But heroes are important: Heroes tell us something about ourselves. History tells us who we used to be, documentaries tell us who we are now; but heroes tell us who we want to be.\n\nAnd a lot of our heroes depress me. But when they made this particular hero, they didn't give him a gun; they gave him a screwdriver, to fix things. They didn't give him a tank or a warship or an x-wing fighter; they gave him a box, from which you can call for help. And they didn't give him a superpower or pointy ears or a heat-ray, they gave him an extra heart. They gave him two hearts! And that's an extraordinary thing.\n\nThere will never come a time when we don't need a hero like the Doctor."
+quote = """
+It wouldn’t be as good. It's hard to talk about the importance of an imaginary hero. But heroes are important: Heroes tell us something about ourselves. History tells us who we used to be, documentaries tell us who we are now; but heroes tell us who we want to be.
+
+And a lot of our heroes depress me. But when they made this particular hero, they didn't give him a gun; they gave him a screwdriver, to fix things. They didn't give him a tank or a warship or an x-wing fighter; they gave him a box, from which you can call for help. And they didn't give him a superpower or pointy ears or a heat-ray, they gave him an extra heart. They gave him two hearts! And that's an extraordinary thing.
+
+There will never come a time when we don't need a hero like the Doctor."""
 attribution = "Steven Moffat"
 
 [2022-02-26-7]

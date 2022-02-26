@@ -119,7 +119,7 @@ async def refresh_quotes():
         if len(deck) == 0: # Cycle deck, filling it back up again
           d.write("\n".join(updated_quotes.keys()))
         else:
-          deck |= set(additions)
-          deck -= set(removals)
+          deck |= {q.quote for q in additions}
+          deck -= {q.quote for q in removals}
           d.write("\n".join(deck))
     return updated_quotes

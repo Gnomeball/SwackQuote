@@ -436,7 +436,7 @@ quote = "It is practically impossible to teach good programming style to student
 [pre-toml-101]
 submitter = "Gnome"
 attribution = "Larry Wall in doarg.c from the perl source code"
-quote = "signal(i, SIG_DFL); /\\* crunch, crunch, crunch \\*/"
+quote = 'signal(i, SIG_DFL); /\* crunch, crunch, crunch \*/'
 
 [pre-toml-102]
 submitter = "Gnome"
@@ -1017,7 +1017,7 @@ quote = "And, in just a more general sense, this is swack.  We know what's swack
 [pre-toml-236]
 submitter = "unreturnable"
 attribution = "unreturnable"
-quote = "Latin doesn't automatically mean \"I win this argument\""
+quote = '''Latin doesn't automatically mean "I win this argument"'''
 
 [pre-toml-237]
 submitter = "unreturnable"
@@ -1031,14 +1031,9 @@ quote = "'tis the way of the world now, everyone thinks everything is a quick fi
 
 [pre-toml-239]
 submitter = "segfault"
-quote = """
-```python
-with open(\"data/day4.txt\") as o: print(len([p for p in [eval(\"{\\\"\"+s.replace(\"\
-\", \",\").replace(\" \", \",\").replace(\":\",'\":\"').replace(\",\",'\",\"').strip()+\"\\\"}\") for s in map(str.strip, o.read().strip().split(\"\
-\
-\"))] if (len(p)==8 or (len(p)==7 and \"cid\" not in p)) and (1920<=int(p[\"byr\"])<=2002) and (2010<=int(p[\"iyr\"])<=2020) and (2020<=int(p[\"eyr\"])<=2030) and (len(p[\"hgt\"])>2 and ((150<=int(p[\"hgt\"][:-2])<=193) if p[\"hgt\"][-2:]==\"cm\" else (59<=int(p[\"hgt\"][:-2])<=76))) and (len(p[\"hcl\"])==7 and p[\"hcl\"][0]==\"#\" and int(p[\"hcl\"][1:],16)) and (p[\"ecl\"] in set([\"amb\", \"blu\", \"brn\", \"gry\", \"grn\", \"hzl\", \"oth\"])) and (len(p[\"pid\"])==9 and int(p[\"pid\"]))]))
-```
-"""
+quote = '''```python
+with open("data/day4.txt") as o: print(len([p for p in [eval("{\""+s.replace("\n", ",").replace(" ", ",").replace(":",'":"').replace(",",'","').strip()+"\"}") for s in map(str.strip, o.read().strip().split("\n\n"))] if (len(p)==8 or (len(p)==7 and "cid" not in p)) and (1920<=int(p["byr"])<=2002) and (2010<=int(p["iyr"])<=2020) and (2020<=int(p["eyr"])<=2030) and (len(p["hgt"])>2 and ((150<=int(p["hgt"][:-2])<=193) if p["hgt"][-2:]=="cm" else (59<=int(p["hgt"][:-2])<=76))) and (len(p["hcl"])==7 and p["hcl"][0]=="#" and int(p["hcl"][1:],16)) and (p["ecl"] in set(["amb", "blu", "brn", "gry", "grn", "hzl", "oth"])) and (len(p["pid"])==9 and int(p["pid"]))]))
+```'''
 
 [pre-toml-240]
 submitter = "IrrelevantSwack"
@@ -1106,7 +1101,7 @@ quote = "Both are valid because words are fake and language is just made up nois
 [pre-toml-253]
 submitter = "Victor"
 attribution = "Larry Wall in <199709041935.MAA27136@wall.org>"
-quote = "A \"goto\" in Perl falls into the category of hard things that should be possible, not easy things that should be easy."
+quote = 'A "goto" in Perl falls into the category of hard things that should be possible, not easy things that should be easy.'
 
 [pre-toml-254]
 submitter = "crox"
@@ -1141,7 +1136,7 @@ quote = "Monads are useful only every other Tuesday."
 
 [pre-toml-258]
 submitter = "segfault"
-quote = "Monads are easy to understand, they're just the crystallisation of: \"we're scared of side-effects so we sweep them under the rug and pretend they're not eating the floorboards\""
+quote = '''Monads are easy to understand, they're just the crystallisation of: "we're scared of side-effects so we sweep them under the rug and pretend they're not eating the floorboards"'''
 
 [pre-toml-259]
 submitter = "segfault"
@@ -1156,12 +1151,9 @@ quote = "Linux poses a real challenge for those with a taste for late-night hack
 
 [pre-toml-261]
 submitter = "Gnome"
-quote = """
-```java
-ls = File.read(\"history\").split(\"\
-\"); m = ARGV.length; t = Array.new(m, 0); ls.each { |li| (0..m-1).each { |i| t[i] += 1 if li.start_with?(ARGV[i]) } }; puts \"total\\t#{ls.length}\"; (0..m-1).each { |i| puts \"#{ARGV[i]}\\t#{t[i]}\"}
-```
-"""
+quote = '''```java
+ls = File.read("history").split("\n"); m = ARGV.length; t = Array.new(m, 0); ls.each { |li| (0..m-1).each { |i| t[i] += 1 if li.start_with?(ARGV[i]) } }; puts "total\t#{ls.length}"; (0..m-1).each { |i| puts "#{ARGV[i]}\t#{t[i]}"}
+```'''
 
 [pre-toml-262]
 submitter = "Gnome"
@@ -1171,12 +1163,12 @@ quote = "[we're] just taking potshots @ C++, which really is too easy."
 [pre-toml-263]
 submitter = "Gnome"
 attribution = "Gnome"
-quote = "Overloading, also known as \"lets just make every single time you call that operator now unclear as to what exactly it does!\""
+quote = '''Overloading, also known as "lets just make every single time you call that operator now unclear as to what exactly it does!"'''
 
 [pre-toml-264]
 submitter = "Gnome"
 attribution = "segfault"
-quote = "Overloading, aka \"you best hope your editor can figure out what this actually is when you're fifteen files deep, otherwise good luck\""
+quote = '''Overloading, aka "you best hope your editor can figure out what this actually is when you're fifteen files deep, otherwise good luck"'''
 
 [pre-toml-265]
 submitter = "Gnome"
@@ -1332,7 +1324,7 @@ quote = "Short term profit at the cost of the environment.  Where have I heard t
 [pre-toml-294]
 submitter = "meetowl"
 attribution = "meetowl, in reference to Cryptocurrency"
-quote = "In general, it's not in human nature to understand the concept of \"short-term loss for long-term gain\""
+quote = '''In general, it's not in human nature to understand the concept of "short-term loss for long-term gain"'''
 
 [pre-toml-295]
 submitter = "Victor"
@@ -1361,11 +1353,9 @@ quote = "Aristotle said a bunch of stuff that was wrong.  Galileo and Newton fix
 
 [pre-toml-300]
 submitter = "segfault"
-quote = """
-```python
-def isprime(n): return not re.match(r\"^1?$|^(11+?)\\1+$\", \"1\"*n)
-```
-"""
+quote = '''```python
+def isprime(n): return not re.match(r"^1?$|^(11+?)\1+$", "1"*n)
+```'''
 
 [pre-toml-301]
 submitter = "Gnome"
@@ -1425,9 +1415,8 @@ W is for whoami, which tells you your name, while
 X is, well, X, of dubious fame.
 Y is for yes, which makes an impression, and
 Z is for zcat, which handles compression.
-
--- THE ABC'S OF UNIX
 """
+source = "THE ABC'S OF UNIX"
 
 [2021-08-10-1]
 submitter = "segfault"
@@ -1449,7 +1438,7 @@ quote = "OH: the two hardest problems in computer science are cache invalidation
 
 [2021-08-27-1]
 submitter = "segfault"
-attribution = "Charles \"Tony\" Hoare"
+attribution = """Charles "Tony" Hoare"""
 source = "The Emperor's Old Clothes, 1980 Turing Award Lecture"
 quote = "There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies.  The other way is to make it so complicated that there are no obvious deficiencies."
 
@@ -1478,7 +1467,7 @@ source = "https://en.wikipedia.org/wiki/HTTP_451"
 quote = """
 ```http
 HTTP/1.1 451 Unavailable For Legal Reasons
-Link: <https://search.example.net/legal>; rel=\"blocked-by\"
+Link: <https://search.example.net/legal>; rel="blocked-by"
 Content-Type: text/html
 
 <html>
@@ -1687,7 +1676,7 @@ quote = "Java.  Pure torture."
 [2021-11-24-1]
 submitter = "Asher"
 attribution = "JamesTK | Urban Dictionary"
-quote = "The men who program in C++ are Real Men. The women who program in C++ are Real Men too. You can spot a C++ programmer from their testosterone fueled swagger, and the unbelievable amount of contempt they inject into the phrase Java \"programmer\". They'll probably do the air quotes and all."
+quote ="""The men who program in C++ are Real Men. The women who program in C++ are Real Men too. You can spot a C++ programmer from their testosterone fueled swagger, and the unbelievable amount of contempt they inject into the phrase Java "programmer". They'll probably do the air quotes and all."""
 source = "https://www.urbandictionary.com/define.php?term=C%2B%2B"
 
 [2021-11-24-2]
@@ -1719,9 +1708,16 @@ submitter = "segfault"
 attribution = "Linus Torvalds"
 source = "https://lkml.org/lkml/2020/5/29/1038"
 quote = """
-I find it completely irrelevant if somebody says that their kernel compile takes 10 hours because they are doing kernel development on a Raspberry PI with 4GB of RAM.
+I find it completely irrelevant if
+somebody says that their kernel compile takes 10 hours because they
+are doing kernel development on a Raspberry PI with 4GB of RAM.
 
-People with restrictive hardware shouldn't make it more inconvenient for people who have better resources. Yes, we'll accommodate things to within reasonable limits. But no, 80-column terminals in 2020 isn't \"reasonable\" any more as far as I'm concerned. People commonly used 132-column terminals even back in the 80's, for chrissake, don't try to make 80 columns some immovable standard.
+People with restrictive hardware shouldn't make it more inconvenient
+for people who have better resources. Yes, we'll accommodate things to
+within reasonable limits. But no, 80-column terminals in 2020 isn't
+"reasonable" any more as far as I'm concerned. People commonly used
+132-column terminals even back in the 80's, for chrissake, don't try
+to make 80 columns some immovable standard.
 """
 
 [2021-12-1-1]
@@ -1798,7 +1794,7 @@ source = "Death by Black Hole"
 
 [2022-02-02-1]
 submitter = "segfault"
-quote = "Antoine de Saint-Exupery, the French writer and aircraft designer, said that, \"A designer knows he has arrived at perfection not when there is no longer anything to add, but when there is no longer anything to take away.\" More programmers should judge their work by this criterion. Simple programs are usually more reliable, secure, robust and efficient than their complex cousins, and easier to build and to maintain."
+quote = 'Antoine de Saint-Exupery, the French writer and aircraft designer, said that, "A designer knows he has arrived at perfection not when there is no longer anything to add, but when there is no longer anything to take away." More programmers should judge their work by this criterion. Simple programs are usually more reliable, secure, robust and efficient than their complex cousins, and easier to build and to maintain.'
 attribution = "Jon Bentley"
 source = "Programming Pearls (2nd Edition)"
 
@@ -1951,7 +1947,6 @@ attribution = "Richard Dawkins"
 source = "The Greatest Show On Earth"
 
 [2022-02-26-12]
-# Not even going to attempt to hide this..
 submitter = "Gnome"
 quote = "Never gonna give you up"
 attribution = "Stock, Aitken and Waterman"

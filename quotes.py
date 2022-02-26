@@ -114,12 +114,12 @@ async def refresh_quotes():
     if quotes != updated_quotes:
         with open(QUOTE_FILE_PATH, "wb") as f:
             tomli_w.dump(updated_quotes, f)
-        with open(QUOTE_DECK_PATH, "w+", encoding="utf8", newline="\n") as d:
-            deck = set(map(str.split, d.readlines()))
-            if len(deck) == 0: # Cycle deck, filling it back up again
-              d.write("\n".join(updated_quotes.keys()))
-            else:
-              deck |= set(additions)
-              deck -= set(removals)
-              d.write("\n".join(deck))
+    with open(QUOTE_DECK_PATH, "w+", encoding="utf8", newline="\n") as d:
+        deck = set(map(str.split, d.readlines()))
+        if len(deck) == 0: # Cycle deck, filling it back up again
+          d.write("\n".join(updated_quotes.keys()))
+        else:
+          deck |= set(additions)
+          deck -= set(removals)
+          d.write("\n".join(deck))
     return updated_quotes

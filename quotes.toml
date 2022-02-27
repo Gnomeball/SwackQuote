@@ -1892,18 +1892,19 @@ source = "The Zygon Inversion (2015)"
 submitter = "Gnome"
 quote = "The universe is big, it’s vast and complicated, and ridiculous. And sometimes, very rarely, impossible things just happen and we call them miracles."
 attribution = "The Doctor"
-source = "The Pandorica Opens"
+source = "The Pandorica Opens, 2010"
 
 [2022-02-26-3]
 submitter = "Gnome"
 quote = "The way I see it, every life is a pile of good things and bad things. The good things don’t always soften the bad things, but vice versa the bad things don’t always spoil the good things and make them unimportant."
 attribution = "The Doctor"
-source = "Vincent and the Doctor"
+source = "Vincent and the Doctor, 2010"
 
 [2022-02-26-4]
 submitter = "Gnome"
 quote = "Some people live more in 20 years than others do in 80. It’s not the time that matters, it’s the person."
 attribution = "The Doctor"
+source = "The Lazarus Experiment, 2007"
 
 [2022-02-26-5]
 submitter = "Gnome"
@@ -1925,17 +1926,19 @@ attribution = "Steven Moffat"
 submitter = "Gnome"
 quote = "There are worlds out there where the sky is burning, where the seas sleep, and the rivers dream; people made of smoke and cities made of song. Somewhere there's danger, somewhere there's injustice, somewhere else the tea's getting cold. Come on, Ace. We've got work to do."
 attribution = "The Doctor"
-source = "Survival"
+source = "Survival, 1989"
 
 [2022-02-26-8]
 submitter = "Gnome"
 quote = "Great men are forged in fire. It is the privilege of lesser men to light the flame"
 attribution = "The War Doctor"
+source = "Day of the Doctor, 2013"
 
 [2022-02-26-9]
 submitter = "Gnome"
 quote = "Winning? Is that what you think it’s about? I’m not trying to win. I’m not doing this because I want to beat someone, or because I hate someone, or because I want to blame someone. It’s not because it’s fun. God knows it’s not because it’s easy. It’s not even because it works because it hardly ever does.. I DO WHAT I DO BECAUSE IT’S RIGHT! Because it’s decent! And above all, it’s kind! It’s just that.. Just kind."
 attribution = "The Doctor"
+source = "The Doctor Falls, 2017"
 
 [2022-02-26-10]
 submitter = "Gnome"
@@ -1953,3 +1956,9 @@ source = "The Greatest Show On Earth"
 submitter = "Gnome"
 quote = "Never gonna give you up"
 attribution = "Stock, Aitken and Waterman"
+
+[2022-02-27-1]
+submitter = "segfault"
+quote = "Of course, the real question is... where did I get the cup of tea? Answer? I'm the Doctor. Just accept it."
+attribution = "The Doctor"
+source = "The Witch's Familiar, 2015"

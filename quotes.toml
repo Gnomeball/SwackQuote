@@ -1962,3 +1962,72 @@ submitter = "segfault"
 quote = "Of course, the real question is... where did I get the cup of tea? Answer? I'm the Doctor. Just accept it."
 attribution = "The Doctor"
 source = "The Witch's Familiar, 2015"
+
+[2022-02-28-1]
+submitter = "Gnome"
+quote = "It is harly an exaggeration to say that the tip of the radicle [the root] thus endowed [with sensitivity], and having the power of directing the movements of the adjoining parts, acts like the brain of one of the lower animals; the brain being seated within the anterior end of the body, recieving impressions from the sense-organs, and directing the several movements."
+attribution = "Charles and Francis Darwin"
+source = "The Power and Movement of Plants"
+
+[2022-02-28-2]
+submitter = "Gnome"
+quote = "I think I can safely say that nobody understands quantum mechanics."
+attribution = "Richard Feynman"
+
+[2022-02-28-3]
+submitter = "Gnome"
+quote = """
+Sir:
+
+   Some recent work by E.Fermi and L. Slizard, which has been comunicated to me in manuscript, leads me to expect that the element uranium may be turned into a new and important source of energy in the near future.
+"""
+attribution = "Albert Einstein, 1939, in a letter to US President Franklin D. Roosevelt"
+source = "Various, but also https://manhattanprojectbreactor.hanford.gov/files.cfm/AlbertEinstein.pdf"
+
+[2022-02-28-4]
+submitter = "Gnome"
+quote = """
+Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every "supreme leader", every saint and sinner in the history of our species lived there - on a mote of dust suspended in a sunbeam.
+
+The Earth is a very small stage in a vast cosmic arena. Think of the rivers of blood spilled by all those generals and emperors so that, in glory and triumph, they could become the momentary masters of a fraction of a dot. Think of the endless cruelties visited by the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some other corner, how frequent their misunderstandings, how eager they are to kill one another, how fervent their hatreds.
+
+Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+
+The Earth is the only world known so far to harbor life. There is nowhere else, at least in the near future, to which our species could migrate. Visit, yes. Settle, not yet. Like it or not, for the moment the Earth is where we make our stand.
+
+It has been said that astronomy is a humbling and character-building experience. There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world. To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known.
+"""
+attribution = "Carl Sagan, Pale Blue Dot, 1994"
+source = "Pale Blue Dot"
+
+[2022-02-28-5]
+submitter = "Gnome"
+quote = "The entire Earth is but a point, and the place of our own inhabitance but a minute corner of it."
+attribution = "Marcus Aurelius, Meditations, CA. 170"
+
+[2022-02-28-6]
+submitter = "Gnome"
+quote = "They journeyed a long time and found nothing. At length they discerned a small light, which was the Earth.. [But] they could not find the smallest reason to suspect that we and our fellow-citizens of this globe have the honor to exist."
+attribution = "Voltaire, Micromegas"
+source = "A Phillosophical History, 1752"
+
+[2022-02-28-7]
+submitter = "Gnome"
+quote = "The planets, in their various stages of development, are subjected to the same formative forces that operate on our earth, and have, therefore, the same geologic formation, and probably life, of our own past, and perhaps future; but. further than this, these forces are acting, in some cases, under totally different conditions from those under which they operate on the earth, and hence must evolve forms different from those ever known to man. The value of such material as this to the comparative sciences is too obvious to need discussion."
+attribution = "Robert H. Goddard, 1907"
+
+[2022-02-28-8]
+submitter = "Gnome"
+quote = "For the first time in my life, I saw the horizon as a curved line. It was accentuated by a thin seam of dark blue light - our atmosphere. Obviously, this was not the \"ocean\" of air I had been told it was so many times in my life. I was terrified by its fragile appearance."
+attribution = "Ulf Merbold (German Astronaut), 1988"
+
+[2022-02-28-9]
+submitter = "Gnome"
+quote = "It is a law of nature that Earth and all other bodies should remain in their proper places and be moved from them only by violence."
+attribution = "Aristotle, Physics"
+
+[2022-02-28-10]
+submitter = "Gnome"
+quote = "[I]t's too late to make any improvements now. The universe is finished; the copestone's on, and the chips were carted off a million years ago."
+attribution = "Herman Melville"
+source = "Moby Dick, Chapter 2"

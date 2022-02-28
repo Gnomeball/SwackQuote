@@ -7,8 +7,8 @@ import tomli
 import tomli_w
 
 QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/QuoteBotRepo/main/quotes.toml'
-QUOTE_FILE_PATH = "quotes.toml" # The collection of all quotes
-QUOTE_DECK_PATH = "quote_deck.txt" # The current deck of quotes we're using
+QUOTE_FILE_PATH    = "quotes.toml" # The collection of all quotes
+QUOTE_DECK_PATH    = "quote_deck.txt" # The current deck of quotes we're using
 QUOTE_HISTORY_PATH = "quote_history.txt" # The logged appearances of each quote
 QUOTE_REPEAT_DELAY = 200 # How many days must pass before a repeated quote should be allowed
 
@@ -80,7 +80,8 @@ def pull_quotes_from_repo():
         req = requests.get(QUOTE_FILE_ADDRESS)
         if req.status_code != 200:
             logger.error(f"Failed to get {QUOTE_FILE_ADDRESS} with status: {req.status_code}")
-        else: updated_quotes = req.text
+        else:
+            updated_quotes = req.text
     except Exception:
         logger.exception("Exception while getting updated quotes:")
 
@@ -117,9 +118,9 @@ async def refresh_quotes():
     with open(QUOTE_DECK_PATH, "w+", encoding="utf8", newline="\n") as d:
         deck = set(map(str.split, d.readlines()))
         if len(deck) == 0: # Cycle deck, filling it back up again
-          d.write("\n".join(updated_quotes.keys()))
+            d.write("\n".join(updated_quotes.keys()))
         else:
-          deck |= {q.quote for q in additions}
-          deck -= {q.quote for q in removals}
-          d.write("\n".join(deck))
+            deck |= {q.quote for q in additions}
+            deck -= {q.quote for q in removals}
+            d.write("\n".join(deck))
     return updated_quotes

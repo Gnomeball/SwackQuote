@@ -10,7 +10,7 @@ logging.basicConfig(level = logging.WARNING, stream = sys.stdout, format = fmt)
 client = discord.Client()
 logger = logging.getLogger("QuoteBot")
 
-gnome = 356467595177885696
+gnome   = 356467595177885696
 sandbox = 767326418572148756
 colours = [0xc27c0e, 0x992d22, 0xad1457, 0x71368a, 0x206694, 0x11806a]
 

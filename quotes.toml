@@ -2036,3 +2036,37 @@ source = "Moby Dick, Chapter 2"
 submitter = "Gnome"
 quote = "When you ask for someone's name, you're essentially asking what noise you should make to get their attention."
 attribution = "High Philosophy, Twitter"
+
+[2022-03-09-1]
+submitter = "Gnome"
+quote = """
+When Spring returns
+Perhaps I will no longer be in the World.
+Today I wish I could think of spring as a person
+So that I could imagine her crying for me
+When she sees that she's lost her only friend.
+But spring isn't even a thing:
+Not even the flowers or green leaves return.
+There are new flowers, new green leaves.
+There are new balmy days.
+Nothing returns, nothing repeats,
+Because everything is new.
+"""
+attribution = "Fernando Pessoa, When Spring Returns"
+
+[2022-03-09-2]
+submitter = "Gnome"
+quote = "A map of the World that does not include Utopia is not worth even glancing at, for it leaves out the one country at which Humanity is always landing.  And when Humanity lands there, it looks out, and, seeing a better country, sets sail."
+attribution = "Oscar Wilde, The Soul Of A Man Under Socialism"
+source = "http://www.wilde-online.info/the-soul-of-man-under-socialism-page11.html"
+
+[2022-03-09-3]
+submitter = "Gnome"
+quote = "If science, like art, is to perform its mission truly and fully, it's achievements must enter not only superficially but with their inner meanings into the conciousness of the people."
+attribution = "Albert Einstein, 1939"
+
+[2022-03-09-4]
+submitter = "Gnome"
+quote = "Shall we .. choose death, because we cannot forget our quarrels? We appeal as human beings: Remember your humanity, and forget the rest."
+attribution = "Bertrand Russell and Albert Einstein (read by Joseph Rotblat), 1955"
+source = "https://www.atomicheritage.org/key-documents/russell-einstein-manifesto"

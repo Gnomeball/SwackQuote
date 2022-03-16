@@ -700,7 +700,7 @@ quote = "Artificial Intelligence usually beats natural stupidity."
 
 [pre-toml-161]
 submitter = "Gnome"
-quote = "To err is human ... to really foul up requires the root password."
+quote = "To err is human... to really foul up requires the root password."
 
 [pre-toml-162]
 submitter = "Gnome"
@@ -764,7 +764,7 @@ quote = "The only problem with troubleshooting is that sometimes trouble shoots 
 
 [pre-toml-177]
 submitter = "Gnome"
-quote = "Crap ... Someone knocked over my recycle bin ... There's icons all over my desktop ..."
+quote = "Crap... Someone knocked over my recycle bin... There's icons all over my desktop..."
 
 [pre-toml-178]
 submitter = "Gnome"
@@ -801,7 +801,7 @@ quote = "I'm not anti-social; I'm just not user friendly"
 
 [pre-toml-186]
 submitter = "Gnome"
-quote = "The world is coming to an end ... SAVE YOUR BUFFERS !"
+quote = "The world is coming to an end... SAVE YOUR BUFFERS !"
 
 [pre-toml-187]
 submitter = "Gnome"
@@ -829,7 +829,7 @@ quote = "Those who can't write programs, write help files."
 
 [pre-toml-193]
 submitter = "Gnome"
-quote = "You know you're a geek when ... You try to shoo a fly away from the monitor with your cursor.  That just happened to me.  It was scary."
+quote = "You know you're a geek when... You try to shoo a fly away from the monitor with your cursor.  That just happened to me.  It was scary."
 
 [pre-toml-194]
 submitter = "Gnome"
@@ -837,7 +837,7 @@ quote = "Who is General Failure?  And why is he reading my disk?"
 
 [pre-toml-195]
 submitter = "Gnome"
-quote = "Keyboard not found ... Press any key to continue."
+quote = "Keyboard not found... Press any key to continue."
 
 [pre-toml-196]
 submitter = "Gnome"
@@ -1119,7 +1119,7 @@ No, Windows is not a virus.  Here's what viruses do:
 n1.  They replicate quickly - okay, Windows does that.
 n2.  Viruses use up valuable system resources, slowing down the system as they do so - okay, Windows does that.
 n3.  Viruses will, from time to time, trash your hard disk - okay, Windows does that too.
-n4.  Viruses are usually carried, unknown to the user, along with valuable programs and systems.  Sigh ... Windows does that, too.
+n4.  Viruses are usually carried, unknown to the user, along with valuable programs and systems.  Sigh... Windows does that, too.
 n5.  Viruses will occasionally make the user suspect their system is too slow (see 2) and the user will buy new hardware.  Yup, that's with Windows, too.
 
 Until now it seems Windows is a virus but there are fundamental differences: Viruses are well supported by their authors, are running on most systems, their program code is fast, compact and efficient and they tend to become more sophisticated as they mature.  So Windows is not a virus.
@@ -1843,7 +1843,7 @@ source = "Analytic Theory of Heat, 1822"
 submitter = "Gnome"
 quote = """
 When you are risen on the eastern horizon
-You have filled every land with your beauty ...
+You have filled every land with your beauty...
 Though you are far away, your rays are on Earth
 """
 attribution = "Akhnaton, 1370 BCE"
@@ -1852,11 +1852,11 @@ attribution = "Akhnaton, 1370 BCE"
 submitter = "Gnome"
 quote = """
 When on high the heaven had not been named,
-Firm ground below had not been called by name ...
+Firm ground below had not been called by name...
 No reed hut had been matted, no marsh land had appeared,
 When no god whatever had been brought into being,
 Uncalled by name, their destinations undetermined -
-Then it was the gods were formed ...
+Then it was the gods were formed...
 """
 attribution = "Enuma Elish - the Babylonian creation myth, late 3rd millennium BCE"
 

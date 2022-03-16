@@ -426,7 +426,7 @@ quote = "Batteries not included."
 [pre-toml-99]
 submitter = "Gnome"
 attribution = "Popular Mechanics, March 1949"
-quote = "Where a calculator on the ENIAC is equipped with 18,000 vacuum tubes and weighs 30 tons, computers in the future may have only 1,000 vaccuum tubes and perhaps weigh 1 1/2 tons."
+quote = "Where a calculator on the ENIAC is equipped with 18,000 vacuum tubes and weighs 30 tons, computers in the future may have only 1,000 vacuum tubes and perhaps weigh 1 1/2 tons."
 
 [pre-toml-100]
 submitter = "Gnome"
@@ -569,7 +569,7 @@ quote = "In the strict scientific sense we all feed on death -- even vegetarians
 
 [pre-toml-131]
 submitter = "Gnome"
-quote = "I have many CHARTS and DIAGRAMS.."
+quote = "I have many CHARTS and DIAGRAMS."
 
 [pre-toml-132]
 submitter = "Gnome"
@@ -700,7 +700,7 @@ quote = "Artificial Intelligence usually beats natural stupidity."
 
 [pre-toml-161]
 submitter = "Gnome"
-quote = "To err is human .. to really foul up requires the root password."
+quote = "To err is human ... to really foul up requires the root password."
 
 [pre-toml-162]
 submitter = "Gnome"
@@ -764,7 +764,7 @@ quote = "The only problem with troubleshooting is that sometimes trouble shoots 
 
 [pre-toml-177]
 submitter = "Gnome"
-quote = "Crap .. Someone knocked over my recycle bin .. There's icons all over my desktop .."
+quote = "Crap ... Someone knocked over my recycle bin ... There's icons all over my desktop ..."
 
 [pre-toml-178]
 submitter = "Gnome"
@@ -801,7 +801,7 @@ quote = "I'm not anti-social; I'm just not user friendly"
 
 [pre-toml-186]
 submitter = "Gnome"
-quote = "The world is coming to an end .. SAVE YOUR BUFFERS !"
+quote = "The world is coming to an end ... SAVE YOUR BUFFERS !"
 
 [pre-toml-187]
 submitter = "Gnome"
@@ -829,7 +829,7 @@ quote = "Those who can't write programs, write help files."
 
 [pre-toml-193]
 submitter = "Gnome"
-quote = "You know you're a geek when .. You try to shoo a fly away from the monitor with your cursor.  That just happened to me.  It was scary."
+quote = "You know you're a geek when ... You try to shoo a fly away from the monitor with your cursor.  That just happened to me.  It was scary."
 
 [pre-toml-194]
 submitter = "Gnome"
@@ -837,7 +837,7 @@ quote = "Who is General Failure?  And why is he reading my disk?"
 
 [pre-toml-195]
 submitter = "Gnome"
-quote = "Keyboard not found .. Press any key to continue."
+quote = "Keyboard not found ... Press any key to continue."
 
 [pre-toml-196]
 submitter = "Gnome"
@@ -983,7 +983,7 @@ quote = "If you have an apple and I have an apple and we exchange apples then yo
 [pre-toml-229]
 submitter = "Kris"
 attribution = "Kris"
-quote = "Pro advice: don't get python jobs.. You think it'll be a good time, it will not be a good time."
+quote = "Pro advice: don't get python jobs... You think it'll be a good time, it will not be a good time."
 
 [pre-toml-230]
 submitter = "Gnome"
@@ -1039,7 +1039,7 @@ with open("data/day4.txt") as o: print(len([p for p in [eval("{\""+s.replace("\\
 
 [pre-toml-240]
 submitter = "IrrelevantSwack"
-quote = " .. fuck"
+quote = "... fuck"
 
 [pre-toml-241]
 submitter = "James"
@@ -1058,7 +1058,7 @@ quote = "We can use the society money to buy those COVID-19 tests."
 
 [pre-toml-244]
 submitter = "Gnome"
-attribution = "basically everyone when refering to Swansea Intranet services"
+attribution = "basically everyone when referring to Swansea Intranet services"
 quote = "This is HCI 11/10"
 
 [pre-toml-245]
@@ -1079,7 +1079,7 @@ quote = "Pub? Pub? Pub!"
 [pre-toml-248]
 submitter = "Gnome"
 attribution = "Gnome, after a pipe burst in the Linux lab"
-quote = "Pipes.. O how they are such inconsiderate little tubes of hope and fluid traversal, they offer so much for us and yet can deliver so little when you most depend upon them.  It is with great unfortune and much aplomb that we have been forced to entake the unthinkable and inconceivable, to declare full and total dictatorship upon the pipes of this great civilisation, we shall not use them whilst they continue to mock us!  As a result of these tragic events, the circumstance we now find ourselves in and frankly, the wrong kind of indoor weather for a meeting we have decided, henceforth declared and now ratified with the power vested upon us by yourselves, the people, the otherwise and absolute re-location of our societies Annual General Meeting to an as of yet unspecified, unknown and undecided upon number of orbital revolutions in your near futures. *mic drop*"
+quote = "Pipes... O how they are such inconsiderate little tubes of hope and fluid traversal, they offer so much for us and yet can deliver so little when you most depend upon them.  It is with great unfortune and much aplomb that we have been forced to intake the unthinkable and inconceivable, to declare full and total dictatorship upon the pipes of this great civilisation, we shall not use them whilst they continue to mock us!  As a result of these tragic events, the circumstance we now find ourselves in and frankly, the wrong kind of indoor weather for a meeting we have decided, henceforth declared and now ratified with the power vested upon us by yourselves, the people, the otherwise and absolute re-location of our societies Annual General Meeting to an as of yet unspecified, unknown and undecided upon number of orbital revolutions in your near futures. *mic drop*"
 
 [pre-toml-249]
 submitter = "Gnome"
@@ -1119,7 +1119,7 @@ No, Windows is not a virus.  Here's what viruses do:
 n1.  They replicate quickly - okay, Windows does that.
 n2.  Viruses use up valuable system resources, slowing down the system as they do so - okay, Windows does that.
 n3.  Viruses will, from time to time, trash your hard disk - okay, Windows does that too.
-n4.  Viruses are usually carried, unknown to the user, along with valuable programs and systems.  Sigh .. Windows does that, too.
+n4.  Viruses are usually carried, unknown to the user, along with valuable programs and systems.  Sigh ... Windows does that, too.
 n5.  Viruses will occasionally make the user suspect their system is too slow (see 2) and the user will buy new hardware.  Yup, that's with Windows, too.
 
 Until now it seems Windows is a virus but there are fundamental differences: Viruses are well supported by their authors, are running on most systems, their program code is fast, compact and efficient and they tend to become more sophisticated as they mature.  So Windows is not a virus.
@@ -1271,7 +1271,7 @@ quote = "I've seen things you people wouldn't believe.  Attack ships on fire off
 [pre-toml-283]
 submitter = "Gnome"
 attribution = "Seneca, Natural Questions, Book 7, first century"
-quote = "The time will come when diligent research over long periods will bring to light things which now lie hidden.  A single lifetime, even though entirely devoted to the sky, would not be enough for the investigation of so vast a subject, and so this knowledge will be unfolded only through long successive ages.  There will come a time when our descendants will be amazed that we did not know things that are so plain to them .. Many discoveries are reserved for ages still to come, when memory of us will have been effaced.  Our Universe is a sorry little affair unless it has in it something for every age to investigate .. Nature does not reveal her mysteries once and for all."
+quote = "The time will come when diligent research over long periods will bring to light things which now lie hidden.  A single lifetime, even though entirely devoted to the sky, would not be enough for the investigation of so vast a subject, and so this knowledge will be unfolded only through long successive ages.  There will come a time when our descendants will be amazed that we did not know things that are so plain to them ... Many discoveries are reserved for ages still to come, when memory of us will have been effaced.  Our Universe is a sorry little affair unless it has in it something for every age to investigate ... Nature does not reveal her mysteries once and for all."
 
 [pre-toml-284]
 submitter = "Gnome"
@@ -1307,7 +1307,7 @@ quote = "I should have invented a 'C++ inside' sticker"
 [pre-toml-290]
 submitter = "segfault"
 attribution = "Twitter"
-quote = "To err is human.. to really mess up requires root or undefined behaviour"
+quote = "To err is human... to really mess up requires root or undefined behaviour"
 
 [pre-toml-291]
 submitter = "meetowl"
@@ -1516,7 +1516,7 @@ attribution = "Richard Feynman"
 
 [2021-09-10-4]
 submitter = "segfault"
-quote = "English uses a lot of idioms, it's almost like the whole lanugage is an inside joke."
+quote = "English uses a lot of idioms, it's almost like the whole language is an inside joke."
 attribution = "Anna Kipnis"
 source = "The Double Fine Adventure Documentary"
 
@@ -1651,7 +1651,7 @@ attribution = "Swansea University"
 quote = """
 Welcome to Meeting Room 212
 
-Maximum Capcity is 1
+Maximum Capacity is 1
 
 Enjoy the space!
 """
@@ -1664,12 +1664,12 @@ quote = "Plans are useless, but planning is indispensable."
 [2021-11-9-2]
 submitter = "Gnome"
 attribution = "astroboy"
-quote = ".. My laptop committed sudoku."
+quote = "... My laptop committed sudoku."
 
 [2021-11-10-1]
 submitter = "segfault"
 attribution = "John Maynard Keynes"
-quote = "Let us not submit to the vile doctrine of the nineteenth century that every enterprise must justify itself in pounds, shillings and pence of cash income … Why should we not add in every substantial city the dignity of an ancient university or a European capital … an ample theatre, a concert hall, a dance hall, a gallery, cafes, and so forth. Assuredly we can afford this and so much more. Anything we can actually do, we can afford. … We are immeasurably richer than our predecessors. Is it not evident that some sophistry, some fallacy, governs our collective action if we are forced to be so much meaner than they in the embellishments of life?"
+quote = "Let us not submit to the vile doctrine of the nineteenth century that every enterprise must justify itself in pounds, shillings and pence of cash income ... Why should we not add in every substantial city the dignity of an ancient university or a European capital ... an ample theatre, a concert hall, a dance hall, a gallery, cafés, and so forth. Assuredly we can afford this and so much more. Anything we can actually do, we can afford. ... We are immeasurably richer than our predecessors. Is it not evident that some sophistry, some fallacy, governs our collective action if we are forced to be so much meaner than they in the embellishments of life?"
 
 [2021-11-21-1]
 submitter = "Gnome"
@@ -1679,7 +1679,7 @@ quote = "Java.  Pure torture."
 [2021-11-24-1]
 submitter = "Asher"
 attribution = "JamesTK | Urban Dictionary"
-quote ="""The men who program in C++ are Real Men. The women who program in C++ are Real Men too. You can spot a C++ programmer from their testosterone fueled swagger, and the unbelievable amount of contempt they inject into the phrase Java "programmer". They'll probably do the air quotes and all."""
+quote ="""The men who program in C++ are Real Men. The women who program in C++ are Real Men too. You can spot a C++ programmer from their testosterone fuelled swagger, and the unbelievable amount of contempt they inject into the phrase Java "programmer". They'll probably do the air quotes and all."""
 source = "https://www.urbandictionary.com/define.php?term=C%2B%2B"
 
 [2021-11-24-2]
@@ -1743,7 +1743,7 @@ quote = "It had been a failure, but it was a failure he understood, and that mad
 [2021-12-08-1]
 submitter = "Gnome"
 attribution = "Kurzgesagt"
-quote = "We became self aware only to realise this story is not about us."
+quote = "We became self-aware only to realise this story is not about us."
 source = "https://www.youtube.com/watch?v=JXeJANDKwDc"
 
 [2021-12-08-2]
@@ -1835,7 +1835,7 @@ attribution = "Neil DeGrasse Tyson"
 
 [2022-02-19-1]
 submitter = "Gnome"
-quote = "There cannot be a language more universal and more simple, more free from errors and from obscurities, that is to say more worthy to express the invariable relations of natural things .. [Mathematics] seems to be a faculty of the human mind destined to supplement the shortness of life and the imperfection of the senses."
+quote = "There cannot be a language more universal and more simple, more free from errors and from obscurities, that is to say more worthy to express the invariable relations of natural things ... [Mathematics] seems to be a faculty of the human mind destined to supplement the shortness of life and the imperfection of the senses."
 attribution = "Joseph Fourier"
 source = "Analytic Theory of Heat, 1822"
 
@@ -1843,7 +1843,7 @@ source = "Analytic Theory of Heat, 1822"
 submitter = "Gnome"
 quote = """
 When you are risen on the eastern horizon
-You have filled every land with your beauty ..
+You have filled every land with your beauty ...
 Though you are far away, your rays are on Earth
 """
 attribution = "Akhnaton, 1370 BCE"
@@ -1858,7 +1858,7 @@ When no god whatever had been brought into being,
 Uncalled by name, their destinations undetermined -
 Then it was the gods were formed ...
 """
-attribution = "Enuma Elish - the Babylonian creation myth, late 3rd millenium BCE"
+attribution = "Enuma Elish - the Babylonian creation myth, late 3rd millennium BCE"
 
 [2022-02-19-4]
 submitter = "Gnome"
@@ -1873,7 +1873,7 @@ attribution = "Prince Sultan Bin Salmon Al-Suad"
 
 [2022-02-19-6]
 submitter = "Gnome"
-quote = "I am not a pessimist.  To percieve evil where it exists is, in my opinion, a form of optimism."
+quote = "I am not a pessimist.  To perceive evil where it exists is, in my opinion, a form of optimism."
 attribution = "Roberto Rossellini"
 
 [2022-02-26-1]
@@ -1936,7 +1936,7 @@ source = "Day of the Doctor, 2013"
 
 [2022-02-26-9]
 submitter = "Gnome"
-quote = "Winning? Is that what you think it’s about? I’m not trying to win. I’m not doing this because I want to beat someone, or because I hate someone, or because I want to blame someone. It’s not because it’s fun. God knows it’s not because it’s easy. It’s not even because it works because it hardly ever does.. I DO WHAT I DO BECAUSE IT’S RIGHT! Because it’s decent! And above all, it’s kind! It’s just that.. Just kind."
+quote = "Winning? Is that what you think it’s about? I’m not trying to win. I’m not doing this because I want to beat someone, or because I hate someone, or because I want to blame someone. It’s not because it’s fun. God knows it’s not because it’s easy. It’s not even because it works because it hardly ever does... I DO WHAT I DO BECAUSE IT’S RIGHT! Because it’s decent! And above all, it’s kind! It’s just that... Just kind."
 attribution = "The Doctor"
 source = "The Doctor Falls, 2017"
 
@@ -1965,7 +1965,7 @@ source = "The Witch's Familiar, 2015"
 
 [2022-02-28-1]
 submitter = "Gnome"
-quote = "It is hardly an exaggeration to say that the tip of the radicle [the root] thus endowed [with sensitivity], and having the power of directing the movements of the adjoining parts, acts like the brain of one of the lower animals; the brain being seated within the anterior end of the body, recieving impressions from the sense-organs, and directing the several movements."
+quote = "It is hardly an exaggeration to say that the tip of the radicle [the root] thus endowed [with sensitivity], and having the power of directing the movements of the adjoining parts, acts like the brain of one of the lower animals; the brain being seated within the anterior end of the body, receiving impressions from the sense-organs, and directing the several movements."
 attribution = "Charles and Francis Darwin"
 source = "The Power and Movement of Plants"
 
@@ -2007,7 +2007,7 @@ attribution = "Marcus Aurelius, Meditations, CA. 170"
 
 [2022-02-28-6]
 submitter = "Gnome"
-quote = "They journeyed a long time and found nothing. At length they discerned a small light, which was the Earth.. [But] they could not find the smallest reason to suspect that we and our fellow-citizens of this globe have the honor to exist."
+quote = "They journeyed a long time and found nothing. At length they discerned a small light, which was the Earth... [But] they could not find the smallest reason to suspect that we and our fellow-citizens of this globe have the honor to exist."
 attribution = "Voltaire, Micromegas"
 source = "A Phillosophical History, 1752"
 
@@ -2062,12 +2062,12 @@ source = "http://www.wilde-online.info/the-soul-of-man-under-socialism-page11.ht
 
 [2022-03-09-3]
 submitter = "Gnome"
-quote = "If science, like art, is to perform its mission truly and fully, it's achievements must enter not only superficially but with their inner meanings into the conciousness of the people."
+quote = "If science, like art, is to perform its mission truly and fully, it's achievements must enter not only superficially but with their inner meanings into the consciousness of the people."
 attribution = "Albert Einstein, 1939"
 
 [2022-03-09-4]
 submitter = "Gnome"
-quote = "Shall we .. choose death, because we cannot forget our quarrels? We appeal as human beings: Remember your humanity, and forget the rest."
+quote = "Shall we ... choose death, because we cannot forget our quarrels? We appeal as human beings: Remember your humanity, and forget the rest."
 attribution = "Bertrand Russell and Albert Einstein (read by Joseph Rotblat), 1955"
 source = "https://www.atomicheritage.org/key-documents/russell-einstein-manifesto"
 
@@ -2097,4 +2097,3 @@ submitter = "Gnome"
 quote = "It is difficult to say exactly why skirts are perceived strictly as a woman’s garment. This is to say, are skirts perceived as feminine because women wear them or do women wear them because skirts are perceived as feminine?"
 attribution = "Vox Clamantis In Deserto"
 source = "https://www.voxclamantisindeserto.us/2018/02/14/en/a-guys-guide-to-great-skirts-for-men"
-

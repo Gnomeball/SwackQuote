@@ -2103,6 +2103,26 @@ submitter = "Gnome"
 quote = "Death is the winner in any war.  Nothing noble in dying for your religion, for your country, for ideology, for faith, for another man."
 attribution = "Nightwish - Song Of Myself"
 
+[2022-03-20-01]
+submitter = "meetowl"
+quote = "I'm a (x << 3) + x + x developer because multiplication is hard."
+attribution = "https://twitter.com/thingskatedid/status/1438300613683548164"
+
+[2022-03-22-01]
+submitter = "Greenfoot5"
+quote = "The fact that we live at the bottom of a deep gravity well, on the surface of a gas covered planet going around a nuclear fireball 90 million miles away and think this to be normal is obviously some indication of how skewed our perspective tends to be."
+attribution = "Douglas Adams"
+
+[2022-03-22-02]
+submitter = "Greenfoot5"
+quote = """
+Picture a wave in the ocean. You can see it, measure it, its height, the way sunlight refracts when it passes through, and it's there, and you can see it, you know what it is. It's a wave.
+
+And then it crashes on the shore, and it's gone. But the water is still there. The was was just a different way for the water to be for a little while.
+"""
+attribution = "Chidi Anagonye"
+source = "The Good Place"
+
 [2022-03-26-1]
 submitter = "Gnome"
 quote = "If you’re still alive, you’re not struggling with Depression.  Depression is struggling with you."

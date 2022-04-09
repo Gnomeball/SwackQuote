@@ -15,7 +15,7 @@ sandbox = 767326418572148756
 colours = [0xc27c0e, 0x992d22, 0xad1457, 0x71368a, 0x206694, 0x11806a]
 
 MINUTE = 60
-REPO_LINK = "https://github.com/Gnomeball/QuoteBotRepo"
+REPO_LINK = "https://github.com/Gnomeball/SwackQuote"
 
 # Client events
 

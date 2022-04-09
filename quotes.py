@@ -6,7 +6,7 @@ import asyncio
 import tomli
 import tomli_w
 
-QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/QuoteBotRepo/main/quotes.toml'
+QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/SwackQuote/main/quotes.toml'
 QUOTE_FILE_PATH    = "quotes.toml" # The collection of all quotes
 QUOTE_DECK_PATH    = "quote_deck.txt" # The current deck of quotes we're using
 QUOTE_HISTORY_PATH = "quote_history.txt" # The logged appearances of each quote

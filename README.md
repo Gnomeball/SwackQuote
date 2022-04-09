@@ -1,4 +1,4 @@
-# QuoteBotRepo
+# SwackQuote
 
 A repository for the QOTD bot on the swan_hack Discord server.
 

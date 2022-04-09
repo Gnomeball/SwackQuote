@@ -1711,16 +1711,9 @@ submitter = "segfault"
 attribution = "Linus Torvalds"
 source = "https://lkml.org/lkml/2020/5/29/1038"
 quote = """
-I find it completely irrelevant if
-somebody says that their kernel compile takes 10 hours because they
-are doing kernel development on a Raspberry PI with 4GB of RAM.
+I find it completely irrelevant if somebody says that their kernel compile takes 10 hours because they are doing kernel development on a Raspberry PI with 4GB of RAM.
 
-People with restrictive hardware shouldn't make it more inconvenient
-for people who have better resources. Yes, we'll accommodate things to
-within reasonable limits. But no, 80-column terminals in 2020 isn't
-"reasonable" any more as far as I'm concerned. People commonly used
-132-column terminals even back in the 80's, for chrissake, don't try
-to make 80 columns some immovable standard.
+People with restrictive hardware shouldn't make it more inconvenient for people who have better resources. Yes, we'll accommodate things to within reasonable limits. But no, 80-column terminals in 2020 isn't "reasonable" any more as far as I'm concerned. People commonly used 132-column terminals even back in the 80's, for chrissake, don't try to make 80 columns some immovable standard.
 """
 
 [2021-12-1-1]

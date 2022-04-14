@@ -12,15 +12,18 @@ logger = logging.getLogger("QuoteBot")
 
 gnome   = 356467595177885696
 sandbox = 767326418572148756
-colours = [0xc27c0e, 0x992d22, 0xad1457, 0x71368a, 0x206694, 0x11806a]
-def random_colour_hex():
-    colour = colorsys.hsv_to_rgb(random.random(), random.uniform(0.42,0.98), random.uniform(0.4, 0.9))
-    return "0x"+ "".join(hex(int(x*255))[2:].zfill(2) for x in colour))
-def random_colour():
-    return int(random_colour_hex(), 16)
+# colours = [0xc27c0e, 0x992d22, 0xad1457, 0x71368a, 0x206694, 0x11806a]
 
 MINUTE = 60
 REPO_LINK = "https://github.com/Gnomeball/SwackQuote"
+
+# Random colours for the embed
+
+def random_colour_hex():
+    colour = colorsys.hsv_to_rgb(random.random(), random.uniform(0.42,0.98), random.uniform(0.4, 0.9))
+    return "0x"+ "".join(hex(int(x*255))[2:].zfill(2) for x in colour)
+def random_colour():
+    return int(random_colour_hex(), 16)
 
 # Client events
 
@@ -67,7 +70,7 @@ async def send_quote(pre = "Quote"):
     logger = logging.getLogger("send_quote")
     quote, quote_index = pull_random_quote(quotes)
     quote_text = format_quote_text(quote)
-    embedVar = discord.Embed(title = "Maximum Swack!", description = quote_text, colour = random.choice(colours))
+    embedVar = discord.Embed(title = "Maximum Swack!", description = quote_text, colour = random_colour())
     embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nQuote {quote_index}/{len(quotes)}, Submitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
     await client.get_channel(sandbox).send(embed = embedVar)
@@ -78,7 +81,7 @@ async def test_quote(which = "pre-toml-255"):
     logger = logging.getLogger("test_quote")
     quote = pull_specific_quote(which, quotes)
     quote_text = format_quote_text(quote)
-    embedVar = discord.Embed(title = "Maximum Swack!", description = quote_text, colour = random_colour(colours))
+    embedVar = discord.Embed(title = "Maximum Swack!", description = quote_text, colour = random_colour())
     embedVar.set_footer(text = f"Test for {await current_date_time()}\nQuote Test/{len(quotes)}, Submitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
     await client.get_channel(sandbox).send(embed = embedVar)

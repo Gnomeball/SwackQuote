@@ -22,6 +22,7 @@ REPO_LINK = "https://github.com/Gnomeball/SwackQuote"
 def random_colour_hex():
     colour = colorsys.hsv_to_rgb(random.random(), random.uniform(0.42,0.98), random.uniform(0.4, 0.9))
     return "0x"+ "".join(hex(int(x*255))[2:].zfill(2) for x in colour)
+
 def random_colour():
     return int(random_colour_hex(), 16)
 
@@ -32,7 +33,6 @@ async def on_ready():
     logging.info(f"We have logged in as {client.user}")
     # await client.change_presence(activity = discord.CustomActivity("Blah"))
     await client.change_presence(activity = discord.Game(name = "Selecting a quote!"))
-
 
 @client.event
 async def on_message(message):

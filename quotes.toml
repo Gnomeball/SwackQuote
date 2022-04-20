@@ -2293,3 +2293,13 @@ quote = """\
     I can see it. It's plain as day, [name redacted]. You have a plum right there on your back. \
     """
 attribution = "Tohru Honda (Fruits Basket)"
+
+[2022-04-20-5]
+submitter = "Victor"
+quote = "Life isn't about waiting for the storm to pass. It's about learning to dance in the rain."
+attribution = "Vivian Greene"
+
+[2022-04-20-6]
+submitter = "Victor"
+quote = "You can fix anything but a blank page."
+attribution = "Nora Roberts"

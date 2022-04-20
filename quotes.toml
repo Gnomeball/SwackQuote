@@ -2263,7 +2263,9 @@ attribution = "Edward Snowden, Permanent Record"
 [2022-04-20-1]
 submitter = "Victor"
 quote = """
-The lingering chilly wind after the rain clears tells that winter is on its way.  But the warmth in my chest proves that the light surely burns.  Though it's so tiny that it might go out with a single puff of air, it surely burns.
+The lingering chilly wind after the rain clears tells that winter is on its way.
+But the warmth in my chest proves that the light surely burns.
+Though it's so tiny that it might go out with a single puff of air, it surely burns.
 """
 attribution = "Tohru Honda (Fruits Basket)"
 
@@ -2301,3 +2303,24 @@ attribution = "Vivian Greene"
 submitter = "Victor"
 quote = "You can fix anything but a blank page."
 attribution = "Nora Roberts"
+
+[2022-04-20-7]
+submitter = "segfault"
+quote = """
+With a sufficient number of users of an API,
+it does not matter what you promise in the contract:
+all observable behaviors of your system
+will be depended on by somebody.
+"""
+attribution = "Hyrum's Law"
+source = "https://www.hyrumslaw.com"
+
+[2022-04-20-08]
+submitter = "segfault"
+quote = "And Stanley... was happy."
+attribution = "The Stanley Parable"
+
+[2022-04-20-08]
+submitter = "segfault"
+quote = "THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END"
+attribution = "The Stanley Parable"

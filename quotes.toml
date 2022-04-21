@@ -1692,18 +1692,11 @@ submitter = "segfault"
 attribution = "Linus Torvalds"
 source = "https://lkml.org/lkml/2020/5/29/1038"
 quote = """
-Longer lines are simply useful. Part of that is that we aren't
-programming in the 80's any more, and our source code is fundamentally
-wider as a result.
+Longer lines are simply useful. Part of that is that we aren't programming in the 80's any more, and our source code is fundamentally wider as a result.
 
-Yes, local iteration variables are still called 'i', because more
-context just isn't helpful for some anonymous counter. Being concise
-is still a good thing, and overly verbose names are not inherently
-better.
+Yes, local iteration variables are still called 'i', because more context just isn't helpful for some anonymous counter. Being concise is still a good thing, and overly verbose names are not inherently better.
 
-But still - it's entirely reasonable to have variable names that are
-10-15 characters and it makes the code more legible. Writing things
-out instead of using abbreviations etc.
+But still - it's entirely reasonable to have variable names that are 10-15 characters and it makes the code more legible. Writing things out instead of using abbreviations etc.
 """
 
 [2021-11-28-2]
@@ -2305,10 +2298,8 @@ attribution = "Nora Roberts"
 [2022-04-20-7]
 submitter = "segfault"
 quote = """
-With a sufficient number of users of an API,
-it does not matter what you promise in the contract:
-all observable behaviors of your system
-will be depended on by somebody.
+With a sufficient number of users of an API, it does not matter what you promise in the contract:
+all observable behaviors of your system will be depended on by somebody.
 """
 attribution = "Hyrum's Law"
 source = "https://www.hyrumslaw.com"
@@ -2322,3 +2313,17 @@ attribution = "The Stanley Parable"
 submitter = "segfault"
 quote = "THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END"
 attribution = "The Stanley Parable"
+
+[2022-04-21-1]
+submitter = "Gnome"
+quote = """
+Tech Support
+
+[tek suh-**pohrt**]
+*noun*
+
+1. A person who does precision guesswork based on unreliable data provided by those of questionable knowledge
+
+See also: ***Wizard***, ***Magician***
+"""
+attribution = "Various, but also, a t-shirt I have"

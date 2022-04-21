@@ -29,7 +29,7 @@ def pull_specific_quote(quote: str, quotes: dict):
     :returns: A Quote(submitter="Tester", quote="Testing", attribution=None, source=None).
     :rtype: Quote
     """
-    return Quote(**quotes[quote]) if quote in quotes else Quote("Tester", "Testing")
+    return Quote(**quotes[quote]) if quote in quotes else Quote("Tester", "*Testing* - [Links work too!](http://www.google.co.uk)")
 
 def pull_random_quote(quotes: dict):
     """

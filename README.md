@@ -22,9 +22,15 @@ source = "where it was said, a url is nice if you have it (optional, currently n
 ```
 
 **You must include your name as the `submitter` and the `quote`, these are _required_.**
-Currently, `attribution` and `source` are optional fields.
-If the quote spans multiple lines, use `"""` at the beginning and end.
-If the quote contains code, use `'''` for raw multi-line strings, and then use ` ``` ` to create a code block.
+
+Currently, `attribution` and `source` are optional fields.  If included however, the `attribution` will appear after the quote behind a `~`, so if citing both a person and a work, please do this in a format that is sensible.
+
+(usage of the `source` field remains an open option, so whilst we do like people providing it, it is not mandatory)
+
+For quotes that span multiple lines, use `"""` at the beginning and end, on separate lines.
+
+For quotes containing code, use `'''` for raw multi-line strings, and then use ` ``` ` to create a code block, remembering to close them both afterwards.
+
 Any discord-accepted markdown should be parsed properly.
 
 For further reading, see:

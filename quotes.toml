@@ -2347,3 +2347,8 @@ attribution = "Colin Chapman"
 submitter = "segfault"
 quote = "Simplify, then add lightness."
 attribution = "Colin Chapman"
+
+[2022-04-30-and-after-a-cray-quote-is-a-quote-about-cray]
+submitter = "segfault"
+quote = "Seymour Cray was famous for packing, powering, and cooling circuits incredibly densely. Classic Crays were made obsolete by microprocessors, but we may yet do similar things at a larger scale. Hyperscale data centers and even national supercomputers are loosely coupled things today, but if challenges demanded it, there is a world with a zetta scale, tightly integrated, low latency matrix dissipating a gigawatt in a swimming pool of circulating fluorinert."
+attribution = "John Carmack"

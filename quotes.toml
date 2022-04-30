@@ -2352,3 +2352,7 @@ attribution = "Colin Chapman"
 submitter = "segfault"
 quote = "Seymour Cray was famous for packing, powering, and cooling circuits incredibly densely. Classic Crays were made obsolete by microprocessors, but we may yet do similar things at a larger scale. Hyperscale data centers and even national supercomputers are loosely coupled things today, but if challenges demanded it, there is a world with a zetta scale, tightly integrated, low latency matrix dissipating a gigawatt in a swimming pool of circulating fluorinert."
 attribution = "John Carmack"
+
+[2022-04-30-this-one-is-a-url-because-it-has-an-obnoxiously-large-copyright-notice]
+submitter = "Gnome"
+quote = "http://www.eviloverlord.com/lists/overlord.html (Yes, the entire website!)"

@@ -2327,3 +2327,23 @@ Tech Support
 See also: ***Wizard***, ***Magician***
 """
 attribution = "Various, but also, a t-shirt I have"
+
+[2022-04-30-wow-iot-is-a-bad-idea]
+submitter = "segfault"
+quote = "Remember, the ‘S’ in ‘IoT’ stands for ‘Security’."
+attribution = "Apocryphal"
+
+[2022-04-30-I-swear-Colin-Chapman-said-something-similar]
+submitter = "segfault"
+quote = "Anyone can build a fast CPU. The trick is to build a fast system."
+attribution = "Seymour Cray"
+
+[2022-04-30-oh-there-it-is]
+submitter = "segfault"
+quote = "Adding power makes you faster on the straights, subtracting weight makes you faster everywhere."
+attribution = "Colin Chapman"
+
+[2022-04-30-oh-look-he-said-it-again]
+submitter = "segfault"
+quote = "Simplify, then add lightness."
+attribution = "Colin Chapman"

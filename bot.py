@@ -79,10 +79,10 @@ async def send_quote(pre = "Quote"):
 async def test_quote(which = "pre-toml-255"):
     quotes = await refresh_quotes() # This way we have access to the latest quotes
     logger = logging.getLogger("test_quote")
-    quote = pull_specific_quote(which, quotes)
+    quote, quote_index = pull_specific_quote(which, quotes)
     quote_text = format_quote_text(quote)
     embedVar = discord.Embed(title = "Maximum Swack!", description = quote_text, colour = random_colour())
-    embedVar.set_footer(text = f"Test for {await current_date_time()}\nQuote Test/{len(quotes)}, Submitted by {quote.submitter}")
+    embedVar.set_footer(text = f"Test for {await current_date_time()}\nQuote {quote_index}/{len(quotes)}, Submitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
     await client.get_channel(sandbox).send(embed = embedVar)
 

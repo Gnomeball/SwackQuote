@@ -856,6 +856,11 @@ quote = "The Internet?  We are not interested in it."
 submitter = "Gnome"
 quote = "Computers are like Air Conditioners, they stop working when you open Windows."
 
+[pre-toml-200]
+submitter = "Greenfoot5"
+quote = "The fact that we live at the bottom of a deep gravity well, on the surface of a gas covered planet going around a nuclear fireball 90 million miles away and think this to be normal is obviously some indication of how skewed our perspective tends to be."
+attribution = "Douglas Adams"
+
 [pre-toml-201]
 submitter = "segfault"
 attribution = "Eric Diven"
@@ -1893,11 +1898,6 @@ attribution = "Nightwish - Song Of Myself"
 submitter = "meetowl"
 quote = "I'm a (x << 3) + x + x developer because multiplication is hard."
 attribution = "https://twitter.com/thingskatedid/status/1438300613683548164"
-
-[pre-toml-200]
-submitter = "Greenfoot5"
-quote = "The fact that we live at the bottom of a deep gravity well, on the surface of a gas covered planet going around a nuclear fireball 90 million miles away and think this to be normal is obviously some indication of how skewed our perspective tends to be."
-attribution = "Douglas Adams"
 
 [2022-03-22-01]
 submitter = "Gnome"

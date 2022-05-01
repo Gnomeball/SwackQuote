@@ -2132,3 +2132,8 @@ attribution = "John Carmack"
 [2022-04-30-this-one-is-a-url-because-it-has-an-obnoxiously-large-copyright-notice]
 submitter = "Gnome"
 quote = "http://www.eviloverlord.com/lists/overlord.html (Yes, the entire website!)"
+
+[2022-05-01-its-hard-apparently]
+submitter = "Gnome"
+quote = "Landing a rover from 26 kilometres above the surface traveling 6 times faster than a bullet... is hard"
+attribution = "Brian Cox, The Planets"

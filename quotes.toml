@@ -756,9 +756,9 @@ quote = "A QA engineer walks into a bar.  Orders a beer.  Orders 0 beers.  Order
 attribution = "Brenen Keller"
 
 [pre-toml-152]
-submitter = "Victor"
+submitter = "Gnome"
 quote = "GNU EMACS = Generally Not Used, Except by Middle-Aged Computer Scientists."
-attribution = "Self"
+attribution = "Victor"
 
 [pre-toml-153]
 submitter = "Victor"
@@ -771,9 +771,9 @@ quote = "Please skip to the bottom of this file if you ate lunch recently."
 attribution = "Alan, Linux kernel pre-2.1.91-1"
 
 [pre-toml-155]
-submitter = "IrrelevantSwack"
+submitter = "Gnome"
 quote = "Have you considered public execution?  It works wonders for motivation."
-attribution = "Self, after a fan failed."
+attribution = "IrrelevantSwack, after a fan failed."
 
 [pre-toml-156]
 submitter = "Gnome"
@@ -1041,9 +1041,9 @@ quote = "The attention span of a computer is only as long as its power cord."
 attribution = "Unknown"
 
 [pre-toml-209]
-submitter = "Gnome"
+submitter = "segfault"
 quote = "Uh oh, found a duplicate quote"
-attribution = "Self"
+attribution = "Gnome"
 
 [pre-toml-210]
 submitter = "Gnome"
@@ -1146,74 +1146,74 @@ quote = "Pro advice: don't get python jobs... You think it'll be a good time, it
 attribution = "Kris"
 
 [pre-toml-230]
-submitter = "Gnome"
+submitter = "Kris"
 quote = "Computer people can't number, it's not our department."
-attribution = "Self"
+attribution = "Gnome"
 
 [pre-toml-231]
-submitter = "James"
+submitter = "Gnome"
 quote = "My marble smooth brain comes up with the best takes."
-attribution = "Self"
+attribution = "James"
 
 [pre-toml-232]
-submitter = "SinDemon"
+submitter = "Gnome"
 quote = "I have a professional interest in heads."
-attribution = "Self"
+attribution = "SinDemon"
 
 [pre-toml-233]
-submitter = "Gnome"
+submitter = "unreturnable"
 quote = "Ehh, soldering is one of those things that takes a million hours of practice."
-attribution = "Self"
+attribution = "Gnome"
 
 [pre-toml-234]
-submitter = "Kris"
+submitter = "Gnome"
 quote = "In feb I set a phone on fire in the office and had to ya-yeet it off my desk.  It left a small crater in the carpet while it burned out."
-attribution = "Self"
+attribution = "Kris"
 
 [pre-toml-235]
-submitter = "Artemis"
+submitter = "Gnome"
 quote = "And, in just a more general sense, this is swack.  We know what's swackening.  We even, if we're feeling daring, call each other swackers.  We like tech and all the rest of that, and while we can have some heated swacker moments, I don't think anyone here is going to outright claim that they're absolutely right about everything and refuse to engage in a conversation meant to improve both parties' understanding?  So, you know.  We like this stuff a lot.  Remember the human on the other side, however enthusiastic we might be about the subject."
-attribution = "Self"
+attribution = "Artemis"
 
 [pre-toml-236]
-submitter = "unreturnable"
+submitter = "Gnome"
 quote = "Latin doesn't automatically mean \"I win this argument\""
-attribution = "Self"
+attribution = "unreturnable"
 
 [pre-toml-237]
-submitter = "unreturnable"
+submitter = "Gnome"
 quote = "If a lightbulb said 100 lumen but then actually was 90 I'd take it back."
-attribution = "Self"
+attribution = "unreternable"
 
 [pre-toml-238]
-submitter = "crox"
+submitter = "Gnome"
 quote = "'tis the way of the world now, everyone thinks everything is a quick fix."
-attribution = "Self"
+attribution = "crox"
 
 [pre-toml-239]
-submitter = "segfault"
+submitter = "Gnome"
 quote = "```python\nwith open(\"data/day4.txt\") as o: print(len([p for p in [eval(\"{\"\"+s.replace(\"\\n\", \",\").replace(\" \", \",\").replace(\":\",'\":\"').replace(\",\",'\",\"').strip()+\"\"}\") for s in map(str.strip, o.read().strip().split(\"\\n\\n\"))] if (len(p)==8 or (len(p)==7 and \"cid\" not in p)) and (1920<=int(p[\"byr\"])<=2002) and (2010<=int(p[\"iyr\"])<=2020) and (2020<=int(p[\"eyr\"])<=2030) and (len(p[\"hgt\"])>2 and ((150<=int(p[\"hgt\"][:-2])<=193) if p[\"hgt\"][-2:]==\"cm\" else (59<=int(p[\"hgt\"][:-2])<=76))) and (len(p[\"hcl\"])==7 and p[\"hcl\"][0]==\"#\" and int(p[\"hcl\"][1:],16)) and (p[\"ecl\"] in set([\"amb\", \"blu\", \"brn\", \"gry\", \"grn\", \"hzl\", \"oth\"])) and (len(p[\"pid\"])==9 and int(p[\"pid\"]))]))\n```\n"
-attribution = "Self"
+attribution = "segfault"
 
 [pre-toml-240]
-submitter = "IrrelevantSwack"
+submitter = "Gnome"
 quote = "... fuck"
-attribution = "Self"
+attribution = "IrrelevantSwack"
 
 [pre-toml-241]
-submitter = "James"
+submitter = "Gnome"
 quote = "I have very nuanced opinions."
-attribution = "Self"
+attribution = "Jamer"
 
 [pre-toml-242]
-submitter = "Victor"
+submitter = "Gnome"
 quote = "RON's dream has finally come true."
-attribution = "Self"
+attribution = "Victor"
 
 [pre-toml-243]
-submitter = "Victor"
+submitter = "Gnome"
 quote = "We can use the society money to buy those COVID-19 tests."
-attribution = "Self"
+attribution = "Victor"
 
 [pre-toml-244]
 submitter = "Gnome"
@@ -1226,9 +1226,9 @@ quote = "The Swansea Hacking Society"
 attribution = "Joss, in every email ever"
 
 [pre-toml-246]
-submitter = "James"
+submitter = "Gnome"
 quote = "We should come up with a hall of fame for how badly people can mangle our name."
-attribution = "Self"
+attribution = "James"
 
 [pre-toml-247]
 submitter = "Gnome / unreturnable"
@@ -1236,29 +1236,29 @@ quote = "Pub? Pub? Pub!"
 attribution = "a typical swan_hack conversation"
 
 [pre-toml-248]
-submitter = "Gnome"
+submitter = "Victor"
 quote = "Pipes... O how they are such inconsiderate little tubes of hope and fluid traversal, they offer so much for us and yet can deliver so little when you most depend upon them.  It is with great unfortune and much aplomb that we have been forced to intake the unthinkable and inconceivable, to declare full and total dictatorship upon the pipes of this great civilisation, we shall not use them whilst they continue to mock us!  As a result of these tragic events, the circumstance we now find ourselves in and frankly, the wrong kind of indoor weather for a meeting we have decided, henceforth declared and now ratified with the power vested upon us by yourselves, the people, the otherwise and absolute re-location of our societies Annual General Meeting to an as of yet unspecified, unknown and undecided upon number of orbital revolutions in your near futures. *mic drop*"
-attribution = "Self, after a pipe burst in the Linux lab"
+attribution = "Gnome, after a pipe burst in the Linux lab"
 
 [pre-toml-249]
-submitter = "Gnome"
+submitter = "segfault"
 quote = "```(input.split(' ')[0].to_i < @buffer.length + 1) ? move_buffer(input.split(' ')[0].to_i) : error if input[0].to_i.is_a?(Integer)```"
-attribution = "Self"
+attribution = "Gnome"
 
 [pre-toml-250]
-submitter = "segfault"
+submitter = "Gnome"
 quote = "This world is called Erlang, but people decided to do other things."
-attribution = "Self"
+attribution = "segfault"
 
 [pre-toml-251]
-submitter = "Bun"
+submitter = "Gnome"
 quote = "I just followed the Arch wiki, it's like Stack Overflow, just plug in commands!"
-attribution = "Self"
+attribution = "Bun"
 
 [pre-toml-252]
-submitter = "SinDemon"
+submitter = "Gnome"
 quote = "Both are valid because words are fake and language is just made up noises."
-attribution = "Self"
+attribution = "SinDemon"
 
 [pre-toml-253]
 submitter = "Victor"
@@ -1276,9 +1276,9 @@ quote = "Is Windows a Virus?\n\nNo, Windows is not a virus.  Here's what viruses
 attribution = "Unknown"
 
 [pre-toml-256]
-submitter = "IrrelevantSwack"
+submitter = "Gnome"
 quote = "Thousands of pipes we can shout at each other down.  If you shout down 80, it's normal.  If you shout down 443, every time you want to say anything you have to shout code words at each other first"
-attribution = "Self"
+attribution = "IrrelevantSwack"
 
 [pre-toml-257]
 submitter = "segfault"
@@ -1286,9 +1286,9 @@ quote = "Monads are useful only every other Tuesday."
 attribution = "Unknown"
 
 [pre-toml-258]
-submitter = "segfault"
+submitter = "Gnome"
 quote = "Monads are easy to understand, they're just the crystallisation of: \"we're scared of side-effects so we sweep them under the rug and pretend they're not eating the floorboards\""
-attribution = "Self"
+attribution = "segfault"
 
 [pre-toml-259]
 submitter = "segfault"
@@ -1302,9 +1302,9 @@ quote = "Linux poses a real challenge for those with a taste for late-night hack
 attribution = "Matt Welsh"
 
 [pre-toml-261]
-submitter = "Gnome"
+submitter = "Kris"
 quote = "```ruby\nls = File.read(\"history\").split(\"\n\"); m = ARGV.length; t = Array.new(m, 0); ls.each { |li| (0..m-1).each { |i| t[i] += 1 if li.start_with?(ARGV[i]) } }; puts \"total	#{ls.length}\"; (0..m-1).each { |i| puts \"#{ARGV[i]}	#{t[i]}\"}\n```\n"
-attribution = "Self"
+attribution = "Gnome"
 
 [pre-toml-262]
 submitter = "Gnome"
@@ -1312,9 +1312,9 @@ quote = "[we're] just taking potshots @ C++, which really is too easy."
 attribution = "Kris"
 
 [pre-toml-263]
-submitter = "Gnome"
+submitter = "IrrelevantSwack"
 quote = "Overloading, also known as \"lets just make every single time you call that operator now unclear as to what exactly it does!\""
-attribution = "Self"
+attribution = "Gnome"
 
 [pre-toml-264]
 submitter = "Gnome"
@@ -1392,9 +1392,9 @@ quote = "There is nothing new to be discovered in physics now.  All that remains
 attribution = "Lord William Thomson Kelvin, circa 1900"
 
 [pre-toml-279]
-submitter = "meetowl"
+submitter = "Gnome"
 quote = "As a former committee member, I have experience in the swackening."
-attribution = "Self"
+attribution = "meetowl"
 
 [pre-toml-280]
 submitter = "Gnome"
@@ -1427,9 +1427,9 @@ quote = "Do there exist many worlds, or is there but a single world?  This is on
 attribution = "Albertus Magnus, thirteenth century"
 
 [pre-toml-286]
-submitter = "Volanti"
+submitter = "Gnome"
 quote = "I literally borked the autograder with a puny infinite loop."
-attribution = "Self"
+attribution = "Volanti"
 
 [pre-toml-287]
 submitter = "segfault"
@@ -1463,14 +1463,14 @@ quote = "Okay, Okay -- I admit it.  You didn't change that program that worked j
 attribution = "`fortune`"
 
 [pre-toml-293]
-submitter = "unreturnable"
+submitter = "Gnome"
 quote = "Short term profit at the cost of the environment.  Where have I heard this before"
-attribution = "Self, in reference to Cryptocurrency"
+attribution = "unreturnable, in reference to Cryptocurrency"
 
 [pre-toml-294]
-submitter = "meetowl"
+submitter = "Gnome"
 quote = "In general, it's not in human nature to understand the concept of \"short-term loss for long-term gain\""
-attribution = "Self, in reference to Cryptocurrency"
+attribution = "meetowl, in reference to Cryptocurrency"
 
 [pre-toml-295]
 submitter = "Victor"
@@ -1498,9 +1498,9 @@ quote = "Aristotle said a bunch of stuff that was wrong.  Galileo and Newton fix
 attribution = "Physics Textbook #17,389,243"
 
 [pre-toml-300]
-submitter = "segfault"
+submitter = "Gnome"
 quote = "```python\ndef isprime(n): return not re.match(r\"^1?$|^(11+?)\\1+$\", \"1\"*n)\n```"
-attribution = "Self"
+attribution = "segfault"
 
 [pre-toml-301]
 submitter = "Gnome"
@@ -1696,9 +1696,9 @@ quote = "I can prove anything by statistics except the truth."
 attribution = "George Canning"
 
 [2021-10-18-1]
-submitter = "Gnome"
+submitter = "segfault"
 quote = "And all because I'm an idiot, essentially"
-attribution = "Self"
+attribution = "Gnome"
 
 [2021-10-18-2]
 submitter = "Victor"
@@ -1749,9 +1749,9 @@ attribution = "Linus Torvalds"
 source = "https://lkml.org/lkml/2020/5/29/1038"
 
 [2021-12-1-1]
-submitter = "Gnome"
+submitter = "segfault"
 quote = "Even with requirements and design, Gnome is still capable of adding bugs to an empty text file, as well as to text that did not have any."
-attribution = "Self, after incorrectly fixing (adding) a typo to this file, then removing it again (twice), because they're dumb"
+attribution = "Gnome, after incorrectly fixing (adding) a typo to this file, then removing it again (twice), because they're dumb"
 
 [2021-12-02-1]
 submitter = "Asher"

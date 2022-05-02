@@ -31,6 +31,8 @@ For quotes that span multiple lines, use `"""` at the beginning and end, on sepa
 
 For quotes containing code, use `'''` for raw multi-line strings, and then use ` ``` ` to create a code block, remembering to close them both afterwards.
 
+Quotes taken from antiquity should use [Common Era](https://en.wikipedia.org/wiki/Common_Era) dating.
+
 Any discord-accepted markdown should be parsed properly.
 
 For further reading, see:

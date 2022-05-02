@@ -1866,7 +1866,7 @@ source = "https://www.atomicheritage.org/key-documents/russell-einstein-manifest
 submitter = "gnome"
 quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 attribution = "Cicero"
-source = "Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC."
+source = "Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BCE."
 
 [2022-03-11-1]
 submitter = "Gnome"
@@ -1980,12 +1980,12 @@ attribution = "Mario Andretti"
 [2022-04-07-5]
 submitter = "Gnome"
 quote = "High thoughts need a high language."
-attribution = "Aristophanes (448-380 BC)"
+attribution = "Aristophanes (448-380 BCE)"
 
 [2022-04-07-6]
 submitter = "Gnome"
 quote = "Neither can embellishments of language be found without arrangement and expression of thoughts, nor can thoughts be made to shine without the light of language."
-attribution = "Cicero (106-43 BC)"
+attribution = "Cicero (106-43 BCE)"
 
 [2022-04-07-7]
 submitter = "Gnome"

@@ -1931,14 +1931,12 @@ source = "The Doctor Falls, 2017"
 [2022-02-26-10]
 submitter = "Gnome"
 quote = "After sleeping through a hundred million centuries we have finally opened our eyes on a sumptuous planet, sparkling with colour, bountiful with life. Within decades we must close our eyes again. Isn't it a noble, an enlightened way of spending our brief time in the sun, to work at understanding the universe and how we have come to wake up in it?"
-attribution = "Richard Dawkins"
-source = "The Greatest Show On Earth"
+attribution = "Richard Dawkins, The Greatest Show On Earth"
 
 [2022-02-26-11]
 submitter = "Gnome"
 quote = "We are going to die, and that makes us the lucky ones. Most people are never going to die because they are never going to be born. The potential people who could have been here in my place but who will in fact never see the light of day outnumber the sand grains of Sahara. Certainly those unborn ghosts include greater poets than Keats, scientists greater than Newton. We know this because the set of possible people allowed by our DNA so massively exceeds the set of actual people. In the teeth of those stupefying odds it is you and I, in our ordinariness, that are here. We privileged few, who won the lottery of birth against all odds, how dare we whine at our inevitable return to that prior state from which the vast majority have never stirred?"
-attribution = "Richard Dawkins"
-source = "The Greatest Show On Earth"
+attribution = "Richard Dawkins, The Greatest Show On Earth"
 
 [2022-02-26-12]
 submitter = "Gnome"
@@ -2063,7 +2061,7 @@ source = "https://www.voxclamantisindeserto.us/2018/02/14/en/a-guys-guide-to-gre
 [2022-03-17-1]
 submitter = "Gnome"
 quote = "Death is the winner in any war.  Nothing noble in dying for your religion, for your country, for ideology, for faith, for another man."
-attribution = "Nightwish - Song Of Myself"
+attribution = "Nightwish, Song Of Myself"
 
 [2022-03-20-01]
 submitter = "meetowl"
@@ -2342,3 +2340,48 @@ submitter = "Gnome"
 quote = "Violence is the last refuge of the incompetent."
 attribution = "Salvor Hardin"
 source = "FreeBSD Fortunes"
+
+[2022-05-02-just-another-set-of-poetic-lyrics]
+submitter = "Gnome"
+quote = """
+Paper is dead without words,
+Ink idle without a poem,
+All the world dead without stories,
+Without love and disarming beauty
+"""
+attribution = "Nightwish, Song Of Myself"
+
+[2022-05-02-and-an-honest-question]
+submitter = "Gnome"
+quote = "Why do we still carry a device of torture around our necks?"
+attribution = "Nightwish, Song Of Myself"
+
+[2022-05-02-Dawkins-being-Dawkins]
+submitter = "Gnome"
+quote = "The God of the Old Testament is arguably the most unpleasant character in all fiction: jealous and proud of it; a petty, unjust, unforgiving control-freak; a vindictive, bloodthirsty ethnic cleanser; a misogynistic, homophobic, racist, infanticidal, genocidal, filicidal, pestilential, megalomaniacal, sadomasochistic, capriciously malevolent bully."
+attribution = "Richard Dawkins, The God Delusion"
+
+[2022-05-02-This-needs-no-comment]
+submitter = "Gnome"
+quote = "Science is interesting, and if you don't agree you can fuck off."
+attribution = "Richard Dawkins"
+
+[2022-05-02-Honestly-do-this-with-anyone-you-teach]
+submitter = "Gnome"
+quote = "Do not indoctrinate your children.  Teach them how to think for themselves, how to evaluate evidence, and how to disagree with you"
+attribution = "Richard Dawkins, The God Delusion"
+
+[2022-05-02-Dawkins-talking-about-rng]
+submitter = "Gnome"
+quote = "The total amount of suffering per year in the natural world is beyond all decent contemplation.  During the minute that it takes me to compose this sentence, thousands of animals are being eaten alive, many others are running for their lives, whimpering with fear, others are slowly being devoured from within by rasping parasites, thousands of all kinds are dying of starvation, thirst, and disease. It must be so.  If there ever is a time of plenty, this very fact will automatically lead to an increase in the population until the natural state of starvation and misery is restored.  In a universe of electrons and selfish genes, blind physical forces and genetic replication, some people are going to get hurt, other people are going to get lucky, and you won't find any rhyme or reason in it, nor any justice.  The universe that we observe has precisely the properties we should expect if there is, at bottom, no design, no purpose, no evil, no good, nothing but pitiless indifference."
+attribution = "Richard Dawkins, River Out of Eden: A Darwinian View of Life"
+
+[2022-05-02-Han-shot-first]
+submitter = "Gnome"
+quote = "The chicken is only an egg's way for making another egg."
+attribution = "Richard Dawkins"
+
+[2022-05-02-And-we-definitely-dream-of-electric-sheep-too]
+submitter = "Gnome"
+quote = "We are survival machines – robot vehicles blindly programmed to preserve the selfish molecules known as genes.  This is a truth which still fills me with astonishment."
+attribution = "Richard Dawkins, The Selfish Gene"

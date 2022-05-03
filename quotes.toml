@@ -2385,3 +2385,8 @@ attribution = "Richard Dawkins"
 submitter = "Gnome"
 quote = "We are survival machines – robot vehicles blindly programmed to preserve the selfish molecules known as genes.  This is a truth which still fills me with astonishment."
 attribution = "Richard Dawkins, The Selfish Gene"
+
+[2022-05-03-English-is-a-trenchcoat]
+submitter = "Gnome"
+quote = "The English language is just three smaller languages in a trenchcoat, beating up other languages in a back alley, then rifling through their pockets in search of loose grammar and vocab."
+attribution = "segfault"

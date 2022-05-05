@@ -1369,12 +1369,12 @@ attribution = "Authur C. Clarke"
 [pre-toml-274]
 submitter = "Gnome"
 quote = "I think one of the reasons why anthropogenic climate change is so difficult for a certain type of person to accept is that atmospheres seem ethereal and tenuous and incapable of trapping enough heat to modify the temperature on a planet significantly.  For such people I suggest a trip to Venus, where they will be squashed and boiled and dissolved on the surface of Earth's twin."
-attribution = "Professor Brian Cox"
+attribution = "Brian Cox, The Planets"
 
 [pre-toml-275]
 submitter = "Gnome"
 quote = "We need to shift our focus.  We live in a solar system of wonders, of planets of storms and moons of ice, of landscapes and vistas that stir the imagination and enrich the soul - a system of limitless resources, limitless beauty, and limitless potential.  If we don't go there, we'll never go anywhere.  And if we go nowhere, then we'll have no future at all."
-attribution = "Professor Brian Cox"
+attribution = "Brian Cox, The Planets"
 
 [pre-toml-276]
 submitter = "segfault"
@@ -2306,7 +2306,7 @@ attribution = "Peter Anspach"
 [2022-05-01-its-hard-apparently]
 submitter = "Gnome"
 quote = "Landing a rover from 26 kilometres above the surface traveling 6 times faster than a bullet... is hard."
-attribution = "Professor Brian Cox, The Planets"
+attribution = "Brian Cox, The Planets"
 
 [2022-05-01-is-it-froid-never-mind-its-freud]
 submitter = "Gnome"
@@ -2408,3 +2408,108 @@ submitter = "Gnome"
 quote = "Life's but a walking shadow, a poor player, that struts and frets his hour upon the stage, and then is heard no more; it is a tale told by an idiot, full of sound and fury, signifying nothing."
 attribution = "Macbeth"
 source = "Macbeth, Act V, Scene V"
+
+[2022-05-05-Suprised-we-did-not-already-have-this]
+submitter = "Gnome"
+quote = """
+There is no strife, no prejudice, no national conflict in outer space as yet.  Its hazards are hostile to us all.  Its conquest deserves the best of all mankind, and its opportunity for peaceful cooperation may never come again.  But why, some say, the Moon?  Why choose this as our goal?  And they may well ask, why climb the highest mountain?  Why, 35 years ago, fly the Atlantic?  Why does Rice play Texas?
+
+We choose to go to the Moon.  We choose to go to the Moon ... We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard; because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one we intend to win, and the others, too.
+"""
+attribution = "John F. Kennedy"
+source = "https://www.jfklibrary.org/learn/about-jfk/historic-speeches/address-at-rice-university-on-the-nations-space-effort"
+
+[2022-05-05-A-questione-we-may-never-answer]
+submitter = "Gnome"
+quote = "There are questions to which knowing the answers would have a profound cultural effect.  The question of our solitude, is one.  Are we alone in the Universe, yes or no.  One of these is true."
+attribution = "Brian Cox, Human Universe"
+
+[2022-05-05-I-hope-someone-else-recognises-this]
+submitter = "Gnome"
+quote = "6EQUJ5"
+attribution = "Unknown"
+
+[2022-05-05-war-is-pointless]
+submitter = "Gnome"
+quote = "I hate war as only a soldier who has lived it can, only as one who has seen its brutality, its futility, its stupidity."
+attribution = "Dwight D. Eisenhower"
+
+[2022-05-05-everything-is-pointless]
+submitter = "Gnome"
+quote = "Dusting is a good example of the futility of trying to put things right.  As soon as you dust, the fact of your next dusting has already been established."
+attribution = "George Carlin"
+
+[2022-05-05-cant-some-else-do-it]
+submitter = "Gnome"
+quote = "Leadership is the art of getting someone else to do something you want done because he wants to do it."
+attribution = "Dwight D. Eisenhower"
+
+[2022-05-05-conflict-is-futile]
+submitter = "Gnome"
+quote = "Every gun that is made, every warship launched, every rocket fired, signifies in the final sense a theft from those who hunger and are not fed, those who are cold and are not clothed."
+attribution = "Dwight D. Eisenhower"
+
+[2022-05-05-thats-because-its-infinite]
+submitter = "Gnome"
+quote = "You can't legislate against stupidity."
+attribution = "Jesse Ventura"
+
+[2022-05-05-and-we-are-still-doing-it]
+submitter = "Gnome"
+quote = "We are in danger of destroying ourselves by our greed and stupidity.  We cannot remain looking inwards at ourselves on a small and increasingly polluted and overcrowded planet."
+attribution = "Steven Hawking"
+
+[2022-05-05-nothing-is-preordained]
+submitter = "Gnome"
+quote = "I have noticed even people who claim everything is predestined, and that we can do nothing to change it, look before they cross the road."
+attribution = "Steven Hawking"
+
+[2022-05-05-Somehow-the-first-Elon-Musk-quote-in-here]
+submitter = "Gnome"
+quote = "Some people don't like change, but you need to embrace change if the alternative is disaster."
+attribution = "Elon Musk"
+
+[2022-05-05-Oh-and-now-a-second]
+submitter = "Gnome"
+quote = "We're running the most dangerous experiment in history right now, which is to see how much carbon dioxide the atmosphere... can handle before there is an environmental catastrophe."
+attribution = "Elon Musk"
+
+[2022-05-05-And-a-third-one]
+submitter = "Gnome"
+quote = "I would like to die on Mars.  Just not on impact."
+attribution = "Elon Musk"
+
+[2022-05-05-tenuous-atmosphere-be-tenuous]
+submitter = "Gnome"
+quote = "Space isn't remote at all.  It's only an hour's drive away if your car could go straight upwards."
+attribution = "Fred Hoyle"
+
+[2022-05-05-in-300-yards-turn-left]
+submitter = "Gnome"
+quote = "If you do not change direction, you may end up where you are heading."
+attribution = "Lao Tzu"
+
+[2022-05-05-Yet-another-Greek-philosopher]
+submitter = "Gnome"
+quote = "There is nothing permanent except change."
+attribution = "Heraclitus (544-483 BCE)"
+
+[2022-05-05-Somehow-the-first-Obama-quote]
+submitter = "Gnome"
+quote = "Change will not come if we wait for some other person or some other time.  We are the ones we've been waiting for.  We are the change that we seek."
+attribution = "Barrack Obama"
+
+[2022-05-05-four-sure]
+submitter = "Gnome"
+quote = "There have to be reasons that you get up in the morning and you want to live.  Why do you want to live?  What's the point?  What inspires you?  What do you love about the future?  If the future does not include being out there among the stars and being a multi-planet species, I find that incredibly depressing."
+attribution = "Elon Musk"
+
+[2022-05-05-ten-thousand]
+submitter = "Gnome"
+quote = "I have not failed.  I've just found 10,000 ways that won't work."
+attribution = "Thomas Alva Edison"
+
+[2022-05-05-Not-true-but-the-spirit-behind-it-remains-accurate]
+submitter = "Gnome"
+quote = "Never forget that everything Hitler did in Germany was legal."
+attribution = "Martin Luther King, Jr"

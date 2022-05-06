@@ -15,6 +15,21 @@ QUOTE_REPEAT_DELAY = 200 # How many days must pass before a repeated quote shoul
 # Our Quote type, has optional attribution & source, requires submitter & quote
 Quote = namedtuple("Quote", "submitter quote attribution source", defaults=(None, None))
 
+def calculate_swack_level():
+    swack_levels = [
+        "Maximum Swack!", "A Modicum of Swack", "Level of Swack: undefined",
+        "Possibility of Swack", "Swack mode uninitialised", "All of the Swack",
+        "None of the Swack", "The Swackening", "The Swack to end all Swack",
+        "The one true Swack", "Just a casual Swack", "One Swack, mildly tepid",
+        "Is this the real Swack, or is this just fantasy?", "Hello, Swack!",
+        "Not an ounce of Swack in the building", "Am I Swacking correctly?"
+    ]
+    # Idk if this way round is better than rotate then shuffle
+    random.shuffle(swack_levels)
+    rotate = random.randint(0, len(swack_levels))
+    swack_levels = swack_levels[rotate:] + swack_levels[:rotate]
+    return random.choice(swack_levels)
+
 def format_quote_text(quote: Quote):
     quote_text = quote.quote
     if quote.attribution is not None:

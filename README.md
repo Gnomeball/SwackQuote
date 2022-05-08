@@ -33,6 +33,8 @@ For quotes containing code, use `'''` for raw multi-line strings, and then use `
 
 Quotes taken from antiquity should use [Common Era](https://en.wikipedia.org/wiki/Common_Era) dating.
 
+When adding quotes, please ensure to update the count if applicable.
+
 Any discord-accepted markdown should be parsed properly.
 
 For further reading, see:

@@ -23,6 +23,8 @@ submitter = "Gnome"
 quote = "Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday's code."
 attribution = "Dan Salomon"
 
+#5
+
 [pre-toml-6]
 submitter = "Gnome"
 quote = "Code is like humour.  When you have to explain it, it's bad."
@@ -47,6 +49,8 @@ attribution = "David Leinweber"
 submitter = "Gnome"
 quote = "The most disastrous thing that you can ever learn is your first programming language."
 attribution = "Alan Kay"
+
+#10
 
 [pre-toml-11]
 submitter = "Gnome"
@@ -73,6 +77,8 @@ submitter = "Gnome"
 quote = "If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilization."
 attribution = "Weinbergs Second Law"
 
+#15
+
 [pre-toml-16]
 submitter = "Gnome"
 quote = "There are two ways to write error-free programs; only the third one works."
@@ -97,6 +103,8 @@ attribution = "Edsger W. Dijkstra"
 submitter = "Gnome"
 quote = "Software undergoes beta testing shortly before it's released; beta is Latin for still doesn't work."
 attribution = "Unknown"
+
+#20
 
 [pre-toml-21]
 submitter = "Gnome"
@@ -123,6 +131,8 @@ submitter = "Gnome"
 quote = "To err is human but to really foul things up you need a computer."
 attribution = "Paul Ehrlich"
 
+#25
+
 [pre-toml-26]
 submitter = "Gnome"
 quote = "Code never lies, Comments sometimes do."
@@ -147,6 +157,8 @@ attribution = "Unknown"
 submitter = "Gnome"
 quote = "Given enough time, I can meet any software deadline."
 attribution = "Unknown"
+
+#30
 
 [pre-toml-31]
 submitter = "Gnome"
@@ -173,6 +185,8 @@ submitter = "Gnome"
 quote = "Beware of bugs in the above code; I have only proved it correct, not tried it."
 attribution = "Donald E. Knuth"
 
+#35
+
 [pre-toml-36]
 submitter = "Gnome"
 quote = "Copy and paste is a design error."
@@ -197,6 +211,8 @@ attribution = "Donald E. Knuth"
 submitter = "Gnome"
 quote = "Any inaccuracies in this index may be explained by the fact that it has been sorted with the help of a computer."
 attribution = "Donald E. Knuth"
+
+#40
 
 [pre-toml-41]
 submitter = "Gnome"
@@ -223,6 +239,8 @@ submitter = "Gnome"
 quote = "bad_ideas :: Time -> IO ()"
 attribution = "Kris"
 
+#45
+
 [pre-toml-46]
 submitter = "Gnome"
 quote = "A programmer is a person who passes as an exacting expert on the basis of being able to turn out, after innumerable punching, an infinite series of incomprehensive answers, calculated with micrometric precisions from vague assumptions, based on debatable figures taken from inconclusive documents, and carried out on instruments of problematical accuracy, by persons of dubious reliability and questionable mentality, for the avowed purpose of annoying and confounding a hopelessly defenseless department, that was unfortunate enough to ask for the information in the first place."
@@ -247,6 +265,8 @@ attribution = "Bill Gates"
 submitter = "Gnome"
 quote = "The question of whether computers can think is like the question of whether submarines can swim."
 attribution = "Edsger W. Dijkstra."
+
+#50
 
 [pre-toml-51]
 submitter = "Gnome"
@@ -273,6 +293,8 @@ submitter = "Gnome"
 quote = "The Web is like a dominatrix.  Everywhere I turn, I see little buttons ordering me to Submit."
 attribution = "Nytwind"
 
+#55
+
 [pre-toml-56]
 submitter = "Gnome"
 quote = "There are two major products that come out of Berkeley: LSD and UNIX.  We don't believe this to be a coincidence."
@@ -297,6 +319,8 @@ attribution = "The Birth of the UNIX Epoch"
 submitter = "Gnome"
 quote = "First learn computer science and all the theory.  Next develop a programming style.  Then forget all that and just hack."
 attribution = "George Carrette"
+
+#60
 
 [pre-toml-61]
 submitter = "Gnome"
@@ -323,6 +347,8 @@ submitter = "Gnome"
 quote = "For a long time it puzzled me how something so expensive, so leading edge, could be so useless.  And then it occurred to me that a computer is a stupid machine with the ability to do incredibly smart things, while computer programmers are smart people with the ability to do incredibly stupid things.  They are, in short, a perfect match."
 attribution = "Bill Bryson"
 
+#65
+
 [pre-toml-66]
 submitter = "Gnome"
 quote = "Come to think of it, there are already a million monkeys on a million typewriters, and Discord is nothing like Shakespeare."
@@ -347,6 +373,8 @@ attribution = "Edsger W. Dijkstra"
 submitter = "Gnome"
 quote = "If Java had true garbage collection, most programs would delete themselves upon execution."
 attribution = "Robert Sewell"
+
+#70
 
 [pre-toml-71]
 submitter = "Gnome"
@@ -373,6 +401,8 @@ submitter = "Gnome"
 quote = "Dijkstra probably hates me."
 attribution = "Linus Torvalds, in kernel/sched.c"
 
+#75
+
 [pre-toml-77]
 submitter = "Gnome"
 quote = "If you put it off long enough, it might go away."
@@ -397,6 +427,8 @@ attribution = "Unknown"
 submitter = "Gnome"
 quote = "The universe is made of stories, not of atoms."
 attribution = "Muriel Rukeyser"
+
+#80
 
 [pre-toml-82]
 submitter = "Gnome"
@@ -423,6 +455,8 @@ submitter = "Gnome"
 quote = "Murphy was an optimist."
 attribution = "O'Toole's commentary on Murphy's Law"
 
+#85
+
 [pre-toml-87]
 submitter = "Gnome"
 quote = "Alcoholics Anonymous is when you get to drink under someone else's name."
@@ -447,6 +481,8 @@ attribution = "Alan Perlis"
 submitter = "Gnome"
 quote = "It [being a Vulcan] means to adopt a philosophy, a way of life which is logical and beneficial.  We cannot disregard that philosophy merely for personal gain, no matter how important that gain might be."
 attribution = "Spock, Journey to Babel, stardate 3842.4"
+
+#90
 
 [pre-toml-92]
 submitter = "Gnome"
@@ -474,6 +510,8 @@ submitter = "Gnome"
 quote = "We have more to fear from the bungling of the incompetent than from the machinations of the wicked."
 attribution = "Bill Davidsen"
 
+#95
+
 [pre-toml-97]
 submitter = "Gnome"
 quote = "After twelve years of therapy my psychiatrist said something that brought tears to my eyes.  He said, No hablo ingles."
@@ -498,6 +536,8 @@ attribution = "Edsger W. Dijkstra, SIGPLAN Notices, Volume 17, Number 5"
 submitter = "Gnome"
 quote = "signal(i, SIG_DFL); /\\* crunch, crunch, crunch \\*/"
 attribution = "Larry Wall in doarg.c from the perl source code"
+
+#100
 
 [pre-toml-102]
 submitter = "Gnome"
@@ -524,6 +564,8 @@ submitter = "Gnome"
 quote = "Experience is something you don't get until just after you need it."
 attribution = "Oliver's Law"
 
+#105
+
 [pre-toml-107]
 submitter = "Gnome"
 quote = "If you think the system is working, ask someone who's waiting for a prompt."
@@ -548,6 +590,8 @@ attribution = "Unknown"
 submitter = "Gnome"
 quote = "Win95 is not a virus; a virus does something."
 attribution = "Unknown"
+
+#110
 
 [pre-toml-112]
 submitter = "Gnome"
@@ -574,6 +618,8 @@ submitter = "Gnome"
 quote = "In a five year period we can get one superb programming language.  Only we can't control when the five year period will begin."
 attribution = "Alan Perlis"
 
+#115
+
 [pre-toml-117]
 submitter = "Gnome"
 quote = "Question = ( to ) ? be : ! be;"
@@ -598,6 +644,8 @@ attribution = "Ashleigh Brilliant"
 submitter = "Gnome"
 quote = "Absolutum obsoletum. (If it works, it's out of date.)"
 attribution = "Stafford Beer"
+
+#120
 
 [pre-toml-122]
 submitter = "Gnome"
@@ -624,6 +672,8 @@ submitter = "Gnome"
 quote = "You don't have to explain something you never said."
 attribution = "Calvin Coolidge"
 
+#125
+
 [pre-toml-127]
 submitter = "Gnome"
 quote = "1 1 was a race-horse, 2 2 was 1 2.  When 1 1 1 1 race, 2 2 1 1 2."
@@ -648,6 +698,8 @@ attribution = "Spock, Wolf in the Fold, stardate 3615.4"
 submitter = "Gnome"
 quote = "I have many CHARTS and DIAGRAMS."
 attribution = "Unknown"
+
+#130
 
 [pre-toml-132]
 submitter = "Gnome"
@@ -675,6 +727,8 @@ submitter = "Gnome"
 quote = "If you explain so clearly that nobody can misunderstand, somebody will."
 attribution = "Chisholm's Second Corollary"
 
+#135
+
 [pre-toml-137]
 submitter = "Gnome"
 quote = "Please remain calm, it's no use both of us being hysterical at the same time."
@@ -699,6 +753,8 @@ attribution = "Princess Leia Organa"
 submitter = "Gnome"
 quote = "Things are more like they are today than they ever were before."
 attribution = "Dwight Eisenhower"
+
+#140
 
 [pre-toml-142]
 submitter = "Gnome"
@@ -725,6 +781,8 @@ submitter = "Gnome"
 quote = "I'm sure a mathematician would claim that 0 and 1 are both very interesting numbers. :-)"
 attribution = "Larry Wall"
 
+#145
+
 [pre-toml-147]
 submitter = "Gnome"
 quote = "Life, n.: A whim of several billion cells to be you for a while."
@@ -749,6 +807,8 @@ attribution = "Murphy's Clarification of Thomas Wolfe's Law"
 submitter = "Artemis"
 quote = "A QA engineer walks into a bar.  Orders a beer.  Orders 0 beers.  Orders 99999999999 beers.  Orders a lizard.  Orders -1 beers.  Orders a ueicbksjdhd.  First real customer walks in and asks where the bathroom is.  The bar bursts into flames, killing everyone."
 attribution = "Brenen Keller"
+
+#150
 
 [pre-toml-152]
 submitter = "Gnome"
@@ -775,6 +835,8 @@ submitter = "Gnome"
 quote = "Some things Man was never meant to know.  For everything else, there's Google."
 attribution = "Unknown"
 
+#155
+
 [pre-toml-157]
 submitter = "Gnome"
 quote = "Failure is not an option -- it comes bundled with Windows."
@@ -799,6 +861,8 @@ attribution = "Unknown"
 submitter = "Gnome"
 quote = "To err is human... to really foul up requires the root password."
 attribution = "Paul R. Ehrlich"
+
+#160
 
 [pre-toml-162]
 submitter = "Gnome"
@@ -825,6 +889,8 @@ submitter = "Gnome"
 quote = "Why do we want intelligent terminals when there are so many stupid users?"
 attribution = "Unknown"
 
+#165
+
 [pre-toml-167]
 submitter = "Gnome"
 quote = "I can't uninstall it, there seems to be some kind of 'Uninstall Shield'."
@@ -849,6 +915,8 @@ attribution = "Unknown"
 submitter = "Gnome"
 quote = "I'm multitasking: I can listen, ignore and forget at the same time."
 attribution = "Unknown"
+
+#170
 
 [pre-toml-172]
 submitter = "Gnome"
@@ -875,6 +943,8 @@ submitter = "Gnome"
 quote = "The only problem with troubleshooting is that sometimes trouble shoots back."
 attribution = "Unknown"
 
+#175
+
 [pre-toml-177]
 submitter = "Gnome"
 quote = "Crap... Someone knocked over my recycle bin... There's icons all over my desktop..."
@@ -899,6 +969,8 @@ attribution = "Unknown"
 submitter = "Gnome"
 quote = "If brute force doesn't solve your problems, then you aren't using enough."
 attribution = "Sherrilyn Kenyon"
+
+#180
 
 [pre-toml-182]
 submitter = "Gnome"
@@ -925,6 +997,8 @@ submitter = "Gnome"
 quote = "The world is coming to an end... SAVE YOUR BUFFERS!"
 attribution = "Unknown"
 
+#185
+
 [pre-toml-187]
 submitter = "Gnome"
 quote = "If you don't want to be replaced by a computer, don't act like one."
@@ -949,6 +1023,8 @@ attribution = "Unknown"
 submitter = "Gnome"
 quote = "Hardware: The parts of a computer system that can be kicked."
 attribution = "Unknown"
+
+#190
 
 [pre-toml-192]
 submitter = "Gnome"
@@ -975,6 +1051,8 @@ submitter = "Gnome"
 quote = "General Failure is a superior of Major Malfunction, who is searching for Private Files."
 attribution = "Unknown"
 
+#195
+
 [pre-toml-197]
 submitter = "Gnome"
 quote = "Windows, problems?  Reboot!  Linux, problems?  Be root!"
@@ -999,6 +1077,8 @@ attribution = "Douglas Adams"
 submitter = "segfault"
 quote = "Sorry I missed your comment of many months ago.  I no longer build software; I now make furniture out of wood.  The hours are long, the pay sucks, and there's always the opportunity to remove my finger with a table saw, but nobody asks me if I can add an RSS feed to a DBMS, so there's that :)"
 attribution = "Eric Diven"
+
+#200
 
 [pre-toml-202]
 submitter = "segfault"
@@ -1025,6 +1105,8 @@ submitter = "Gnome"
 quote = "Never trust a computer you can't throw out a window."
 attribution = "Steve Wozniak"
 
+#205
+
 [pre-toml-207]
 submitter = "Gnome"
 quote = "Never let a computer know you're in a hurry."
@@ -1037,7 +1119,7 @@ attribution = "Unknown"
 
 [pre-toml-209]
 submitter = "segfault"
-quote = "Uh oh, found a duplicate quote"
+quote = "Uh oh, found a duplicate quote."
 attribution = "Gnome"
 
 [pre-toml-210]
@@ -1049,6 +1131,8 @@ attribution = "R. Buckminster Fuller"
 submitter = "Gnome"
 quote = "Once a new technology rolls over you, if you're not part of the steamroller, you're part of the road."
 attribution = "David Gardner"
+
+#210
 
 [pre-toml-212]
 submitter = "Gnome"
@@ -1075,6 +1159,8 @@ submitter = "Gnome"
 quote = "Any sufficiently advanced technology is indistinguishable from magic."
 attribution = "Arthur C. Clarke"
 
+#215
+
 [pre-toml-217]
 submitter = "Gnome"
 quote = "Computers make it easier to do a lot of things, but most of the things they make it easier to do don't need to be done."
@@ -1099,6 +1185,8 @@ attribution = "Albert Einstein"
 submitter = "Gnome"
 quote = "One machine can do the work of 50 ordinary people.  No machine can do the work of one extraordinary person."
 attribution = "Elbert Hubbard"
+
+#220
 
 [pre-toml-222]
 submitter = "Gnome"
@@ -1125,6 +1213,8 @@ submitter = "segfault"
 quote = "Why do people find DNS so difficult?  It's just cache invalidation and naming things."
 attribution = "Jeff Waugh"
 
+#225
+
 [pre-toml-227]
 submitter = "segfault"
 quote = "I can tell you a UDP joke, but I'm not sure you'll get it."
@@ -1149,6 +1239,8 @@ attribution = "Gnome"
 submitter = "Gnome"
 quote = "My marble smooth brain comes up with the best takes."
 attribution = "James"
+
+#230
 
 [pre-toml-232]
 submitter = "Gnome"
@@ -1175,6 +1267,8 @@ submitter = "Gnome"
 quote = "Latin doesn't automatically mean \"I win this argument\""
 attribution = "unreturnable"
 
+#235
+
 [pre-toml-237]
 submitter = "Gnome"
 quote = "If a lightbulb said 100 lumen but then actually was 90 I'd take it back."
@@ -1200,6 +1294,8 @@ submitter = "Gnome"
 quote = "I have very nuanced opinions."
 attribution = "Jamer"
 
+#240
+
 [pre-toml-242]
 submitter = "Gnome"
 quote = "RON's dream has finally come true."
@@ -1217,13 +1313,15 @@ attribution = "basically everyone when referring to Swansea Intranet services"
 
 [pre-toml-245]
 submitter = "Gnome"
-quote = "The Swansea Hacking Society"
+quote = "The Swansea Hacking Society."
 attribution = "Joss, in every email ever"
 
 [pre-toml-246]
 submitter = "Gnome"
 quote = "We should come up with a hall of fame for how badly people can mangle our name."
 attribution = "James"
+
+#245
 
 [pre-toml-247]
 submitter = "Gnome / unreturnable"
@@ -1250,6 +1348,8 @@ submitter = "Gnome"
 quote = "I just followed the Arch wiki, it's like Stack Overflow, just plug in commands!"
 attribution = "Bun"
 
+#250
+
 [pre-toml-252]
 submitter = "Gnome"
 quote = "Both are valid because words are fake and language is just made up noises."
@@ -1274,6 +1374,8 @@ attribution = "Unknown"
 submitter = "Gnome"
 quote = "Thousands of pipes we can shout at each other down.  If you shout down 80, it's normal.  If you shout down 443, every time you want to say anything you have to shout code words at each other first"
 attribution = "IrrelevantSwack"
+
+#255
 
 [pre-toml-257]
 submitter = "segfault"
@@ -1301,6 +1403,8 @@ submitter = "Kris"
 quote = "```ruby\nls = File.read(\"history\").split(\"\n\"); m = ARGV.length; t = Array.new(m, 0); ls.each { |li| (0..m-1).each { |i| t[i] += 1 if li.start_with?(ARGV[i]) } }; puts \"total	#{ls.length}\"; (0..m-1).each { |i| puts \"#{ARGV[i]}	#{t[i]}\"}\n```\n"
 attribution = "Gnome"
 
+#260
+
 [pre-toml-262]
 submitter = "Gnome"
 quote = "[we're] just taking potshots @ C++, which really is too easy."
@@ -1326,6 +1430,8 @@ submitter = "Victor"
 quote = "It was great to meet those folks and work with them for a while.  It'll take me some time to get the taste of C++ out of my mouth, though!"
 attribution = "Drew DeVault on working with the KDE team"
 
+#265
+
 [pre-toml-267]
 submitter = "Gnome"
 quote = "There was an Indian Chief, and he had three squaws, and kept them in three teepees.  When he would come home late from hunting, he would not know which teepee contained which squaw, being dark and all.  He went hunting one day, and killed a hippopotamus, a bear, and a buffalo.  He put the a hide from each animal into a different teepee, so that when he came home late, he could feel inside the teepee and he would know which squaw was inside.\n\nWell after about a year, all three squaws had children.  The squaw on the bear had a baby boy, the squaw on the buffalo hide had a baby girl.  But the squaw on the hippopotamus had a girl and a boy.  So what is the moral of the story?\n\nThe squaw on the hippopotamus is equal to the sum of the squaws on the other two hides.\n"
@@ -1333,12 +1439,12 @@ attribution = "Various"
 
 [pre-toml-268]
 submitter = "Gnome"
-quote = "If it was built in Rust your corpse just melts away once it's done being used"
+quote = "If it was built in Rust your corpse just melts away once it's done being used."
 attribution = "unreturnable"
 
 [pre-toml-269]
 submitter = "Gnome"
-quote = "I will build my body out of COBOL, I will exist past the heat death of the universe, but I'll be broke because I have to pay the one last COBOL dev to maintain me"
+quote = "I will build my body out of COBOL, I will exist past the heat death of the universe, but I'll be broke because I have to pay the one last COBOL dev to maintain me."
 attribution = "Artemis"
 
 [pre-toml-270]
@@ -1348,8 +1454,10 @@ attribution = "segfault"
 
 [pre-toml-271]
 submitter = "Gnome"
-quote = "Life would be so much easier if there is nice documentation with what is going on in the code"
+quote = "Life would be so much easier if there is nice documentation with what is going on in the code."
 attribution = "Apple"
+
+#270
 
 [pre-toml-272]
 submitter = "Gnome"
@@ -1376,6 +1484,8 @@ submitter = "segfault"
 quote = "PHP is a minor evil perpetrated and created by incompetent amateurs, whereas Perl is a great and insidious evil perpetrated by skilled but perverted professionals."
 attribution = "Jon Ribbens"
 
+#275
+
 [pre-toml-277]
 submitter = "Gnome"
 quote = "The good thing about science is that it's true whether or not you believe in it."
@@ -1401,6 +1511,8 @@ submitter = "Gnome"
 quote = "aaaaaaacccccdeeeeeghiiiiiiillllmmnnnnnnnnnooooppqrrstttttuuuuu."
 attribution = "Christiaan Huygens"
 
+#280
+
 [pre-toml-282]
 submitter = "Gnome"
 quote = "I've seen things you people wouldn't believe.  Attack ships on fire off the shoulder of Orion.  I watched C-beams glitter in the dark near the Tannhäuser Gate.  All those moments will be lost in time, like tears in rain.  Time to die."
@@ -1425,6 +1537,8 @@ attribution = "Albertus Magnus, thirteenth century"
 submitter = "Gnome"
 quote = "I literally borked the autograder with a puny infinite loop."
 attribution = "Volanti"
+
+#285
 
 [pre-toml-287]
 submitter = "segfault"
@@ -1452,6 +1566,8 @@ submitter = "meetowl"
 quote = "In a certain sense, every program on Windows begins by asking itself the perennial question: am I the 1998 Barbie Riding Club game, or can I run the program normally?"
 attribution = "Pwn All The Things"
 
+#290
+
 [pre-toml-292]
 submitter = "Victor"
 quote = "Okay, Okay -- I admit it.  You didn't change that program that worked just a little while ago; I inserted some random characters into the executable.  Please forgive me.  You can recover the file by typing in the code over again, since I also removed the source."
@@ -1476,6 +1592,8 @@ attribution = "Aldous Huxley, Brave New World"
 submitter = "segfault"
 quote = "When you mix politics with science, you get politics."
 attribution = "John M. Barry"
+
+#295
 
 [pre-toml-297]
 submitter = "Victor"
@@ -1503,6 +1621,8 @@ quote = "In the beginning the Universe was created.  This made a lot of people v
 attribution = "Douglas Adams"
 source = "The Restaurant at the End of the Universe"
 
+#300
+
 [pre-toml-302]
 submitter = "Amethyst"
 quote = "If you wish to make an apple pie from scratch, you must first invent the Universe."
@@ -1529,6 +1649,8 @@ submitter = "Victor"
 quote = "A is for awk, which runs like a snail, and\nB is for biff, which reads all your mail.\nC is for cc, as hackers recall, while\nD is for dd, the command that does all.\nE is for emacs, which rebinds your keys, and\nF is for fsck, which rebuilds your trees.\nG is for grep, a clever detective, while\nH is for halt, which may seem defective.\nI is for indent, which rarely amuses, and\nJ is for join, which nobody uses.\nK is for kill, which makes you the boss, while\nL is for lex, which is missing from DOS.\nM is for more, from which less was begot, and\nN is for nice, which it really is not.\nO is for od, which prints out things nice, while\nP is for passwd, which reads in strings twice.\nQ is for quota, a Berkeley-type fable, and\nR is for ranlib, for sorting ar table.\nS is for spell, which attempts to belittle, while\nT is for true, which does very little.\nU is for uniq, which is used after sort, and\nV is for vi, which is hard to abort.\nW is for whoami, which tells you your name, while\nX is, well, X, of dubious fame.\nY is for yes, which makes an impression, and\nZ is for zcat, which handles compression.\n"
 attribution = "Unknown"
 source = "THE ABC'S OF UNIX"
+
+#305
 
 [2021-08-10-1]
 submitter = "segfault"
@@ -1560,6 +1682,8 @@ quote = "To what extent should one trust a statement that a program is free of T
 attribution = "Ken Thompson"
 source = "Reflections on Trusting Trust, 1984 Turing Award Lecture"
 
+#310
+
 [2021-08-27-3]
 submitter = "segfault"
 quote = "I am rarely happier than when spending an entire day programming my computer to perform automatically a task that would otherwise take me a good ten seconds to do by hand."
@@ -1589,6 +1713,8 @@ submitter = "segfault"
 quote = "Human beings face ever more complex and urgent problems, and their effectiveness in dealing with these problems is a matter that is critical to the stability and continued progress of society."
 attribution = "Douglas Engelbart"
 
+#315
+
 [2021-09-10-3]
 submitter = "segfault"
 quote = "For a successful technology, honesty must take precedence over public relations, for nature cannot be fooled."
@@ -1617,6 +1743,8 @@ quote = "Problems worthy of attack prove their worth by fighting back!"
 attribution = "Piet Hein"
 source = "http://www.sophilos.net/GrooksofPietHein"
 
+#320
+
 [2021-09-22-1]
 submitter = "segfault"
 quote = "data structure optimization protips:\n- constant factors are always bigger than you think they are\n- _n_ will always be smaller than you think it's gonna be\n- arrays stay winning\n- the hardest problem in computer science is “how to malloc just the right amount of array”\n- malloc is the second-biggest constant factor\n- but the constant factor that matters the most is bounds checking\n- the only thing worse than doing a lot of bounds checking is doing an OOB read/write\n"
@@ -1625,7 +1753,7 @@ source = "https://twitter.com/mycoliza/status/1440702345168388101"
 
 [2021-09-30]
 submitter = "Gnome"
-quote = "turns out finding the average internal volume of a sheep is pretty hard"
+quote = "turns out finding the average internal volume of a sheep is pretty hard."
 attribution = "Amethyst"
 
 [2021-09-30-1]
@@ -1635,7 +1763,7 @@ attribution = "Galaxyshark"
 
 [2021-09-30-2]
 submitter = "Gnome"
-quote = "Goose hacked socks"
+quote = "Goose hacked socks."
 attribution = "segfault"
 
 [2021-10-05-1]
@@ -1643,6 +1771,8 @@ submitter = "segfault"
 quote = "```               THE STRONGEST PUBLIC LICENSE                 Draft 1, November 2010\n\nEveryone is permitted to copy and distribute verbatim or modified\ncopies of this license document, and changing it is allowed as long\nas the name is changed.\n\n                 THE STRONGEST PUBLIC LICENSE\n  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  ⑨. This licence document permits you to DO WHAT THE FUCK YOU WANT TO\n     as long as you APPRECIATE CIRNO AS THE STRONGEST IN GENSOKYO.\n\nThis program is distributed in the hope that it will be THE STRONGEST,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nUSEFULNESS or FITNESS FOR A PARTICULAR PURPOSE.\n```\n"
 attribution = "THE CIRNO LICENSE"
 source = "https://twitter.com/ablative_sasha/status/1428084447879081985"
+
+#325
 
 [2021-10-5-2]
 submitter = "Gnome"
@@ -1669,6 +1799,8 @@ submitter = "Gnome"
 quote = "Everything that exists is born for no reason, carries on living through weakness, and dies by accident."
 attribution = "Jean-Paul Sarte"
 
+#330
+
 [2021-10-15-1]
 submitter = "Gnome"
 quote = "Once we were blobs in the sea, and then fishes, and then lizards and rats and then monkeys, and hundreds of things in between.  This hand was once a fin, this hand once had claws! In my human mouth I have the pointy teeth of a wolf and the chisel teeth of a rabbit and the grinding teeth of a cow! Our blood is as salty as the sea we used to live in! When we're frightened, the hair on our skin stands up, just like it did when we had fur.  We are history! Everything we've ever been on the way to becoming us, we still are."
@@ -1686,13 +1818,15 @@ attribution = "George Canning"
 
 [2021-10-18-1]
 submitter = "segfault"
-quote = "And all because I'm an idiot, essentially"
+quote = "And all because I'm an idiot, essentially."
 attribution = "Gnome"
 
 [2021-10-18-2]
 submitter = "Victor"
 quote = "Welcome to Meeting Room 212\n\nMaximum Capacity is 1\n\nEnjoy the space!\n"
 attribution = "Swansea University"
+
+#335
 
 [2021-11-9-1]
 submitter = "Gnome"
@@ -1720,9 +1854,11 @@ quote = "The men who program in C++ are Real Men.  The women who program in C++ 
 attribution = "JamesTK, Urban Dictionary"
 source = "https://www.urbandictionary.com/define.php?term=C%2B%2B"
 
+#340
+
 [2021-11-24-2]
 submitter = "Amethyst"
-quote = "I didn't say cheese wasnt science"
+quote = "I didn't say cheese wasn't science."
 attribution = "MasterMind"
 
 [2021-11-28-1]
@@ -1747,6 +1883,8 @@ submitter = "Asher"
 quote = "At some point in your life, please read 'What every computer scientist should know about floating point numbers' and have the appropriate amount of fear."
 attribution = "John W. Byrd"
 source = "https://stackoverflow.com/a/37947583"
+
+#345
 
 [2021-12-03-1]
 submitter = "unreturnable"
@@ -1778,6 +1916,8 @@ quote = "How many seconds in eternity?\n\nThere's this mountain of pure diamond.
 attribution = "The Doctor"
 source = "Heavens Sent, 2015"
 
+#350
+
 [2021-12-22-1]
 submitter = "Victor"
 quote = "I don't understand why this is even part of Java, but for some reason it is."
@@ -1807,6 +1947,8 @@ quote = "Antoine de Saint-Exupery, the French writer and aircraft designer, said
 attribution = "Jon Bentley"
 source = "Programming Pearls (2nd Edition)"
 
+#355
+
 [2022-02-03-1]
 submitter = "segfault"
 quote = "Everything should be built top-down, except the first time."
@@ -1832,6 +1974,8 @@ source = "The Tonight Show with Johnny Carson, March 2nd 1978"
 submitter = "Gnome"
 quote = "Consider the following declarations.\n\nThe North Star is the brightest star in the nighttime sky.  The Sun is a yellow star.  What goes up must come down.  On a dark night you can see millions of stars with the unaided eye.  In space there is no gravity.  A compass points north.  Days get shorter in the winter and longer in the summer.  Total solar eclipses are rare.  At high noon, the Sun is directly overhead.  The Sun rises in the east and sets in the west.  The Moon comes out at night.  On the equinox there are 12 hours of day and 12 hours of night.  The Southern Cross is a beautiful constellation.\n\nEvery statement in the above paragraph is false.\n"
 attribution = "Neil DeGrasse Tyson"
+
+#360
 
 [2022-02-19-1]
 submitter = "Gnome"
@@ -1859,6 +2003,8 @@ source = "Essays, III, 6, 1588"
 submitter = "Gnome"
 quote = "The first day or so, we all pointed to our countries.  The third or fourth day, we were pointing to our continents.  By the fifth day, we were aware of only one Earth."
 attribution = "Prince Sultan Bin Salmon Al-Suad"
+
+#365
 
 [2022-02-19-6]
 submitter = "Gnome"
@@ -1889,6 +2035,8 @@ quote = "Some people live more in 20 years than others do in 80.  It's not the t
 attribution = "The Doctor"
 source = "The Lazarus Experiment, 2007"
 
+#370
+
 [2022-02-26-5]
 submitter = "Gnome"
 quote = "There's a lot of things you need to get across this universe.  Warp drive... wormhole refractors... You know the thing you need most of all? You need a hand to hold."
@@ -1917,6 +2065,8 @@ quote = "Winning? Is that what you think it's about? I'm not trying to win.  I'm
 attribution = "The Doctor"
 source = "The Doctor Falls, 2017"
 
+#375
+
 [2022-02-26-10]
 submitter = "Gnome"
 quote = "After sleeping through a hundred million centuries we have finally opened our eyes on a sumptuous planet, sparkling with colour, bountiful with life.  Within decades we must close our eyes again.  Isn't it a noble, an enlightened way of spending our brief time in the sun, to work at understanding the universe and how we have come to wake up in it?"
@@ -1929,7 +2079,7 @@ attribution = "Richard Dawkins, The Greatest Show On Earth"
 
 [2022-02-26-12]
 submitter = "Gnome"
-quote = "Never gonna give you up"
+quote = "Never gonna give you up."
 attribution = "Stock, Aitken and Waterman"
 
 [2022-02-27-1]
@@ -1943,6 +2093,8 @@ submitter = "Gnome"
 quote = "It is hardly an exaggeration to say that the tip of the radicle [the root] thus endowed [with sensitivity], and having the power of directing the movements of the adjoining parts, acts like the brain of one of the lower animals; the brain being seated within the anterior end of the body, receiving impressions from the sense-organs, and directing the several movements."
 attribution = "Charles and Francis Darwin"
 source = "The Power and Movement of Plants"
+
+#380
 
 [2022-02-28-2]
 submitter = "Gnome"
@@ -1972,6 +2124,8 @@ quote = "They journeyed a long time and found nothing.  At length they discerned
 attribution = "Voltaire, Micromegas"
 source = "A Phillosophical History, 1752"
 
+#385
+
 [2022-02-28-7]
 submitter = "Gnome"
 quote = "The planets, in their various stages of development, are subjected to the same formative forces that operate on our earth, and have, therefore, the same geologic formation, and probably life, of our own past, and perhaps future; but.  Further than this, these forces are acting, in some cases, under totally different conditions from those under which they operate on the earth, and hence must evolve forms different from those ever known to man.  The value of such material as this to the comparative sciences is too obvious to need discussion."
@@ -1997,6 +2151,8 @@ source = "Moby Dick, Chapter 2"
 submitter = "Gnome"
 quote = "When you ask for someone's name, you're essentially asking what noise you should make to get their attention."
 attribution = "High Philosophy"
+
+#390
 
 [2022-03-09-1]
 submitter = "Gnome"
@@ -2026,6 +2182,8 @@ quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 attribution = "Cicero"
 source = "Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BCE."
 
+#395
+
 [2022-03-11-1]
 submitter = "Gnome"
 quote = "What's the use of having developed a science well enough to make predictions if, in the end, all we're willing to do is stand around and wait for them to come true?"
@@ -2033,7 +2191,7 @@ attribution = "Sherwood Rowland"
 
 [2022-03-13-01]
 submitter = "Gnome"
-quote = "Wow the irony of someone called segfault asking if there's an issue"
+quote = "Wow the irony of someone called segfault asking if there's an issue."
 attribution = "segfault"
 
 [2022-03-13-02]
@@ -2051,6 +2209,8 @@ source = "https://www.voxclamantisindeserto.us/2018/02/14/en/a-guys-guide-to-gre
 submitter = "Gnome"
 quote = "Death is the winner in any war.  Nothing noble in dying for your religion, for your country, for ideology, for faith, for another man."
 attribution = "Nightwish, Song Of Myself"
+
+#400
 
 [2022-03-20-01]
 submitter = "meetowl"
@@ -2074,13 +2234,13 @@ submitter = "Gnome"
 quote = "Unexpected call for quote, try again in 24 hours."
 attribution = "SwackQuote"
 
-#404
-
 [2022-03-28-1]
 submitter = "Victor"
 quote = "A problem shared is a problem halved."
 attribution = "A popular saying"
 source = "A very kind friend of Victor"
+
+#405
 
 [2022-03-28-2]
 submitter = "Victor"
@@ -2108,6 +2268,8 @@ submitter = "Victor"
 quote = "Unexpected kindness is the most powerful, least costly, and most underrated agent of human change."
 attribution = "Bob Kerrey"
 
+#410
+
 [2022-04-02-2]
 submitter = "Victor"
 quote = "Go and love someone exactly as they are.  And then watch how quickly they transform into the greatest, truest version of themselves."
@@ -2133,6 +2295,8 @@ submitter = "Gnome"
 quote = "Programmers are creators of universes for which they alone are responsible.  Universes of virtually unlimited complexity can be created in the form of computer programs."
 attribution = "Joseph Weizenbaum - Computer Power and Human Reason (1974)"
 
+#415
+
 [2022-04-07-4]
 submitter = "Gnome"
 quote = "If everything seems under control, you're just not going fast enough."
@@ -2148,8 +2312,6 @@ submitter = "Gnome"
 quote = "I'm a teapot."
 attribution = "Hyper Text Coffee Pot Control Protocol"
 
-#418
-
 [2022-04-07-6]
 submitter = "Gnome"
 quote = "Neither can embellishments of language be found without arrangement and expression of thoughts, nor can thoughts be made to shine without the light of language."
@@ -2159,6 +2321,8 @@ attribution = "Cicero (106-43 BCE)"
 submitter = "Gnome"
 quote = "We shall not cease from exploration, and at the end we will arrive where we started, and know the place for the first time."
 attribution = "T. S. Eliot"
+
+#420
 
 [2022-04-08-1]
 submitter = "Victor"
@@ -2185,6 +2349,8 @@ submitter = "Victor"
 quote = "Life's too short to spend it at war with yourself."
 attribution = "Ritu Ghatourey"
 
+#425
+
 [2022-04-14-2]
 submitter = "Victor"
 quote = "Managing your emotions doesn't mean you don't express yourself; it means you stop short of hurting others and sabotaging yourself."
@@ -2210,6 +2376,8 @@ submitter = "Victor"
 quote = "Sometimes a hypocrite is nothing more than a man in the process of changing."
 attribution = "Brandon Sanderson"
 
+#430
+
 [2022-04-18-2]
 submitter = "Victor"
 quote = "Sometimes good things fall apart so better things can fall together."
@@ -2234,6 +2402,8 @@ attribution = "Tohru Honda (Fruits Basket)"
 submitter = "Victor"
 quote = "You need gentleness to feel pain.  You need sunlight before you notice darkness.  You can't underestimate either, and neither is a waste."
 attribution = "Kyoko Honda (Fruits Basket)"
+
+#435
 
 [2022-04-20-4]
 submitter = "Victor"
@@ -2261,6 +2431,8 @@ submitter = "segfault"
 quote = "And Stanley... was happy."
 attribution = "The Stanley Parable"
 
+#440
+
 [2022-04-20-09]
 submitter = "segfault"
 quote = "THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END"
@@ -2285,6 +2457,8 @@ attribution = "Seymour Cray"
 submitter = "segfault"
 quote = "Adding power makes you faster on the straights, subtracting weight makes you faster everywhere."
 attribution = "Colin Chapman"
+
+#445
 
 [2022-04-30-oh-look-he-said-it-again]
 submitter = "segfault"
@@ -2311,13 +2485,13 @@ submitter = "Gnome"
 quote = "One day, in retrospect, the years of struggle will strike you as the most beautiful."
 attribution = "Sigmund Freud"
 
-[2021-09-03-1-the-451-error]
+#450
+
+[2021-09-03-1]
 submitter = "segfault"
 quote = "```http\nHTTP/1.1 451 Unavailable For Legal Reasons\nLink: <https://search.example.net/legal>; rel=\"blocked-by\"\nContent-Type: text/html\n\n<html>\n <head><title>Unavailable For Legal Reasons</title></head>\n <body>\n  <h1>Unavailable For Legal Reasons</h1>\n  <p>This request may not be serviced in the Roman Province\n  of Judea due to the Lex Julia Majestatis, which disallows\n  access to resources hosted on servers deemed to be\n  operated by the People's Front of Judea.</p>\n </body>\n</html>\n```\n"
 attribution = "HTTP 451 Unavailable For Legal Reasons"
 source = "https://en.wikipedia.org/wiki/HTTP_451"
-
-#451
 
 [2022-05-01-take-it-slow-real-slow]
 submitter = "Gnome"
@@ -2341,6 +2515,8 @@ quote = "An unbreakable toy is useful for breaking other toys."
 attribution = "Van Roy's Law"
 source = "FreeBSD Fortunes"
 
+#455
+
 [2022-05-02-no-witty-remarks-here]
 submitter = "Gnome"
 quote = "Violence is the last refuge of the incompetent."
@@ -2353,7 +2529,7 @@ quote = """
 Paper is dead without words,
 Ink idle without a poem,
 All the world dead without stories,
-Without love and disarming beauty
+Without love and disarming beauty.
 """
 attribution = "Nightwish, Song Of Myself"
 
@@ -2371,6 +2547,8 @@ attribution = "Richard Dawkins, The God Delusion"
 submitter = "Gnome"
 quote = "Science is interesting, and if you don't agree you can fuck off."
 attribution = "Richard Dawkins"
+
+#460
 
 [2022-05-02-Honestly-do-this-with-anyone-you-teach]
 submitter = "Gnome"
@@ -2396,6 +2574,8 @@ attribution = "Richard Dawkins, The Selfish Gene"
 submitter = "Gnome"
 quote = "The English language is just three smaller languages in a trenchcoat, beating up other languages in a back alley, then rifling through their pockets in search of loose grammar and vocab."
 attribution = "segfault"
+
+#465
 
 [2022-05-04-Just-an-Anime-quote-for-once]
 submitter = "Gnome"
@@ -2430,6 +2610,8 @@ submitter = "Gnome"
 quote = "There are questions to which knowing the answers would have a profound cultural effect.  The question of our solitude, is one.  Are we alone in the Universe, yes or no.  One of these is true."
 attribution = "Brian Cox, Human Universe"
 
+#470
+
 [2022-05-05-I-hope-someone-else-recognises-this]
 submitter = "Gnome"
 quote = "6EQUJ5"
@@ -2454,6 +2636,8 @@ attribution = "Dwight D. Eisenhower"
 submitter = "Gnome"
 quote = "Every gun that is made, every warship launched, every rocket fired, signifies in the final sense a theft from those who hunger and are not fed, those who are cold and are not clothed."
 attribution = "Dwight D. Eisenhower"
+
+#475
 
 [2022-05-05-thats-because-its-infinite]
 submitter = "Gnome"
@@ -2480,6 +2664,8 @@ submitter = "Gnome"
 quote = "We're running the most dangerous experiment in history right now, which is to see how much carbon dioxide the atmosphere... can handle before there is an environmental catastrophe."
 attribution = "Elon Musk"
 
+#480
+
 [2022-05-05-And-a-third-one]
 submitter = "Gnome"
 quote = "I would like to die on Mars.  Just not on impact."
@@ -2504,6 +2690,8 @@ attribution = "Heraclitus (544-483 BCE)"
 submitter = "Gnome"
 quote = "Change will not come if we wait for some other person or some other time.  We are the ones we've been waiting for.  We are the change that we seek."
 attribution = "Barrack Obama"
+
+#485
 
 [2022-05-05-four-sure]
 submitter = "Gnome"
@@ -2530,6 +2718,8 @@ submitter = "Gnome"
 quote = "Destiny is baloney.  Your future is not foretold.  It's what you make of it."
 attribution = "Elfo"
 
+#490
+
 [2022-05-08-well-hes-died-once-already]
 submitter = "Gnome"
 quote = "I'd rather die a big death than live a small life."
@@ -2554,6 +2744,8 @@ attribution = "Princess Bean"
 submitter = "Gnome"
 quote = "I don't wanna brag or anything, but when it comes to being the worst, I'm pretty much the best."
 attribution = "Astolfo"
+
+#495
 
 [2022-05-08-just-like-a-sponge]
 submitter = "Gnome"
@@ -2580,6 +2772,8 @@ submitter = "Gnome"
 quote = "For as long as human history goes on, the past will continue to accumulate.  History isn't just records of the past.  It's also proof that civilisation has continued to advance to the present.  Our present civilisation is the result of our past."
 attribution = "Yang Wenli"
 
+#500
+
 [2022-05-08-staying-out-of-it-is-often-the-best-option]
 submitter = "Gnome"
 quote = "The greatest freedom is the freedom not to get involved."
@@ -2589,8 +2783,6 @@ attribution = "Yang Wenli"
 submitter = "Gnome"
 quote = "502 Bad Gateway"
 attribution = "Various"
-
-#502
 
 [2022-05-08-to-alcohol-the-cause-of-and-solution-to-all-of-lifes-problems]
 submitter = "Gnome"
@@ -2607,7 +2799,28 @@ submitter = "Gnome"
 quote = "Either way, the only ones who can die tomorrow are those who survive today."
 attribution = "Dusty Attenborough"
 
+#505
+
 [2022-05-08-alcohol-is-humanitys-friend-how-can-I-abandon-a-friend]
 submitter = "Gnome"
 quote = "To alcohol! The cause of... and solution to... all of life's problems."
 attribution = "Homer Simpson"
+
+[2022-05-08-what-even-is-a-glass]
+submitter = "Gnome"
+quote = """
+Optimist: The glass is 1/2 full.
+Pessimist: The glass is 1/2 empty.
+Excel: The glass is January 2nd.
+Scientist: The glass is half full of one fluid, and half full of another.
+Engineer: The glass is full, except when in a vacuum.
+Alcoholic: Shucks, drinks nearly gone, lets order another round!
+Dr Strange: Half full? Check again.
+Mathematician: The glass isn't a platonic solid.
+Topologist: The glass has no holes.
+Philosopher: What does it mean, to be \"full\"?
+Me: I dunno but I'm hungry.
+Early Career Developer: uh, I don't know what happened, but there's an overflow.
+Late Career Developer: Huh.  Just double the memory requirements and ship it.
+"""
+attribution = "Various"

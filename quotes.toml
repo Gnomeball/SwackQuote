@@ -74,7 +74,7 @@ attribution = "Unknown"
 
 [pre-toml-15]
 submitter = "Gnome"
-quote = "If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilization."
+quote = "If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilisation."
 attribution = "Weinbergs Second Law"
 
 #15
@@ -2109,7 +2109,7 @@ source = "Various, but also https://manhattanprojectbreactor.hanford.gov/files.c
 
 [2022-02-28-4]
 submitter = "Gnome"
-quote = "Look again at that dot.  That's here.  That's home.  That's us.  On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives.  The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every \"superstar\", every \"supreme leader\", every saint and sinner in the history of our species lived there - on a mote of dust suspended in a sunbeam.\n\nThe Earth is a very small stage in a vast cosmic arena.  Think of the rivers of blood spilled by all those generals and emperors so that, in glory and triumph, they could become the momentary masters of a fraction of a dot.  Think of the endless cruelties visited by the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some other corner, how frequent their misunderstandings, how eager they are to kill one another, how fervent their hatreds.\n\nOur posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.  Our planet is a lonely speck in the great enveloping cosmic dark.  In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.\n\nThe Earth is the only world known so far to harbor life.  There is nowhere else, at least in the near future, to which our species could migrate.  Visit, yes.  Settle, not yet.  Like it or not, for the moment the Earth is where we make our stand.\n\nIt has been said that astronomy is a humbling and character-building experience.  There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world.  To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known.\n"
+quote = "Look again at that dot.  That's here.  That's home.  That's us.  On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives.  The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilisation, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every \"superstar\", every \"supreme leader\", every saint and sinner in the history of our species lived there - on a mote of dust suspended in a sunbeam.\n\nThe Earth is a very small stage in a vast cosmic arena.  Think of the rivers of blood spilled by all those generals and emperors so that, in glory and triumph, they could become the momentary masters of a fraction of a dot.  Think of the endless cruelties visited by the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some other corner, how frequent their misunderstandings, how eager they are to kill one another, how fervent their hatreds.\n\nOur posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.  Our planet is a lonely speck in the great enveloping cosmic dark.  In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.\n\nThe Earth is the only world known so far to harbor life.  There is nowhere else, at least in the near future, to which our species could migrate.  Visit, yes.  Settle, not yet.  Like it or not, for the moment the Earth is where we make our stand.\n\nIt has been said that astronomy is a humbling and character-building experience.  There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world.  To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known.\n"
 attribution = "Carl Sagan, Pale Blue Dot, 1994"
 source = "Pale Blue Dot"
 
@@ -2552,7 +2552,7 @@ attribution = "Richard Dawkins"
 
 [2022-05-02-Honestly-do-this-with-anyone-you-teach]
 submitter = "Gnome"
-quote = "Do not indoctrinate your children.  Teach them how to think for themselves, how to evaluate evidence, and how to disagree with you"
+quote = "Do not indoctrinate your children.  Teach them how to think for themselves, how to evaluate evidence, and how to disagree with you."
 attribution = "Richard Dawkins, The God Delusion"
 
 [2022-05-02-Dawkins-talking-about-rng]
@@ -2832,7 +2832,7 @@ attribution = "Brian Cox, Human Universe"
 
 [2022-05-09-irrelevance]
 submitter = "Gnome"
-quote = "It seems to me however, that a small planet such as Earth, cannot continue to support an expanding and flourishing civilisation, without a major change in the way we view ourselves.  The division into hundreds of countries, whose borders and interests are defined by imagined local differences, and arbitrary religious dogma, both of which are utterly irrelevant and meaningless on a galactic scale.  Must surely be addressed if we are to confront global problems, such as mutually assured destruction, asteroid threats, climate change, pandemic disease, and who knows what else, and flourish beyond the twenty first century."
+quote = "It seems to me however, that a small planet such as Earth, cannot continue to support an expanding and flourishing civilisation, without a major change in the way we view ourselves.  The division into hundreds of countries whose borders and interests are defined by imagined local differences and arbitrary religious dogma, both of which are utterly irrelevant and meaningless on a galactic scale, must surely be addressed if we are to confront global problems such as mutually assured destruction, asteroid threats, climate change, pandemic disease and who knows what else, and flourish beyond the twenty-first century.  The very fact that the preceding sentence sounds hopelessly utopian might provide a plausible answer to the Great Silence."
 attribution = "Brian Cox, Human Universe"
 
 [2022-05-09-I-tend-to-agree]
@@ -2841,3 +2841,40 @@ quote = "I think that advanced space faring civilisations are extremely rare, no
 attribution = "Brian Cox, Human Universe"
 
 #510
+
+[2022-05-09-be-very-afraid]
+submitter = "Gnome"
+quote = "don't be afraid, I am a Soviet citizen like you, who has descended from space and I must find a telephone to call Moscow!"
+attribution = "Yuri Gagarin"
+
+[2022-05-09-casually-stealing-from-a-literary-legend]
+submitter = "Gnome"
+quote = "I deliberately borrow from Shakespeare; the most precious objects on Earth are not gems or jewels, but ink marks on paper.  No single human brain could conceive of Hamlet, Principia Mathematica or Codex Leicester; they were created by and belong to the entire human race, and the library of wonders continues to grow."
+attribution = "Brian Cox, Human Universe"
+
+[2022-05-09-complexity]
+submitter = "Gnome"
+quote = "Science is a time machine, and it goes both ways.  We are able to predict our future with increasing certainty.  Our ability to act in response to these predictions will ultimately determine our fate.  Science and reason make the darkness visible.  I worry that lack of investment in science and a retreat from reason may prevent us from seeing further, or delay our reaction to what we see, making a meaningful response impossible.  There are no simple fixes.  Our civilisation is complex, our global political system is inadequate, our internal differences of opinion are deep-seated.  Iid bet you think you're absolutely right about some things and virtually everyone else is an idiot.  Climate Change?  Europe?  God?  America?  The Monarchy?  Same-sex Marriage?  Abortion?  Big Business?  Nationalism?  The United Nations?  The Bank Bailout?  Tax Rates?  Genetically Modified Crops?  Eating Meat?  Football?  X Factor or Strictly?  The way forward is to understand and accept that there are many opinions, but only one human civilisation, only one Nature, and only one science.  The collective goal of ensuring that there is never less than one human civilisation must surely override our personal prejudices.  At least we have come far enough in 40,800 years to be able to state the obvious, and this is a necessary first step."
+attribution = "Brian Cox, Human Universe"
+
+[2022-05-09-brains]
+submitter = "Gnome"
+quote = "I held a brain for the cameras at St Paul's teaching hospital in Addis.  It is the most complex single object in the known universe, a most intricate example of emergent complexity assembled over 4 billion years by natural selection operating within the constraints placed upon it by the laws of physics and the particular biochemistry of life on Earth.  It contains around 85 billion individual neurons, which is of the same order as the number of stars in an average galaxy.  But that doesn't begin to describe its complexity.  Each neuron is thought to make between 10,000 and 100,000 connections to other neurons, making the brain a computer way beyond anything our current technology can simulate.  When we do manage to simulate one, I have no doubt that sentience will emerge; consciousness is not magic, it is an emergent property consistent with the known laws of nature."
+attribution = "Brian Cox, Human Universe"
+
+[2022-05-09-monkeys]
+submitter = "Gnome"
+quote = "Common sense is completely worthless and irrelevant when trying to understand reality.  This is probably why people who like to boast about their common sense tend to rail against the fact that they share a common ancestor with a monkey."
+attribution = "Brian Cox, Human Universe"
+
+#515
+
+[2022-05-09-yep-we-just-guess]
+submitter = "Gnome"
+quote = "First we guess it.  Then we – now don't laugh, that's really true – then we compute the consequences of the guess to see what, if this is right, if this law that we guessed is right, to see what it would imply.  And then we compare the computation results to nature, or we say compare to experiment or experience, compare it directly with observations to see if it works.  If it disagrees with experiment, it's wrong."
+attribution = "Brian Cox, Human Universe"
+
+[2022-05-09-sit-down-and-talk]
+submitter = "Gnome"
+quote = "To me, and to the participants of at the Green Bank conference, the idea that a civilisation might destroy itself is both ludicrous and likely.  We are pathetically inadequate at long-term planning, idiotically primitive in our destructive urges and pathologically incapable of simply getting along."
+attribution = "Brian Cox, Human Universe"

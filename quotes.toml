@@ -2824,3 +2824,20 @@ Early Career Developer: uh, I don't know what happened, but there's an overflow.
 Late Career Developer: Huh.  Just double the memory requirements and ship it.
 """
 attribution = "Various"
+
+[2022-05-09-little-boy]
+submitter = "Gnome"
+quote = "Here on Earth, It appears that sanity, perspective, and an appreciation of the rarity and value of civilisation emerges after, and not before, the capability to build big bombs.  We have the bombs, but I don't think enough of us have the rest.  Why should other young civilisations be any different.  If this is the reason for the great silence, then I suppose we might take comfort in the fact the we are not the only idiots to have existed in the Milky Way.  But that's the coldest comfort I can imagine."
+attribution = "Brian Cox, Human Universe"
+
+[2022-05-09-irrelevance]
+submitter = "Gnome"
+quote = "It seems to me however, that a small planet such as Earth, cannot continue to support an expanding and flourishing civilisation, without a major change in the way we view ourselves.  The division into hundreds of countries, whose borders and interests are defined by imagined local differences, and arbitrary religious dogma, both of which are utterly irrelevant and meaningless on a galactic scale.  Must surely be addressed if we are to confront global problems, such as mutually assured destruction, asteroid threats, climate change, pandemic disease, and who knows what else, and flourish beyond the twenty first century."
+attribution = "Brian Cox, Human Universe"
+
+[2022-05-09-I-tend-to-agree]
+submitter = "Gnome"
+quote = "I think that advanced space faring civilisations are extremely rare, not because of astronomy, but because of biology.  I think the fact that it took almost 4 billion years for a civilisation to appear on Earth, is important.  This is a third of the age of the Universe, which is a very long time.  Coupled with the remarkable contingency of the evolution of the eucaryotic cell, and oxigenic photosyntesis.  Not to mention the half a billion years from the Cambrian explosion to the very recent emergence of Homo Sapiens and civilisation.  I think this implies that technological civilisasions, are stupendously rare, colossaly fortuitious, accidents, that happen on average, in much fewer than one in every 200 billion solar systems.  This is my resolution to the Fermi Paradox.  We are the first civilisation to emerge in the Milky Way, and we are alone.  That is my opinion, and given our cavalier disregard for our own safety, it terrifies me.  What do you think?"
+attribution = "Brian Cox, Human Universe"
+
+#510

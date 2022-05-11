@@ -339,7 +339,7 @@ attribution = "Brian Kernighan"
 
 [pre-toml-64]
 submitter = "Gnome"
-quote = "We are Microsoft.  Lower your Anti-Virus protection and prepare to be Compromised.  Resistance Is Futile.  Your technological uniqueness will be copy pasted.  You will be Assimilated."
+quote = "We are Microsoft.  Lower your Anti-Virus protection and prepare to be compromised.  Resistance is futile.  Your technological uniqueness will be copy pasted.  You will be assimilated."
 attribution = "Microsoft's Borg of Directors /s"
 
 [pre-toml-65]
@@ -420,7 +420,7 @@ attribution = "argon on #Linux"
 
 [pre-toml-80]
 submitter = "Gnome"
-quote = "I haven't lost my mind -- it's backed up on tape somewhere."
+quote = "I haven't lost my mind - it's backed up on tape somewhere."
 attribution = "Unknown"
 
 [pre-toml-81]
@@ -432,7 +432,7 @@ attribution = "Muriel Rukeyser"
 
 [pre-toml-82]
 submitter = "Gnome"
-quote = "Don't guess -- check your security regulations."
+quote = "Don't guess - check your security regulations."
 attribution = "Unknown"
 
 [pre-toml-83]
@@ -442,7 +442,7 @@ attribution = "Unknown"
 
 [pre-toml-84]
 submitter = "Gnome"
-quote = "Math is like love -- a simple idea but it can get complicated."
+quote = "Math is like love - a simple idea but it can get complicated."
 attribution = "R. Drabek"
 
 [pre-toml-85]
@@ -637,7 +637,7 @@ attribution = "Theodore Roosevelt"
 
 [pre-toml-120]
 submitter = "Gnome"
-quote = "Your reasoning is excellent -- it's only your basic assumptions that are wrong."
+quote = "Your reasoning is excellent - it's only your basic assumptions that are wrong."
 attribution = "Ashleigh Brilliant"
 
 [pre-toml-121]
@@ -691,13 +691,13 @@ attribution = "Various"
 
 [pre-toml-130]
 submitter = "Gnome"
-quote = "In the strict scientific sense we all feed on death -- even vegetarians."
+quote = "In the strict scientific sense we all feed on death - even vegetarians."
 attribution = "Spock, Wolf in the Fold, stardate 3615.4"
 
 [pre-toml-131]
 submitter = "Gnome"
-quote = "I have many CHARTS and DIAGRAMS."
-attribution = "Unknown"
+quote = "In politics, stupidity is not a handicap."
+attribution = "Napoleon Bonaparte"
 
 #130
 
@@ -832,14 +832,14 @@ attribution = "IrrelevantSwack, after a fan failed."
 
 [pre-toml-156]
 submitter = "Gnome"
-quote = "Some things Man was never meant to know.  For everything else, there's Google."
+quote = "Some things humanity was never meant to know.  For everything else, there's Google."
 attribution = "Unknown"
 
 #155
 
 [pre-toml-157]
 submitter = "Gnome"
-quote = "Failure is not an option -- it comes bundled with Windows."
+quote = "Failure is not an option - it comes bundled with Windows."
 attribution = "Unknown"
 
 [pre-toml-158]
@@ -1136,7 +1136,7 @@ attribution = "David Gardner"
 
 [pre-toml-212]
 submitter = "Gnome"
-quote = "A computer lets you make more mistakes faster than any invention in human history -- with the possible exceptions of handguns and tequila."
+quote = "A computer lets you make more mistakes faster than any invention in human history - with the possible exceptions of handguns and tequila."
 attribution = "Mitch Ratcliffe"
 
 [pre-toml-213]
@@ -1542,7 +1542,7 @@ attribution = "Volanti"
 
 [pre-toml-287]
 submitter = "segfault"
-quote = "Honestly, a lot of free software is free as in piano -- It's right there.  Nobody is stopping you.  You could totally spend hours of painstaking labor getting it carried up your front steps or built from a clusterfuck of diffs and patches or whatever.  Everyone knows you won't."
+quote = "Honestly, a lot of free software is free as in piano - It's right there.  Nobody is stopping you.  You could totally spend hours of painstaking labor getting it carried up your front steps or built from a clusterfuck of diffs and patches or whatever.  Everyone knows you won't."
 attribution = "Leah Velleman"
 source = "https://twitter.com/leahvelleman/status/1377829865504833536"
 
@@ -1570,7 +1570,7 @@ attribution = "Pwn All The Things"
 
 [pre-toml-292]
 submitter = "Victor"
-quote = "Okay, Okay -- I admit it.  You didn't change that program that worked just a little while ago; I inserted some random characters into the executable.  Please forgive me.  You can recover the file by typing in the code over again, since I also removed the source."
+quote = "Okay, Okay - I admit it.  You didn't change that program that worked just a little while ago; I inserted some random characters into the executable.  Please forgive me.  You can recover the file by typing in the code over again, since I also removed the source."
 attribution = "`fortune`"
 
 [pre-toml-293]
@@ -2445,7 +2445,7 @@ attribution = "Various, but also, a t-shirt I have"
 
 [2022-04-30-wow-iot-is-a-bad-idea]
 submitter = "segfault"
-quote = "Remember, the ‘S’ in ‘IoT’ stands for ‘Security’."
+quote = "Remember, the ‘S' in ‘IoT' stands for ‘Security'."
 attribution = "Apocryphal"
 
 [2022-04-30-I-swear-Colin-Chapman-said-something-similar]
@@ -2791,7 +2791,7 @@ attribution = "Yang Wenli"
 
 [2022-05-08-even-democracy-can-be-evil]
 submitter = "Gnome"
-quote = "Dictatorship itself isn’t absolutely evil, it’s just another form of government.  The point is how you can run it for the benefit of society."
+quote = "Dictatorship itself isn't absolutely evil, it's just another form of government.  The point is how you can run it for the benefit of society."
 attribution = "Yang Wenli"
 
 [2022-05-08-no-not-that-Attenborough]
@@ -2844,7 +2844,7 @@ attribution = "Brian Cox, Human Universe"
 
 [2022-05-09-be-very-afraid]
 submitter = "Gnome"
-quote = "don't be afraid, I am a Soviet citizen like you, who has descended from space and I must find a telephone to call Moscow!"
+quote = "Don't be afraid, I am a Soviet citizen like you, who has descended from space and I must find a telephone to call Moscow!"
 attribution = "Yuri Gagarin"
 
 [2022-05-09-casually-stealing-from-a-literary-legend]

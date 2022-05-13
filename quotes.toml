@@ -872,7 +872,7 @@ attribution = "Unknown"
 [pre-toml-163]
 submitter = "Gnome"
 quote = "If at first you don't succeed; call it version 1.0"
-attribution = "Unknown"
+attribution = "Apocryphal"
 
 [pre-toml-164]
 submitter = "Gnome"
@@ -2916,4 +2916,9 @@ submitter = "Gnome"
 quote = "This planet is not terra firma.  It is a delicate flower and it must be cared for.  It's lonely.  It's small.  It's isolated, and there is no resupply.  And we are mistreating it.  Clearly, the highest loyalty we should have is not to our on country or our own religion or our home town or even to ourselves.  It should be to, number two, the family of man, and number one, the planet at large.  This is our home, and this is all we've got."
 attribution = "Scott Carpenter"
 
-#524 - Remember to update this, in counts of five!
+[2022-05-13-another-potshot-at-the-english-language]
+submitter = "Gnome"
+quote = "A man may take to drink because he feels himself to be a failure, and then fail all the more completely because he drinks.  It is rather the same thing that is happening to the English language.  It becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts."
+attribution = "George Orwell"
+
+#525 - Remember to update this, in counts of five!

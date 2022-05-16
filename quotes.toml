@@ -2929,4 +2929,37 @@ quote = "Can you hear them?  All these people who lived in terror of you and you
 attribution = "The Doctor"
 source = "The Rings of Akhaten, 2013"
 
-#526 - Remember to update this, in counts of five!
+[2022-05-16-real-scientists]
+submitter = "Gnome"
+quote = "Real scientists are delighted when they find out they are wrong.  And to me that is one of the greatest gifts that a scientific education can bring.  There are too many people in this world who want to be right.  And too few who just want to know."
+attribution = "Brian Cox, Forces of Nature"
+
+[2022-05-16-cause-and-effect]
+submitter = "Gnome"
+quote = "You have to get old because of the geometry of spacetime."
+attribution = "Brian Cox, Forces of Nature"
+
+[2022-05-16-Astronomers-are-goths]
+submitter = "Gnome"
+quote = """
+There are three known planets in the PSR B1257 system, which have been named Draugr, Poltergeist and Phobetor.  Poltergeist was the first to be discovered.  I know, I was curious about their names as well. Poltergeist means "pounding ghost".  The draugr are the unded in Norse legends who live in their graves.  And Phobetor is the personification of nightmares, and the son of Nyx, Greek goddess of the night.
+
+Astronomers are goths.
+"""
+attribution = "Brian Cox, Forces of Nature"
+
+[2022-05-16-bacteria]
+submitter = "Gnome"
+quote = """
+We must come to terms with being of no cosmic significance, and this means jettisoning our personal and collective egos and valuing what we have.  We can no longer assume the platform of gods, or dream of a unique place in their hearts.  Science has forced us to look fixedly into an infinite universe, and its volume dilutes special pleading to a vanishingly small and pathetic whimper.  And yet what's left is better.  No monument to the gods is as magnificent as the story of our planet; of the origin and evolution of life on the rare Earth and the rise of a fledgling civilisation taking its first steps into the dark.  We stand related to every one of Darwin's endless, most beautiful forms, each of us connected at some branch in the unbroken chain of life stretching back 4 billion years.  We share more in common with bacteria than we do with any living things out there amongst the stars, should they exist, and they are more worthy of our attention.  Build cathedrals in praise of bacteria; we are on our own, and as the dominant intellect we are responsible for our planet in its magnificent and fragile entirety.
+"""
+attribution = "Brian Cox, Forces of Nature"
+
+#530
+
+[2022-05-16-skepticism]
+submitter = "Gnome"
+quote = "Without skepticism there can be no progress."
+attribution = "various"
+
+#531 - Remember to update this, in counts of five!

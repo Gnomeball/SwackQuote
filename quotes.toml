@@ -665,7 +665,7 @@ attribution = "Unknown"
 [pre-toml-125]
 submitter = "Gnome"
 quote = "It is the quality rather than the quantity that matters."
-attribution = "Lucius Annaeus Seneca"
+attribution = "Lucius Annaeus Seneca (4 BCE - 65 CE)"
 
 [pre-toml-126]
 submitter = "Gnome"
@@ -1226,7 +1226,7 @@ quote = "If you have an apple and I have an apple and we exchange apples then yo
 attribution = "George Bernard Shaw"
 
 [pre-toml-229]
-submitter = "Kris"
+submitter = "Gnome"
 quote = "Pro advice: don't get python jobs... You think it'll be a good time, it will not be a good time."
 attribution = "Kris"
 
@@ -1292,7 +1292,7 @@ attribution = "IrrelevantSwack"
 [pre-toml-241]
 submitter = "Gnome"
 quote = "I have very nuanced opinions."
-attribution = "Jamer"
+attribution = "James"
 
 #240
 
@@ -1358,7 +1358,8 @@ attribution = "SinDemon"
 [pre-toml-253]
 submitter = "Victor"
 quote = "A \"goto\" in Perl falls into the category of hard things that should be possible, not easy things that should be easy."
-attribution = "Larry Wall in <199709041935.MAA27136@wall.org>"
+attribution = "Larry Wall"
+source = "<199709041935.MAA27136@wall.org>"
 
 [pre-toml-254]
 submitter = "crox"
@@ -1412,7 +1413,7 @@ attribution = "Kris"
 
 [pre-toml-263]
 submitter = "IrrelevantSwack"
-quote = "Overloading, also known as \"lets just make every single time you call that operator now unclear as to what exactly it does!\""
+quote = "Overloading, also known as \"lets just make every single time you call that operator now unclear as to what exactly it does\""
 attribution = "Gnome"
 
 [pre-toml-264]
@@ -1521,7 +1522,8 @@ attribution = "Roy Batty"
 [pre-toml-283]
 submitter = "Gnome"
 quote = "The time will come when diligent research over long periods will bring to light things which now lie hidden.  A single lifetime, even though entirely devoted to the sky, would not be enough for the investigation of so vast a subject, and so this knowledge will be unfolded only through long successive ages.  There will come a time when our descendants will be amazed that we did not know things that are so plain to them ... Many discoveries are reserved for ages still to come, when memory of us will have been effaced.  Our Universe is a sorry little affair unless it has in it something for every age to investigate ... Nature does not reveal her mysteries once and for all."
-attribution = "Seneca, Natural Questions, Book 7, first century"
+attribution = "Lucius Annaeus Seneca, (4 BCE - 65 CE)"
+source = "Natural Questions, Book 7"
 
 [pre-toml-284]
 submitter = "Gnome"
@@ -1549,12 +1551,12 @@ source = "https://twitter.com/leahvelleman/status/1377829865504833536"
 [pre-toml-288]
 submitter = "Victor"
 quote = "There's never been a shortage of people predicting that C++ will be dead in 2 years."
-attribution = "Bjarne Stroustrup, 2021"
+attribution = "Bjarne Stroustrup"
 
 [pre-toml-289]
 submitter = "Victor"
 quote = "I should have invented a 'C++ inside' sticker"
-attribution = "Bjarne Stroustrup, 2021"
+attribution = "Bjarne Stroustrup"
 
 [pre-toml-290]
 submitter = "segfault"
@@ -1608,7 +1610,8 @@ attribution = "curl(1) manual page"
 [pre-toml-299]
 submitter = "segfault"
 quote = "Aristotle said a bunch of stuff that was wrong.  Galileo and Newton fixed things up.  Then Einstein broke everything again.  Now we've basically got it all worked out, except for small stuff, big stuff, hot stuff, cold stuff, fast stuff, heavy stuff, dark stuff, turbulence and the concept of time."
-attribution = "Physics Textbook #17,389,243"
+attribution = "Zach Weinersmith"
+source  ="Science: Abridged Beyond the Point of Usefulness "
 
 [pre-toml-300]
 submitter = "Gnome"
@@ -1782,7 +1785,7 @@ attribution = "Amethyst"
 [2021-10-8-1]
 submitter = "Gnome"
 quote = "The best way to live a full life is to be a child, no matter what your age."
-attribution = "Sakata Gintoki"
+attribution = "Sakata Gintoki, Gintama"
 
 [2021-10-8-2]
 submitter = "Gnome"
@@ -1876,7 +1879,7 @@ source = "https://lkml.org/lkml/2020/5/29/1038"
 [2021-12-1-1]
 submitter = "segfault"
 quote = "Even with requirements and design, Gnome is still capable of adding bugs to an empty text file, as well as to text that did not have any."
-attribution = "Gnome, after incorrectly fixing (adding) a typo to this file, then removing it again (twice), because they're dumb"
+attribution = "Gnome, after incorrectly fixing (adding) a typo to this file, then removing it again (twice)"
 
 [2021-12-02-1]
 submitter = "Asher"
@@ -2305,7 +2308,7 @@ attribution = "Mario Andretti"
 [2022-04-07-5]
 submitter = "Gnome"
 quote = "High thoughts need a high language."
-attribution = "Aristophanes (448-380 BCE)"
+attribution = "Aristophanes (448 - 380 BCE)"
 
 [Im-a-teapot]
 submitter = "Gnome"
@@ -2315,7 +2318,7 @@ attribution = "Hyper Text Coffee Pot Control Protocol"
 [2022-04-07-6]
 submitter = "Gnome"
 quote = "Neither can embellishments of language be found without arrangement and expression of thoughts, nor can thoughts be made to shine without the light of language."
-attribution = "Cicero (106-43 BCE)"
+attribution = "Cicero (106 - 43 BCE)"
 
 [2022-04-07-7]
 submitter = "Gnome"
@@ -2391,24 +2394,24 @@ attribution = "Edward Snowden, Permanent Record"
 [2022-04-20-1]
 submitter = "Victor"
 quote = "The lingering chilly wind after the rain clears tells that winter is on its way.  But the warmth in my chest proves that the light surely burns.  Though it's so tiny that it might go out with a single puff of air, it surely burns.\n"
-attribution = "Tohru Honda (Fruits Basket)"
+attribution = "Tohru Honda, Fruits Basket"
 
 [2022-04-20-2]
 submitter = "Victor"
 quote = "A night full of worries is best spent together in a warm place."
-attribution = "Tohru Honda (Fruits Basket)"
+attribution = "Tohru Honda, Fruits Basket"
 
 [2022-04-20-3]
 submitter = "Victor"
 quote = "You need gentleness to feel pain.  You need sunlight before you notice darkness.  You can't underestimate either, and neither is a waste."
-attribution = "Kyoko Honda (Fruits Basket)"
+attribution = "Kyoko Honda, Fruits Basket"
 
 #435
 
 [2022-04-20-4]
 submitter = "Victor"
 quote = "If a person is a rice ball and what's great about the person is a pickled plum, then maybe your plum is on your back!\n\nMaybe everyone in the world has plums on their backs of all different shapes, colours, and sizes.\nBut since they can't see their backs, they can't see the plums they have.\nThey think they don't have anything — that they're just plain white rice.\nEven though it's not true at all — even though they really do have a plum there.\nMaybe the reason we get jealous of others is because other people's backs are easy to see.\n\nI can see it.  It's plain as day, [name redacted].  You have a plum right there on your back.\n"
-attribution = "Tohru Honda (Fruits Basket)"
+attribution = "Tohru Honda, Fruits Basket"
 
 [2022-04-20-5]
 submitter = "Victor"
@@ -2684,7 +2687,7 @@ attribution = "Lao Tzu"
 [2022-05-05-Yet-another-Greek-philosopher]
 submitter = "Gnome"
 quote = "There is nothing permanent except change."
-attribution = "Heraclitus (535-475 BCE)"
+attribution = "Heraclitus (535 - 475 BCE)"
 
 [2022-05-05-Somehow-the-first-Obama-quote]
 submitter = "Gnome"
@@ -3010,5 +3013,14 @@ quote = "Waking up in the morning, I smile. 24 brand new hours are before me.  I
 attribution = "Thích Nhất Hạnh"
 
 #540
+
+[2022-05-19-casual-potshot]
+submitter = "Gnome"
+quote = """
+Changing random stuff until your program works is "hacky" and "bad practice".
+
+But, if you do it fast enough it's "Machine Learning", and pays 4x your current salary.
+"""
+attribution = "Unknown"
 
 #540 - Remember to update this, in counts of five!

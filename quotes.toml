@@ -3023,4 +3023,20 @@ But, if you do it fast enough it's "Machine Learning", and pays 4x your current 
 """
 attribution = "Unknown"
 
-#541 - Remember to update this, in counts of five!
+[2022-05-19-would-you-like-a-quote]
+submitter = "Gnome"
+quote = """
+"Hi, I'd like to hear a TCP joke."
+"Hello, would you like to hear a TCP joke?"
+"Yes, I'd like to hear a TCP joke."
+"Ok, I'll tell you a TCP joke."
+"Ok, I will hear a TCP joke."
+"Are you ready to hear a TCP joke?"
+"Yes, I am ready to hear a TCP joke."
+"Ok, I am about to send the TCP joke.  It will last 10 seconds, it has two characters, it does not have a setting, it ends with a punchline."
+"Ok, I am ready to get your TCP joke that will last 10 seconds, has two characters, does not have an explicit setting, and ends with a punchline."
+"I'm sorry, your connection has timed out.  Hello, would you like to hear a TCP joke?"
+"""
+attribution = "Various"
+
+#542 - Remember to update this, in counts of five!

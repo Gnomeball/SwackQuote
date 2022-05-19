@@ -69,7 +69,7 @@ attribution = "Louis Srygley"
 
 [pre-toml-14]
 submitter = "Gnome"
-quote = "The best method for accelerating a computer is the one that boosts it by 9.8 m/s2."
+quote = "The best method for accelerating a computer is the one that boosts it by 9.8 m/s²."
 attribution = "Unknown"
 
 [pre-toml-15]
@@ -1787,12 +1787,12 @@ attribution = "Sakata Gintoki"
 [2021-10-8-2]
 submitter = "Gnome"
 quote = "One cannot step twice in the same river."
-attribution = "Heraclitus"
+attribution = "Heraclitus (535 - 475 BCE)"
 
 [2021-10-8-3]
 submitter = "Gnome"
 quote = "The only thing I know is that I know nothing."
-attribution = "Socrates"
+attribution = "Socrates (470 - 399 BCE)"
 
 [2021-10-8-4]
 submitter = "Gnome"
@@ -2684,7 +2684,7 @@ attribution = "Lao Tzu"
 [2022-05-05-Yet-another-Greek-philosopher]
 submitter = "Gnome"
 quote = "There is nothing permanent except change."
-attribution = "Heraclitus (544-483 BCE)"
+attribution = "Heraclitus (535-475 BCE)"
 
 [2022-05-05-Somehow-the-first-Obama-quote]
 submitter = "Gnome"
@@ -2803,7 +2803,7 @@ attribution = "Dusty Attenborough"
 
 [2022-05-08-alcohol-is-humanitys-friend-how-can-I-abandon-a-friend]
 submitter = "Gnome"
-quote = "To alcohol! The cause of... and solution to... all of life's problems."
+quote = "To alcohol! The cause of, and solution to, all of life's problems."
 attribution = "Homer Simpson"
 
 [2022-05-08-what-even-is-a-glass]
@@ -2887,7 +2887,7 @@ attribution = "Theodore Isaac Rubin"
 [2022-05-11-sophocles-kindness-friend]
 submitter = "Victor"
 quote = "One who knows how to show and to accept kindness will be a friend better than any possession."
-attribution = "Sophocles"
+attribution = "Sophocles (496 - 405 BCE)"
 
 [2022-05-11-faulkner-swim-for-new-horizons]
 submitter = "Victor"
@@ -2904,7 +2904,7 @@ attribution = "Helen Keller"
 [2022-05-11-epicurus-desiring-what-you-have-not]
 submitter = "Victor"
 quote = "Do not spoil what you have by desiring what you have not; remember that what you now have was once among the things you only hoped for."
-attribution = "Epicurus"
+attribution = "Epicurus (341 - 270 BCE)"
 
 [2022-05-11-satisfaction]
 submitter = "Victor"
@@ -2960,22 +2960,22 @@ attribution = "Brian Cox, Forces of Nature"
 [2022-05-16-skepticism]
 submitter = "Gnome"
 quote = "Without skepticism there can be no progress."
-attribution = "various"
+attribution = "Various"
 
 [2022-05-18-russell]
 submitter = "Victor"
-quote = "There is an artist imprisoned in each one of us. Let him loose to spread joy everywhere."
+quote = "There is an artist imprisoned in each one of us.  Let him loose to spread joy everywhere."
 attribution = "Bertrand Russell"
 
 [2022-05-18-mulan]
 submitter = "Victor"
 quote = "The flower that blooms in adversity is the most rare and beautiful of all."
-attribution = "Mulan (1998 film)"
+attribution = "The Emperor of China, Mulan"
 
 [2022-05-18-caproni]
 submitter = "Victor"
-quote = "Airplanes are not tools for war. They’re not for making money. Airplanes are beautiful dreams. Engineers turn dreams into reality."
-attribution = "Giovanni Battista Caproni (The Wind Rises)"
+quote = "Airplanes are not tools for war.  They're not for making money.  Airplanes are beautiful dreams.  Engineers turn dreams into reality."
+attribution = "Giovanni Battista Caproni, The Wind Rises"
 
 [2022-05-18-dr-seuss-memory]
 submitter = "Victor"
@@ -2986,7 +2986,7 @@ attribution = "Dr. Seuss"
 
 [2022-05-18-huxley-experience]
 submitter = "Victor"
-quote = "Experience is not what happens to you; it's what you do with what happens to you."
+quote = "Experience is not what happens to you;  it's what you do with what happens to you."
 attribution = "Aldous Huxley"
 
 [2022-05-18-sherman-beginning-and-ending]
@@ -3006,7 +3006,7 @@ attribution = "Claude Monet"
 
 [2022-05-18-live-fully-in-each-moment]
 submitter = "Victor"
-quote = "Waking up in the morning, I smile. 24 brand new hours are before me. I vow to live fully in each moment."
+quote = "Waking up in the morning, I smile. 24 brand new hours are before me.  I vow to live fully in each moment."
 attribution = "Thích Nhất Hạnh"
 
 #540

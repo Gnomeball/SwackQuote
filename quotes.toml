@@ -3039,4 +3039,43 @@ quote = """
 """
 attribution = "Various"
 
-#542 - Remember to update this, in counts of five!
+[2022-05-20-why-indeed]
+submitter = "Gnome"
+quote = "When you're finally up on the moon, looking back at the earth, all these differences and nationalistic traits are pretty well going to blend and you're going to get a concept that maybe this is really one world and why the hell can't we learn to live together like decent people?"
+attribution = "Frank Borman, Apollo 8"
+
+[2022-05-20-earthrise]
+submitter = "Gnome"
+quote = "We set out to explore the moon and instead discovered the Earth."
+attribution = "William Anders, Apollo 8, in reference to [Earthrise](https://en.wikipedia.org/wiki/Earthrise)"
+# I really hope that link works
+
+[2022-05-20-WALES]
+submitter = "Gnome"
+quote = "It's very hard to picture the enormity of the Sun.  A hundred Earth's would line up along it's diameter, it would take the average passenger jet 6 months to fly around it.  It's traditional to say something about the size of Wales at this point; it would take 289 million countries the size of Wales, to tile the surface of the Sun."
+attribution = "Brian Cox, Forces of Nature"
+
+#545
+
+[2022-05-20-penicillin]
+submitter = "Gnome"
+quote = "When I woke up just after dawn on September 28, 1928, I certainly didn't plan to revolutionise all medicine by discovering the world's first antibiotic, or bacteria killer.  But I suppost that is exactly what I did."
+attribution = "Alexander Fleming"
+
+[2022-05-20-rainbows]
+submitter = "Gnome"
+quote = """
+Why are there so many
+Songs about rainbows
+And what's on the other side?
+Rainbows are visions
+But only illusions
+And rainbows have nothing to hide
+So we've been told and some choose to believe it
+I know they're wrong wait and see
+Someday we'll find it, the rainbow connection
+The lovers, the dreamers and me
+"""
+attribution = "Kermit the Frog"
+
+#547 - Remember to update this, in counts of five!

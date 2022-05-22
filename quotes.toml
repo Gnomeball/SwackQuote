@@ -2237,11 +2237,10 @@ submitter = "Gnome"
 quote = "Unexpected call for quote, try again in 24 hours."
 attribution = "SwackQuote"
 
-[2022-03-28-1]
-submitter = "Victor"
-quote = "A problem shared is a problem halved."
-attribution = "A popular saying"
-source = "A very kind friend of Victor"
+[2022-05-22-banhammer]
+submitter = "Gnome"
+quote = "You shall not pass!"
+attribution = "Gandalf the Grey"
 
 #405
 
@@ -2315,15 +2314,15 @@ submitter = "Gnome"
 quote = "I'm a teapot."
 attribution = "Hyper Text Coffee Pot Control Protocol"
 
-[2022-04-07-6]
-submitter = "Gnome"
-quote = "Neither can embellishments of language be found without arrangement and expression of thoughts, nor can thoughts be made to shine without the light of language."
-attribution = "Cicero (106 - 43 BCE)"
-
 [2022-04-07-7]
 submitter = "Gnome"
 quote = "We shall not cease from exploration, and at the end we will arrive where we started, and know the place for the first time."
 attribution = "T. S. Eliot"
+
+[2022-05-22-enhance-your-calm]
+submitter = "Gnome"
+quote = "Calm down dear, it's only a Quote."
+attribution = "Twitter, I guess?"
 
 #420
 
@@ -2347,10 +2346,10 @@ submitter = "Victor"
 quote = "There are only two ways to live your life.  One is as though nothing is a miracle.  The other is as though everything is a miracle."
 attribution = "Albert Einstein"
 
-[2022-04-14-1]
-submitter = "Victor"
-quote = "Life's too short to spend it at war with yourself."
-attribution = "Ritu Ghatourey"
+[2022-05-22-too-early-nah]
+submitter = "Gnome"
+quote = "A wizard is never late, Frodo Baggins.  Nor is he early.  He arrives precisely when he means to."
+attribution = "Gandalf the Grey"
 
 #425
 
@@ -2478,15 +2477,15 @@ submitter = "Gnome"
 quote = "http://www.eviloverlord.com/lists/overlord.html (Yes, the entire website!)"
 attribution = "Peter Anspach"
 
-[2022-05-01-its-hard-apparently]
-submitter = "Gnome"
-quote = "Landing a rover from 26 kilometres above the surface traveling 6 times faster than a bullet... is hard."
-attribution = "Brian Cox, The Planets"
-
 [2022-05-01-is-it-froid-never-mind-its-freud]
 submitter = "Gnome"
 quote = "One day, in retrospect, the years of struggle will strike you as the most beautiful."
 attribution = "Sigmund Freud"
+
+[2022-05-01-blocked-by-parental-control]
+submitter = "Gnome"
+quote = "Windows Parental Controls has blocked access to this Quote."
+attribution = "Windows"
 
 #450
 
@@ -2926,21 +2925,15 @@ attribution = "George Orwell"
 
 #525
 
-[2022-05-14-just-another-monologue]
-submitter = "Gnome"
-quote = "Can you hear them?  All these people who lived in terror of you and your judgement.  All these people who's ancestors devoted and sacrificed themselves to you.  Can you hear them singing?  Oh, you like to think you're a god, but you're not a god.  You're just a parasite eating out the jealousy and envy and longing for the lives of others.  You feed on them. On the memory of love and lost and birth and death and joy and sorrow.  So, so come on then.  Take mine.  Take my memories.  And I hope you've got a big appetite because I have lived a long life and I have seen a few things.  I walked away from the last Great Time War.  I marked the passing of the Time Lords.  I saw the birth of the universe and watched as time ran out.  Moment by moment until nothing remained - no time, no space, just me.  I walked in universes where the laws of physics where devised by the mind of a mad man.  I watched universes freeze and creations burn.  I have seen things you wouldn't believe.  I have lost things you will never understand.  And I know things.  Secrets that must never be told.  Knowledge that must never be spoken.  Knowledge that will make parasite gods blaze.  So come on then!  Take it!  Take it all, baby!  Have it!  You have it all!"
-attribution = "The Doctor"
-source = "The Rings of Akhaten, 2013"
-
 [2022-05-16-real-scientists]
 submitter = "Gnome"
 quote = "Real scientists are delighted when they find out they are wrong.  And to me that is one of the greatest gifts that a scientific education can bring.  There are too many people in this world who want to be right.  And too few who just want to know."
 attribution = "Brian Cox, Forces of Nature"
 
-[2022-05-16-cause-and-effect]
+[2022-05-22-railgun]
 submitter = "Gnome"
-quote = "You have to get old because of the geometry of spacetime."
-attribution = "Brian Cox, Forces of Nature"
+quote = "Wishing won't do any good.  This is going to take work."
+attribution = "Shirai Kuroko"
 
 [2022-05-16-Astronomers-are-goths]
 submitter = "Gnome"
@@ -2957,6 +2950,19 @@ quote = """
 We must come to terms with being of no cosmic significance, and this means jettisoning our personal and collective egos and valuing what we have.  We can no longer assume the platform of gods, or dream of a unique place in their hearts.  Science has forced us to look fixedly into an infinite universe, and its volume dilutes special pleading to a vanishingly small and pathetic whimper.  And yet what's left is better.  No monument to the gods is as magnificent as the story of our planet; of the origin and evolution of life on the rare Earth and the rise of a fledgling civilisation taking its first steps into the dark.  We stand related to every one of Darwin's endless, most beautiful forms, each of us connected at some branch in the unbroken chain of life stretching back 4 billion years.  We share more in common with bacteria than we do with any living things out there amongst the stars, should they exist, and they are more worthy of our attention.  Build cathedrals in praise of bacteria; we are on our own, and as the dominant intellect we are responsible for our planet in its magnificent and fragile entirety.
 """
 attribution = "Brian Cox, Forces of Nature"
+
+[2022-22-05-frozen]
+submitter = "Gnome"
+quote = """
+Let it go, let it go
+Can't hold it back anymore
+Let it go, let it go
+Turn away and slam the door
+I don't care what they're going to say
+Let the storm rage on
+The cold never bothered me anyway
+"""
+attribution = "Elsa"
 
 #530
 
@@ -3084,4 +3090,82 @@ quote = "But the cure for so many things is connection, and we may think 'no one
 attribution = "Jonathan Decker (Cinema Therapy) on _A Silent Voice_"
 source = "https://youtu.be/h8VHaNeuw3o?t=1204"
 
-#548 - Remember to update this, in counts of five!
+[2022-22-05-Quark-Strangeness-and-Charm]
+submitter = "Gnome"
+quote = "Not only is the Universe stranger than we think, it is stranger than we can think."
+attribution = "Werner Heisenberg"
+
+[2022-22-05-oops-its-not-a-wavicle-anymore]
+submitter = "Gnome"
+quote = "What we observe is not nature itself, but nature exposed to our method of questioning."
+attribution = "Werner Heisenberg"
+
+#550
+
+[2022-22-05-Funny-business]
+submitter = "Gnome"
+quote = "There are things that are so serious that you can only joke about them."
+attribution = "Werner Heisenberg"
+
+[2022-22-05-Quantum-Theory-be-whack]
+submitter = "Gnome"
+quote = "Those who are not shocked when they first come across quantum theory cannot possibly have understood it."
+attribution = "Niels Bohr"
+
+[2022-22-05-Protons-are-fake-news]
+submitter = "Gnome"
+quote = "Everything we call real is made of things that cannot be regarded as real."
+attribution = "Niels Bohr"
+
+[2022-22-05-profundity]
+submitter = "Gnome"
+quote = "The opposite of a correct statement is a false statement.  But the opposite of a profound truth may well be another profound truth."
+attribution = "Niels Bohr"
+
+[2022-03-28-1]
+submitter = "Victor"
+quote = "A problem shared is a problem halved."
+attribution = "A popular saying"
+source = "A very kind friend of Victor"
+
+#555
+
+[2022-04-07-6]
+submitter = "Gnome"
+quote = "Neither can embellishments of language be found without arrangement and expression of thoughts, nor can thoughts be made to shine without the light of language."
+attribution = "Cicero (106 - 43 BCE)"
+
+[2022-05-14-just-another-monologue]
+submitter = "Gnome"
+quote = "Can you hear them?  All these people who lived in terror of you and your judgement.  All these people who's ancestors devoted and sacrificed themselves to you.  Can you hear them singing?  Oh, you like to think you're a god, but you're not a god.  You're just a parasite eating out the jealousy and envy and longing for the lives of others.  You feed on them. On the memory of love and lost and birth and death and joy and sorrow.  So, so come on then.  Take mine.  Take my memories.  And I hope you've got a big appetite because I have lived a long life and I have seen a few things.  I walked away from the last Great Time War.  I marked the passing of the Time Lords.  I saw the birth of the universe and watched as time ran out.  Moment by moment until nothing remained - no time, no space, just me.  I walked in universes where the laws of physics where devised by the mind of a mad man.  I watched universes freeze and creations burn.  I have seen things you wouldn't believe.  I have lost things you will never understand.  And I know things.  Secrets that must never be told.  Knowledge that must never be spoken.  Knowledge that will make parasite gods blaze.  So come on then!  Take it!  Take it all, baby!  Have it!  You have it all!"
+attribution = "The Doctor"
+source = "The Rings of Akhaten, 2013"
+
+[2022-04-14-1]
+submitter = "Victor"
+quote = "Life's too short to spend it at war with yourself."
+attribution = "Ritu Ghatourey"
+
+[2022-05-01-its-hard-apparently]
+submitter = "Gnome"
+quote = "Landing a rover from 26 kilometres above the surface traveling 6 times faster than a bullet... is hard."
+attribution = "Brian Cox, The Planets"
+
+[2022-05-16-cause-and-effect]
+submitter = "Gnome"
+quote = "You have to get old because of the geometry of spacetime."
+attribution = "Brian Cox, Forces of Nature"
+
+#560
+
+[2022-22-05-Predictions]
+submitter = "Gnome"
+quote = "Prediction is very difficult, especially about the future."
+attribution = "Niels Bohr"
+
+[2022-22-05-Experts]
+submitter = "Gnome"
+quote = "An expert is a person who has made all the mistakes that can be made in a very narrow field."
+attribution = "Niels Bohr"
+
+#562 - Remember to update this, in counts of five!

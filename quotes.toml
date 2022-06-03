@@ -3186,4 +3186,52 @@ but a habit.
 """
 attribution = "Aristotle"
 
-#564 - Remember to update this, in counts of five!
+[2022-06-03-human-heart-in-conflict]
+submitter = "Victor"
+quote = "The only thing worth writing about is the human heart in conflict with itself."
+attribution = "William Faulkner"
+
+#565
+
+[2022-06-03-kindness]
+submitter = "Victor"
+quote = "Kindness is the light that dissolves all walls between souls, families, and nations."
+attribution = "Paramahansa Yogananda"
+
+[2022-06-03-storm]
+submitter = "Victor"
+quote = "And once the storm is over, you won't remember how you made it through. But one thing is certain. When you come out of the storm, you won't be the same person who walked in. That's what this storm's all about."
+attribution = "Haruki Murakami"
+
+[2022-06-03-start]
+submitter = "Victor"
+quote = "You don't have to be great to start, but you have to start to be great."
+attribution = "Zig Ziglar"
+
+[2022-06-03-just-be-my-friend]
+submitter = "Victor"
+quote = """
+Don’t walk in front of me, I may not follow.
+Don’t walk behind me, I may not lead.
+Walk beside me, just be my friend.
+"""
+attribution = "Unknown"
+
+[2022-06-03-nothing]
+submitter = "Victor"
+quote = "People say nothing is impossible, but I do nothing every day."
+attribution = "Winnie the Pooh"
+
+# 570
+
+[2022-06-03-cheer-up]
+submitter = "Victor"
+quote = "The best way to cheer yourself is to try to cheer someone else up."
+attribution = "Mark Twain"
+
+[2022-06-03-life-is-short]
+submitter = "Victor"
+quote = "Life is short: kiss slowly, laugh insanely, love truly and forgive quickly."
+attribution = "Paulo Coelho"
+
+#572 - Remember to update this, in counts of five!

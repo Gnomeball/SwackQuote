@@ -3200,7 +3200,7 @@ attribution = "Paramahansa Yogananda"
 
 [2022-06-03-storm]
 submitter = "Victor"
-quote = "And once the storm is over, you won't remember how you made it through. But one thing is certain. When you come out of the storm, you won't be the same person who walked in. That's what this storm's all about."
+quote = "And once the storm is over, you won't remember how you made it through.  But one thing is certain.  When you come out of the storm, you won't be the same person who walked in.  That's what this storm's all about."
 attribution = "Haruki Murakami"
 
 [2022-06-03-start]
@@ -3211,8 +3211,8 @@ attribution = "Zig Ziglar"
 [2022-06-03-just-be-my-friend]
 submitter = "Victor"
 quote = """
-Don’t walk in front of me, I may not follow.
-Don’t walk behind me, I may not lead.
+Don't walk in front of me, I may not follow.
+Don't walk behind me, I may not lead.
 Walk beside me, just be my friend.
 """
 attribution = "Unknown"
@@ -3222,7 +3222,7 @@ submitter = "Victor"
 quote = "People say nothing is impossible, but I do nothing every day."
 attribution = "Winnie the Pooh"
 
-# 570
+#570
 
 [2022-06-03-cheer-up]
 submitter = "Victor"
@@ -3233,5 +3233,10 @@ attribution = "Mark Twain"
 submitter = "Victor"
 quote = "Life is short: kiss slowly, laugh insanely, love truly and forgive quickly."
 attribution = "Paulo Coelho"
+
+[2022-06-04-Right]
+submitter = "Gnome"
+quote = "If we're kind and polite, the world will be right."
+attribution = "Paddington Bear"
 
 #572 - Remember to update this, in counts of five!

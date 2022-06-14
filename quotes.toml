@@ -3255,16 +3255,71 @@ submitter = "Gnome"
 quote = "In my personal opinion, fuck Zoom."
 attribution = "SinDemon"
 
-#575
-
 [2022-06-13-Pretty-Dress]
 submitter = "Gnome"
 quote = "A pretty dress can make all the difference.  Anyone who disagrees must have just never seen me in a dress, I rock that shit."
 attribution = "IrrelevantSwack"
+
+#575
 
 [2022-06-13-To-Swack-or-not-to-Swack]
 submitter = "Gnome"
 quote = "I don't want Swack to be the goto name for the society.  I'm trying to find a line where it persists as a joke without it becoming all-encompassing."
 attribution = "IrrelevantSwack, 2018"
 
-#576 - Remember to update this, in counts of five!
+[2022-06-13-Transition]
+submitter = "Gnome"
+quote = "Next committee: \"I wonder what they talked about when they worked hard on the transition?\""
+attribution = "Victor"
+
+[2022-06-13-despacito]
+submitter = "Gnome"
+quote = "Obligator(y) despacito every 30 minutes of talk."
+attribution = "Meetowl"
+
+[2022-06-13-Time-is-relative]
+submitter = "Victor"
+quote = "I'm 78 days into a 14 day turn around on a Motherboard repair... time is relative."
+attribution = "Gnome"
+
+[2022-06-14-The-zen-of-Python]
+submitter = "Gnome"
+quote = """
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one - and preferably only one – obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than right now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea – let's do more of those!
+"""
+attribution = "Tim Peters"
+
+#580
+
+[2022-06-14-while-true]
+submitter = "Gnome"
+quote = "I'm going to betray myself... `while True:`"
+attribution = "Victor"
+
+[2022-06-14-300]
+submitter = "Gnome"
+quote = """
+Victor: Why did it give me a 200?
+Gnome: You clearly need to put it into slow motion mode, then you get a 300.
+"""
+attribution = "Various"
+
+#582 - Remember to update this, in counts of five!

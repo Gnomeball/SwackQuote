@@ -3322,4 +3322,31 @@ Gnome: You clearly need to put it into slow motion mode, then you get a 300.
 """
 attribution = "Various"
 
-#582 - Remember to update this, in counts of five!
+[2022-06-20-angelou]
+submitter = "Victor"
+quote = "There is no greater agony than bearing an untold story inside you."
+attribution = "Maya Angelou"
+
+[2022-06-20-kant]
+submitter = "Victor"
+quote = "We are not rich by what we possess but by what we can do without."
+attribution = "Immanuel Kant"
+
+[2022-06-20-dalai-lama]
+submitter = "Victor"
+quote = "Happiness is not something ready made. It comes from your own actions."
+attribution = "Dalai Lama XIV"
+
+#585
+
+[2022-06-20-van-gogh-love]
+submitter = "Victor"
+quote = "I feel that there is nothing more truly artistic than to love people."
+attribution = "Vincent Van Gogh"
+
+[2022-06-20-van-gogh-dream]
+submitter = "Victor"
+quote = "I dream of painting and then I paint my dream."
+attribution = "Vincent Van Gogh"
+
+#587 - Remember to update this, in counts of five!

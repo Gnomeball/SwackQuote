@@ -3418,4 +3418,10 @@ submitter = "Gnome"
 quote = "Low self esteem is like driving through life with your handbrake on."
 attribution = "Maxwell Maltz"
 
-#599 - Remember to update this, in counts of five!
+[2022-07-26-road-to-hell]
+submitter = "segfault"
+quote = "While it is true that the road to hell is paved with good intentions, it also seems true that the road to good intentions is paved with hell."
+attribution = "Casey Muratori"
+source = "https://twitter.com/cmuratori/status/1546405527650832384"
+
+#600 - Remember to update this, in counts of five!

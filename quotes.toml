@@ -3522,4 +3522,31 @@ quote = "We're all going to die, so let's mess it up."
 attribution = "Brad Pitt"
 submitter = "Gnome"
 
-#618 - Remember to update this, in counts of five!
+[2022-08-07-three-days-1]
+submitter = "Victor"
+quote = "Universal appeal does not come by obsequiously sucking up to everyone around you so that they like you. It comes from digging to the bottom of your own well and painstakingly dredging up what's down there. It lies within the results of a completely individual and personal approach."
+attribution = "Kusunoki, Three Days of Happiness"
+
+[2022-08-07-three-days-2]
+submitter = "Victor"
+quotes = "I don't really trust words like *personality* and *disposition* and *nature*. They can all change with circumstances. In the long run, I think the way people actually differ is in which situations they are more likely to fall into. Everyone has this extreme belief in consistency of character, but I think it's a much shallower quality than most people like to think."
+attribution = "Kusunoki, Three Days of Happiness"
+
+#620
+
+[2022-08-07-jami]
+quote = "Grudges are for those who insist that they are owed something; forgiveness, however, is for those who are substantial enough to move on."
+attribution = "Criss Jami"
+submitter = "Victor"
+
+[2022-08-07-disney]
+quote = "Laughter is timeless. Imagination has no age. And dreams are forever."
+attribution = "Walt Disney"
+submitter = "Victor"
+
+[2022-08-07-shaw]
+quote = "A life spent making mistakes is not only more honorable but more useful than a life spent doing nothing."
+attribution = "George Bernard Shaw"
+submitter = "Victor"
+
+#623 - Remember to update this, in counts of five!

@@ -4,10 +4,13 @@ from quotes import pull_random_quote, pull_specific_quote, refresh_quotes, forma
 
 # Logging boilerplate
 fmt = '[%(asctime)s: %(name)s %(levelname)s]: %(message)s'
-logging.basicConfig(level = logging.WARNING, stream = sys.stdout, format = fmt)
+logging.basicConfig(level = logging.INFO, stream = sys.stdout, format = fmt)
 
 # Variables and stuff
-client = discord.Client()
+intents = discord.Intents.default()
+intents.message_content = True
+
+client = discord.Client(intents=intents)
 logger = logging.getLogger("QuoteBot")
 
 gnome   = 356467595177885696

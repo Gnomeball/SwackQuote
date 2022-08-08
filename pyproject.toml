@@ -5,8 +5,8 @@ description = "A repository for the QOTD bot on the swan_hack Discord server"
 authors = ["Gnomeball", "AlexBlandin", "KrisRalph", "dedbepole"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
-"discord.py" = "^1.7.3"
+python = "^3.8"
+py-cord = "^2.0.0"
 tomli = "^2.0.1"
 tomli_w = "^1.0.0"
 

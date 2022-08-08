@@ -9,6 +9,7 @@ python = "^3.8"
 py-cord = "^2.0.0"
 tomli = "^2.0.1"
 tomli_w = "^1.0.0"
+requests = "^2.27.0"
 
 [tool.poetry.dev-dependencies]
 

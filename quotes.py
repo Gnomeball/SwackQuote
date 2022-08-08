@@ -1,4 +1,5 @@
 from collections import namedtuple
+from pathlib import Path
 import random
 import requests
 import logging
@@ -12,8 +13,16 @@ QUOTE_DECK_PATH    = "quote_deck.txt" # The current deck of quotes we're using
 QUOTE_HISTORY_PATH = "quote_history.txt" # The logged appearances of each quote
 QUOTE_REPEAT_DELAY = 200 # How many days must pass before a repeated quote should be allowed
 
-# Our Quote type, has optional attribution & source, requires identifier, submitter, & quote
-Quote = namedtuple("Quote", "identifier submitter quote attribution source", defaults=(None, None))
+# Our Quote type, has optional attribution & source, requires submitter, & quote
+Quote = namedtuple("Quote", "submitter quote attribution source", defaults=(None, None))
+
+def as_quotes(quotes: str):
+  """
+  Converts a TOML-format string to a dict[str, Quote] of identifier -> Quote
+  :returns: Dictionary of Quote identifiers to Quote.
+  :rtype: dict[str, Quote]
+  """
+  return {identifier: Quote(**quote) for identifier, quote in tomli.loads(quotes).items()}
 
 def calculate_swack_level():
     swack_levels = [
@@ -41,18 +50,18 @@ def format_quote_text(quote: Quote):
 def pull_specific_quote(quote: str, quotes: dict):
     """
     Selects a given quote from the given dictionary.
-    :returns: A Quote(identifier="Testing", submitter="Tester", quote="Testing", attribution=None, source=None).
+    :returns: A Quote(submitter="Tester", quote="*Testing* - [Links work too!](https://www.google.co.uk)", attribution=None, source=None).
     :rtype: Quote
     """
-    return (Quote(quote, **quotes[quote]), list(quotes.keys()).index(quote)+1) if quote in quotes else (Quote("Testing", "Tester", "*Testing* - [Links work too!](https://www.google.co.uk)"), "Test")
-    # return Quote(quote, **quotes[quote]) if quote in quotes else Quote("Testing","Tester", "*Testing* - [Links work too!](https://www.google.co.uk)")
+    return (quotes[quote], list(quotes.keys()).index(quote)+1) if quote in quotes else (Quote("Tester", "*Testing* - [Links work too!](https://www.google.co.uk)"), "Test")
+    # return quotes[quote] if quote in quotes else Quote("Tester", "*Testing* - [Links work too!](https://www.google.co.uk)")
 
 def pull_random_quote(quotes: dict):
     """
     Selects a random quote from the given dictionary.
     Currently, ignores the last QUOTE_REPEAT_DELAY quotes.
     We reference the deck of current quotes for which are good to use and update it.
-    :returns: A Quote(identifier, submitter, quote, attribution=None, source=None) and its position in the full list.
+    :returns: A Quote(submitter, quote, attribution=None, source=None) and its position in the full list.
     :rtype: Quote, int
     """
     with open(QUOTE_DECK_PATH, "r", encoding="utf8") as d:
@@ -71,23 +80,22 @@ def pull_random_quote(quotes: dict):
     with open(QUOTE_DECK_PATH, "w+", encoding="utf8", newline="\n") as d:
         d.write("\n".join(deck-recent))
 
-    return (Quote(quote, **quotes[quote]), quote_index)
+    return quotes[quote], quote_index
 
 def pull_quotes_from_file(path=QUOTE_FILE_PATH):
     """
     Pulls the quotes from a local file (default: "quotes.toml").
-    :returns: The dictionary of quotes (use Quote(k, **quotes[k])).
-    :rtype: Dict
+    :returns: The dictionary of quotes.
+    :rtype: dict[str, Quote]
     """
-    with open(path, "r", encoding="utf8") as f:
-        return tomli.loads(f.read())
+    return as_quotes(Path(path).read_text(encoding="utf8"))
 
 def pull_quotes_from_repo():
     """
     Pulls updated quotes from the repository.
-    :returns: Updated quotes as a dictionary of quotes (use Quote(k, **quotes[k])).
+    :returns: Updated quotes as a dictionary of quotes.
               On error, returns an empty list and logs exception.
-    :rtype: Dict
+    :rtype: dict[str, Quote]
     """
     logger = logging.getLogger("pull_from_repo")
     updated_quotes = ""
@@ -101,7 +109,7 @@ def pull_quotes_from_repo():
     except Exception:
         logger.exception("Exception while getting updated quotes:")
 
-    return tomli.loads(updated_quotes)
+    return as_quotes(updated_quotes)
 
 async def refresh_quotes():
     """
@@ -109,16 +117,16 @@ async def refresh_quotes():
     If we cannot reach the repo, we always fallback to local.
     Probably don't call this one from two different threads.
     :returns: The most up-to-date dict of quotes we can access.
-    :rtype: Dict
+    :rtype: dict[str, Quote]
     """
     logger = logging.getLogger("refresh_quotes")
     quotes = pull_quotes_from_file()
     updated_quotes = pull_quotes_from_repo()
     if updated_quotes == {}: return quotes
 
-    additions = [Quote(k, **q) for k,q in updated_quotes.items() if k not in quotes]
-    removals  = [Quote(k, **q) for k,q in quotes.items() if k not in updated_quotes]
-    changed   = [(Quote(k, **q), Quote(k, **quotes[k])) for k,q in updated_quotes.items() if k in quotes and Quote(k, **q) != Quote(k, **quotes[k])]
+    additions = [q for k,q in updated_quotes.items() if k not in quotes]
+    removals  = [q for k,q in quotes.items() if k not in updated_quotes]
+    changed   = [(q, quotes[k]) for k,q in updated_quotes.items() if k in quotes and q != quotes[k]]
 
     for submitter,quote,*opt in additions:
         logger.info(f"+ {submitter} ({' '.join(map(str,opt))}) {quote}")

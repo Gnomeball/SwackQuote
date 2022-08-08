@@ -7,9 +7,10 @@ To add a quote, fork, add it to `quotes.toml`, and make a pull request... hopefu
 ### Requirements
 
 Requirements:
-- discord.py
-- tomli
-- tomli-w
+- [py-cord](https://pypi.org/project/py-cord/)
+- [tomli](https://pypi.org/project/tomli)
+- [tomli-w](https://pypi.org/project/tomli-w)
+- [requests](https://pypi.org/project/requests)
 
 We have a [poetry](https://python-poetry.org/) `pyproject.toml` setup for easy installation.  Just run `poetry install`!
 
@@ -18,7 +19,7 @@ We have a [poetry](https://python-poetry.org/) `pyproject.toml` setup for easy i
 The flat-file uses the TOML specification for storing quotes.  Quotes are formatted like so:
 
 ```toml
-[identifier] # some stable identifier, such as a date
+[identifier] # some unique, stable identifier, such as a date and number (2022-08-08-example-1)
 submitter = "the name of who submitted it (aka, your discord handle)"
 quote = "the quote you're adding"
 attribution = "whoever said or wrote it"
@@ -31,7 +32,7 @@ Currently, `attribution` and `source` are optional fields.
 
 However, the `attribution` field will appear after the quote, behind a `~`, if given.
 
-If you do not know who, or cannot find the original source, please use `unknown`, or `various`.
+If you do not know who, or cannot find the original source, please use `Unknown`, or `Various`. If many have said it, use `Apocryphal`.
 
 If citing both a person and a work, please do this in a format that is sensible, perhaps `person, work`, inside the `attribution` field - with anything more specific in the `source` field.
 
@@ -39,7 +40,7 @@ For quotes that span multiple lines, use `"""` at the beginning and end, on sepa
 
 For quotes containing code, use `'''` for raw multi-line strings, and then use ` ``` ` to create a code block, remembering to close them both afterwards.
 
-Any discord-accepted markdown should be parsed properly.
+All discord-accepted markdown should be parsed properly.
 
 When adding quotes, please ensure to update the count.
 

@@ -9,6 +9,7 @@ import tomli_w
 
 QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/SwackQuote/main/quotes.toml'
 QUOTE_FILE_PATH    = "quotes.toml" # The collection of all quotes
+QUOTE_DUD_PATH     = "quote_duds.toml" # Any quotes that aren't `quote_compliant()`
 QUOTE_DECK_PATH    = "quote_deck.txt" # The current deck of quotes we're using
 QUOTE_HISTORY_PATH = "quote_history.txt" # The logged appearances of each quote
 QUOTE_REPEAT_DELAY = 200 # How many days must pass before a repeated quote should be allowed
@@ -16,12 +17,17 @@ QUOTE_REPEAT_DELAY = 200 # How many days must pass before a repeated quote shoul
 # Our Quote type, has optional attribution & source, requires submitter, & quote
 Quote = namedtuple("Quote", "submitter quote attribution source", defaults=(None, None))
 
+def quote_compliant(quote: dict):
+  pass
+
 def as_quotes(quotes: str):
   """
   Converts a TOML-format string to a dict[str, Quote] of identifier -> Quote
   :returns: Dictionary of Quote identifiers to Quote.
   :rtype: dict[str, Quote]
   """
+  # TODO: handle incorrectly formatted quotes, preferably by putting a new embed on discord
+  # so should log to a file, and then when bot.py runs it has a subroutine to check it and send a message
   return {identifier: Quote(**quote) for identifier, quote in tomli.loads(quotes).items()}
 
 def calculate_swack_level():

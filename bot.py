@@ -76,7 +76,7 @@ async def current_date_time():
 async def send_quote(pre = "Quote"):
     quotes = await refresh_quotes() # This way we have access to the latest quotes
     logger = logging.getLogger("send_quote")
-    quote_warning(logger)
+    await quote_warning(logger)
     quote, quote_index = pull_random_quote(quotes)
     quote_text = format_quote_text(quote)
     swack_level = calculate_swack_level()
@@ -89,7 +89,7 @@ async def send_quote(pre = "Quote"):
 async def test_quote(which = "pre-toml-255"):
     quotes = await refresh_quotes() # This way we have access to the latest quotes
     logger = logging.getLogger("test_quote")
-    quote_warning(logger)
+    await quote_warning(logger)
     quote, quote_index = pull_specific_quote(which, quotes)
     quote_text = format_quote_text(quote)
     embedVar = discord.Embed(title = "Testing the Swack", description = quote_text, colour = random_colour())

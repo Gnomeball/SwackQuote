@@ -127,7 +127,7 @@ def pull_quotes_from_repo():
 
 async def refresh_quotes():
     """
-    Overwrites quotes.txt with any updates.
+    Overwrites QUOTE_FILE_PATH with any updates.
     If we cannot reach the repo, we always fallback to local.
     Probably don't call this one from two different threads.
     :returns: The most up-to-date dict of quotes we can access.
@@ -136,19 +136,25 @@ async def refresh_quotes():
     logger = logging.getLogger("refresh_quotes")
     quotes = pull_quotes_from_file()
     updated_quotes = pull_quotes_from_repo()
-    if updated_quotes == {}: return quotes
+    if updated_quotes == {}:
+      logger.info(f"{QUOTE_FILE_ADDRESS} was empty")
+      return quotes
+    if quotes == updated_quotes:
+      logger.info(f"{QUOTE_FILE_PATH} and {QUOTE_FILE_ADDRESS} are the same")
+      return quotes
+    if quotes == {}: logger.info(f"{QUOTE_FILE_PATH} was empty")
 
-    additions = [q for k,q in updated_quotes.items() if k not in quotes]
-    removals  = [q for k,q in quotes.items() if k not in updated_quotes]
-    changed   = [(q, quotes[k]) for k,q in updated_quotes.items() if k in quotes and q != quotes[k]]
+    additions = [(k, q) for k,q in updated_quotes.items() if k not in quotes]
+    removals  = [(k, q) for k,q in quotes.items() if k not in updated_quotes]
+    changed   = [(k, q, quotes[k]) for k,q in updated_quotes.items() if k in quotes and q != quotes[k]]
 
-    for submitter,quote,*opt in additions:
-        logger.info(f"+ {submitter} ({' '.join(map(str,opt))}) {quote}")
-    for submitter,quote,*opt in removals:
-        logger.info(f"- {submitter} ({' '.join(map(str,opt))}) {quote}")
-    for (submitter,quote,*opt), (old_s,old_q,*old_opt) in changed:
-        logger.info(f"+ {submitter} ({' '.join(map(str,opt))}) {quote}")
-        logger.info(f"- {old_s} ({' '.join(map(str,old_opt))}) {old_q}")
+    for k, (submitter,quote,*opt) in additions:
+        logger.info(f"+ [{k}] {submitter}{'; '.join(map(str, filter(None, opt)))}: {quote}")
+    for k, (submitter,quote,*opt) in removals:
+        logger.info(f"- [{k}] {submitter}{'; '.join(map(str, filter(None, opt)))}: {quote}")
+    for k, (submitter,quote,*opt), (old_s,old_q,*old_opt) in changed:
+        logger.info(f"- [{k}] {old_s}{'; '.join(map(str, filter(None, old_opt)))}: {old_q}")
+        logger.info(f"+ [{k}] {submitter}{'; '.join(map(str, filter(None, opt)))}: {quote}")
 
     if quotes != updated_quotes:
         with open(QUOTE_FILE_PATH, "wb") as f:

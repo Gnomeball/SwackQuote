@@ -9,12 +9,16 @@ import tomli_w
 
 QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/SwackQuote/main/quotes.toml'
 QUOTE_FILE_PATH    = "quotes.toml" # The collection of all quotes
+QUOTE_DUD_PATH     = "quote_duds.toml" # Any quotes that aren't `quote_compliant()`
 QUOTE_DECK_PATH    = "quote_deck.txt" # The current deck of quotes we're using
 QUOTE_HISTORY_PATH = "quote_history.txt" # The logged appearances of each quote
 QUOTE_REPEAT_DELAY = 200 # How many days must pass before a repeated quote should be allowed
 
 # Our Quote type, has optional attribution & source, requires submitter, & quote
-Quote = namedtuple("Quote", "submitter quote attribution source", defaults=(None, None))
+Quote = namedtuple("Quote", "submitter quote attribution source", defaults = (None, None))
+
+def quote_compliant(quote: dict):
+  pass
 
 def as_quotes(quotes: str):
   """
@@ -22,7 +26,17 @@ def as_quotes(quotes: str):
   :returns: Dictionary of Quote identifiers to Quote.
   :rtype: dict[str, Quote]
   """
+  # TODO: handle incorrectly formatted quotes, preferably by putting a new embed on discord
+  # so should log to a file, and then when bot.py runs it has a subroutine to check it and send a message
   return {identifier: Quote(**quote) for identifier, quote in tomli.loads(quotes).items()}
+
+def as_dicts(quotes: dict[str, Quote]):
+  """
+  Converts a dict[str, Quote] to something TOML can serialise.
+  :returns: Dictionary of quote identifiers to TOML-compatible dicts
+  :rtype: dict[str, dict[str, str]]
+  """
+  return {identifier: {k:v for k,v in quote._asdict().items() if v is not None} for identifier, quote in quotes.items()}
 
 def calculate_swack_level():
     swack_levels = [
@@ -138,7 +152,7 @@ async def refresh_quotes():
 
     if quotes != updated_quotes:
         with open(QUOTE_FILE_PATH, "wb") as f:
-            tomli_w.dump(updated_quotes, f)
+            tomli_w.dump(as_dicts(updated_quotes), f)
     with open(QUOTE_DECK_PATH, "w+", encoding="utf8", newline="\n") as d:
         deck = set(map(str.split, d.readlines()))
         if len(deck) == 0: # Cycle deck, filling it back up again

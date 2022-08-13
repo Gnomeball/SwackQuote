@@ -56,6 +56,7 @@ async def on_message(message: discord.Message):
 @client.event
 async def dud_quotes():
     logger = logging.getLogger("dud_quotes")
+    Path(QUOTE_DUD_PATH).touch()
     duds = Path(QUOTE_DUD_PATH).read_text().strip() # we just print verbatim, no need to parse
     if len(duds):
         logger.info(f"Sending dud quotes: \n{duds}")

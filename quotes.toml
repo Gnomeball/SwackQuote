@@ -3554,4 +3554,73 @@ submitter = "Gnome"
 quote = "In a very real sense, we are all aliens on a strange planet.  We spend most of our lives reaching out and trying to communicate.  If during our whole lifetime, we could reach out and really communicate with just two people, we are indeed very fortunate."
 attribution = "Gene Roddenbury"
 
-#624 - Remember to update this, in counts of five!
+[2022-08-13-ullman]
+submitter = "segfault"
+quote = "Until I became a programmer, I didn't thoroughly understand the usefulness of such isolation: the silence, the reduction of life to thought and form; for example, going off to a dark room to work on a program when relations with people get difficult."
+attribution = "Ellen Ullman, Life in Code: A Personal History of Technology"
+
+#625
+
+[2022-08-13-sudo]
+submitter = "segfault"
+quote = '''```
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+```'''
+attribution = "Todd C. Miller, sudo" # kinda, the actual author is unknown, but Todd made the original commit and the one that added 3, so I'll credit him
+
+[2022-08-13-sql]
+submitter = "segfault"
+quote = "It's funny how even something as simple as a MYSQL database requires pruning, nurture."
+attribution = "Craig Mod"
+
+[2022-08-13-poetry]
+submitter = "segfault"
+quote = "With static sites, we've come full circle, like exhausted poets who have travelled the world trying every form of poetry and realizing that the haiku is enough to see most of us through our tragedies."
+attribution = "Craig Mod"
+
+[2022-08-13-Rutherford]
+submitter = "segfault"
+quote = "If your experiment needs statistics, you ought to have done a better experiment."
+attribution = "Ernest Rutherford"
+
+[2022-08-13-Goddard]
+submitter = "segfault"
+quote = "It is difficult to say what is impossible, for the dream of yesterday is the hope of today and the reality of tomorrow."
+attribution = "Robert H. Goddard"
+
+#630
+
+[2022-08-13-I-really-recommend-this-game]
+submitter = "segfault"
+quote = "Your wisdom is something for you to find out yourself."
+attribution = "Mohammad Fahmi, What Comes After" # RIP
+source = "https://store.steampowered.com/app/1421760/What_Comes_After/"
+
+[2022-08-13-heavy]
+submitter = "segfault"
+quote = "Just because someone carries it well, doesn't mean it isn't heavy."
+attribution = "Apocryphal"
+source = "The side of a building (probably photoshopped)"
+
+[2022-08-13-De-Bois]
+submitter = "segfault"
+quote = "We should measure the prosperity of a nation not by the number of millionaires, but by the absence of poverty, the prevalence of health, the efficiency of the public schools, and the number of people who can and do read worthwhile books."
+attribution = "W. E. B. De Bois"
+
+[2022-08-13-return-of-the-Doug]
+submitter = "segfault"
+quote = "These days, the problem isn't how to innovate; it's how to get society to adopt the good ideas that already exist."
+attribution = "Douglas Engelbart"
+
+[2022-08-13-a-new-Doug]
+submitter = "segfault"
+quote = "The key thing about all the world's big problems is that they have to be dealt with collectively. If we don't get collectively smarter, we're doomed."
+attribution = "Douglas Engelbart, Intelligence in the Internet Age"
+
+#635 - Remember to update this, in counts of five!
+

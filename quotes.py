@@ -38,11 +38,8 @@ def as_quotes(quotes: str):
     """
     loaded_quotes = tomli.loads(quotes)
     quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
-    non_compliant = {i: q for i, q in loaded_quotes.items() if not quote_compliant(q)}
-    if non_compliant != {}:
-        with open(QUOTE_DUD_PATH, "wb") as f:
-            tomli_w.dump(as_dicts(non_compliant), f)
-    return quote_dict
+    non_compliant = {i: q for i, q in loaded_quotes.items() if q not in quote_dict}
+    return quote_dict, non_compliant
 
 def as_dicts(quotes: dict[str, Quote]):
     """

@@ -55,14 +55,14 @@ async def on_message(message: discord.Message):
 
 @client.event
 async def dud_quotes():
-  logger = logging.getLogger("dud_quotes")
-  duds = Path(QUOTE_DUD_PATH).read_text().strip() # we just print verbatim, no need to parse
-  if len(duds):
-      logger.info(f"Sending dud quotes: \n{duds}")
-      embedVar = discord.Embed(title = "These quotes need fixing", description = f"```\n{duds[:4000]}\n```", colour = random_colour())
-      await client.get_channel(CHANNEL).send(embed = embedVar)
-  else:
-      logger.info("There were no dud quotes today")
+    logger = logging.getLogger("dud_quotes")
+    duds = Path(QUOTE_DUD_PATH).read_text().strip() # we just print verbatim, no need to parse
+    if len(duds):
+        logger.info(f"Sending dud quotes: \n{duds}")
+        embedVar = discord.Embed(title = "These quotes need fixing", description = f"```\n{duds[:4000]}\n```", colour = random_colour())
+        await client.get_channel(CHANNEL).send(embed = embedVar)
+    else:
+        logger.info("There were no dud quotes today")
 
 @client.event
 async def quote_loop():

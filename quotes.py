@@ -38,11 +38,8 @@ def as_quotes(quotes: str):
     """
     loaded_quotes = tomli.loads(quotes)
     quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
-    non_compliant = {i: q for i, q in loaded_quotes.items() if not quote_compliant(q)}
-    if non_compliant != {}:
-        with open(QUOTE_DUD_PATH, "wb") as f:
-            tomli_w.dump(as_dicts(non_compliant), f)
-    return quote_dict
+    non_compliant = {i: q for i, q in loaded_quotes.items() if q not in quote_dict}
+    return quote_dict, non_compliant
 
 def as_dicts(quotes: dict[str, Quote]):
     """
@@ -142,12 +139,8 @@ async def refresh_quotes():
     :rtype: dict[str, Quote]
     """
     logger = logging.getLogger("refresh_quotes")
-    quotes, duds, *_ = pull_quotes_from_file()
-    assert(isinstance(quotes, dict))
-    assert(isinstance(duds, dict))
-    updated_quotes, updated_duds, *_ = pull_quotes_from_repo()
-    assert(isinstance(updated_quotes, dict))
-    assert(isinstance(updated_duds, dict))
+    quotes, duds = pull_quotes_from_file()
+    updated_quotes, updated_duds = pull_quotes_from_repo()
     duds |= updated_duds
     if duds != {}:
         logger.info(f"We have recorded dud quotes to {QUOTE_DUD_PATH}")

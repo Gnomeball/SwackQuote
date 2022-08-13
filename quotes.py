@@ -18,36 +18,36 @@ QUOTE_REPEAT_DELAY = 200 # How many days must pass before a repeated quote shoul
 Quote = namedtuple("Quote", "submitter quote attribution source", defaults = (None, None))
 
 def quote_compliant(quote: dict):
-  """
-  Checks whether a dict would make a valid Quote.
-  :returns: Is quote a valid Quote?
-  :rtype: bool
-  """
-  if not isinstance(quote, dict): return False # no top-level variables allowed
-  if set(quote).difference(Quote._fields): return False # has bad keys
-  if not all(isinstance(v, str) for v in quote.values()): return False # has bad values
-  if "quote" not in quote and "submitter" not in quote: return False # missing required fields
-  if len(quote["quote"]) > 4000: return False # discord has limits
-  return True
+    """
+    Checks whether a dict would make a valid Quote.
+    :returns: Is quote a valid Quote?
+    :rtype: bool
+    """
+    if not isinstance(quote, dict): return False # no top-level variables allowed
+    if set(quote).difference(Quote._fields): return False # has bad keys
+    if not all(isinstance(v, str) for v in quote.values()): return False # has bad values
+    if "quote" not in quote and "submitter" not in quote: return False # missing required fields
+    if len(quote["quote"]) > 4000: return False # discord has limits
+    return True
 
 def as_dicts(quotes: dict[str, Quote]):
-  """
-  Converts a dict[str, Quote] to something TOML can serialise.
-  :returns: Dictionary of quote identifiers to TOML-compatible dicts
-  :rtype: dict[str, dict[str, str]]
-  """
-  return {i: {k: v for k, v in q._asdict().items() if v is not None} for i, q in quotes.items()}
+    """
+    Converts a dict[str, Quote] to something TOML can serialise.
+    :returns: Dictionary of quote identifiers to TOML-compatible dicts
+    :rtype: dict[str, dict[str, str]]
+    """
+    return {i: {k: v for k, v in q._asdict().items() if v is not None} for i, q in quotes.items()}
 
 def as_quotes(quotes: str):
-  """
-  Converts a TOML-format string to a dict[str, Quote] of identifier -> Quote
-  :returns: Dictionary of Quote identifiers to Quote, and those that were not.
-  :rtype: dict[str, Quote], dict[str, dict[str, Any]]
-  """
-  loaded_quotes = tomli.loads(quotes)
-  quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
-  non_compliant = {i: q for i, q in loaded_quotes.items() if i not in quote_dict}
-  return quote_dict, non_compliant
+    """
+    Converts a TOML-format string to a dict[str, Quote] of identifier -> Quote
+    :returns: Dictionary of Quote identifiers to Quote, and those that were not.
+    :rtype: dict[str, Quote], dict[str, dict[str, Any]]
+    """
+    loaded_quotes = tomli.loads(quotes)
+    quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
+    non_compliant = {i: q for i, q in loaded_quotes.items() if i not in quote_dict}
+    return quote_dict, non_compliant
 
 def calculate_swack_level():
     swack_levels = [
@@ -148,15 +148,15 @@ async def refresh_quotes():
     updated_quotes, updated_duds = pull_quotes_from_repo()
     duds |= updated_duds
     if duds != {}:
-      logger.info(f"We have recorded dud quotes to {QUOTE_DUD_PATH}")
-      with open(QUOTE_DUD_PATH, "wb") as f:
-          tomli_w.dump(as_dicts(duds), f)
+        logger.info(f"We have recorded dud quotes to {QUOTE_DUD_PATH}")
+        with open(QUOTE_DUD_PATH, "wb") as f:
+            tomli_w.dump(as_dicts(duds), f)
     if updated_quotes == {}:
-      logger.info(f"{QUOTE_FILE_ADDRESS} was empty")
-      return quotes
+        logger.info(f"{QUOTE_FILE_ADDRESS} was empty")
+        return quotes
     if quotes == updated_quotes:
-      logger.info(f"{QUOTE_FILE_PATH} and {QUOTE_FILE_ADDRESS} are the same")
-      return quotes
+        logger.info(f"{QUOTE_FILE_PATH} and {QUOTE_FILE_ADDRESS} are the same")
+        return quotes
     if quotes == {}: logger.info(f"{QUOTE_FILE_PATH} was empty")
 
     additions = [(k, q) for k,q in updated_quotes.items() if k not in quotes]

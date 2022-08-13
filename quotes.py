@@ -38,7 +38,7 @@ def as_quotes(quotes: str):
     """
     loaded_quotes = tomli.loads(quotes)
     quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
-    non_compliant = {i: q for i, q in loaded_quotes.items() if q not in quote_dict}
+    non_compliant = {i: q for i, q in loaded_quotes.items() if not quote_compliant(q)}
     return quote_dict, non_compliant
 
 def as_dicts(quotes: dict[str, Quote]):

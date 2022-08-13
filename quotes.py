@@ -30,24 +30,27 @@ def quote_compliant(quote: dict):
     if len(quote["quote"]) > 4000: return False # discord has limits
     return True
 
+def as_quotes(quotes: str):
+    """
+    Converts a TOML-format string to a dict[str, Quote] of identifier -> Quote
+    :returns: Dictionary of Quote identifiers to Quote.
+    :rtype: dict[str, Quote]
+    """
+    loaded_quotes = tomli.loads(quotes)
+    quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
+    non_compliant = {i: q for i, q in loaded_quotes.items() if not quote_compliant(q)}
+    if non_compliant != {}:
+        with open(QUOTE_DUD_PATH, "wb") as f:
+            tomli_w.dump(as_dicts(non_compliant), f)
+    return quote_dict
+
 def as_dicts(quotes: dict[str, Quote]):
     """
     Converts a dict[str, Quote] to something TOML can serialise.
     :returns: Dictionary of quote identifiers to TOML-compatible dicts
     :rtype: dict[str, dict[str, str]]
     """
-    return {i: {k: v for k, v in q._asdict().items() if v is not None} for i, q in quotes.items()}
-
-def as_quotes(quotes: str):
-    """
-    Converts a TOML-format string to a dict[str, Quote] of identifier -> Quote
-    :returns: Dictionary of Quote identifiers to Quote, and those that were not.
-    :rtype: dict[str, Quote], dict[str, dict[str, Any]]
-    """
-    loaded_quotes = tomli.loads(quotes)
-    quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
-    non_compliant = {i: q for i, q in loaded_quotes.items() if i not in quote_dict}
-    return quote_dict, non_compliant
+    return {identifier: {k:v for k,v in quote._asdict().items() if v is not None} for identifier, quote in quotes.items()}
 
 def calculate_swack_level():
     swack_levels = [
@@ -58,11 +61,7 @@ def calculate_swack_level():
         "Is this the real Swack, or is this just fantasy?", "Hello, Swack!",
         "Not an ounce of Swack in the building", "Am I Swacking correctly?"
     ]
-    # Idk if this way round is better than rotate then shuffle
-    # random.shuffle(swack_levels)
-    # rotate = random.randint(0, len(swack_levels))
-    # swack_levels = swack_levels[rotate:] + swack_levels[:rotate]
-    return random.choice(swack_levels) # random.choice() is plenty random enough, "mixing randomness" doesn't help here
+    return random.choice(swack_levels)
 
 def format_quote_text(quote: Quote):
     quote_text = quote.quote
@@ -79,7 +78,6 @@ def pull_specific_quote(quote: str, quotes: dict):
     :rtype: Quote
     """
     return (quotes[quote], list(quotes.keys()).index(quote)+1) if quote in quotes else (Quote("Tester", "*Testing* - [Links work too!](https://www.google.co.uk)"), "Test")
-    # return quotes[quote] if quote in quotes else Quote("Tester", "*Testing* - [Links work too!](https://www.google.co.uk)")
 
 def pull_random_quote(quotes: dict):
     """

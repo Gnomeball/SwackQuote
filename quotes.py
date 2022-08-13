@@ -144,8 +144,12 @@ async def refresh_quotes():
     :rtype: dict[str, Quote]
     """
     logger = logging.getLogger("refresh_quotes")
-    quotes, duds = pull_quotes_from_file()
-    updated_quotes, updated_duds = pull_quotes_from_repo()
+    quotes, duds, *_ = pull_quotes_from_file()
+    assert(isinstance(quotes, dict))
+    assert(isinstance(duds, dict))
+    updated_quotes, updated_duds, *_ = pull_quotes_from_repo()
+    assert(isinstance(updated_quotes, dict))
+    assert(isinstance(updated_duds, dict))
     duds |= updated_duds
     if duds != {}:
         logger.info(f"We have recorded dud quotes to {QUOTE_DUD_PATH}")

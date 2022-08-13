@@ -1,11 +1,11 @@
 from collections import namedtuple
 from pathlib import Path
 import random
-import requests
 import logging
-import asyncio
+
 import tomli
 import tomli_w
+import requests
 
 QUOTE_FILE_ADDRESS = 'https://raw.githubusercontent.com/Gnomeball/SwackQuote/main/quotes.toml'
 QUOTE_FILE_PATH    = "quotes.toml" # The collection of all quotes
@@ -18,7 +18,16 @@ QUOTE_REPEAT_DELAY = 200 # How many days must pass before a repeated quote shoul
 Quote = namedtuple("Quote", "submitter quote attribution source", defaults = (None, None))
 
 def quote_compliant(quote: dict):
-  pass
+  """
+  Checks whether a dict would make a valid Quote.
+  :returns: Is quote a valid Quote?
+  :rtype: bool
+  """
+  if set(quote).difference(Quote._fields): return False # has bad keys
+  if not all(isinstance(v, str) for v in quote.values()): return False # has bad values
+  if "quote" not in quote and "submitter" not in quote: return False # missing required fields
+  if len(quote["quote"]) > 4000: return False # discord has limits
+  return True
 
 def as_quotes(quotes: str):
   """
@@ -26,9 +35,13 @@ def as_quotes(quotes: str):
   :returns: Dictionary of Quote identifiers to Quote.
   :rtype: dict[str, Quote]
   """
-  # TODO: handle incorrectly formatted quotes, preferably by putting a new embed on discord
-  # so should log to a file, and then when bot.py runs it has a subroutine to check it and send a message
-  return {identifier: Quote(**quote) for identifier, quote in tomli.loads(quotes).items()}
+  loaded_quotes = tomli.loads(quotes)
+  quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
+  non_compliant = {i: q for i, q in loaded_quotes.items() if not quote_compliant(q)}
+  if non_compliant != {}:
+      with open(QUOTE_DUD_PATH, "wb") as f:
+          tomli_w.dump(as_dicts(non_compliant), f)
+  return quote_dict
 
 def as_dicts(quotes: dict[str, Quote]):
   """

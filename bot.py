@@ -1,9 +1,13 @@
-import time, discord, asyncio, random, logging, sys, colorsys
+import discord, asyncio, random, logging, sys, colorsys
 from datetime import datetime
-from quotes import pull_random_quote, pull_specific_quote, refresh_quotes, format_quote_text, calculate_swack_level
+from pathlib import Path
+
+import tomli
+
+from quotes import pull_random_quote, pull_specific_quote, refresh_quotes, format_quote_text, calculate_swack_level, QUOTE_DUD_PATH
 
 # Logging boilerplate
-fmt = '[%(asctime)s: %(name)s %(levelname)s]: %(message)s'
+fmt = "[%(asctime)s: %(name)s %(levelname)s]: %(message)s"
 logging.basicConfig(level = logging.INFO, stream = sys.stdout, format = fmt)
 
 # Variables and stuff
@@ -13,9 +17,9 @@ intents.message_content = True
 client = discord.Client(intents=intents)
 logger = logging.getLogger("QuoteBot")
 
-gnome   = 356467595177885696
-sandbox = 767326418572148756
-# colours = [0xc27c0e, 0x992d22, 0xad1457, 0x71368a, 0x206694, 0x11806a]
+# Those able to send commands to the bot and which channel it must be in
+ADMINS  = set(map(int, tomli.loads(Path("admins.toml").read_text(encoding="utf8")).values()))
+CHANNEL = int(Path("channel.txt").read_text())
 
 MINUTE = 60
 REPO_LINK = "https://github.com/Gnomeball/SwackQuote"
@@ -38,21 +42,28 @@ async def on_ready():
     await client.change_presence(activity = discord.Game(name = "Selecting a quote!"))
 
 @client.event
-async def on_message(message):
-    if message.channel.id == sandbox:
-        if message.author.id == gnome:
+async def on_message(message: discord.Message):
+    if message.channel.id == CHANNEL:
+        if message.author.id in ADMINS:
             if message.content == "#reroll":
                 await send_quote("Re-rolled Quote")
             if message.content[:5] == "#test":
                 await test_quote(message.content[5:].strip())
         if message.content == "#repo":
-            await client.get_channel(sandbox).send(content = REPO_LINK)
+            await client.get_channel(CHANNEL).send(content = REPO_LINK)
     else: pass
 
 @client.event
-async def quote_warning(logger):
-  # TODO: pull latest duds from quote_duds.toml and let us know. A message with the identifier is the MVP.
-  pass
+async def dud_quotes():
+  logger = logging.getLogger("dud_quotes")
+  Path(QUOTE_DUD_PATH).touch()
+  duds = Path(QUOTE_DUD_PATH).read_text().strip() # we just print verbatim, no need to parse
+  if len(duds):
+      logger.info(f"Sending dud quotes: \n{duds}")
+      embedVar = discord.Embed(title = "These quotes need fixing", description = f"```\n{duds[:4000]}\n```", colour = random_colour())
+      await client.get_channel(CHANNEL).send(embed = embedVar)
+  else:
+      logger.info("There were no dud quotes today")
 
 @client.event
 async def quote_loop():
@@ -76,28 +87,28 @@ async def current_date_time():
 async def send_quote(pre = "Quote"):
     quotes = await refresh_quotes() # This way we have access to the latest quotes
     logger = logging.getLogger("send_quote")
-    await quote_warning(logger)
+    await dud_quotes()
     quote, quote_index = pull_random_quote(quotes)
     quote_text = format_quote_text(quote)
     swack_level = calculate_swack_level()
     embedVar = discord.Embed(title = swack_level, description = quote_text, colour = random_colour())
     embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nQuote {quote_index}/{len(quotes)}, Submitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
-    await client.get_channel(sandbox).send(embed = embedVar)
+    await client.get_channel(CHANNEL).send(embed = embedVar)
 
 @client.event
 async def test_quote(which = "pre-toml-255"):
     quotes = await refresh_quotes() # This way we have access to the latest quotes
     logger = logging.getLogger("test_quote")
-    await quote_warning(logger)
+    await dud_quotes()
     quote, quote_index = pull_specific_quote(which, quotes)
     quote_text = format_quote_text(quote)
     embedVar = discord.Embed(title = "Testing the Swack", description = quote_text, colour = random_colour())
     embedVar.set_footer(text = f"Test for {await current_date_time()}\nQuote {quote_index}/{len(quotes)}, Submitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
-    await client.get_channel(sandbox).send(embed = embedVar)
+    await client.get_channel(CHANNEL).send(embed = embedVar)
 
 # Run the thing
 
 client.loop.create_task(quote_loop())
-client.run(open("token.txt", "r").read())
+client.run(Path("token.txt").read_text())

@@ -18,38 +18,38 @@ QUOTE_REPEAT_DELAY = 200 # How many days must pass before a repeated quote shoul
 Quote = namedtuple("Quote", "submitter quote attribution source", defaults = (None, None))
 
 def quote_compliant(quote: dict):
-  """
-  Checks whether a dict would make a valid Quote.
-  :returns: Is quote a valid Quote?
-  :rtype: bool
-  """
-  if set(quote).difference(Quote._fields): return False # has bad keys
-  if not all(isinstance(v, str) for v in quote.values()): return False # has bad values
-  if "quote" not in quote and "submitter" not in quote: return False # missing required fields
-  if len(quote["quote"]) > 4000: return False # discord has limits
-  return True
+    """
+    Checks whether a dict would make a valid Quote.
+    :returns: Is quote a valid Quote?
+    :rtype: bool
+    """
+    if set(quote).difference(Quote._fields): return False # has bad keys
+    if not all(isinstance(v, str) for v in quote.values()): return False # has bad values
+    if "quote" not in quote and "submitter" not in quote: return False # missing required fields
+    if len(quote["quote"]) > 4000: return False # discord has limits
+    return True
 
 def as_quotes(quotes: str):
-  """
-  Converts a TOML-format string to a dict[str, Quote] of identifier -> Quote
-  :returns: Dictionary of Quote identifiers to Quote.
-  :rtype: dict[str, Quote]
-  """
-  loaded_quotes = tomli.loads(quotes)
-  quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
-  non_compliant = {i: q for i, q in loaded_quotes.items() if not quote_compliant(q)}
-  if non_compliant != {}:
-      with open(QUOTE_DUD_PATH, "wb") as f:
-          tomli_w.dump(as_dicts(non_compliant), f)
-  return quote_dict
+    """
+    Converts a TOML-format string to a dict[str, Quote] of identifier -> Quote
+    :returns: Dictionary of Quote identifiers to Quote.
+    :rtype: dict[str, Quote]
+    """
+    loaded_quotes = tomli.loads(quotes)
+    quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
+    non_compliant = {i: q for i, q in loaded_quotes.items() if not quote_compliant(q)}
+    if non_compliant != {}:
+        with open(QUOTE_DUD_PATH, "wb") as f:
+            tomli_w.dump(as_dicts(non_compliant), f)
+    return quote_dict
 
 def as_dicts(quotes: dict[str, Quote]):
-  """
-  Converts a dict[str, Quote] to something TOML can serialise.
-  :returns: Dictionary of quote identifiers to TOML-compatible dicts
-  :rtype: dict[str, dict[str, str]]
-  """
-  return {identifier: {k:v for k,v in quote._asdict().items() if v is not None} for identifier, quote in quotes.items()}
+    """
+    Converts a dict[str, Quote] to something TOML can serialise.
+    :returns: Dictionary of quote identifiers to TOML-compatible dicts
+    :rtype: dict[str, dict[str, str]]
+    """
+    return {identifier: {k:v for k,v in quote._asdict().items() if v is not None} for identifier, quote in quotes.items()}
 
 def calculate_swack_level():
     swack_levels = [
@@ -60,11 +60,7 @@ def calculate_swack_level():
         "Is this the real Swack, or is this just fantasy?", "Hello, Swack!",
         "Not an ounce of Swack in the building", "Am I Swacking correctly?"
     ]
-    # Idk if this way round is better than rotate then shuffle
-    # random.shuffle(swack_levels)
-    # rotate = random.randint(0, len(swack_levels))
-    # swack_levels = swack_levels[rotate:] + swack_levels[:rotate]
-    return random.choice(swack_levels) # random.choice() is plenty random enough, "mixing randomness" doesn't help here
+    return random.choice(swack_levels)
 
 def format_quote_text(quote: Quote):
     quote_text = quote.quote
@@ -81,7 +77,6 @@ def pull_specific_quote(quote: str, quotes: dict):
     :rtype: Quote
     """
     return (quotes[quote], list(quotes.keys()).index(quote)+1) if quote in quotes else (Quote("Tester", "*Testing* - [Links work too!](https://www.google.co.uk)"), "Test")
-    # return quotes[quote] if quote in quotes else Quote("Tester", "*Testing* - [Links work too!](https://www.google.co.uk)")
 
 def pull_random_quote(quotes: dict):
     """
@@ -150,11 +145,11 @@ async def refresh_quotes():
     quotes = pull_quotes_from_file()
     updated_quotes = pull_quotes_from_repo()
     if updated_quotes == {}:
-      logger.info(f"{QUOTE_FILE_ADDRESS} was empty")
-      return quotes
+        logger.info(f"{QUOTE_FILE_ADDRESS} was empty")
+        return quotes
     if quotes == updated_quotes:
-      logger.info(f"{QUOTE_FILE_PATH} and {QUOTE_FILE_ADDRESS} are the same")
-      return quotes
+        logger.info(f"{QUOTE_FILE_PATH} and {QUOTE_FILE_ADDRESS} are the same")
+        return quotes
     if quotes == {}: logger.info(f"{QUOTE_FILE_PATH} was empty")
 
     additions = [(k, q) for k,q in updated_quotes.items() if k not in quotes]

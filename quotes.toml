@@ -3554,4 +3554,9 @@ submitter = "Gnome"
 quote = "In a very real sense, we are all aliens on a strange planet.  We spend most of our lives reaching out and trying to communicate.  If during our whole lifetime, we could reach out and really communicate with just two people, we are indeed very fortunate."
 attribution = "Gene Roddenbury"
 
-#624 - Remember to update this, in counts of five!
+[2022-08-13-ullman]
+submitter = "segfault"
+quote = "Until I became a programmer, I didn't thoroughly understand the usefulness of such isolation: the silence, the reduction of life to thought and form; for example, going off to a dark room to work on a program when relations with people get difficult."
+attribution = "Ellen Ullman, Life in Code: A Personal History of Technology"
+
+#625 - Remember to update this, in counts of five!

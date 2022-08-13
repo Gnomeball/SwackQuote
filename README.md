@@ -6,6 +6,8 @@ To add a quote, fork, add it to `quotes.toml`, and make a pull request... hopefu
 
 ### Requirements
 
+First and foremost, if you're wishing to run this bot on your own server, you require your own bot token in `token.txt`. You will also need to change the IDs in `bot.py` to your own.
+
 Requirements:
 - [py-cord](https://pypi.org/project/py-cord/)
 - [tomli](https://pypi.org/project/tomli)
@@ -32,9 +34,9 @@ Currently, `attribution` and `source` are optional fields.
 
 However, the `attribution` field will appear after the quote, behind a `~`, if given.
 
-If you do not know who, or cannot find the original source, please use `Unknown`, or `Various`. If many have said it, use `Apocryphal`.
+If you do not know who, or cannot find the original attribution, please use `Unknown`, or `Various`. If many have said it, use `Apocryphal`. But, if you're having trouble, you can always ask others, who may know it themselves or know where to check.
 
-If citing both a person and a work, please do this in a format that is sensible, perhaps `person, work`, inside the `attribution` field - with anything more specific in the `source` field.
+If citing both a person and a work, please do this in a format that is sensible, perhaps `person, work`, inside the `attribution` field --- with anything more specific (i.e. URLs for Tweets) in the `source` field.
 
 For quotes that span multiple lines, use `"""` at the beginning and end, on separate lines.
 
@@ -42,7 +44,7 @@ For quotes containing code, use `'''` for raw multi-line strings, and then use `
 
 All discord-accepted markdown should be parsed properly.
 
-When adding quotes, please ensure to update the count.
+When adding quotes, please take care to update the trailing count comments, spaced out in groups of 5 quotes before a comment (so `#5` if followed by `#10` and so on). The one at the bottom should have the exact number of quotes, but if you round up to the nearest 5 then it's unlikely anyone will complain.
 
 ### Quotes from Fictional Characters
 

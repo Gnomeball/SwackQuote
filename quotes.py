@@ -23,25 +23,12 @@ def quote_compliant(quote: dict):
   :returns: Is quote a valid Quote?
   :rtype: bool
   """
+  if not isinstance(quote, dict): return False # no top-level variables allowed
   if set(quote).difference(Quote._fields): return False # has bad keys
   if not all(isinstance(v, str) for v in quote.values()): return False # has bad values
   if "quote" not in quote and "submitter" not in quote: return False # missing required fields
   if len(quote["quote"]) > 4000: return False # discord has limits
   return True
-
-def as_quotes(quotes: str):
-  """
-  Converts a TOML-format string to a dict[str, Quote] of identifier -> Quote
-  :returns: Dictionary of Quote identifiers to Quote.
-  :rtype: dict[str, Quote]
-  """
-  loaded_quotes = tomli.loads(quotes)
-  quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
-  non_compliant = {i: q for i, q in loaded_quotes.items() if not quote_compliant(q)}
-  if non_compliant != {}:
-      with open(QUOTE_DUD_PATH, "wb") as f:
-          tomli_w.dump(as_dicts(non_compliant), f)
-  return quote_dict
 
 def as_dicts(quotes: dict[str, Quote]):
   """
@@ -49,7 +36,18 @@ def as_dicts(quotes: dict[str, Quote]):
   :returns: Dictionary of quote identifiers to TOML-compatible dicts
   :rtype: dict[str, dict[str, str]]
   """
-  return {identifier: {k:v for k,v in quote._asdict().items() if v is not None} for identifier, quote in quotes.items()}
+  return {i: {k: v for k, v in q._asdict().items() if v is not None} for i, q in quotes.items()}
+
+def as_quotes(quotes: str):
+  """
+  Converts a TOML-format string to a dict[str, Quote] of identifier -> Quote
+  :returns: Dictionary of Quote identifiers to Quote, and those that were not.
+  :rtype: dict[str, Quote], dict[str, dict[str, Any]]
+  """
+  loaded_quotes = tomli.loads(quotes)
+  quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
+  non_compliant = {i: q for i, q in loaded_quotes.items() if i not in quote_dict}
+  return quote_dict, non_compliant
 
 def calculate_swack_level():
     swack_levels = [
@@ -112,17 +110,16 @@ def pull_random_quote(quotes: dict):
 def pull_quotes_from_file(path=QUOTE_FILE_PATH):
     """
     Pulls the quotes from a local file (default: "quotes.toml").
-    :returns: The dictionary of quotes.
-    :rtype: dict[str, Quote]
+    :returns: The dictionary of quotes and a dictionary of not-quite quotes
+    :rtype: dict[str, Quote], dict[str, dict[str, Any]]
     """
     return as_quotes(Path(path).read_text(encoding="utf8"))
 
 def pull_quotes_from_repo():
     """
     Pulls updated quotes from the repository.
-    :returns: Updated quotes as a dictionary of quotes.
-              On error, returns an empty list and logs exception.
-    :rtype: dict[str, Quote]
+    :returns: Updated quotes as a dictionary of quotes and a dictionary of not-quite quotes.
+    :rtype: dict[str, Quote], dict[str, dict[str, Any]]
     """
     logger = logging.getLogger("pull_from_repo")
     updated_quotes = ""
@@ -147,8 +144,13 @@ async def refresh_quotes():
     :rtype: dict[str, Quote]
     """
     logger = logging.getLogger("refresh_quotes")
-    quotes = pull_quotes_from_file()
-    updated_quotes = pull_quotes_from_repo()
+    quotes, duds = pull_quotes_from_file()
+    updated_quotes, updated_duds = pull_quotes_from_repo()
+    duds |= updated_duds
+    if duds != {}:
+      logger.info(f"We have recorded dud quotes to {QUOTE_DUD_PATH}")
+      with open(QUOTE_DUD_PATH, "wb") as f:
+          tomli_w.dump(as_dicts(duds), f)
     if updated_quotes == {}:
       logger.info(f"{QUOTE_FILE_ADDRESS} was empty")
       return quotes

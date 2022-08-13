@@ -6,7 +6,10 @@ To add a quote, fork, add it to `quotes.toml`, and make a pull request... hopefu
 
 ### Requirements
 
-First and foremost, if you're wishing to run this bot on your own server, you require your own bot token in `token.txt`. You will also need to change the IDs in `bot.py` to your own.
+First and foremost, if you're wishing to run this bot on your own server, you must provide:
+- [your own bot token](https://discordapp.com/developers/applications/) in `token.txt`
+- [your user ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) in `admins.toml` (with a nice handle in the format `<name> = <id>`, such as `gnome = 356467595177885696`)
+- the [ID of the channel you](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) wish the bot to use in `channel.txt`.
 
 Requirements:
 - [py-cord](https://pypi.org/project/py-cord/)
@@ -42,7 +45,7 @@ For quotes that span multiple lines, use `"""` at the beginning and end, on sepa
 
 For quotes containing code, use `'''` for raw multi-line strings, and then use ` ``` ` to create a code block, remembering to close them both afterwards.
 
-All discord-accepted markdown should be parsed properly.
+All discord-accepted markdown should be parsed properly. Individual quotes must be less than 4000 bytes long (UTF-8).
 
 When adding quotes, please take care to update the trailing count comments, spaced out in groups of 5 quotes before a comment (so `#5` if followed by `#10` and so on). The one at the bottom should have the exact number of quotes, but if you round up to the nearest 5 then it's unlikely anyone will complain.
 

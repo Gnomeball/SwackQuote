@@ -34,13 +34,13 @@ def quote_compliant(quote: dict):
     if len(quote["quote"]) > 4000: return False # discord has limits
     return True
 
-def as_quotes(quotes: Union[str, bytes]):
+def as_quotes(quotes: str):
     """
-    Converts TOML-format string/bytes to a dict[str, Quote] of identifier -> Quote
+    Converts a TOML-format string to a dict[str, Quote] of identifier -> Quote
     :returns: Dictionary of Quote identifiers to Quote.
     :rtype: dict[str, Quote]
     """
-    loaded_quotes = tomli.loads(quotes) if isinstance(quotes, str) else tomli.load(quotes)
+    loaded_quotes = tomli.loads(quotes)
     quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
     non_compliant = {i: q for i, q in loaded_quotes.items() if not quote_compliant(q)}
     return quote_dict, non_compliant
@@ -117,7 +117,7 @@ def pull_quotes_from_file():
     :returns: The dictionary of quotes and a dictionary of not-quite quotes
     :rtype: dict[str, Quote], dict[str, dict[str, Any]]
     """
-    return as_quotes(QUOTE_FILE_PATH.read_bytes())
+    return as_quotes(QUOTE_FILE_PATH.read_text())
 
 def pull_quotes_from_repo():
     """

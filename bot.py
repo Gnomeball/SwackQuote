@@ -19,7 +19,7 @@ client = discord.Client(intents = intents)
 logger = logging.getLogger("QuoteBot")
 
 # Those able to send commands to the bot and which channel it must be in
-ADMINS  = set(tomli.load(Path("admins.toml").read_bytes()).values())
+ADMINS  = set(tomli.loads(Path("admins.toml").read_text()).values())
 CHANNEL = int(Path("channel.txt").read_text())
 
 MINUTE = 60

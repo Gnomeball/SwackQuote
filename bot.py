@@ -4,7 +4,7 @@ from pathlib import Path
 
 import tomli
 
-from quotes import pull_random_quote, pull_specific_quote, refresh_quotes, format_quote_text, calculate_swack_level, QUOTE_DUD_PATH
+from quotes import pull_random_quote, pull_specific_quote, refresh_quotes, format_quote_text, calculate_swack_level, QUOTE_FILE_PATH, QUOTE_DUD_PATH, QUOTE_DECK_PATH, QUOTE_HISTORY_PATH
 
 # Logging boilerplate
 fmt = "[%(asctime)s: %(name)s %(levelname)s]: %(message)s"
@@ -14,11 +14,11 @@ logging.basicConfig(level = logging.INFO, stream = sys.stdout, format = fmt)
 intents = discord.Intents.default()
 intents.message_content = True
 
-client = discord.Client(intents=intents)
+client = discord.Client(intents = intents)
 logger = logging.getLogger("QuoteBot")
 
 # Those able to send commands to the bot and which channel it must be in
-ADMINS  = set(tomli.loads(Path("admins.toml").read_text(encoding="utf8")).values())
+ADMINS  = set(tomli.load(Path("admins.toml").read_bytes()).values())
 CHANNEL = int(Path("channel.txt").read_text())
 
 MINUTE = 60
@@ -80,8 +80,8 @@ async def quote_loop():
 @client.event
 async def current_date_time():
     day_n = datetime.now().day
-    day_ord = {1:"st", 21:"st", 31:"st", 2:"nd", 22:"nd", 3:"rd", 23:"rd", 7:"nth", 17:"nth", 27:"nth"}.get(day_n, "th")
-    return datetime.now().strftime('%A %-d# %B %Y').replace("#", day_ord)
+    day_ord = {1: "st", 21: "st", 31: "st", 2: "nd", 22: "nd", 3: "rd", 23: "rd", 7: "nth", 17: "nth", 27: "nth"}.get(day_n, "th")
+    return datetime.now().strftime("%A %-d# %B %Y").replace("#", day_ord)
 
 @client.event
 async def send_quote(pre = "Quote"):
@@ -109,6 +109,11 @@ async def test_quote(which = "pre-toml-255"):
     await client.get_channel(CHANNEL).send(embed = embedVar)
 
 # Run the thing
+
+QUOTE_FILE_PATH.touch()
+QUOTE_DUD_PATH.touch()
+QUOTE_DECK_PATH.touch()
+QUOTE_HISTORY_PATH.touch()
 
 client.loop.create_task(quote_loop())
 client.run(Path("token.txt").read_text())

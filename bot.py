@@ -1,5 +1,6 @@
 import discord, asyncio, random, logging, sys, colorsys
 from datetime import datetime
+from typing import Optional
 from pathlib import Path
 
 import tomli
@@ -84,29 +85,21 @@ async def current_date_time():
     return datetime.now().strftime("%A %-d# %B %Y").replace("#", day_ord)
 
 @client.event
-async def send_quote(pre = "Quote"):
+async def send_quote(pre: str = "Quote", title: Optional[str] = None, which: Optional[str] = None, log: str = "send_quote"):
     quotes = await refresh_quotes() # This way we have access to the latest quotes
-    logger = logging.getLogger("send_quote")
+    logger = logging.getLogger(log)
     await dud_quotes()
-    quote, quote_index = pull_random_quote(quotes)
+    quote, i = pull_random_quote(quotes) if which is None else pull_specific_quote(which, quotes)
     quote_text = format_quote_text(quote)
-    swack_level = calculate_swack_level()
-    embedVar = discord.Embed(title = swack_level, description = quote_text, colour = random_colour())
-    embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nQuote {quote_index}/{len(quotes)}, Submitted by {quote.submitter}")
+    title = calculate_swack_level() if title is None else title
+    embedVar = discord.Embed(title = title, description = quote_text, colour = random_colour())
+    embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nQuote {i}/{len(quotes)}, Submitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
     await client.get_channel(CHANNEL).send(embed = embedVar)
 
 @client.event
 async def test_quote(which = "pre-toml-255"):
-    quotes = await refresh_quotes() # This way we have access to the latest quotes
-    logger = logging.getLogger("test_quote")
-    await dud_quotes()
-    quote, quote_index = pull_specific_quote(which, quotes)
-    quote_text = format_quote_text(quote)
-    embedVar = discord.Embed(title = "Testing the Swack", description = quote_text, colour = random_colour())
-    embedVar.set_footer(text = f"Test for {await current_date_time()}\nQuote {quote_index}/{len(quotes)}, Submitted by {quote.submitter}")
-    logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
-    await client.get_channel(CHANNEL).send(embed = embedVar)
+    await send_quote(pre = "Testing", title = "Testing the Swack", which = which, log = "test_quote")
 
 # Run the thing
 

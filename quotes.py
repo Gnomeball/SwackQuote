@@ -98,16 +98,16 @@ def pull_random_quote(quotes: dict[str, Quote]):
     :returns: A Quote(submitter, quote, attribution = None, source = None) and its position in the full list.
     :rtype: Quote, int
     """
-    deck = set(QUOTE_DECK_PATH.read_text(encoding = "utf8").splitlines())
-    recent = set(QUOTE_HISTORY_PATH.read_text(encoding = "utf8").splitlines()[-QUOTE_REPEAT_DELAY:])
-    good_q = [(i, k) for i, k in enumerate(quotes, 1) if k not in recent and k in deck]
+    recent = QUOTE_HISTORY_PATH.read_text(encoding = "utf8").splitlines()[-QUOTE_REPEAT_DELAY:]
+    rs, deck = set(recent), set(QUOTE_DECK_PATH.read_text(encoding = "utf8").splitlines())
+    good_q = [(i, k) for i, k in enumerate(quotes, 1) if k not in rs and k in deck]
 
     quote_index, quote = random.choice(good_q)
     deck.remove(quote)
-    recent.add(quote)
+    recent.append(quote)
 
-    QUOTE_HISTORY_PATH.write_text("\n".join(recent) + "\n", encoding = "utf8")
-    QUOTE_DECK_PATH.write_text("\n".join(deck - recent) + "\n", encoding = "utf8")
+    QUOTE_HISTORY_PATH.write_text("\n".join(recent), encoding = "utf8")
+    QUOTE_DECK_PATH.write_text("\n".join(deck - rs), encoding = "utf8")
 
     return quotes[quote], quote_index
 
@@ -186,6 +186,6 @@ async def refresh_quotes():
     else:
         deck.update(updated_quotes) # cycle deck, filling it back up again
 
-    QUOTE_DECK_PATH.write_text("\n".join(deck), encoding = "utf8", newline = "\n")
+    QUOTE_DECK_PATH.write_text("\n".join(deck), encoding = "utf8")
 
     return updated_quotes

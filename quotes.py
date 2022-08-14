@@ -106,8 +106,8 @@ def pull_random_quote(quotes: dict[str, Quote]):
     deck.remove(quote)
     recent.add(quote)
 
-    QUOTE_HISTORY_PATH.write_text("\n".join(recent), encoding = "utf8", newline = "\n")
-    QUOTE_DECK_PATH.write_text("\n".join(deck - recent), encoding = "utf8", newline = "\n")
+    QUOTE_HISTORY_PATH.write_text("\n".join(recent) + "\n", encoding = "utf8")
+    QUOTE_DECK_PATH.write_text("\n".join(deck - recent) + "\n", encoding = "utf8")
 
     return quotes[quote], quote_index
 

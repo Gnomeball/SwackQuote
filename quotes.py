@@ -1,4 +1,4 @@
-from typing import NamedTuple, Optional
+from typing import NamedTuple, Optional, Union
 from pathlib import Path
 import random
 import logging
@@ -34,7 +34,7 @@ def quote_compliant(quote: dict):
     if len(quote["quote"]) > 4000: return False # discord has limits
     return True
 
-def as_quotes(quotes: str | bytes):
+def as_quotes(quotes: Union[str, bytes]):
     """
     Converts TOML-format string/bytes to a dict[str, Quote] of identifier -> Quote
     :returns: Dictionary of Quote identifiers to Quote.

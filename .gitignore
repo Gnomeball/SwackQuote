@@ -1,4 +1,14 @@
+# Secrets
 token.txt
+admins.toml
+channel.txt
+
+# Misc. files
+out.txt
+err.txt
+quote_deck.txt
+quote_duds.toml
+quote_history.txt
 count-please.py
 
 # Byte-compiled / optimized / DLL files

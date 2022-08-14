@@ -1,10 +1,11 @@
 import discord, asyncio, random, logging, sys, colorsys
 from datetime import datetime
+from typing import Optional
 from pathlib import Path
 
 import tomli
 
-from quotes import pull_random_quote, pull_specific_quote, refresh_quotes, format_quote_text, calculate_swack_level, QUOTE_DUD_PATH
+from quotes import pull_random_quote, pull_specific_quote, refresh_quotes, format_quote_text, calculate_swack_level, QUOTE_FILE_PATH, QUOTE_DUD_PATH, QUOTE_DECK_PATH, QUOTE_HISTORY_PATH
 
 # Logging boilerplate
 fmt = "[%(asctime)s: %(name)s %(levelname)s]: %(message)s"
@@ -14,11 +15,11 @@ logging.basicConfig(level = logging.INFO, stream = sys.stdout, format = fmt)
 intents = discord.Intents.default()
 intents.message_content = True
 
-client = discord.Client(intents=intents)
+client = discord.Client(intents = intents)
 logger = logging.getLogger("QuoteBot")
 
 # Those able to send commands to the bot and which channel it must be in
-ADMINS  = set(tomli.loads(Path("admins.toml").read_text(encoding="utf8")).values())
+ADMINS  = set(tomli.load(Path("admins.toml").read_bytes()).values())
 CHANNEL = int(Path("channel.txt").read_text())
 
 MINUTE = 60
@@ -80,35 +81,32 @@ async def quote_loop():
 @client.event
 async def current_date_time():
     day_n = datetime.now().day
-    day_ord = {1:"st", 21:"st", 31:"st", 2:"nd", 22:"nd", 3:"rd", 23:"rd", 7:"nth", 17:"nth", 27:"nth"}.get(day_n, "th")
-    return datetime.now().strftime('%A %-d# %B %Y').replace("#", day_ord)
+    day_ord = {1: "st", 21: "st", 31: "st", 2: "nd", 22: "nd", 3: "rd", 23: "rd", 7: "nth", 17: "nth", 27: "nth"}.get(day_n, "th")
+    return datetime.now().strftime("%A %-d# %B %Y").replace("#", day_ord)
 
 @client.event
-async def send_quote(pre = "Quote"):
+async def send_quote(pre: str = "Quote", title: Optional[str] = None, which: Optional[str] = None, log: str = "send_quote"):
     quotes = await refresh_quotes() # This way we have access to the latest quotes
-    logger = logging.getLogger("send_quote")
+    logger = logging.getLogger(log)
     await dud_quotes()
-    quote, quote_index = pull_random_quote(quotes)
+    quote, i = pull_random_quote(quotes) if which is None else pull_specific_quote(which, quotes)
     quote_text = format_quote_text(quote)
-    swack_level = calculate_swack_level()
-    embedVar = discord.Embed(title = swack_level, description = quote_text, colour = random_colour())
-    embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nQuote {quote_index}/{len(quotes)}, Submitted by {quote.submitter}")
+    title = calculate_swack_level() if title is None else title
+    embedVar = discord.Embed(title = title, description = quote_text, colour = random_colour())
+    embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nQuote {i}/{len(quotes)}, Submitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
     await client.get_channel(CHANNEL).send(embed = embedVar)
 
 @client.event
 async def test_quote(which = "pre-toml-255"):
-    quotes = await refresh_quotes() # This way we have access to the latest quotes
-    logger = logging.getLogger("test_quote")
-    await dud_quotes()
-    quote, quote_index = pull_specific_quote(which, quotes)
-    quote_text = format_quote_text(quote)
-    embedVar = discord.Embed(title = "Testing the Swack", description = quote_text, colour = random_colour())
-    embedVar.set_footer(text = f"Test for {await current_date_time()}\nQuote {quote_index}/{len(quotes)}, Submitted by {quote.submitter}")
-    logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
-    await client.get_channel(CHANNEL).send(embed = embedVar)
+    await send_quote(pre = "Testing", title = "Testing the Swack", which = which, log = "test_quote")
 
 # Run the thing
+
+QUOTE_FILE_PATH.touch()
+QUOTE_DUD_PATH.touch()
+QUOTE_DECK_PATH.touch()
+QUOTE_HISTORY_PATH.touch()
 
 client.loop.create_task(quote_loop())
 client.run(Path("token.txt").read_text())

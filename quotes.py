@@ -27,12 +27,27 @@ def quote_compliant(quote: dict):
     :returns: Is quote a valid Quote?
     :rtype: bool
     """
-    if not isinstance(quote, dict): return False # no top-level variables allowed
-    if set(quote).difference(Quote._fields): return False # has bad keys
-    if not all(isinstance(v, str) for v in quote.values()): return False # has bad values
+    if not isinstance(quote, dict): return False # we must start with a dictionary
+    for key, val in quote.items():
+        if key not in Quote.__annotations__ or not isinstance(val, str):
+            return False # field not in Quote or not a str
     if "quote" not in quote and "submitter" not in quote: return False # missing required fields
     if len(quote["quote"]) > 4000: return False # discord has limits
     return True
+
+# def quote_compliant(quote: dict):
+#     """
+#     Checks whether a dict would make a valid Quote.
+#     :returns: Is quote a valid Quote?
+#     :rtype: bool
+#     """
+#     match quote:
+#         case {"submitter": str(_), "quote": str(text), **optional} if len(text) < 4000:
+#             for key, val in optional.items():
+#                 if key not in Quote.__annotations__ or not isinstance(val, str):
+#                     return False # field not in Quote or not a str
+#             return True
+#     return False
 
 def as_quotes(quotes: str):
     """
@@ -51,7 +66,10 @@ def as_dicts(quotes: dict[str, Quote]):
     :returns: Dictionary of quote identifiers to TOML-compatible dicts
     :rtype: dict[str, dict[str, str]]
     """
-    return {identifier: {k: v for k, v in quote._asdict().items() if v is not None} for identifier, quote in quotes.items()}
+    return {
+        identifier: {k: v for k, v in quote._asdict().items() if v is not None}
+        for identifier, quote in quotes.items()
+    }
 
 def calculate_swack_level():
     """
@@ -88,7 +106,10 @@ def pull_specific_quote(quote: str, quotes: dict[str, Quote]):
     :returns: The selected quote, or failing that Quote("Tester", "*Testing* - [Links work too!](https://www.google.co.uk)").
     :rtype: Quote
     """
-    return (quotes[quote], list(quotes).index(quote) + 1) if quote in quotes else (Quote("Tester", "*Testing* - [Links work too!](https://www.google.co.uk)"), "Test")
+    if quote in quotes:
+        return quotes[quote], list(quotes).index(quote) + 1
+    else:
+        return Quote("Tester", "*Testing* - [Links work too!](https://www.google.co.uk)"), "Test"
 
 def pull_random_quote(quotes: dict[str, Quote]):
     """

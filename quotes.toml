@@ -54,7 +54,7 @@ attribution = "Alan Kay"
 
 [pre-toml-11]
 submitter = "Gnome"
-quote = "There are 10 types of people – those who understand binary and those who do not."
+quote = "There are 10 types of people - those who understand binary and those who do not."
 attribution = "Various"
 
 [pre-toml-12]
@@ -86,7 +86,7 @@ attribution = "Alan Perlis"
 
 [pre-toml-17]
 submitter = "Gnome"
-quote = "It's not a bug – it's an undocumented feature."
+quote = "It's not a bug - it's an undocumented feature."
 attribution = "Will J. Doors"
 
 [pre-toml-18]
@@ -796,7 +796,7 @@ attribution = "Sun Microsystems"
 [pre-toml-149]
 submitter = "Gnome"
 quote = "Dammit Jim, I'm an actor, not a doctor."
-attribution = "Misquoted misquote from ‎Dr. Leonard McCoy"
+attribution = "Misquoted misquote from Dr. Leonard McCoy"
 
 [pre-toml-150]
 submitter = "Gnome"
@@ -1379,7 +1379,16 @@ attribution = "Brandolini's Law"
 
 [pre-toml-255]
 submitter = "Victor"
-quote = "Is Windows a Virus?\n\nNo, Windows is not a virus.  Here's what viruses do:\nn1.  They replicate quickly - okay, Windows does that.\nn2.  Viruses use up valuable system resources, slowing down the system as they do so - okay, Windows does that.\nn3.  Viruses will, from time to time, trash your hard disk - okay, Windows does that too.\nn4.  Viruses are usually carried, unknown to the user, along with valuable programs and systems.  Sigh... Windows does that, too.\nn5.  Viruses will occasionally make the user suspect their system is too slow (see 2) and the user will buy new hardware.  Yup, that's with Windows, too.\n\nUntil now it seems Windows is a virus but there are fundamental differences: Viruses are well supported by their authors, are running on most systems, their program code is fast, compact and efficient and they tend to become more sophisticated as they mature.  So Windows is not a virus.\n\nIt's a bug.\n"
+quote = """Is Windows a Virus?
+No, Windows is not a virus.  Here's what viruses do:
+n1.  They replicate quickly - okay, Windows does that.
+n2.  Viruses use up valuable system resources, slowing down the system as they do so - okay, Windows does that.
+n3.  Viruses will, from time to time, trash your hard disk - okay, Windows does that too.
+n4.  Viruses are usually carried, unknown to the user, along with valuable programs and systems.  Sigh... Windows does that, too.
+n5.  Viruses will occasionally make the user suspect their system is too slow (see 2) and the user will buy new hardware.  Yup, that's with Windows, too.
+Until now it seems Windows is a virus but there are fundamental differences: Viruses are well supported by their authors, are running on most systems, their program code is fast, compact and efficient and they tend to become more sophisticated as they mature.  So Windows is not a virus.
+It's a bug.
+"""
 attribution = "Unknown"
 
 [pre-toml-256]
@@ -1412,14 +1421,16 @@ attribution = "Matt Welsh"
 
 [pre-toml-261]
 submitter = "Kris"
-quote = "```ruby\nls = File.read(\"history\").split(\"\n\"); m = ARGV.length; t = Array.new(m, 0); ls.each { |li| (0..m-1).each { |i| t[i] += 1 if li.start_with?(ARGV[i]) } }; puts \"total	#{ls.length}\"; (0..m-1).each { |i| puts \"#{ARGV[i]}	#{t[i]}\"}\n```\n"
+quote = """```ruby
+ls = File.read(\"history\").split(\"\n\"); m = ARGV.length; t = Array.new(m, 0); ls.each { |li| (0..m-1).each { |i| t[i] += 1 if li.start_with?(ARGV[i]) } }; puts \"total	#{ls.length}\"; (0..m-1).each { |i| puts \"#{ARGV[i]}	#{t[i]}\"}
+```"""
 attribution = "Gnome"
 
 #260
 
 [pre-toml-262]
 submitter = "Gnome"
-quote = "[we're] just taking potshots @ C++, which really is too easy."
+quote = "[We're] just taking potshots @ C++, which really is too easy."
 attribution = "Kris"
 
 [pre-toml-263]
@@ -1446,7 +1457,12 @@ attribution = "Drew DeVault on working with the KDE team"
 
 [pre-toml-267]
 submitter = "Gnome"
-quote = "There was an Indian Chief, and he had three squaws, and kept them in three teepees.  When he would come home late from hunting, he would not know which teepee contained which squaw, being dark and all.  He went hunting one day, and killed a hippopotamus, a bear, and a buffalo.  He put the a hide from each animal into a different teepee, so that when he came home late, he could feel inside the teepee and he would know which squaw was inside.\n\nWell after about a year, all three squaws had children.  The squaw on the bear had a baby boy, the squaw on the buffalo hide had a baby girl.  But the squaw on the hippopotamus had a girl and a boy.  So what is the moral of the story?\n\nThe squaw on the hippopotamus is equal to the sum of the squaws on the other two hides.\n"
+quote = """There was an Indian Chief, and he had three squaws, and kept them in three teepees.  When he would come home late from hunting, he would not know which teepee contained which squaw, being dark and all.  He went hunting one day, and killed a hippopotamus, a bear, and a buffalo.  He put the a hide from each animal into a different teepee, so that when he came home late, he could feel inside the teepee and he would know which squaw was inside.
+
+Well after about a year, all three squaws had children.  The squaw on the bear had a baby boy, the squaw on the buffalo hide had a baby girl.  But the squaw on the hippopotamus had a girl and a boy.  So what is the moral of the story?
+
+The squaw on the hippopotamus is equal to the sum of the squaws on the other two hides.
+"""
 attribution = "Various"
 
 [pre-toml-268]
@@ -1626,7 +1642,9 @@ source  ="Science: Abridged Beyond the Point of Usefulness "
 
 [pre-toml-300]
 submitter = "Gnome"
-quote = "```python\ndef isprime(n): return not re.match(r\"^1?$|^(11+?)\\1+$\", \"1\"*n)\n```"
+quote = """```python
+def isprime(n): return not re.match(r\"^1?$|^(11+?)\\1+$\", \"1\"*n)
+```"""
 attribution = "segfault"
 
 [pre-toml-301]
@@ -1645,7 +1663,10 @@ source = "COSMOS, A Personal Voyage"
 
 [pre-toml-303]
 submitter = "segfault"
-quote = "जो सो रहा हो उसे तो जगा सकते हैं, लेकिन जो आँखे मूँद कर सोने का अभिनय कर रहा हो उसे कैसे जगाएंगे\nYou can wake the one who is sleeping, but how will you wake the one who is pretending to sleep with his eyes closed?\n"
+quote = """जो सो रहा हो उसे तो जगा सकते हैं, लेकिन जो आँखे मूँद कर सोने का अभिनय कर रहा हो उसे कैसे जगाएंगे
+
+You can wake the one who is sleeping, but how will you wake the one who is pretending to sleep with his eyes closed?
+"""
 attribution = "The Mahabharata (Ancient Sanskrit Epic)"
 
 [pre-toml-304]
@@ -1660,7 +1681,33 @@ attribution = "Edsger W. Dijkstra"
 
 [2021-08-06-1]
 submitter = "Victor"
-quote = "A is for awk, which runs like a snail, and\nB is for biff, which reads all your mail.\nC is for cc, as hackers recall, while\nD is for dd, the command that does all.\nE is for emacs, which rebinds your keys, and\nF is for fsck, which rebuilds your trees.\nG is for grep, a clever detective, while\nH is for halt, which may seem defective.\nI is for indent, which rarely amuses, and\nJ is for join, which nobody uses.\nK is for kill, which makes you the boss, while\nL is for lex, which is missing from DOS.\nM is for more, from which less was begot, and\nN is for nice, which it really is not.\nO is for od, which prints out things nice, while\nP is for passwd, which reads in strings twice.\nQ is for quota, a Berkeley-type fable, and\nR is for ranlib, for sorting ar table.\nS is for spell, which attempts to belittle, while\nT is for true, which does very little.\nU is for uniq, which is used after sort, and\nV is for vi, which is hard to abort.\nW is for whoami, which tells you your name, while\nX is, well, X, of dubious fame.\nY is for yes, which makes an impression, and\nZ is for zcat, which handles compression.\n"
+quote = """A is for awk, which runs like a snail, and
+B is for biff, which reads all your mail.
+C is for cc, as hackers recall, while
+D is for dd, the command that does all.
+E is for emacs, which rebinds your keys, and
+F is for fsck, which rebuilds your trees.
+G is for grep, a clever detective, while
+H is for halt, which may seem defective.
+I is for indent, which rarely amuses, and
+J is for join, which nobody uses.
+K is for kill, which makes you the boss, while
+L is for lex, which is missing from DOS.
+M is for more, from which less was begot, and
+N is for nice, which it really is not.
+O is for od, which prints out things nice, while
+P is for passwd, which reads in strings twice.
+Q is for quota, a Berkeley-type fable, and
+R is for ranlib, for sorting ar table.
+S is for spell, which attempts to belittle, while
+T is for true, which does very little.
+U is for uniq, which is used after sort, and
+V is for vi, which is hard to abort.
+W is for whoami, which tells you your name, while
+X is, well, X, of dubious fame.
+Y is for yes, which makes an impression, and
+Z is for zcat, which handles compression.
+"""
 attribution = "Unknown"
 source = "THE ABC'S OF UNIX"
 
@@ -1718,7 +1765,12 @@ source = "The Eisenhower Matrix"
 
 [2021-09-10-1]
 submitter = "segfault"
-quote = "What does it mean to have a human brain?\n\nI act on impulse most of the time, and otherwise do what I can to design a life that rewards my impulses with beautiful outcomes.  I think designing games is like that: designing little spaces that reward my avatar's impulses with beautiful outcomes.  Only, when I make a game I can share the experience with you; you can inhabit the same space, embody the same avatar, perhaps act on the same impulses, and – if serendipity allows – behold the same beautiful outcomes.\n\nThrough making and playing with games and other art, I hope to come to some deeper understanding of not the science of my brain, but the experience and meaning of being some specific person.\n"
+quote = """What does it mean to have a human brain?
+
+I act on impulse most of the time, and otherwise do what I can to design a life that rewards my impulses with beautiful outcomes.  I think designing games is like that: designing little spaces that reward my avatar's impulses with beautiful outcomes.  Only, when I make a game I can share the experience with you; you can inhabit the same space, embody the same avatar, perhaps act on the same impulses, and - if serendipity allows - behold the same beautiful outcomes.
+
+Through making and playing with games and other art, I hope to come to some deeper understanding of not the science of my brain, but the experience and meaning of being some specific person.
+"""
 attribution = "droqen"
 source = "https://www.droqen.com/1112/"
 
@@ -1747,7 +1799,14 @@ attribution = "Simon Wiesenthal"
 
 [2021-09-10-6]
 submitter = "segfault"
-quote = "The road to wisdom? - Well, it's plain\nand simple to express:\n> Err\n> and err\n> and err again\n> but less\n> and less\n> and less.\n"
+quote = """The road to wisdom? - Well, it's plain and simple to express:
+> Err
+> and err
+> and err again
+> but less
+> and less
+> and less.
+"""
 attribution = "Piet Hein"
 source = "http://www.sophilos.net/GrooksofPietHein"
 
@@ -1761,7 +1820,15 @@ source = "http://www.sophilos.net/GrooksofPietHein"
 
 [2021-09-22-1]
 submitter = "segfault"
-quote = "data structure optimization protips:\n- constant factors are always bigger than you think they are\n- _n_ will always be smaller than you think it's gonna be\n- arrays stay winning\n- the hardest problem in computer science is “how to malloc just the right amount of array”\n- malloc is the second-biggest constant factor\n- but the constant factor that matters the most is bounds checking\n- the only thing worse than doing a lot of bounds checking is doing an OOB read/write\n"
+quote = """data structure optimization protips:
+- constant factors are always bigger than you think they are
+- _n_ will always be smaller than you think it's gonna be
+- arrays stay winning
+- the hardest problem in computer science is \"how to malloc just the right amount of array\"
+- malloc is the second-biggest constant factor
+- but the constant factor that matters the most is bounds checking
+- the only thing worse than doing a lot of bounds checking is doing an OOB read/write
+"""
 attribution = "Eliza Weisman"
 source = "https://twitter.com/mycoliza/status/1440702345168388101"
 
@@ -1782,7 +1849,24 @@ attribution = "segfault"
 
 [2021-10-05-1]
 submitter = "segfault"
-quote = "```               THE STRONGEST PUBLIC LICENSE                 Draft 1, November 2010\n\nEveryone is permitted to copy and distribute verbatim or modified\ncopies of this license document, and changing it is allowed as long\nas the name is changed.\n\n                 THE STRONGEST PUBLIC LICENSE\n  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  ⑨. This licence document permits you to DO WHAT THE FUCK YOU WANT TO\n     as long as you APPRECIATE CIRNO AS THE STRONGEST IN GENSOKYO.\n\nThis program is distributed in the hope that it will be THE STRONGEST,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nUSEFULNESS or FITNESS FOR A PARTICULAR PURPOSE.\n```\n"
+quote = """```
+               THE STRONGEST PUBLIC LICENSE
+                 Draft 1, November 2010
+
+Everyone is permitted to copy and distribute verbatim or modified
+copies of this license document, and changing it is allowed as long
+as the name is changed.
+
+                 THE STRONGEST PUBLIC LICENSE
+  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+ ⑨. This licence document permits you to DO WHAT THE FUCK YOU WANT TO
+    as long as you APPRECIATE CIRNO AS THE STRONGEST IN GENSOKYO.
+
+This program is distributed in the hope that it will be THE STRONGEST,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+USEFULNESS or FITNESS FOR A PARTICULAR PURPOSE.
+```"""
 attribution = "THE CIRNO LICENSE"
 source = "https://twitter.com/ablative_sasha/status/1428084447879081985"
 
@@ -1837,7 +1921,12 @@ attribution = "Gnome"
 
 [2021-10-18-2]
 submitter = "Victor"
-quote = "Welcome to Meeting Room 212\n\nMaximum Capacity is 1\n\nEnjoy the space!\n"
+quote = """Welcome to Meeting Room 212
+
+Maximum Capacity is 1
+
+Enjoy the space!
+"""
 attribution = "Swansea University"
 
 #335
@@ -1877,13 +1966,13 @@ attribution = "MasterMind"
 
 [2021-11-28-1]
 submitter = "segfault"
-quote = "Longer lines are simply useful.  Part of that is that we aren't programming in the 80's any more, and our source code is fundamentally wider as a result.\n\nYes, local iteration variables are still called 'i', because more context just isn't helpful for some anonymous counter.  Being concise is still a good thing, and overly verbose names are not inherently better.\n\nBut still - it's entirely reasonable to have variable names that are 10-15 characters and it makes the code more legible.  Writing things out instead of using abbreviations etc.\n"
+quote = "Longer lines are simply useful.  Part of that is that we aren't programming in the 80's any more, and our source code is fundamentally wider as a result.  Yes, local iteration variables are still called 'i', because more context just isn't helpful for some anonymous counter.  Being concise is still a good thing, and overly verbose names are not inherently better.  But still - it's entirely reasonable to have variable names that are 10-15 characters and it makes the code more legible.  Writing things out instead of using abbreviations etc."
 attribution = "Linus Torvalds"
 source = "https://lkml.org/lkml/2020/5/29/1038"
 
 [2021-11-28-2]
 submitter = "segfault"
-quote = "I find it completely irrelevant if somebody says that their kernel compile takes 10 hours because they are doing kernel development on a Raspberry PI with 4GB of RAM.\n\nPeople with restrictive hardware shouldn't make it more inconvenient for people who have better resources.  Yes, we'll accommodate things to within reasonable limits.  But no, 80-column terminals in 2020 isn't \"reasonable\" any more as far as I'm concerned.  People commonly used 132-column terminals even back in the 80's, for chrissake, don't try to make 80 columns some immovable standard.\n"
+quote = "I find it completely irrelevant if somebody says that their kernel compile takes 10 hours because they are doing kernel development on a Raspberry PI with 4GB of RAM.  People with restrictive hardware shouldn't make it more inconvenient for people who have better resources.  Yes, we'll accommodate things to within reasonable limits.  But no, 80-column terminals in 2020 isn't \"reasonable\" any more as far as I'm concerned.  People commonly used 132-column terminals even back in the 80's, for chrissake, don't try to make 80 columns some immovable standard."
 attribution = "Linus Torvalds"
 source = "https://lkml.org/lkml/2020/5/29/1038"
 
@@ -1926,7 +2015,14 @@ source = "The Girl Who Died, 2015"
 
 [2021-12-08-4]
 submitter = "Gnome"
-quote = "How many seconds in eternity?\n\nThere's this mountain of pure diamond.  It takes an hour to climb it and an hour to go around it.  Every hundred years.  A little bird comes and sharpens its beak on the mountain.  And within time, the mountain is chiselled away.  The first second of eternity has passed.\n\nYou might think that's one hell of a long time.\n\nPersonally, I think that's one hell of a bird.\n"
+quote = """How many seconds in eternity?
+
+There's this mountain of pure diamond.  It takes an hour to climb it and an hour to go around it.  Every hundred years.  A little bird comes and sharpens its beak on the mountain.  And within time, the mountain is chiselled away.  The first second of eternity has passed.
+
+You might think that's one hell of a long time.
+
+Personally, I think that's one hell of a bird.
+"""
 attribution = "The Doctor"
 source = "Heavens Sent, 2015"
 
@@ -1986,7 +2082,12 @@ source = "The Tonight Show with Johnny Carson, March 2nd 1978"
 
 [2022-02-16]
 submitter = "Gnome"
-quote = "Consider the following declarations.\n\nThe North Star is the brightest star in the nighttime sky.  The Sun is a yellow star.  What goes up must come down.  On a dark night you can see millions of stars with the unaided eye.  In space there is no gravity.  A compass points north.  Days get shorter in the winter and longer in the summer.  Total solar eclipses are rare.  At high noon, the Sun is directly overhead.  The Sun rises in the east and sets in the west.  The Moon comes out at night.  On the equinox there are 12 hours of day and 12 hours of night.  The Southern Cross is a beautiful constellation.\n\nEvery statement in the above paragraph is false.\n"
+quote = """Consider the following declarations.
+
+The North Star is the brightest star in the nighttime sky.  The Sun is a yellow star.  What goes up must come down.  On a dark night you can see millions of stars with the unaided eye.  In space there is no gravity.  A compass points north.  Days get shorter in the winter and longer in the summer.  Total solar eclipses are rare.  At high noon, the Sun is directly overhead.  The Sun rises in the east and sets in the west.  The Moon comes out at night.  On the equinox there are 12 hours of day and 12 hours of night.  The Southern Cross is a beautiful constellation.
+
+Every statement in the above paragraph is false.
+"""
 attribution = "Neil DeGrasse Tyson"
 
 #360
@@ -1999,12 +2100,21 @@ source = "Analytic Theory of Heat, 1822"
 
 [2022-02-19-2]
 submitter = "Gnome"
-quote = "When you are risen on the eastern horizon\nYou have filled every land with your beauty...\nThough you are far away, your rays are on Earth\n"
+quote = """When you are risen on the eastern horizon
+You have filled every land with your beauty...
+Though you are far away, your rays are on Earth
+"""
 attribution = "Akhnaton, 1370 BCE"
 
 [2022-02-19-3]
 submitter = "Gnome"
-quote = "When on high the heaven had not been named,\nFirm ground below had not been called by name...\nNo reed hut had been matted, no marsh land had appeared,\nWhen no god whatever had been brought into being,\nUncalled by name, their destinations undetermined -\nThen it was the gods were formed...\n"
+quote = """When on high the heaven had not been named,
+Firm ground below had not been called by name...
+No reed hut had been matted, no marsh land had appeared,
+When no god whatever had been brought into being,
+Uncalled by name, their destinations undetermined -
+Then it was the gods were formed...
+"""
 attribution = "Enuma Elish - the Babylonian creation myth, late 3rd millennium BCE"
 
 [2022-02-19-4]
@@ -2027,7 +2137,7 @@ attribution = "Roberto Rossellini"
 
 [2022-02-26-1]
 submitter = "segfault"
-quote = "When you fire that first shot, no matter how right you feel, you have no idea who's going to die.\n\nYou don't know whose children are going to scream and burn.  How many hearts will be broken.  How many lives shattered.  How much blood will spill until everybody does what they were always going to have to do from the very beginning: sit down and talk.\n\nListen to me.  Listen.  I just want you to think.  Do you know what thinking is? It's just a fancy word for changing your mind.\n"
+quote = "When you fire that first shot, no matter how right you feel, you have no idea who's going to die.  You don't know whose children are going to scream and burn.  How many hearts will be broken.  How many lives shattered.  How much blood will spill until everybody does what they were always going to have to do from the very beginning: sit down and talk.  Listen to me.  Listen.  I just want you to think.  Do you know what thinking is? It's just a fancy word for changing your mind."
 attribution = "The Doctor"
 source = "The Zygon Inversion, 2015"
 
@@ -2054,11 +2164,17 @@ source = "The Lazarus Experiment, 2007"
 [2022-02-26-5]
 submitter = "Gnome"
 quote = "There's a lot of things you need to get across this universe.  Warp drive... wormhole refractors... You know the thing you need most of all? You need a hand to hold."
-attribution = "The Doctor, The Almost People"
+attribution = "The Doctor"
+source = "The Almost People, 2011"
 
 [2022-02-26-6]
 submitter = "Gnome"
-quote = "It wouldn't be as good.  It's hard to talk about the importance of an imaginary hero.  But heroes are important: Heroes tell us something about ourselves.  History tells us who we used to be, documentaries tell us who we are now; but heroes tell us who we want to be.\n\nAnd a lot of our heroes depress me.  But when they made this particular hero, they didn't give him a gun; they gave him a screwdriver, to fix things.  They didn't give him a tank or a warship or an x-wing fighter; they gave him a box, from which you can call for help.  And they didn't give him a superpower or pointy ears or a heat-ray, they gave him an extra heart.  They gave him two hearts! And that's an extraordinary thing.\n\nThere will never come a time when we don't need a hero like the Doctor.\n"
+quote = """It wouldn't be as good.  It's hard to talk about the importance of an imaginary hero.  But heroes are important: Heroes tell us something about ourselves.  History tells us who we used to be, documentaries tell us who we are now; but heroes tell us who we want to be.
+
+And a lot of our heroes depress me.  But when they made this particular hero, they didn't give him a gun; they gave him a screwdriver, to fix things.  They didn't give him a tank or a warship or an x-wing fighter; they gave him a box, from which you can call for help.  And they didn't give him a superpower or pointy ears or a heat-ray, they gave him an extra heart.  They gave him two hearts! And that's an extraordinary thing.
+
+There will never come a time when we don't need a hero like the Doctor.
+"""
 attribution = "Steven Moffat"
 
 [2022-02-26-7]
@@ -2117,13 +2233,25 @@ attribution = "Richard Feynman"
 
 [2022-02-28-3]
 submitter = "Gnome"
-quote = "Sir:\n\n   Some recent work by E.Fermi and L. Slizard, which has been communicated to me in manuscript, leads me to expect that the element uranium may be turned into a new and important source of energy in the near future.\n"
+quote = """Sir:
+
+Some recent work by E.Fermi and L. Slizard, which has been communicated to me in manuscript, leads me to expect that the element uranium may be turned into a new and important source of energy in the near future.
+"""
 attribution = "Albert Einstein, 1939, in a letter to US President Franklin D. Roosevelt"
 source = "Various, but also https://manhattanprojectbreactor.hanford.gov/files.cfm/AlbertEinstein.pdf"
 
 [2022-02-28-4]
 submitter = "Gnome"
-quote = "Look again at that dot.  That's here.  That's home.  That's us.  On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives.  The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilisation, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every \"superstar\", every \"supreme leader\", every saint and sinner in the history of our species lived there - on a mote of dust suspended in a sunbeam.\n\nThe Earth is a very small stage in a vast cosmic arena.  Think of the rivers of blood spilled by all those generals and emperors so that, in glory and triumph, they could become the momentary masters of a fraction of a dot.  Think of the endless cruelties visited by the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some other corner, how frequent their misunderstandings, how eager they are to kill one another, how fervent their hatreds.\n\nOur posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.  Our planet is a lonely speck in the great enveloping cosmic dark.  In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.\n\nThe Earth is the only world known so far to harbor life.  There is nowhere else, at least in the near future, to which our species could migrate.  Visit, yes.  Settle, not yet.  Like it or not, for the moment the Earth is where we make our stand.\n\nIt has been said that astronomy is a humbling and character-building experience.  There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world.  To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known.\n"
+quote = """Look again at that dot.  That's here.  That's home.  That's us.  On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives.  The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilisation, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every \"superstar\", every \"supreme leader\", every saint and sinner in the history of our species lived there - on a mote of dust suspended in a sunbeam.
+
+The Earth is a very small stage in a vast cosmic arena.  Think of the rivers of blood spilled by all those generals and emperors so that, in glory and triumph, they could become the momentary masters of a fraction of a dot.  Think of the endless cruelties visited by the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some other corner, how frequent their misunderstandings, how eager they are to kill one another, how fervent their hatreds.
+
+Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.  Our planet is a lonely speck in the great enveloping cosmic dark.  In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+
+The Earth is the only world known so far to harbor life.  There is nowhere else, at least in the near future, to which our species could migrate.  Visit, yes.  Settle, not yet.  Like it or not, for the moment the Earth is where we make our stand.
+
+It has been said that astronomy is a humbling and character-building experience.  There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world.  To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known.
+"""
 attribution = "Carl Sagan, Pale Blue Dot, 1994"
 source = "Pale Blue Dot"
 
@@ -2170,7 +2298,18 @@ attribution = "High Philosophy"
 
 [2022-03-09-1]
 submitter = "Gnome"
-quote = "When Spring returns\nPerhaps I will no longer be in the World.\nToday I wish I could think of spring as a person\nSo that I could imagine her crying for me\nWhen she sees that she's lost her only friend.\nBut spring isn't even a thing:\nNot even the flowers or green leaves return.\nThere are new flowers, new green leaves.\nThere are new balmy days.\nNothing returns, nothing repeats,\nBecause everything is new.\n"
+quote = """When Spring returns
+Perhaps I will no longer be in the World.
+Today I wish I could think of spring as a person
+So that I could imagine her crying for me
+When she sees that she's lost her only friend.
+But spring isn't even a thing:
+Not even the flowers or green leaves return.
+There are new flowers, new green leaves.
+There are new balmy days.
+Nothing returns, nothing repeats,
+Because everything is new.
+"""
 attribution = "Fernando Pessoa, When Spring Returns"
 
 [2022-03-09-2]
@@ -2233,7 +2372,7 @@ attribution = "https://twitter.com/thingskatedid/status/1438300613683548164"
 
 [2022-03-22-02]
 submitter = "Greenfoot5"
-quote = "Picture a wave in the ocean.  You can see it, measure it, its height, the way sunlight refracts when it passes through, and it's there, and you can see it, you know what it is.  It's a wave.\n\nAnd then it crashes on the shore, and it's gone.  But the water is still there.  The wave was just a different way for the water to be for a little while.\n"
+quote = "Picture a wave in the ocean.  You can see it, measure it, its height, the way sunlight refracts when it passes through, and it's there, and you can see it, you know what it is.  It's a wave.  And then it crashes on the shore, and it's gone.  But the water is still there.  The wave was just a different way for the water to be for a little while."
 attribution = "Chidi Anagonye"
 source = "The Good Place"
 
@@ -2301,12 +2440,13 @@ attribution = "Albert Einstein"
 [2022-04-07-2]
 submitter = "Gnome"
 quote = "What's in a name? That which we call a rose by any other name would smell as sweet."
-attribution = "William Shakespere - Romeo and Juliet"
+attribution = "Juliet"
+source = "Romeo and Juliet, Act II, Scene II"
 
 [2022-04-07-3]
 submitter = "Gnome"
 quote = "Programmers are creators of universes for which they alone are responsible.  Universes of virtually unlimited complexity can be created in the form of computer programs."
-attribution = "Joseph Weizenbaum - Computer Power and Human Reason (1974)"
+attribution = "Joseph Weizenbaum, Computer Power and Human Reason (1974)"
 
 #415
 
@@ -2403,7 +2543,7 @@ attribution = "Edward Snowden, Permanent Record"
 
 [2022-04-20-1]
 submitter = "Victor"
-quote = "The lingering chilly wind after the rain clears tells that winter is on its way.  But the warmth in my chest proves that the light surely burns.  Though it's so tiny that it might go out with a single puff of air, it surely burns.\n"
+quote = "The lingering chilly wind after the rain clears tells that winter is on its way.  But the warmth in my chest proves that the light surely burns.  Though it's so tiny that it might go out with a single puff of air, it surely burns."
 attribution = "Tohru Honda, Fruits Basket"
 
 [2022-04-20-2]
@@ -2420,7 +2560,12 @@ attribution = "Kyoko Honda, Fruits Basket"
 
 [2022-04-20-4]
 submitter = "Victor"
-quote = "If a person is a rice ball and what's great about the person is a pickled plum, then maybe your plum is on your back!\n\nMaybe everyone in the world has plums on their backs of all different shapes, colours, and sizes.\nBut since they can't see their backs, they can't see the plums they have.\nThey think they don't have anything — that they're just plain white rice.\nEven though it's not true at all — even though they really do have a plum there.\nMaybe the reason we get jealous of others is because other people's backs are easy to see.\n\nI can see it.  It's plain as day, [name redacted].  You have a plum right there on your back.\n"
+quote = """If a person is a rice ball and what's great about the person is a pickled plum, then maybe your plum is on your back!
+
+Maybe everyone in the world has plums on their backs of all different shapes, colours, and sizes.  But since they can't see their backs, they can't see the plums they have.  They think they don't have anything — that they're just plain white rice.  Even though it's not true at all — even though they really do have a plum there.  Maybe the reason we get jealous of others is because other people's backs are easy to see.
+
+I can see it.  It's plain as day.  You have a plum right there on your back.
+"""
 attribution = "Tohru Honda, Fruits Basket"
 
 [2022-04-20-5]
@@ -2435,7 +2580,9 @@ attribution = "Nora Roberts"
 
 [2022-04-20-7]
 submitter = "segfault"
-quote = "With a sufficient number of users of an API, it does not matter what you promise in the contract:\nall observable behaviors of your system will be depended on by somebody.\n"
+quote = """With a sufficient number of users of an API, it does not matter what you promise in the contract:
+all observable behaviors of your system will be depended on by somebody.
+"""
 attribution = "Hyrum's Law"
 source = "https://www.hyrumslaw.com"
 
@@ -2453,12 +2600,18 @@ attribution = "The Stanley Parable"
 
 [2022-04-21-1]
 submitter = "Gnome"
-quote = "Tech Support\n\n[tek suh-**pohrt**]\n*noun*\n\n1. A person who does precision guesswork based on unreliable data provided by those of questionable knowledge\n\nSee also: ***Wizard***, ***Magician***\n"
+quote = """Tech Support
+
+[tek suh-**pohrt**] *noun*
+1. A person who does precision guesswork based on unreliable data provided by those of questionable knowledge
+
+See also: ***Wizard***, ***Magician***
+"""
 attribution = "Various, but also, a t-shirt I have"
 
 [2022-04-30-wow-iot-is-a-bad-idea]
 submitter = "segfault"
-quote = "Remember, the ‘S' in ‘IoT' stands for ‘Security'."
+quote = "Remember, the 'S' in 'IoT' stands for 'Security'."
 attribution = "Apocryphal"
 
 [2022-04-30-I-swear-Colin-Chapman-said-something-similar]
@@ -2495,14 +2648,27 @@ attribution = "Sigmund Freud"
 
 [2022-05-01-blocked-by-parental-control]
 submitter = "Gnome"
-quote = "Windows Parental Controls has blocked access to this Quote."
+quote = "Windows Parental Control has blocked access to this Quote."
 attribution = "Windows"
 
 #450
 
 [2021-09-03-1]
 submitter = "segfault"
-quote = "```http\nHTTP/1.1 451 Unavailable For Legal Reasons\nLink: <https://search.example.net/legal>; rel=\"blocked-by\"\nContent-Type: text/html\n\n<html>\n <head><title>Unavailable For Legal Reasons</title></head>\n <body>\n  <h1>Unavailable For Legal Reasons</h1>\n  <p>This request may not be serviced in the Roman Province\n  of Judea due to the Lex Julia Majestatis, which disallows\n  access to resources hosted on servers deemed to be\n  operated by the People's Front of Judea.</p>\n </body>\n</html>\n```\n"
+quote = """```http
+HTTP/1.1 451 Unavailable For Legal Reasons
+Link: <https://search.example.net/legal>; rel=\"blocked-by\"\nContent-Type: text/html
+<html>
+ <head><title>Unavailable For Legal Reasons</title></head>
+ <body>
+  <h1>Unavailable For Legal Reasons</h1>
+  <p>This request may not be serviced in the Roman Province
+  of Judea due to the Lex Julia Majestatis, which disallows
+  access to resources hosted on servers deemed to be
+  operated by the People's Front of Judea.</p>
+ </body>
+</html>
+```"""
 attribution = "HTTP 451 Unavailable For Legal Reasons"
 source = "https://en.wikipedia.org/wiki/HTTP_451"
 
@@ -2580,7 +2746,7 @@ attribution = "Richard Dawkins"
 
 [2022-05-02-And-we-definitely-dream-of-electric-sheep-too]
 submitter = "Gnome"
-quote = "We are survival machines – robot vehicles blindly programmed to preserve the selfish molecules known as genes.  This is a truth which still fills me with astonishment."
+quote = "We are survival machines - robot vehicles blindly programmed to preserve the selfish molecules known as genes.  This is a truth which still fills me with astonishment."
 attribution = "Richard Dawkins, The Selfish Gene"
 
 [2022-05-03-English-is-a-trenchcoat]
@@ -2884,7 +3050,7 @@ attribution = "Brian Cox, Human Universe"
 
 [2022-05-09-yep-we-just-guess]
 submitter = "Gnome"
-quote = "First we guess it.  Then we – now don't laugh, that's really true – then we compute the consequences of the guess to see what, if this is right, if this law that we guessed is right, to see what it would imply.  And then we compare the computation results to nature, or we say compare to experiment or experience, compare it directly with observations to see if it works.  If it disagrees with experiment, it's wrong."
+quote = "First we guess it.  Then we - now don't laugh, that's really true - then we compute the consequences of the guess to see what, if this is right, if this law that we guessed is right, to see what it would imply.  And then we compare the computation results to nature, or we say compare to experiment or experience, compare it directly with observations to see if it works.  If it disagrees with experiment, it's wrong."
 attribution = "Brian Cox, Human Universe"
 
 [2022-05-09-sit-down-and-talk]
@@ -3297,13 +3463,13 @@ Although practicality beats purity.
 Errors should never pass silently.
 Unless explicitly silenced.
 In the face of ambiguity, refuse the temptation to guess.
-There should be one - and preferably only one – obvious way to do it.
+There should be one - and preferably only one - obvious way to do it.
 Although that way may not be obvious at first unless you're Dutch.
 Now is better than never.
 Although never is often better than right now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea – let's do more of those!
+Namespaces are one honking great idea - let's do more of those!
 """
 attribution = "Tim Peters"
 
@@ -3657,7 +3823,8 @@ quote = """We've moved beyond the idea that women wearing pants is a problem.  W
 
 The minute a man puts on a dress it's disgusting, so what are you saying?  Men are strong, women are disgusting?  I'm not doing that anymore.
 
-I'm done with that.  I'm a man in a dress and if I feel like wearing a dress I'm gonna wear one."""
+I'm done with that.  I'm a man in a dress and if I feel like wearing a dress I'm gonna wear one.
+"""
 attribution = "Billy Porter"
 
 [2022-09-11-Free-Speech]
@@ -3684,7 +3851,34 @@ attribution = "John Elder Robinson"
 
 [2022-09-17-Only-universal-in-computing]
 submitter = "Asher"
-quote = "Sometimes I think the only universal in the computing field is the fetch–execute cycle."
+quote = "Sometimes I think the only universal in the computing field is the fetch-execute cycle."
 attribution = "Alan Perlis, 1981"
 
-#646 - Remember to update this, in counts of five!
+[2022-09-18-Silence]
+submitter = "Gnome"
+quote = "Yes, sir.  I am attempting to fill a silent moment with non-relevant conversation."
+attribution = "Lt. Cmdr. Data, Starship Mine"
+
+[2022-09-18-Friendship]
+submitter = "Gnome"
+quote = "I never knew what a friend was until I met Geordi.  He spoke to me as though I were human.  He treated me no differently from anyone else.  He accepted me for what I am.  And that, I have learned, is friendship."
+attribution = "Lt. Cmdr. Data, The Next Phase"
+
+[2022-09-18-Four-lights]
+submitter = "Gnome"
+quote = "There are four lights!"
+attribution = "Captain Jean-Luc Picard, Chain of Command"
+
+[2022-09-18-Never-forget]
+submitter = "Gnome"
+quote = "The act injured you, and saved me.  I will not forget it."
+attribution = "Lt. Cmdr. Data, Measure of a Man"
+
+#650
+
+[2022-09-18-Strategema]
+submitter = "Gnome"
+quote = "It is possible to commit no errors and still lose.  That is not a weakness.  That is life."
+attribution = "Captain Jean-Luc Picard, Peak Performance"
+
+#651 - Remember to update this, in counts of five!

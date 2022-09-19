@@ -497,8 +497,7 @@ attribution = "Unknown"
 [pre-toml-94]
 submitter = "Gnome"
 quote = "What the deuce is it to me?  You say that we go around the Sun.  If we went around the Moon it would not make a pennyworth of difference to me or my work."
-attribution = "Sherlock Holmes"
-source = "A Study in Scarlet"
+attribution = "Sherlock Holmes, A Study in Scarlet"
 
 [pre-toml-95]
 submitter = "Gnome"
@@ -1549,8 +1548,7 @@ attribution = "Roy Batty"
 [pre-toml-283]
 submitter = "Gnome"
 quote = "The time will come when diligent research over long periods will bring to light things which now lie hidden.  A single lifetime, even though entirely devoted to the sky, would not be enough for the investigation of so vast a subject, and so this knowledge will be unfolded only through long successive ages.  There will come a time when our descendants will be amazed that we did not know things that are so plain to them ... Many discoveries are reserved for ages still to come, when memory of us will have been effaced.  Our Universe is a sorry little affair unless it has in it something for every age to investigate ... Nature does not reveal her mysteries once and for all."
-attribution = "Lucius Annaeus Seneca, (4 BCE - 65 CE)"
-source = "Natural Questions, Book 7"
+attribution = "Lucius Annaeus Seneca, Natural Questions (Book 7)"
 
 [pre-toml-284]
 submitter = "Gnome"
@@ -1637,8 +1635,7 @@ attribution = "curl(1) manual page"
 [pre-toml-299]
 submitter = "segfault"
 quote = "Aristotle said a bunch of stuff that was wrong.  Galileo and Newton fixed things up.  Then Einstein broke everything again.  Now we've basically got it all worked out, except for small stuff, big stuff, hot stuff, cold stuff, fast stuff, heavy stuff, dark stuff, turbulence and the concept of time."
-attribution = "Zach Weinersmith"
-source  ="Science: Abridged Beyond the Point of Usefulness "
+attribution = "Zach Weinersmith, Science: Abridged Beyond the Point of Usefulness"
 
 [pre-toml-300]
 submitter = "Gnome"
@@ -1650,16 +1647,14 @@ attribution = "segfault"
 [pre-toml-301]
 submitter = "Gnome"
 quote = "In the beginning the Universe was created.  This made a lot of people very angry, and has been widely regarded as a bad move."
-attribution = "Douglas Adams"
-source = "The Restaurant at the End of the Universe"
+attribution = "Douglas Adams, The Restaurant at the End of the Universe"
 
 #300
 
 [pre-toml-302]
 submitter = "Amethyst"
 quote = "If you wish to make an apple pie from scratch, you must first invent the Universe."
-attribution = "Carl Sagan"
-source = "COSMOS, A Personal Voyage"
+attribution = "Carl Sagan, Cosmos: A Personal Voyage"
 
 [pre-toml-303]
 submitter = "segfault"
@@ -1708,16 +1703,14 @@ X is, well, X, of dubious fame.
 Y is for yes, which makes an impression, and
 Z is for zcat, which handles compression.
 """
-attribution = "Unknown"
-source = "THE ABC'S OF UNIX"
+attribution = "Unknown, THE ABC'S OF UNIX"
 
 #305
 
 [2021-08-10-1]
 submitter = "segfault"
 quote = "Ludwig Boltzmann, who spent much of his life studying statistical mechanics, died in 1906, by his own hand.  Paul Ehrenfest, carrying on the work, died similarly in 1933.  Now it is our turn to study statistical mechanics."
-attribution = "David L. Goodstein"
-source = "States of Matter (1985 edition)"
+attribution = "David L. Goodstein, States of Matter (1985 edition)"
 
 [2021-08-21-1]
 submitter = "segfault"
@@ -1734,22 +1727,19 @@ source = "https://twitter.com/alisa_tao/status/1181193451330768897"
 [2021-08-27-1]
 submitter = "segfault"
 quote = "There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies.  The other way is to make it so complicated that there are no obvious deficiencies."
-attribution = "Charles \"Tony\" Hoare"
-source = "The Emperor's Old Clothes, 1980 Turing Award Lecture"
+attribution = "Charles \"Tony\" Hoare, The Emperor's Old Clothes (1980 Turing Award Lecture)"
 
 [2021-08-27-2]
 submitter = "segfault"
 quote = "To what extent should one trust a statement that a program is free of Trojan horses? Perhaps it is more important to trust the people who wrote the software."
-attribution = "Ken Thompson"
-source = "Reflections on Trusting Trust, 1984 Turing Award Lecture"
+attribution = "Ken Thompson, Reflections on Trusting Trust (1984 Turing Award Lecture)"
 
 #310
 
 [2021-08-27-3]
 submitter = "segfault"
 quote = "I am rarely happier than when spending an entire day programming my computer to perform automatically a task that would otherwise take me a good ten seconds to do by hand."
-attribution = "Douglas Adams"
-source = "Last Chance to See"
+attribution = "Douglas Adams, Last Chance to See"
 
 [2021-08-30-1]
 submitter = "segfault"
@@ -1789,8 +1779,7 @@ attribution = "Richard Feynman"
 [2021-09-10-4]
 submitter = "segfault"
 quote = "English uses a lot of idioms, it's almost like the whole language is an inside joke."
-attribution = "Anna Kipnis"
-source = "The Double Fine Adventure Documentary"
+attribution = "Anna Kipnis, The Double Fine Adventure"
 
 [2021-09-10-5]
 submitter = "segfault"
@@ -1807,13 +1796,13 @@ quote = """The road to wisdom? - Well, it's plain and simple to express:
 > and less
 > and less.
 """
-attribution = "Piet Hein"
+attribution = "Piet Hein, Grooks"
 source = "http://www.sophilos.net/GrooksofPietHein"
 
 [2021-09-10-7]
 submitter = "segfault"
 quote = "Problems worthy of attack prove their worth by fighting back!"
-attribution = "Piet Hein"
+attribution = "Piet Hein, Grooks"
 source = "http://www.sophilos.net/GrooksofPietHein"
 
 #320
@@ -1992,8 +1981,7 @@ source = "https://stackoverflow.com/a/37947583"
 [2021-12-03-1]
 submitter = "unreturnable"
 quote = "It had been a failure, but it was a failure he understood, and that made it a victory."
-attribution = "Praxideke Meng"
-source = "The Expanse: Caliban's war"
+attribution = "Praxideke Meng, The Expanse: Caliban's war"
 
 [2021-12-08-1]
 submitter = "Gnome"
@@ -2010,8 +1998,7 @@ source = "https://www.youtube.com/watch?v=JXeJANDKwDc"
 [2021-12-08-3]
 submitter = "Gnome"
 quote = "Immortality isn't living forever, that's not what it feels like.  Immortality is everybody else dying."
-attribution = "The Doctor"
-source = "The Girl Who Died, 2015"
+attribution = "The Doctor, The Girl Who Died, 2015"
 
 [2021-12-08-4]
 submitter = "Gnome"
@@ -2023,8 +2010,7 @@ You might think that's one hell of a long time.
 
 Personally, I think that's one hell of a bird.
 """
-attribution = "The Doctor"
-source = "Heavens Sent, 2015"
+attribution = "The Doctor, Heavens Sent, 2015"
 
 #350
 
@@ -2048,14 +2034,12 @@ source = "https://www.youtube.com/watch?v=bMMOesLMWXs"
 [2022-01-20-1]
 submitter = "Gnome"
 quote = "Humans are emotionally fragile, perennially gullible, hopelessly ignorant masters of an insignificantly small speck in the cosmos.  Have a nice day."
-attribution = "Neil DeGrasse Tyson"
-source = "Death by Black Hole"
+attribution = "Neil DeGrasse Tyson, Death by Black Hole"
 
 [2022-02-02-1]
 submitter = "segfault"
 quote = "Antoine de Saint-Exupery, the French writer and aircraft designer, said that, \"A designer knows he has arrived at perfection not when there is no longer anything to add, but when there is no longer anything to take away.\" More programmers should judge their work by this criterion. Simple programs are usually more reliable, secure, robust and efficient than their complex cousins, and easier to build and to maintain."
-attribution = "Jon Bentley"
-source = "Programming Pearls (2nd Edition)"
+attribution = "Jon Bentley, Programming Pearls (2nd Edition)"
 
 #355
 
@@ -2077,8 +2061,7 @@ attribution = "Various"
 [2022-02-15]
 submitter = "Gnome"
 quote = "We are in the process of inadvertently altering our climate through exhaustion of fossil fuels."
-attribution = "Carl Sagan, 1978"
-source = "The Tonight Show with Johnny Carson, March 2nd 1978"
+attribution = "Carl Sagan, The Tonight Show with Johnny Carson, March 2nd 1978"
 
 [2022-02-16]
 submitter = "Gnome"
@@ -2095,8 +2078,7 @@ attribution = "Neil DeGrasse Tyson"
 [2022-02-19-1]
 submitter = "Gnome"
 quote = "There cannot be a language more universal and more simple, more free from errors and from obscurities, that is to say more worthy to express the invariable relations of natural things ... [Mathematics] seems to be a faculty of the human mind destined to supplement the shortness of life and the imperfection of the senses."
-attribution = "Joseph Fourier"
-source = "Analytic Theory of Heat, 1822"
+attribution = "Joseph Fourier, Analytic Theory of Heat, 1822"
 
 [2022-02-19-2]
 submitter = "Gnome"
@@ -2120,8 +2102,7 @@ attribution = "Enuma Elish - the Babylonian creation myth, late 3rd millennium B
 [2022-02-19-4]
 submitter = "Gnome"
 quote = "It takes courage to be afraid."
-attribution = "Montaigne"
-source = "Essays, III, 6, 1588"
+attribution = "Montaigne, Essays, III, 6, 1588"
 
 [2022-02-19-5]
 submitter = "Gnome"
@@ -2138,34 +2119,29 @@ attribution = "Roberto Rossellini"
 [2022-02-26-1]
 submitter = "segfault"
 quote = "When you fire that first shot, no matter how right you feel, you have no idea who's going to die.  You don't know whose children are going to scream and burn.  How many hearts will be broken.  How many lives shattered.  How much blood will spill until everybody does what they were always going to have to do from the very beginning: sit down and talk.  Listen to me.  Listen.  I just want you to think.  Do you know what thinking is? It's just a fancy word for changing your mind."
-attribution = "The Doctor"
-source = "The Zygon Inversion, 2015"
+attribution = "The Doctor, The Zygon Inversion, 2015"
 
 [2022-02-26-2]
 submitter = "Gnome"
 quote = "The universe is big, it's vast and complicated, and ridiculous.  And sometimes, very rarely, impossible things just happen and we call them miracles."
-attribution = "The Doctor"
-source = "The Pandorica Opens, 2010"
+attribution = "The Doctor, The Pandorica Opens, 2010"
 
 [2022-02-26-3]
 submitter = "Gnome"
 quote = "The way I see it, every life is a pile of good things and bad things.  The good things don't always soften the bad things, but vice versa the bad things don't always spoil the good things and make them unimportant."
-attribution = "The Doctor"
-source = "Vincent and the Doctor, 2010"
+attribution = "The Doctor, Vincent and the Doctor, 2010"
 
 [2022-02-26-4]
 submitter = "Gnome"
 quote = "Some people live more in 20 years than others do in 80.  It's not the time that matters, it's the person."
-attribution = "The Doctor"
-source = "The Lazarus Experiment, 2007"
+attribution = "The Doctor, The Lazarus Experiment, 2007"
 
 #370
 
 [2022-02-26-5]
 submitter = "Gnome"
 quote = "There's a lot of things you need to get across this universe.  Warp drive... wormhole refractors... You know the thing you need most of all? You need a hand to hold."
-attribution = "The Doctor"
-source = "The Almost People, 2011"
+attribution = "The Doctor, The Almost People, 2011"
 
 [2022-02-26-6]
 submitter = "Gnome"
@@ -2180,20 +2156,17 @@ attribution = "Steven Moffat"
 [2022-02-26-7]
 submitter = "Gnome"
 quote = "There are worlds out there where the sky is burning, where the seas sleep, and the rivers dream; people made of smoke and cities made of song.  Somewhere there's danger, somewhere there's injustice, somewhere else the tea's getting cold.  Come on, Ace.  We've got work to do."
-attribution = "The Doctor"
-source = "Survival, 1989"
+attribution = "The Doctor, Survival, 1989"
 
 [2022-02-26-8]
 submitter = "Gnome"
 quote = "Great men are forged in fire.  It is the privilege of lesser men to light the flame"
-attribution = "The War Doctor"
-source = "Day of the Doctor, 2013"
+attribution = "The War Doctor, Day of the Doctor, 2013"
 
 [2022-02-26-9]
 submitter = "Gnome"
 quote = "Winning? Is that what you think it's about? I'm not trying to win.  I'm not doing this because I want to beat someone, or because I hate someone, or because I want to blame someone.  It's not because it's fun.  God knows it's not because it's easy.  It's not even because it works because it hardly ever does... I DO WHAT I DO BECAUSE IT'S RIGHT! Because it's decent! And above all, it's kind! It's just that... Just kind."
-attribution = "The Doctor"
-source = "The Doctor Falls, 2017"
+attribution = "The Doctor, The Doctor Falls, 2017"
 
 #375
 
@@ -2215,14 +2188,12 @@ attribution = "Stock, Aitken and Waterman"
 [2022-02-27-1]
 submitter = "segfault"
 quote = "Of course, the real question is... where did I get the cup of tea? Answer? I'm the Doctor.  Just accept it."
-attribution = "The Doctor"
-source = "The Witch's Familiar, 2015"
+attribution = "The Doctor, The Witch's Familiar, 2015"
 
 [2022-02-28-1]
 submitter = "Gnome"
 quote = "It is hardly an exaggeration to say that the tip of the radicle [the root] thus endowed [with sensitivity], and having the power of directing the movements of the adjoining parts, acts like the brain of one of the lower animals; the brain being seated within the anterior end of the body, receiving impressions from the sense-organs, and directing the several movements."
-attribution = "Charles and Francis Darwin"
-source = "The Power and Movement of Plants"
+attribution = "Charles and Francis Darwin, The Power and Movement of Plants"
 
 #380
 
@@ -2238,7 +2209,7 @@ quote = """Sir:
 Some recent work by E.Fermi and L. Slizard, which has been communicated to me in manuscript, leads me to expect that the element uranium may be turned into a new and important source of energy in the near future.
 """
 attribution = "Albert Einstein, 1939, in a letter to US President Franklin D. Roosevelt"
-source = "Various, but also https://manhattanprojectbreactor.hanford.gov/files.cfm/AlbertEinstein.pdf"
+source = "https://manhattanprojectbreactor.hanford.gov/files.cfm/AlbertEinstein.pdf"
 
 [2022-02-28-4]
 submitter = "Gnome"
@@ -2253,7 +2224,7 @@ The Earth is the only world known so far to harbor life.  There is nowhere else,
 It has been said that astronomy is a humbling and character-building experience.  There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world.  To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known.
 """
 attribution = "Carl Sagan, Pale Blue Dot, 1994"
-source = "Pale Blue Dot"
+source = "https://www.youtube.com/watch?v=GO5FwsblpT8"
 
 [2022-02-28-5]
 submitter = "Gnome"
@@ -2263,8 +2234,7 @@ attribution = "Marcus Aurelius, Meditations, CE. 170"
 [2022-02-28-6]
 submitter = "Gnome"
 quote = "They journeyed a long time and found nothing.  At length they discerned a small light, which was the Earth... [But] they could not find the smallest reason to suspect that we and our fellow-citizens of this globe have the honor to exist."
-attribution = "Voltaire, Micromegas"
-source = "A Phillosophical History, 1752"
+attribution = "Voltaire, Micromégas"
 
 #385
 
@@ -2286,8 +2256,7 @@ attribution = "Aristotle, Physics"
 [2022-02-28-10]
 submitter = "Gnome"
 quote = "[I]t's too late to make any improvements now.  The universe is finished; the copestone's on, and the chips were carted off a million years ago."
-attribution = "Herman Melville"
-source = "Moby Dick, Chapter 2"
+attribution = "Herman Melville, Moby Dick"
 
 [2022-03-06-1]
 submitter = "Gnome"
@@ -2332,8 +2301,7 @@ source = "https://www.atomicheritage.org/key-documents/russell-einstein-manifest
 [2022-03-09-5]
 submitter = "gnome"
 quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-attribution = "Cicero"
-source = "Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BCE."
+attribution = "Cicero, de Finibus Bonorum et Malorum (The Extremes of Good and Evil), sections 1.10.32 and 1.10.33, 45 BCE"
 
 #395
 
@@ -2373,8 +2341,7 @@ attribution = "https://twitter.com/thingskatedid/status/1438300613683548164"
 [2022-03-22-02]
 submitter = "Greenfoot5"
 quote = "Picture a wave in the ocean.  You can see it, measure it, its height, the way sunlight refracts when it passes through, and it's there, and you can see it, you know what it is.  It's a wave.  And then it crashes on the shore, and it's gone.  But the water is still there.  The wave was just a different way for the water to be for a little while."
-attribution = "Chidi Anagonye"
-source = "The Good Place"
+attribution = "Chidi Anagonye, The Good Place"
 
 [2022-03-26-1]
 submitter = "Gnome"
@@ -2440,8 +2407,7 @@ attribution = "Albert Einstein"
 [2022-04-07-2]
 submitter = "Gnome"
 quote = "What's in a name? That which we call a rose by any other name would smell as sweet."
-attribution = "Juliet"
-source = "Romeo and Juliet, Act II, Scene II"
+attribution = "William Shakespeare, Romeo and Juliet, Act II, Scene II"
 
 [2022-04-07-3]
 submitter = "Gnome"
@@ -2759,20 +2725,17 @@ attribution = "segfault"
 [2022-05-04-Just-an-Anime-quote-for-once]
 submitter = "Gnome"
 quote = "You can disapprove of their actions, but you don't need to hate those who sin."
-attribution = "Red Saber"
-source = "Fate/EXTRA last Encore, Season 2, Episode 2"
+attribution = "Red Saber, Fate/EXTRA last Encore, Season 2, Episode 2"
 
 [2022-05-05-A-quote-from-Hamlet]
 submitter = "Gnome"
 quote = "What a piece of worke is a man!  How Noble in reason!  How infinite in faculty!  In forme and mouing how expresse and admirable!  In Action, how like an Angel in apprehension, how like a God!  The beauty of the world, the paragon of animals - and yet, to me, what is this quintessence of dust?  Man delights not me - nor woman neither, though by your smiling you seem to say so."
-attribution = "Hamlet"
-source = "Hamlet, Act II, Scene II"
+attribution = "William Shakespeare, Hamlet, Act II, Scene II"
 
 [2022-05-05-A-quote-from-the-Scottish-Play]
 submitter = "Gnome"
 quote = "Life's but a walking shadow, a poor player, that struts and frets his hour upon the stage, and then is heard no more; it is a tale told by an idiot, full of sound and fury, signifying nothing."
-attribution = "Macbeth"
-source = "Macbeth, Act V, Scene V"
+attribution = "William Shakespeare, Macbeth, Act V, Scene V"
 
 [2022-05-05-Suprised-we-did-not-already-have-this]
 submitter = "Gnome"
@@ -3315,8 +3278,7 @@ attribution = "Cicero (106 - 43 BCE)"
 [2022-05-14-just-another-monologue]
 submitter = "Gnome"
 quote = "Can you hear them?  All these people who lived in terror of you and your judgement.  All these people who's ancestors devoted and sacrificed themselves to you.  Can you hear them singing?  Oh, you like to think you're a god, but you're not a god.  You're just a parasite eating out the jealousy and envy and longing for the lives of others.  You feed on them. On the memory of love and lost and birth and death and joy and sorrow.  So, so come on then.  Take mine.  Take my memories.  And I hope you've got a big appetite because I have lived a long life and I have seen a few things.  I walked away from the last Great Time War.  I marked the passing of the Time Lords.  I saw the birth of the universe and watched as time ran out.  Moment by moment until nothing remained - no time, no space, just me.  I walked in universes where the laws of physics where devised by the mind of a mad man.  I watched universes freeze and creations burn.  I have seen things you wouldn't believe.  I have lost things you will never understand.  And I know things.  Secrets that must never be told.  Knowledge that must never be spoken.  Knowledge that will make parasite gods blaze.  So come on then!  Take it!  Take it all, baby!  Have it!  You have it all!"
-attribution = "The Doctor"
-source = "The Rings of Akhaten, 2013"
+attribution = "The Doctor, The Rings of Akhaten, 2013"
 
 [2022-04-14-1]
 submitter = "Victor"
@@ -3923,4 +3885,13 @@ submitter = "Gnome"
 quote = "If current technological processes continue without change, the environment will change, and we, the human species, will either have to mutate or even die, to disappear, as many species have disappeared."
 attribution = "Mikhail Gorbachev"
 
-#659 - Remember to update this, in counts of five!
+[2022-09-19-the-tao-of-programming]
+submitter = "segfault"
+quote = """
+Each language has its purpose, however humble. Each language expresses the Yin and Yang of software. Each language has its place within the Tao.
+
+But do not program in COBOL if you can avoid it."""
+attribution = "Geoffrey James, The Tao of Programming"
+source = "http://www.canonical.org/~kragen/tao-of-programming.html"
+
+#660 - Remember to update this, in counts of five!

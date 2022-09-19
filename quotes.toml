@@ -3881,4 +3881,46 @@ submitter = "Gnome"
 quote = "It is possible to commit no errors and still lose.  That is not a weakness.  That is life."
 attribution = "Captain Jean-Luc Picard, Peak Performance"
 
-#651 - Remember to update this, in counts of five!
+[2022-09-19-Stupidity]
+submitter = "Gnome"
+quote = "Nothing in all the world is more dangerous than sincere ignorance and conscientious stupidity."
+attribution = "Martin Luther King, Jr."
+
+[2022-09-19-Free]
+submitter = "Gnome"
+quote = "The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion."
+attribution = "Albert Camus"
+
+[2022-09-19-Courage]
+submitter = "Gnome"
+quote = "Courage is what it takes to stand up and speak; courage is also what it takes to sit down and listen."
+attribution = "A common misquote from Winston Churchill"
+
+[2022-09-19-Limited-Time]
+submitter = "Gnome"
+quote = "Your time is limited, so don't waste it living someone else's life.  Don't be trapped by dogma - which is living with the results of other people's thinking. Don't let the noise of others' opinions drown out your own inner voice.  And most important, have the courage to follow your heart and intuition."
+attribution = "Steve Jobs"
+
+#655
+
+[2022-09-19-Nothing-to-lose]
+submitter = "Gnome"
+quote = "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose.  You are already naked.  There is no reason not to follow your heart."
+attribution = "Steve Jobs"
+
+[2022-09-19-Thats-all-it-does]
+submitter = "Gnome"
+quote = "It takes these very simple-minded instructions - 'Go fetch a number, add it to this number, put the result there, perceive if it's greater than this other number' - but executes them at a rate of, let's say, 1,000,000 per second.  At 1,000,000 per second, the results appear to be magic."
+attribution = "Steve Jobs"
+
+[2022-09-19-Cheese]
+submitter = "Gnome"
+quote = "How can anyone govern a nation that has two hundred and forty-six different kinds of cheese?"
+attribution = "Charles De Gaulle"
+
+[2022-09-19-Change]
+submitter = "Gnome"
+quote = "If current technological processes continue without change, the environment will change, and we, the human species, will either have to mutate or even die, to disappear, as many species have disappeared."
+attribution = "Mikhail Gorbachev"
+
+#659 - Remember to update this, in counts of five!

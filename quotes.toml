@@ -497,7 +497,7 @@ attribution = "Unknown"
 [pre-toml-94]
 submitter = "Gnome"
 quote = "What the deuce is it to me?  You say that we go around the Sun.  If we went around the Moon it would not make a pennyworth of difference to me or my work."
-attribution = "Sherlock Holmes, A Study in Scarlet"
+attribution = "Arthur Conan Doyle, Sherlock Holmes, A Study in Scarlet"
 
 [pre-toml-95]
 submitter = "Gnome"
@@ -622,7 +622,7 @@ attribution = "Alan Perlis"
 [pre-toml-117]
 submitter = "Gnome"
 quote = "Question = ( to ) ? be : ! be;"
-attribution = "William Shakespeare"
+attribution = "Apocryphal, adapted from William Shakespeare, Hamlet"
 
 [pre-toml-118]
 submitter = "Gnome"
@@ -1710,7 +1710,7 @@ attribution = "Unknown, THE ABC'S OF UNIX"
 [2021-08-10-1]
 submitter = "segfault"
 quote = "Ludwig Boltzmann, who spent much of his life studying statistical mechanics, died in 1906, by his own hand.  Paul Ehrenfest, carrying on the work, died similarly in 1933.  Now it is our turn to study statistical mechanics."
-attribution = "David L. Goodstein, States of Matter (1985 edition)"
+attribution = "David L. Goodstein, States of Matter, 1985"
 
 [2021-08-21-1]
 submitter = "segfault"
@@ -2097,7 +2097,7 @@ When no god whatever had been brought into being,
 Uncalled by name, their destinations undetermined -
 Then it was the gods were formed...
 """
-attribution = "Enuma Elish - the Babylonian creation myth, late 3rd millennium BCE"
+attribution = "Enuma Elish --- the Babylonian creation myth, late 3rd millennium BCE"
 
 [2022-02-19-4]
 submitter = "Gnome"
@@ -2407,7 +2407,7 @@ attribution = "Albert Einstein"
 [2022-04-07-2]
 submitter = "Gnome"
 quote = "What's in a name? That which we call a rose by any other name would smell as sweet."
-attribution = "William Shakespeare, Romeo and Juliet, Act II, Scene II"
+attribution = "William Shakespeare, Juliet, Romeo and Juliet, Act II, Scene II"
 
 [2022-04-07-3]
 submitter = "Gnome"

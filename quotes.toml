@@ -3887,8 +3887,7 @@ attribution = "Mikhail Gorbachev"
 
 [2022-09-19-the-tao-of-programming]
 submitter = "segfault"
-quote = """
-Each language has its purpose, however humble. Each language expresses the Yin and Yang of software. Each language has its place within the Tao.
+quote = """Each language has its purpose, however humble. Each language expresses the Yin and Yang of software. Each language has its place within the Tao.
 
 But do not program in COBOL if you can avoid it.
 """

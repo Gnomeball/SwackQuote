@@ -2010,7 +2010,7 @@ You might think that's one hell of a long time.
 
 Personally, I think that's one hell of a bird.
 """
-attribution = "The Doctor, Heavens Sent, 2015"
+attribution = "The Doctor, Heaven Sent, 2015"
 
 #350
 
@@ -3890,7 +3890,8 @@ submitter = "segfault"
 quote = """
 Each language has its purpose, however humble. Each language expresses the Yin and Yang of software. Each language has its place within the Tao.
 
-But do not program in COBOL if you can avoid it."""
+But do not program in COBOL if you can avoid it.
+"""
 attribution = "Geoffrey James, The Tao of Programming"
 source = "http://www.canonical.org/~kragen/tao-of-programming.html"
 

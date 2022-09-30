@@ -3894,4 +3894,11 @@ But do not program in COBOL if you can avoid it.
 attribution = "Geoffrey James, The Tao of Programming"
 source = "http://www.canonical.org/~kragen/tao-of-programming.html"
 
-#660 - Remember to update this, in counts of five!
+#660
+
+[2022-09-30-not-a-merry-man]
+submitter = "Gnome"
+quote = "Sir, I protest!  I am NOT a Merry Man!"
+attribution = "Lt. Cmdr. Worf, Qpid"
+
+#661 - Remember to update this, in counts of five!

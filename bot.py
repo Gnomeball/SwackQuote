@@ -93,7 +93,7 @@ async def send_quote(pre: str = "Quote", title: Optional[str] = None, which: Opt
     title = calculate_swack_level() if title is None else title
     embedVar = discord.Embed(title = title, description = quote_text, colour = random_colour())
     if quote.quote == quote.source:
-      embedVar = discord.Embed(title = title, url = quote.quote, colour = random_colour())
+      embedVar._video = {"url": quote.quote}
     embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nQuote {i}/{len(quotes)}, Submitted by {quote.submitter}")
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
     await client.get_channel(CHANNEL).send(embed = embedVar)

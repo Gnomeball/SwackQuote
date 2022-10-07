@@ -3901,4 +3901,10 @@ submitter = "Gnome"
 quote = "Sir, I protest!  I am NOT a Merry Man!"
 attribution = "Lt. Cmdr. Worf, Qpid"
 
-#661 - Remember to update this, in counts of five!
+[pale-blue-dot]
+submitter = "segfault"
+quote = "https://www.youtube.com/watch?v=GO5FwsblpT8"
+attribution = "Carl Sagan, Pale Blue Dot, 1994"
+source = "https://www.youtube.com/watch?v=GO5FwsblpT8"
+
+#662 - Remember to update this, in counts of five!

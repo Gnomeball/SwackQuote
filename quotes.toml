@@ -703,8 +703,7 @@ attribution = "Napoleon Bonaparte"
 [pre-toml-132]
 submitter = "Gnome"
 quote = "Today's scientific question is: What in the world is electricity?  And where does it go after it leaves the toaster?"
-attribution = "Dave Barry"
-source = "What is Electricity?"
+attribution = "Dave Barry, What is Electricity?"
 
 [pre-toml-133]
 submitter = "Gnome"
@@ -1368,8 +1367,7 @@ attribution = "SinDemon"
 [pre-toml-253]
 submitter = "Victor"
 quote = "A \"goto\" in Perl falls into the category of hard things that should be possible, not easy things that should be easy."
-attribution = "Larry Wall"
-source = "<199709041935.MAA27136@wall.org>"
+attribution = "Larry Wall, <199709041935.MAA27136@wall.org>"
 
 [pre-toml-254]
 submitter = "crox"
@@ -1750,8 +1748,7 @@ source = "https://www.activism.net/cypherpunk/manifesto.html"
 [2021-09-08-1]
 submitter = "segfault"
 quote = "I have two kinds of problems, the urgent and the important.  The urgent are not important, and the important are never urgent."
-attribution = "Dwight D. Eisenhower"
-source = "The Eisenhower Matrix"
+attribution = "Dwight D. Eisenhower, The Eisenhower Matrix"
 
 [2021-09-10-1]
 submitter = "segfault"
@@ -2652,13 +2649,11 @@ attribution = "Aristotle, but not really, because it's always misquoted, includi
 submitter = "Gnome"
 quote = "The amount of work to be done increases in proportion to the amount of work already completed."
 attribution = "Vail's Second Axiom"
-source = "FreeBSD Fortunes"
 
 [2022-05-02-also-true]
 submitter = "Gnome"
 quote = "An unbreakable toy is useful for breaking other toys."
 attribution = "Van Roy's Law"
-source = "FreeBSD Fortunes"
 
 #455
 
@@ -2666,7 +2661,6 @@ source = "FreeBSD Fortunes"
 submitter = "Gnome"
 quote = "Violence is the last refuge of the incompetent."
 attribution = "Salvor Hardin"
-source = "FreeBSD Fortunes"
 
 [2022-05-02-just-another-set-of-poetic-lyrics]
 submitter = "Gnome"
@@ -3265,8 +3259,7 @@ attribution = "Niels Bohr"
 [2022-03-28-1]
 submitter = "Victor"
 quote = "A problem shared is a problem halved."
-attribution = "A popular saying"
-source = "A very kind friend of Victor"
+attribution = "Apocryphal"
 
 #555
 
@@ -3733,7 +3726,6 @@ source = "https://store.steampowered.com/app/1421760/What_Comes_After/"
 submitter = "segfault"
 quote = "Just because someone carries it well, doesn't mean it isn't heavy."
 attribution = "Apocryphal"
-source = "The side of a building (probably photoshopped)"
 
 [2022-08-13-De-Bois]
 submitter = "segfault"

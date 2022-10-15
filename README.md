@@ -28,7 +28,7 @@ The flat-file uses the TOML specification for storing quotes.  Quotes are format
 submitter = "the name of who submitted it (aka, your discord handle)"
 quote = "the quote you're adding"
 attribution = "whoever said or wrote it, optionally where it was said or written"
-source = "URL or such citation, if you have it (currently not displayed)"
+source = "A URL to the quote or source, if you have it"
 ```
 
 **You must include your name as the `submitter`, and the `quote`, these are _required_.**
@@ -39,7 +39,7 @@ However, the `attribution` field will appear after the quote, behind a `~`, if g
 
 If you do not know who, or cannot find the original attribution, please use `Unknown`, or `Various`. If many have said it, use `Apocryphal`. But, if you're having trouble, you can always ask others, who may know it themselves or know where to check.
 
-If citing both a person and a work, please do this in a format that is sensible, perhaps `person, work`, inside the `attribution` field --- with anything more specific (i.e. URLs for Tweets) in the `source` field. We tend to prefer this is included in the `attribution`, as `source` is currently not displayed and is meant to contain exact URLs or such references. If the year or edition is relevant, include this either parenthised `(3rd edition)`, or following it like, say, `Unix Epoch, 1900`. With years, we prefer and assume Common Era, such as `Julius Caesar (100 - 44 BCE)` or `de Finibus Bonorum et Malorum, 45 BCE`.
+If citing both a person and a work, please do this in a format that is sensible, perhaps `person, work`, inside the `attribution` field --- with a URL (i.e. for Tweets, videos, or articles) in the `source` field. We tend to prefer this is included in the `attribution`, as `source` is used for HTTP URLs. If the year or edition is relevant, include this either parenthised `(3rd edition)`, or following it like, say, `Unix Epoch, 1900`. With years, we prefer and assume Common Era, such as `Julius Caesar (100 - 44 BCE)` or `de Finibus Bonorum et Malorum, 45 BCE`.
 
 When citing something said by a character, use a simple rule of thumb: if you know who wrote it, cite as Author, Character, otherwise cite the character directly. For example, The Doctor or Jean-Luc Picard are cited as themselves, because various scriptwriters and actors are involved, whereas Macbeth is cited as William Shakespeare, Macbeth, as we're quoting his script. Other examples, such as Sherlock Holmes, may be context dependent, such as the books will be cited as Arthur Conan Doyle, Sherlock Holmes, whereas film or show adaptations are cited accordingly (Character, Film/Show, Year).
 

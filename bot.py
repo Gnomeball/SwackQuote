@@ -7,25 +7,25 @@ import tomli
 
 from quotes import pull_random_quote, pull_specific_quote, refresh_quotes, format_quote_text, calculate_swack_level, QUOTE_FILE_PATH, QUOTE_DUD_PATH, QUOTE_DECK_PATH, QUOTE_HISTORY_PATH
 
-# * Logging boilerplate
+# Logging boilerplate
 fmt = "[%(asctime)s: %(name)s %(levelname)s]: %(message)s"
 logging.basicConfig(level = logging.INFO, stream = sys.stdout, format = fmt)
 
-# * Variables and stuff
+# Variables and stuff
 intents = discord.Intents.default()
 intents.message_content = True
 
 client = discord.Client(intents = intents)
 logger = logging.getLogger("QuoteBot")
 
-# * Those able to send commands to the bot and which channel it must be in
+# Those able to send commands to the bot and which channel it must be in
 ADMINS  = set(tomli.loads(Path("admins.toml").read_text()).values())
 CHANNEL = int(Path("channel.txt").read_text())
 
 MINUTE = 60
 REPO_LINK = "https://github.com/Gnomeball/SwackQuote"
 
-# * Random colours for the embed
+# Auxiliary functions
 
 def random_colour() -> int:
     """
@@ -37,7 +37,7 @@ def random_colour() -> int:
     colour_hex = "0x" + "".join(hex(int(x*255))[2:].zfill(2) for x in colour)
     return int(colour_hex, 16)
 
-# * Client events
+# Client events
 
 @client.event
 async def on_ready():
@@ -123,7 +123,7 @@ async def send_quote(pre: str = "Quote", title: Optional[str] = None, which: Opt
 async def test_quote(which = "pre-toml-255", log: str = "test_quote"):
     await send_quote(pre = "Testing", title = "Testing the Swack", which = which, log = log)
 
-# * Run the thing
+# Run the thing
 
 QUOTE_FILE_PATH.touch()
 QUOTE_DUD_PATH.touch()

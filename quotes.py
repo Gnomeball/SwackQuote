@@ -87,13 +87,13 @@ def calculate_swack_level():
     ]
     return random.choice(swack_levels)
 
-def format_quote_text(quote: Quote):
+def format_quote_text(quote: Quote, attribution_only = False):
     """
     Formats a Quote into our preferred string output.
     :returns: A string containing the quote, it's attribution, and with any affordances we have for accessibility.
     :rtype: str
     """
-    quote_text = quote.quote
+    quote_text = quote.quote if not attribution_only else ""
     if quote.attribution is not None:
         quote_text += f" ~{quote.attribution}"
     if "'''" not in quote_text:

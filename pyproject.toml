@@ -12,7 +12,21 @@ tomli_w = "^1.0.0"
 requests = "^2.27.0"
 
 [tool.poetry.group.dev.dependencies]
+isort = "^5.10.1"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+ensure_newline_before_comments = true
+include_trailing_comma = true
+lines_after_imports = 1
+use_parentheses = true
+comment_prefix = " #"
+multi_line_output = 3
+force_grid_wrap = 0
+reverse_sort = true
+length_sort = true
+line_length = 120
+from_first = true

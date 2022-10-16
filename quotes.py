@@ -1,11 +1,11 @@
-from typing import NamedTuple, Optional, Union
 from pathlib import Path
-import random
+from typing import NamedTuple, Optional
 import logging
+import random
 
-import tomli
-import tomli_w
 import requests
+import tomli_w
+import tomli
 
 QUOTE_FILE_ADDRESS = "https://raw.githubusercontent.com/Gnomeball/SwackQuote/main/quotes.toml"
 QUOTE_FILE_PATH    = Path("quotes.toml") # The collection of all quotes

@@ -1,11 +1,27 @@
-import discord, asyncio, random, logging, sys, colorsys
 from datetime import datetime
-from typing import Optional
 from pathlib import Path
+from typing import Optional
+import colorsys
+import logging
+import asyncio
+import random
+import sys
+import re
 
+import discord
 import tomli
 
-from quotes import pull_random_quote, pull_specific_quote, refresh_quotes, format_quote_text, calculate_swack_level, QUOTE_FILE_PATH, QUOTE_DUD_PATH, QUOTE_DECK_PATH, QUOTE_HISTORY_PATH
+from quotes import (
+    calculate_swack_level,
+    pull_specific_quote,
+    pull_random_quote,
+    format_quote_text,
+    refresh_quotes,
+    QUOTE_HISTORY_PATH,
+    QUOTE_FILE_PATH,
+    QUOTE_DECK_PATH,
+    QUOTE_DUD_PATH,
+)
 
 # Logging boilerplate
 fmt = "[%(asctime)s: %(name)s %(levelname)s]: %(message)s"

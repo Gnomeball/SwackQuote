@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import NamedTuple, Optional
+from typing import NamedTuple, Optional, Union
 import logging
 import random
 
@@ -100,7 +100,7 @@ def format_quote_text(quote: Quote, attribution_only = False) -> str:
         quote_text = quote_text.replace(". ", ".  ").replace(".   ", ".  ")
     return quote_text
 
-def pull_specific_quote(quote: str, quotes: dict[str, Quote]) -> tuple[Quote, any]:
+def pull_specific_quote(quote: str, quotes: dict[str, Quote]) -> tuple[Quote, Union[int, str]]:
     """
     Selects a given quote from the given dictionary.
     :returns: The selected quote, or, failing that, a test quote.

@@ -104,16 +104,17 @@ async def send_quote(pre: str = "Quote", title: Optional[str] = None, which: Opt
 
     # * Build the embed
     embedVar = discord.Embed(title = title, description = quote_text, colour = random_colour())
-    if quote.source:
+    if quote.source and quote.source.startswith("http"):
       embedVar.url = quote.source
-    if quote.quote == quote.source:
-      embedVar._video = {"url": quote.quote}
     embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nQuote {i}/{len(quotes)}, Submitted by {quote.submitter}")
 
     # * Try and send the embed
     logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
     try:
-        await client.get_channel(CHANNEL).send(embed = embedVar)
+        if quote.quote == quote.source and quote.source.startswith("http"):
+          await client.get_channel(CHANNEL).send(content = quote.source)
+        else:
+          await client.get_channel(CHANNEL).send(embed = embedVar)
     except Exception as e:
         logger.info(f"Error sending quote : {e}")
     finally:

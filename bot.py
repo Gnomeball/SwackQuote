@@ -102,19 +102,22 @@ async def send_quote(pre: str = "Quote", title: Optional[str] = None, which: Opt
     quote_text = format_quote_text(quote)
     title = calculate_swack_level() if title is None else title
 
-    # * Build the embed
-    embedVar = discord.Embed(title = title, description = quote_text, colour = random_colour())
+    # TODO: better check for if its a url
+    quoteIsUrl = quote.quote == quote.source and quote.source.startswith("http")
+
+    # Build the quote embed
+    embedVar = discord.Embed( title = title, colour = random_colour(), description = "" if quoteIsUrl else quote_text)
+    # TODO: again, better url check
     if quote.source and quote.source.startswith("http"):
-      embedVar.url = quote.source
+        embedVar.url = quote.source
     embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nQuote {i}/{len(quotes)}, Submitted by {quote.submitter}")
 
-    # * Try and send the embed
-    logger.info(f"Sending quote from {quote.submitter}: {quote_text}")
+    # Try and send the quote
+    logger.info(f"Attempting to send quote #{i}, submitted by {quote.submitter}")
     try:
-        if quote.quote == quote.source and quote.source.startswith("http"):
-          await client.get_channel(CHANNEL).send(content = quote.source)
-        else:
-          await client.get_channel(CHANNEL).send(embed = embedVar)
+        await client.get_channel(CHANNEL).send(embed = embedVar)
+        if quoteIsUrl:
+            await client.get_channel(CHANNEL).send(content = quote.source)
     except Exception as e:
         logger.info(f"Error sending quote : {e}")
     finally:

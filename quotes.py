@@ -21,7 +21,7 @@ class Quote(NamedTuple):
     attribution: Optional[str] = None
     source: Optional[str] = None
 
-def quote_compliant(quote: dict):
+def quote_compliant(quote: dict) -> bool:
     """
     Checks whether a dict would make a valid Quote.
     :returns: Is quote a valid Quote?
@@ -49,18 +49,18 @@ def quote_compliant(quote: dict):
 #             return True
 #     return False
 
-def as_quotes(quotes: str):
+def as_quotes(quotes: str) -> tuple[dict[str, Quote], dict[str, Quote]]:
     """
     Converts a TOML-format string to a dict[str, Quote] of identifier -> Quote
     :returns: Dictionary of Quote identifiers to Quote.
-    :rtype: dict[str, Quote]
+    :rtype: dict[str, Quote], dict[str, Quote]
     """
     loaded_quotes = tomli.loads(quotes)
     quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
     non_compliant = {i: q for i, q in loaded_quotes.items() if not quote_compliant(q)}
     return quote_dict, non_compliant
 
-def as_dicts(quotes: dict[str, Quote]):
+def as_dicts(quotes: dict[str, Quote]) -> dict[str, dict[str, str]]:
     """
     Converts a dict[str, Quote] to something TOML can serialise.
     :returns: Dictionary of quote identifiers to TOML-compatible dicts
@@ -71,7 +71,7 @@ def as_dicts(quotes: dict[str, Quote]):
         for identifier, quote in quotes.items()
     }
 
-def calculate_swack_level():
+def calculate_swack_level() -> str:
     """
     Calculate the Swack Level with the Patent-Pending Swack Power Meter
     :returns: An appropriate level of Swack
@@ -87,7 +87,7 @@ def calculate_swack_level():
     ]
     return random.choice(swack_levels)
 
-def format_quote_text(quote: Quote, attribution_only = False):
+def format_quote_text(quote: Quote, attribution_only = False) -> str:
     """
     Formats a Quote into our preferred string output.
     :returns: A string containing the quote, it's attribution, and with any affordances we have for accessibility.
@@ -100,18 +100,18 @@ def format_quote_text(quote: Quote, attribution_only = False):
         quote_text = quote_text.replace(". ", ".  ").replace(".   ", ".  ")
     return quote_text
 
-def pull_specific_quote(quote: str, quotes: dict[str, Quote]):
+def pull_specific_quote(quote: str, quotes: dict[str, Quote]) -> tuple[Quote, any]:
     """
     Selects a given quote from the given dictionary.
-    :returns: The selected quote, or failing that Quote("Tester", "*Testing* - [Links work too!](https://www.google.co.uk)").
-    :rtype: Quote
+    :returns: The selected quote, or, failing that, a test quote.
+    :rtype: Quote, any
     """
     if quote in quotes:
         return quotes[quote], list(quotes).index(quote) + 1
     else:
         return Quote("Tester", "*Testing* - [Links work too!](https://www.google.co.uk)"), "Test"
 
-def pull_random_quote(quotes: dict[str, Quote]):
+def pull_random_quote(quotes: dict[str, Quote]) -> tuple[Quote, int]:
     """
     Selects a random quote from the given dictionary.
     Currently, ignores the last QUOTE_REPEAT_DELAY quotes.
@@ -132,7 +132,7 @@ def pull_random_quote(quotes: dict[str, Quote]):
 
     return quotes[quote], quote_index
 
-def pull_quotes_from_file():
+def pull_quotes_from_file() -> tuple[dict[str, Quote], dict[str, Quote]]:
     """
     Pulls the quotes from a local file at QUOTE_FILE_PATH.
     :returns: The dictionary of quotes and a dictionary of not-quite quotes
@@ -140,7 +140,7 @@ def pull_quotes_from_file():
     """
     return as_quotes(QUOTE_FILE_PATH.read_text())
 
-def pull_quotes_from_repo():
+def pull_quotes_from_repo() -> tuple[dict[str, Quote], dict[str, Quote]]:
     """
     Pulls updated quotes from the repository.
     :returns: Updated quotes as a dictionary of quotes and a dictionary of not-quite quotes.
@@ -160,7 +160,7 @@ def pull_quotes_from_repo():
 
     return as_quotes(updated_quotes)
 
-async def refresh_quotes():
+async def refresh_quotes() -> dict[str, Quote]:
     """
     Overwrites QUOTE_FILE_PATH with any updates.
     If we cannot reach the repo, we always fallback to local.

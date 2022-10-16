@@ -41,7 +41,11 @@ CHANNEL = int(Path("channel.txt").read_text())
 MINUTE = 60
 REPO_LINK = "https://github.com/Gnomeball/SwackQuote"
 
-RE_IS_URL = re.compile(r"^https?://[^\s/$.?#].[^\s]*$", flags = re.I | re.M | re.U) # regex is by @stephenhay
+# regex is by @stephenhay
+RE_IS_URL = re.compile(r"^https?://[^\s/$.?#].[^\s]*$", flags = re.I | re.M | re.U)
+
+# Auxiliary functions
+
 def is_url(url: str) -> bool:
   """
   Check if a string is a valid URL for Discord. Some invalid URLs may get through, but all valid URLs will pass. Things that are absolutely not URLs will fail.
@@ -49,8 +53,6 @@ def is_url(url: str) -> bool:
   :rtype: bool
   """
   return re.match(RE_IS_URL, url) is not None
-
-# Auxiliary functions
 
 def random_colour() -> int:
     """

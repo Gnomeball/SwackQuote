@@ -1,11 +1,11 @@
-from typing import NamedTuple, Optional, Union
 from pathlib import Path
-import random
+from typing import NamedTuple, Optional
 import logging
+import random
 
-import tomli
-import tomli_w
 import requests
+import tomli_w
+import tomli
 
 QUOTE_FILE_ADDRESS = "https://raw.githubusercontent.com/Gnomeball/SwackQuote/main/quotes.toml"
 QUOTE_FILE_PATH    = Path("quotes.toml") # The collection of all quotes
@@ -87,13 +87,13 @@ def calculate_swack_level():
     ]
     return random.choice(swack_levels)
 
-def format_quote_text(quote: Quote):
+def format_quote_text(quote: Quote, attribution_only = False):
     """
     Formats a Quote into our preferred string output.
     :returns: A string containing the quote, it's attribution, and with any affordances we have for accessibility.
     :rtype: str
     """
-    quote_text = quote.quote
+    quote_text = quote.quote if not attribution_only else ""
     if quote.attribution is not None:
         quote_text += f" ~{quote.attribution}"
     if "'''" not in quote_text:

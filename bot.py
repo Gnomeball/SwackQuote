@@ -1,11 +1,27 @@
-import discord, asyncio, random, logging, sys, colorsys
 from datetime import datetime
-from typing import Optional
 from pathlib import Path
+from typing import Optional
+import colorsys
+import logging
+import asyncio
+import random
+import sys
+import re
 
+import discord
 import tomli
 
-from quotes import pull_random_quote, pull_specific_quote, refresh_quotes, format_quote_text, calculate_swack_level, QUOTE_FILE_PATH, QUOTE_DUD_PATH, QUOTE_DECK_PATH, QUOTE_HISTORY_PATH
+from quotes import (
+    calculate_swack_level,
+    pull_specific_quote,
+    pull_random_quote,
+    format_quote_text,
+    refresh_quotes,
+    QUOTE_HISTORY_PATH,
+    QUOTE_FILE_PATH,
+    QUOTE_DECK_PATH,
+    QUOTE_DUD_PATH,
+)
 
 # Logging boilerplate
 fmt = "[%(asctime)s: %(name)s %(levelname)s]: %(message)s"
@@ -24,6 +40,15 @@ CHANNEL = int(Path("channel.txt").read_text())
 
 MINUTE = 60
 REPO_LINK = "https://github.com/Gnomeball/SwackQuote"
+
+RE_IS_URL = re.compile(r"^https?://[^\s/$.?#].[^\s]*$", flags = re.I | re.M | re.U) # regex is by @stephenhay
+def is_url(url: str) -> bool:
+  """
+  Check if a string is a valid URL for Discord. Some invalid URLs may get through, but all valid URLs will pass. Things that are absolutely not URLs will fail.
+  :returns: whether the given string is a valid URL.
+  :rtype: bool
+  """
+  return re.match(RE_IS_URL, url) is not None
 
 # Auxiliary functions
 
@@ -99,16 +124,14 @@ async def send_quote(pre: str = "Quote", title: Optional[str] = None, which: Opt
     await dud_quotes()
 
     quote, i = pull_random_quote(quotes) if which is None else pull_specific_quote(which, quotes)
-    quote_text = format_quote_text(quote)
     title = calculate_swack_level() if title is None else title
 
-    # TODO: better check for if its a url
-    quoteIsUrl = quote.quote == quote.source and quote.source.startswith("http")
+    quote_is_url = is_url(quote.quote)
+    quote_text = format_quote_text(quote, attribution_only = quote_is_url)
 
     # Build the quote embed
-    embedVar = discord.Embed( title = title, colour = random_colour(), description = "" if quoteIsUrl else quote_text)
-    # TODO: again, better url check
-    if quote.source and quote.source.startswith("http"):
+    embedVar = discord.Embed(title = title, colour = random_colour(), description = quote_text)
+    if quote.source and re.match(RE_IS_URL, quote.source):
         embedVar.url = quote.source
     embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nQuote {i}/{len(quotes)}, Submitted by {quote.submitter}")
 
@@ -116,10 +139,10 @@ async def send_quote(pre: str = "Quote", title: Optional[str] = None, which: Opt
     logger.info(f"Attempting to send quote #{i}, submitted by {quote.submitter}")
     try:
         await client.get_channel(CHANNEL).send(embed = embedVar)
-        if quoteIsUrl:
-            await client.get_channel(CHANNEL).send(content = quote.source)
+        if quote_is_url:
+            await client.get_channel(CHANNEL).send(content = quote.quote)
     except Exception as e:
-        logger.info(f"Error sending quote : {e}")
+        logger.info(f"Error sending quote #{i}: {e}")
     finally:
         logger.info(f"Quote sent successfully")
 

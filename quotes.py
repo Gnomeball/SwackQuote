@@ -104,7 +104,7 @@ def pull_specific_quote(quote: str, quotes: dict[str, Quote]) -> tuple[Quote, Un
     """
     Selects a given quote from the given dictionary.
     :returns: The selected quote, or, failing that, a test quote.
-    :rtype: Quote, any
+    :rtype: Quote, Union[int, str]
     """
     if quote in quotes:
         return quotes[quote], list(quotes).index(quote) + 1
@@ -136,7 +136,7 @@ def pull_quotes_from_file() -> tuple[dict[str, Quote], dict[str, Quote]]:
     """
     Pulls the quotes from a local file at QUOTE_FILE_PATH.
     :returns: The dictionary of quotes and a dictionary of not-quite quotes
-    :rtype: dict[str, Quote], dict[str, dict[str, Any]]
+    :rtype: dict[str, Quote], dict[str, Quote]
     """
     return as_quotes(QUOTE_FILE_PATH.read_text())
 
@@ -144,7 +144,7 @@ def pull_quotes_from_repo() -> tuple[dict[str, Quote], dict[str, Quote]]:
     """
     Pulls updated quotes from the repository.
     :returns: Updated quotes as a dictionary of quotes and a dictionary of not-quite quotes.
-    :rtype: dict[str, Quote], dict[str, dict[str, Any]]
+    :rtype: dict[str, Quote], dict[str, Quote]
     """
     logger = logging.getLogger("pull_from_repo")
     updated_quotes = ""

@@ -3917,4 +3917,18 @@ submitter = "IrrelevantSwack"
 quote = "swockening"
 attribution = "Antikyth"
 
+[2022-10-26-British-Python]
+submitter = "Gnome"
+quote = """```python
+with a_gift() as apologies:
+  try:
+    greetings(give = apologies)
+  except FumbledSentence as fuckup:
+    await sleep(hours(7))
+    remember(fuckup)
+  finally:
+    awkwardly_exit()
+```"""
+attribution = "segfault"
+
 #664 - Remember to update this, in counts of five!

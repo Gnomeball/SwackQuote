@@ -3931,4 +3931,11 @@ with a_gift() as apologies:
 ```"""
 attribution = "segfault"
 
-#664 - Remember to update this, in counts of five!
+#665
+
+[2022-10-26-Oops]
+submitter = "Gnome"
+quote = "I don't have all the answers, I've never been dead before."
+attribution = "Ensign Ro Laren, The Next Phase"
+
+#666 (spooky) - Remember to update this, in counts of five!

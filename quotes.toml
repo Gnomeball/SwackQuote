@@ -3938,4 +3938,10 @@ submitter = "Gnome"
 quote = "I don't have all the answers, I've never been dead before."
 attribution = "Ensign Ro Laren, The Next Phase"
 
-#666 (spooky) - Remember to update this, in counts of five!
+[2022-11-1-Human-Addition]
+submitter = "Gnome"
+quote = "Hey, if human arithmetic were simple enough that we could reproduce it in a computer, we wouldn't be able to count high enough to build computers."
+attribution = "Eliezer Yudkowsky"
+source = "https://www.lesswrong.com/posts/YhgjmCxcQXixStWMC/artificial-addition"
+
+#667 - Remember to update this, in counts of five!

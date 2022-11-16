@@ -3949,9 +3949,9 @@ submitter = "Gnome"
 quote = "Reports that say that something hasn't happened are always interesting to me, because as we know, there are known knowns; there are things we know we know.  We also know there are known unknowns; that is to say we know there are some things we do not know.  But there are also unknown unknowns - the ones we don't know we don't know.  And if one looks throughout the history of our country and other free countries, it is the latter category that tends to be the difficult ones."
 attribution = "Donald Rumsfeld, United States Secretary of Defense (2001 - 2006)"
 
-[2022-14-11-Regular-expressions]
+[2022-11-14-Regular-expressions]
 submitter = "Asher"
-quote = "Some people, when confronted with a problem, think ‘I know, I’ll use regular expressions.’ Now they have two problems."
+quote = "Some people, when confronted with a problem, think 'I know, I'll use regular expressions'.  Now they have two problems."
 attribution = "Jamie Zawinski"
 
 [2022-11-16-javafx-was-mentioned-and-i-was-reminded-of-this-so-i-added-it]
@@ -3960,4 +3960,16 @@ quote = "Give someone state and they'll have a bug one day, but teach them how t
 attribution = "Fabian \"ryg\" Giesen"
 source = "https://twitter.com/rygorous/status/1507178315886444544"
 
-#670 - Remember to update this, in counts of five!
+#670
+
+[2022-11-16-Einstein]
+submitter = "Gnome"
+quote = "All our science, measured against reality, is primitive and childlike - and yet it is the most precious thing we have."
+attribution = "Albert Einstein"
+
+[2022-11-16-Sherlock]
+submitter = "Gnome"
+quote = "It is a capital mistake to theorise before one has data.  Instensibly one begins to twist facts to suit theories, instead of theories to suit facts."
+attribution = "Arthur Conan Doyle, Sherlock Holmes, A Scandal in Bohemia"
+
+#672 - Remember to update this, in counts of five!

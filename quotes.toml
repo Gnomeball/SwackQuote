@@ -3954,4 +3954,10 @@ submitter = "Asher"
 quote = "Some people, when confronted with a problem, think ‘I know, I’ll use regular expressions.’ Now they have two problems."
 attribution = "Jamie Zawinski"
 
-#669 - Remember to update this, in counts of five!
+[2022-11-16-javafx-was-mentioned-and-i-was-reminded-of-this-so-i-added-it]
+submitter = "segfault"
+quote = "Give someone state and they'll have a bug one day, but teach them how to represent state in two separate locations that have to be kept in sync and they'll have bugs for a lifetime."
+attribution = "Fabian \"ryg\" Giesen"
+source = "https://twitter.com/rygorous/status/1507178315886444544"
+
+#670 - Remember to update this, in counts of five!

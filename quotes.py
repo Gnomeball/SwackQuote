@@ -83,7 +83,12 @@ def calculate_swack_level() -> str:
         "None of the Swack", "The Swackening", "The Swack to end all Swack",
         "The one true Swack", "Just a casual Swack", "One Swack, mildly tepid",
         "Is this the real Swack, or is this just fantasy?", "Hello, Swack!",
-        "Not an ounce of Swack in the building", "Am I Swacking correctly?"
+        "Not an ounce of Swack in the building", "One Swack; ice and a slice",
+        "Am I Swacking correctly?", "Unexpected Loss in the Swacking area",
+        "Do you even Swack?", "We're Swacking off at 1PM, right?", "Swack™",
+        "Incorrect usage of the Swack!", "Ilicit Swacking Equipment", "Swæk",
+        "The Swack are not what they seem", "All your Swack are belong to us",
+
     ]
     return random.choice(swack_levels)
 

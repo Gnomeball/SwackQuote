@@ -3977,4 +3977,12 @@ submitter = "Gnome"
 quote = "To sum up: We need to do something gigantic we have never done before, much faster than we have ever done anything similar.  To do it, we need lots of breakthroughs in science and engineering.  We need to build a concensus that doesn't exist and create public policies to push a transition that would not happen otherwise.  We need the energy system to stop doing all the things we don't like and keep doing all the things we do like - in other words, to change completely and also stay the same."
 attribution = "Bill Gates, How to Avoid a Climate Disaster"
 
-#673 - Remember to update this, in counts of five!
+[2022-11-29-Knuth-quote-in-full-for-once]
+submitter = "segfault"
+quote = """There is no doubt that the grail of efficiency leads to abuse. Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil.
+
+Yet we should not pass up our opportunities in that critical 3%. A good programmer will not be lulled into complacency by such reasoning, he will be wise to look carefully at the critical code; but only after that code has been identified. It is often a mistake to make a priori judgments about what parts of a program are really critical, since the universal experience of programmers who have been using measurement tools has been that their intuitive guesses fail. After working with such tools for seven years, I've become convinced that all compilers written from now on should be designed to provide all programmers with feedback indicating what parts of their programs are costing the most; indeed, this feedback should be supplied automatically unless it has been specificaly turned off. After a programmer knows which parts of his routines are really important, a transformation like doubling up of loops will be worthwhile."""
+attribution = "Donald Knuth, Structured Programming with `go to` Statements (1974)"
+source = "https://doi.org/10.1145/356635.356640"
+
+#674 - Remember to update this, in counts of five!

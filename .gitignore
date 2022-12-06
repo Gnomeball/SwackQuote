@@ -10,6 +10,7 @@ quote_deck.txt
 quote_duds.toml
 quote_history.txt
 count-please.py
+test.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

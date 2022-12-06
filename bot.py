@@ -1,6 +1,9 @@
 from datetime import datetime
 from pathlib import Path
 from typing import Optional
+from operator import attrgetter
+from operator import itemgetter
+from collections import Counter
 import colorsys
 import logging
 import asyncio
@@ -84,8 +87,58 @@ async def on_message(message: discord.Message):
                 await test_quote(message.content[5:].strip(), log="quote_request")
         if message.content == "#repo":
             await client.get_channel(CHANNEL).send(content = REPO_LINK)
+        if message.content == "#authors":
+            await author_counts()
+        if message.content == "#help":
+            await send_help()
     else:
         pass
+
+@client.event
+async def send_help():
+    """
+    Prints out the help
+    """
+    help_string = """Commands:
+```
+Usable by owner only:
+
+#test <ID> - Sends a test quote, ID optional
+#reroll    - Reroll todays quote
+
+Usable by anyone:
+
+#repo - Prints out the URL for the GitHub repository
+#help - Prints out this message
+```
+How to add a Quote:
+```
+1. Go to the GitHub repository
+2. Fork the repository to create a remote copy
+3. Clone and pull this copy to your local machine
+4. Add your quote(s) to quotes.toml (be sure to update the count)
+5. Commit and push to your own remote repository
+6. Open a pull request to the main GitHub repository
+```
+"""
+    embedVar = discord.Embed(title = "Sending help!", colour = random_colour(), description = help_string)
+    embedVar.set_footer(text = f"Help for {await current_date_time()}")
+    await client.get_channel(CHANNEL).send(embed = embedVar)
+
+@client.event
+async def author_counts():
+    quotes = await refresh_quotes() # This way we have access to the latest quotes
+    authors = dict(sorted(Counter(map(attrgetter("submitter"), quotes.values())).items(), key=itemgetter(1), reverse=True))
+    pad = max(len(a) for a in authors)
+
+    author_string = "```\n"
+    for a in authors: # Name, padded with a space and dots, a dot, then, padded with dots and a space, their count
+        author_string += f"{a + ' '.ljust(pad + 1 - len(a), '.')}.{' '.rjust(4 - len(str(authors[a])), '.') + str(authors[a])}\n"
+    author_string += "```"
+
+    embedVar = discord.Embed(title = "Submitters", colour = random_colour(), description = author_string)
+    embedVar.set_footer(text = f"Submitter table as of {await current_date_time()}")
+    await client.get_channel(CHANNEL).send(embed = embedVar)
 
 @client.event
 async def dud_quotes():

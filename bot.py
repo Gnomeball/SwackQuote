@@ -109,7 +109,7 @@ Usable by owner only:
 Usable by anyone:
 
 #repo    - Prints out the URL for the GitHub repository
-#authors - Returns a list of authors, with contribution counts
+#authors - Prints a list of authors, with quote contribution counts
 #help    - Prints out this message
 ```
 How to add a Quote:

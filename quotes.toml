@@ -4011,6 +4011,16 @@ submitter = "segfault"
 quote = "Four minutes? That's ages! What if I get bored? I need a television - a couple of books - anyone for chess?"
 attribution = "The Doctor, The Night of the Doctor, 2013"
 
+[2022-12-08-humble-pie]
+submitter = "Corndog"
+quote = """
+Roy : Moss, I don't like to be negative about it, but everything you invent is worthless.
+
+Moss : Ah, well, prepare to put mustard on those words, for you will soon be consuming them along with this slice of humble pie that comes direct from the oven of shame set at gas mark 'egg on your face'!
+"""
+attribution = "Roy Trenneman and Maurice Moss, The IT Crowd, S2 E5"
+source = "https://www.imdb.com/title/tt1111175/characters/nm1547964"
+
 [2022-12-13-I-hate-this]
 submitter = "Gnome"
 quote = """
@@ -4020,4 +4030,4 @@ Data: Please!
 """
 attribution = "Lt. Cmdr. Data, and Guinan, Generations "
 
-#679 - Remember to update this, in counts of five!
+#680 - Remember to update this, in counts of five!

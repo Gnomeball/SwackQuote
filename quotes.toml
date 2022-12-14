@@ -4011,4 +4011,13 @@ submitter = "segfault"
 quote = "Four minutes? That's ages! What if I get bored? I need a television - a couple of books - anyone for chess?"
 attribution = "The Doctor, The Night of the Doctor, 2013"
 
-#678 - Remember to update this, in counts of five!
+[2022-12-13-I-hate-this]
+submitter = "Gnome"
+quote = """
+Data: Oh, yes! I hate this stuff! It is revolting!
+Guinan: More?
+Data: Please!
+"""
+attribution = "Lt. Cmdr. Data, and Guinan, Generations "
+
+#679 - Remember to update this, in counts of five!

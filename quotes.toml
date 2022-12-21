@@ -4126,7 +4126,7 @@ attribution = "Morris West"
 [2022-12-21-marcus-aurelius]
 submitter = "Victor"
 quote = "When you arise in the morning think of what a privilege it is to be alive, to think, to enjoy, to love."
-attribution = "Marcus Aurelius"
+attribution = "Marcus Aurelius (121-180 CE)"
 
 [2022-12-21-gide]
 submitter = "Victor"
@@ -4140,4 +4140,42 @@ attribution = "Dr. Seuss"
 
 #700
 
-#700 - Remember to update this, in counts of five!
+[2022-12-21-hemingway]
+submitter = "Victor"
+quote = "Night is always darker before the dawn and life is the same, everything will get better and sun will shine brighter than ever."
+attribution = "Ernest Hemingway"
+
+[2022-12-21-homer]
+submitter = "Victor"
+quote = "There is a time for many words, and there is also a time for sleep."
+attribution = "Homer (Greek poet, 8th century BCE)"
+
+[2022-12-21-hoffman]
+submitter = "Victor"
+quote = "Today's goals: Coffee and kindness. Maybe two coffees, and then kindness."
+attribution = "Nanea Hoffman"
+
+[2022-12-21-frank-3]
+submitter = "Victor"
+quote = "It's really a wonder that I haven't dropped all my ideals, because they seem so absurd and impossible to carry out. Yet I keep them, because in spite of everything, I still believe that people are really good at heart."
+attribution = "Anne Frank"
+
+[2022-12-21-stevenson]
+submitter = "Victor"
+quote = "Don't judge each day by the harvest you reap but by the seeds that you plant."
+attribution = "Robert Louis Stevenson"
+
+#705
+
+[2022-12-21-rohn]
+submitter = "Victor"
+quote = "Happiness is not something you postpone for the future; it is something you design for the present."
+attribution = "Jim Rohn"
+
+[2022-12-21-willson]
+submitter = "Victor"
+quote = """Count your age by friends, not years.
+Count your life by smiles, not tears."""
+attribution = "Dixie Willson"
+
+#707 - Remember to update this, in counts of five!

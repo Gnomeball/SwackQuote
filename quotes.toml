@@ -4037,4 +4037,26 @@ submitter = "Gnome"
 quote = "Slowly is the fastest way to get where you want to be"
 attribution = "André De Shields"
 
-#681 - Remember to update this, in counts of five!
+[2022-12-21-frank-1]
+submitter = "Victor"
+quote = "I can shake off everything as I write; my sorrows disappear, my courage is reborn."
+attribution = "Anne Frank"
+
+[2022-12-21-aristotle]
+submitter = "Victor"
+quote = "It is the mark of an educated mind, to entertain a thought without accepting it."
+attribution = "Aristotle (384–322 BCE)"
+
+[2022-12-21-garland]
+submitter = "Victor"
+quote = "Always be a first-rate version of yourself, instead of a second-rate version of somebody else."
+attribution = "Judy Garland"
+
+[2022-12-21-angelou]
+submitter = "Victor"
+quote = "Try to be a rainbow in someone's cloud."
+attribution = "Maya Angelou"
+
+#685
+
+#685 - Remember to update this, in counts of five!

@@ -30,8 +30,8 @@ def quote_compliant(quote: dict) -> bool:
     if not isinstance(quote, dict): return False # we must start with a dictionary
     for key, val in quote.items():
         if key not in Quote.__annotations__ or not isinstance(val, str):
-            return False # field not in Quote or not a str
-    if "quote" not in quote and "submitter" not in quote: return False # missing required fields
+            return False # field not in Quote or is not a str
+    if "quote" not in quote or "submitter" not in quote: return False # missing required fields
     if len(quote["quote"]) > 4000: return False # discord has limits
     return True
 

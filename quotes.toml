@@ -4229,4 +4229,21 @@ attribution = "Jonathan Decker (Cinema Therapy) on the _Toy Story_ franchise"
 source = "https://www.youtube.com/watch?v=EO489MtqUNw"
 submitter = "Victor"
 
-#715 - Remember to update this, in counts of five!
+#715
+
+[2023-01-18-twain]
+quote = "Give every day the chance to become the most beautiful day of your life."
+attribution = "Mark Twain"
+submitter = "Victor"
+
+[2023-01-18-picasso]
+quote = "When I was a child my mother said to me, 'If you become a soldier, you'll be a general. If you become a monk, you'll be the pope.' Instead I became a painter and wound up as Picasso."
+attribution = "Pablo Picasso"
+submitter = "Victor"
+
+[2023-01-18-bennett]
+quote = "Everyone you meet is a part of your journey, but not all of them are meant to stay in your life. Some people are just passing through to bring you gifts; either they're blessings or lessons."
+attribution = "Roy T. Bennett"
+submitter = "Victor"
+
+#718 - Remember to update this, in counts of five!

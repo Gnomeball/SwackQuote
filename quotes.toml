@@ -4206,4 +4206,10 @@ submitter = "segfault"
 quote = "Java is the new COBOL."
 attribution = "Jonathan Edwards"
 
+[2023-01-18-threat-modelling]
+submitter = "Victor"
+quote = "Threat modelling rule of thumb: if you don't explain exactly what you are securing against and how you secure against it, the answers can be assumed to be: 'bears' and 'not very well'."
+attribution = "Ryan Mallon"
+source = "https://twitter.com/ryiron/status/1150924668020203521"
+
 #711 - Remember to update this, in counts of five!

@@ -4246,4 +4246,26 @@ quote = "Everyone you meet is a part of your journey, but not all of them are me
 attribution = "Roy T. Bennett"
 submitter = "Victor"
 
-#718 - Remember to update this, in counts of five!
+[2023-01-21-Asimov-is-right-you-know]
+quote = "There are no nations! There is only humanity. And if we don't come to understand that right soon, there will be no nations, because there will be no humanity."
+attribution = "Isaac Asimov"
+submitter = "segfault"
+
+[2023-01-21-sometimes-I-do-question-if-people-get-this]
+quote = "If the point of having a society isn't to care for each other, to ease suffering, and realise each life's potential, literally what is the point? To hoard wealth? To build empires on other people's throats? Life is brief, nothing lasts. Wealth and empires are pointless violence."
+attribution = "Apocryphal"
+submitter = "segfault"
+
+#720
+
+[2023-01-21-because-lets-be-honest-its-true]
+quote = "I am, somehow, less interested in the weight and convolutions of Einstein's brain than in the near certainty that people of equal talent have lived and died in cotton fields and sweatshops."
+attribution = "Steven Jay Gould"
+submitter = "segfault"
+
+[2023-01-21-the-erlang-guy-seems-to-know-a-thing-or-two]
+quote = "Make it work, then make it beautiful. Then, if you really, *really* have to, make it fast. 90% of the time, if you make it beautiful, it will already be fast. So, really, just make it beautiful."
+attribution = "Joe Armstrong"
+submitter = "segfault"
+
+#722 - Remember to update this, in counts of five!

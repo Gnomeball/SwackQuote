@@ -4219,7 +4219,7 @@ source = "https://www.youtube.com/watch?v=4KXqvVEdgqs"
 submitter = "Victor"
 
 [2023-01-18-maquia]
-quote ="If you ever meet anyone from the outside, you mustn't fall in love. If you do, you'll truly become alone." 
+quote ="If you ever meet anyone from the outside, you mustn't fall in love. If you do, you'll truly become alone."
 attribution = "Racine (Iorph elder), _Maquia_"
 submitter = "Victor"
 
@@ -4273,4 +4273,14 @@ quote = "The uncreative mind can spot wrong answers, but it takes a very creativ
 attribution = "Anthony Jay"
 submitter = "segfault"
 
-#723 - Remember to update this, in counts of five!
+[2023-01-25-these-go-to-eleven]
+quote = "But, these go to eleven..."
+attribution = "Nigel Tufnel, Spinal Tap"
+submitter = "Gnome"
+
+[2023-01-25-if-i-nad-a-nickel]
+quote = "Which isn't a lot, but it's weird that it happened twice."
+attribution = "Phineas, from a show I've never watched"
+submitter = "Gnome"
+
+#725 - Remember to update this, in counts of five!

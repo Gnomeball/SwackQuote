@@ -95,7 +95,7 @@ def calculate_swack_level() -> str:
 def format_quote_text(quote: Quote, attribution_only = False) -> str:
     """
     Formats a Quote into our preferred string output.
-    :returns: A string containing the quote, it's attribution, and with any affordances we have for accessibility.
+    :returns: A string containing the quote, its attribution, and with any affordances we have for accessibility.
     :rtype: str
     """
     quote_text = quote.quote if not attribution_only else ""

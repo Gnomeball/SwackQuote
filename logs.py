@@ -7,11 +7,9 @@ def init():
     "Configure `logging` with our handlers of choice."
     logging.config.dictConfig(LOG_CONFIG)
 
-LOCAL = Path(__file__).parent
-
-OUTLOG = LOCAL / "out.log"
-ERRLOG = LOCAL / "err.log"
-DBGLOG = LOCAL / "dbg.log"
+OUTLOG = Path("out.log")
+ERRLOG = Path("err.log")
+DBGLOG = Path("dbg.log")
 
 OUTLOG.touch()
 ERRLOG.touch()

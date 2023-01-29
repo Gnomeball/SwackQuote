@@ -4291,32 +4291,10 @@ attribution = "Dylan Beattie, Flatscreen (a Everybody's Free (To Wear Sunscreen)
 source = "https://www.youtube.com/watch?v=q3G4EPGH2r0"
 submitter = "segfault"
 
-[2023-01-29-then-however-jank-they-are]
+[2023-01-29-we-should-use-them-sparingly]
 quote = "https://www.youtube.com/watch?v=jxi0ETwDvws"
 attribution = "Dylan Beattie, Bug in the Javascript (a Piano Man parody)"
 source = "https://www.youtube.com/watch?v=jxi0ETwDvws"
 submitter = "segfault"
 
-[2023-01-29-we-should-probably-use-them]
-quote = "https://www.youtube.com/watch?v=lIFE7h3m40U"
-attribution = "Tom Scott, The Art of the Bodge: How I Made The Emoji Keyboard"
-source = "https://www.youtube.com/watch?v=lIFE7h3m40U"
-submitter = "segfault"
-
-[2023-01-29-and-one-day-even-nice-embeds-with-quotes-themselves]
-quote = "https://www.youtube.com/watch?v=-5wpm-gesOY"
-attribution = "Tom Scott, The Problem with Time & Timezones"
-source = "https://www.youtube.com/watch?v=-5wpm-gesOY"
-submitter = "segfault"
-
-[2023-01-29-so-that-we-dont-need-to-duplicate-like-this-for-an-embed]
-quote = """
-What you learn after dealing with timezones, is that what you do is you put away your code, you don't try and write anything to deal with this.
-You look at the people who have been there before you. You look at the first people, the people who have dealt with this before, the people who have built the spaghetti code, and you go to them, **and you thank them very much for making it open source**, and you give them credit, and you take what they have made and you put it in your program, and you never ever look at it again.
-Because that way lies madness.
-"""
-attribution = "Tom Scott, The Problem with Time & Timezones"
-source = "https://www.youtube.com/watch?v=-5wpm-gesOY"
-submitter = "segfault"
-
-#730 - Remember to update this, in counts of five!
+#727 - Remember to update this, in counts of five!

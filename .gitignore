@@ -4,8 +4,9 @@ admins.toml
 channel.txt
 
 # Misc. files
-out.txt
-err.txt
+out.log.*
+err.log.*
+dbg.log.*
 quote_deck.txt
 quote_duds.toml
 quote_history.txt

@@ -4283,4 +4283,18 @@ quote = "Which isn't a lot, but it's weird that it happened twice."
 attribution = "Phineas, from a show I've never watched"
 submitter = "Gnome"
 
-#725 - Remember to update this, in counts of five!
+#725
+
+[2023-01-29-look-if-we-added-embeds]
+quote = "https://www.youtube.com/watch?v=q3G4EPGH2r0"
+attribution = "Dylan Beattie, Flatscreen (a Everybody's Free (To Wear Sunscreen) parody)"
+source = "https://www.youtube.com/watch?v=q3G4EPGH2r0"
+submitter = "segfault"
+
+[2023-01-29-we-should-use-them-sparingly]
+quote = "https://www.youtube.com/watch?v=jxi0ETwDvws"
+attribution = "Dylan Beattie, Bug in the Javascript (a Piano Man parody)"
+source = "https://www.youtube.com/watch?v=jxi0ETwDvws"
+submitter = "segfault"
+
+#727 - Remember to update this, in counts of five!

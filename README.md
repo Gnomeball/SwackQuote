@@ -28,7 +28,7 @@ The flat-file uses the TOML specification for storing quotes.  Quotes are format
 submitter = "the name of who submitted it (aka, your discord handle)"
 quote = "the quote you're adding"
 attribution = "whoever said or wrote it, optionally where it was said or written"
-source = "A URL to the quote or source, if you have it"
+source = "a URL for the quote or source, if you have it"
 ```
 
 **You must include your name as the `submitter`, and the `quote`, these are _required_.**
@@ -37,17 +37,21 @@ Currently, `attribution` and `source` are optional fields.
 
 However, the `attribution` field will appear after the quote, behind a `~`, if given.
 
-If you do not know who, or cannot find the original attribution, please use `Unknown`, or `Various`. If many have said it, use `Apocryphal`. But, if you're having trouble, you can always ask others, who may know it themselves or know where to check.
+If you do not know who, or cannot find the original attribution, please use `Unknown`, or `Various`. If many have said it, use `Apocryphal`. But, if you're having trouble, you can always ask others who may know it themselves or know where to check.
 
-If citing both a person and a work, please do this in a format that is sensible, perhaps `person, work`, inside the `attribution` field --- with a URL (i.e. for Tweets, videos, or articles) in the `source` field. We tend to prefer this is included in the `attribution`, as `source` is used for HTTP URLs. If the year or edition is relevant, include this either parenthised `(3rd edition)`, or following it like, say, `Unix Epoch, 1900`. With years, we prefer and assume Common Era, such as `Julius Caesar (100 - 44 BCE)` or `de Finibus Bonorum et Malorum, 45 BCE`.
+If citing both a person and a work, please do this in a format that is sensible, perhaps `person, work`, inside the `attribution` field --- with a URL (i.e. for Tweets, videos, or articles) in the `source` field. We tend to prefer this is included in the `attribution`, so use `source` for HTTP/HTTPS URLs (where relevant). If the year or edition is relevant, include this either parenthesised `(3rd edition)`, or following it like, say, `Unix Epoch, 1970`. With dating, we prefer and assume [Common Era](https://en.wikipedia.org/wiki/Common_Era), such as `Julius Caesar (100 - 44 BCE)` or `de Finibus Bonorum et Malorum, 45 BCE`.
 
-When citing something said by a character, use a simple rule of thumb: if you know who wrote it, cite as Author, Character, otherwise cite the character directly. For example, The Doctor or Jean-Luc Picard are cited as themselves, because various scriptwriters and actors are involved, whereas Macbeth is cited as William Shakespeare, Macbeth, as we're quoting his script. Other examples, such as Sherlock Holmes, may be context dependent, such as the books will be cited as Arthur Conan Doyle, Sherlock Holmes, whereas film or show adaptations are cited accordingly (Character, Film/Show, Year).
+When citing something said by a character, use a simple rule of thumb: if you know who wrote it, cite as `Author, Character`, otherwise cite the character directly. For example, `The Doctor` or `Jean-Luc Picard` are cited as themselves, because various scriptwriters and actors are involved, whereas Macbeth is cited as `William Shakespeare, Macbeth`, as we're quoting his script (the character should be listed, though in the case of Macbeth, it would be redundant). Other examples, such as `Sherlock Holmes`, may be context dependent, such as the books will be cited as `Arthur Conan Doyle, Sherlock Holmes`, whereas film or show adaptations are cited accordingly (`Character, Film/Show, Year`). Shows may include the specific episode by name and perhaps number, where relevant, but further details (timestamps etc.) should not be included (but may be part of a `source` URL, such as timestamped links to YouTube).
+
+So, when done properly, attributions should use the order **`"Author, Character, Work, Edition, Year"`**. These may be omitted where redundant or unknown (though we prefer an unknown author to be cited as such, except as in such cases as the examples above). Commas separate for clarity, and where clear may be removed or instead parenthesised (as in above examples). Additional context or aspects of the attribution may be included if it is felt to improve the quote, preferably after the above ordering.
+
+For now, do not put URLs in the attribution; Markdown links may be accepted, but lengthy raw URLs likely will not be. A single URL may be included in the `source`, however for embedding then the quote should *currently* also only contain the URL, such as `quote = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"`. The `source` should include the URL in this case, as a future update may permit direct embedding from the `source` field and free up the `quote`, however for now this is not done. The embedding is janky, not visually appealing, and not what we desired; if you can improve this, please contribute!
 
 For quotes that span multiple lines, use `"""` at the beginning and end, on separate lines.
 
 For quotes containing code, use `'''` for raw multi-line strings, and then use ` ``` ` to create a code block, remembering to close them both afterwards.
 
-All discord-accepted markdown should be parsed properly. Individual quotes must be less than 4000 bytes long (UTF-8).
+All discord-accepted markdown should be rendered properly. Individual quotes must be less than 4000 bytes long (UTF-8).
 
 When adding quotes, please take care to update the trailing count comments, spaced out in groups of 5 quotes before a comment (so `#5` if followed by `#10` and so on). The one at the bottom should have the exact number of quotes, but if you round up to the nearest 5 then it's unlikely anyone will complain.
 
@@ -75,6 +79,19 @@ Example:
 submitter = "Gnome"
 quote = "There is nothing permanent except change."
 attribution = "Heraclitus (535-475 BCE)"
+```
+
+### Quotes from Code
+
+Quotes of code should be multi-line strings starting with a code fence (not indentation based), which may have syntax highlighting specified (might not work on all devices).
+
+```toml
+[pre-toml-300]
+submitter = "Gnome"
+quote = """```python
+def isprime(n): return not re.match(r\"^1?$|^(11+?)\\1+$\", \"1\"*n)
+```"""
+attribution = "segfault"
 ```
 
 ### Further Reading

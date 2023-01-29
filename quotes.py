@@ -20,6 +20,7 @@ class Quote(NamedTuple):
     quote: str
     attribution: Optional[str] = None
     source: Optional[str] = None
+    embed: bool = False
 
 def quote_compliant(quote: dict) -> bool:
     """
@@ -29,8 +30,8 @@ def quote_compliant(quote: dict) -> bool:
     """
     if not isinstance(quote, dict): return False # we must start with a dictionary
     for key, val in quote.items():
-        if key not in Quote.__annotations__ or not isinstance(val, str):
-            return False # field not in Quote or is not a str
+        if key not in Quote.__annotations__ or not isinstance(val, Quote.__annotations__[key]):
+            return False # field not in Quote or is not the correct type
     if "quote" not in quote or "submitter" not in quote: return False # missing required fields
     if len(quote["quote"]) > 4000: return False # discord has limits
     return True
@@ -44,8 +45,8 @@ def quote_compliant(quote: dict) -> bool:
 #     match quote:
 #         case {"submitter": str(_), "quote": str(text), **optional} if len(text) < 4000:
 #             for key, val in optional.items():
-#                 if key not in Quote.__annotations__ or not isinstance(val, str):
-#                     return False # field not in Quote or not a str
+#                 if key not in Quote.__annotations__ or not isinstance(val, Quote.__annotations__[key]):
+#                     return False # field not in Quote or is not the correct type
 #             return True
 #     return False
 
@@ -95,7 +96,7 @@ def calculate_swack_level() -> str:
 def format_quote_text(quote: Quote, attribution_only = False) -> str:
     """
     Formats a Quote into our preferred string output.
-    :returns: A string containing the quote, it's attribution, and with any affordances we have for accessibility.
+    :returns: A string containing the quote, its attribution, and with any affordances we have for accessibility.
     :rtype: str
     """
     quote_text = quote.quote if not attribution_only else ""

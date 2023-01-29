@@ -52,7 +52,7 @@ def quote_compliant(quote: dict) -> bool:
     logger.info("Quote is valid")
     return True
 
-def as_quotes(quotes: str) -> tuple[dict[str, Quote], dict[str, Quote]]:
+def as_quotes(quotes: str, logger: logging.Logger) -> tuple[dict[str, Quote], dict[str, Quote]]:
     """
     Converts a TOML-format string to a dict[str, Quote] of identifier -> Quote
     :returns: Dictionary of Quote identifiers to Quote.
@@ -61,6 +61,8 @@ def as_quotes(quotes: str) -> tuple[dict[str, Quote], dict[str, Quote]]:
     loaded_quotes = tomli.loads(quotes)
     quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
     non_compliant = {i: q for i, q in loaded_quotes.items() if not quote_compliant(q)}
+    if len(non_compliant):
+        logger.error(f"Received non compliant quotes: {non_compliant}")
     return quote_dict, non_compliant
 
 def as_dicts(quotes: dict[str, Quote]) -> dict[str, dict[str, str]]:
@@ -146,7 +148,7 @@ def pull_quotes_from_file() -> tuple[dict[str, Quote], dict[str, Quote]]:
     :returns: The dictionary of quotes and a dictionary of not-quite quotes
     :rtype: dict[str, Quote], dict[str, Quote]
     """
-    return as_quotes(QUOTE_FILE_PATH.read_text())
+    return as_quotes(QUOTE_FILE_PATH.read_text(), logging.getLogger("pull_quotes_from_file"))
 
 def pull_quotes_from_repo() -> tuple[dict[str, Quote], dict[str, Quote]]:
     """
@@ -166,7 +168,7 @@ def pull_quotes_from_repo() -> tuple[dict[str, Quote], dict[str, Quote]]:
     except Exception:
         logger.exception("Exception while getting updated quotes:")
 
-    return as_quotes(updated_quotes)
+    return as_quotes(updated_quotes, logger)
 
 async def refresh_quotes() -> dict[str, Quote]:
     """

@@ -2222,6 +2222,7 @@ It has been said that astronomy is a humbling and character-building experience.
 """
 attribution = "Carl Sagan, Pale Blue Dot, 1994"
 source = "https://www.youtube.com/watch?v=GO5FwsblpT8"
+embed = true
 
 [2022-02-28-5]
 submitter = "Gnome"
@@ -3893,12 +3894,6 @@ submitter = "Gnome"
 quote = "Sir, I protest!  I am NOT a Merry Man!"
 attribution = "Lt. Cmdr. Worf, Qpid"
 
-[pale-blue-dot]
-submitter = "segfault"
-quote = "https://www.youtube.com/watch?v=GO5FwsblpT8"
-attribution = "Carl Sagan, Pale Blue Dot, 1994"
-source = "https://www.youtube.com/watch?v=GO5FwsblpT8"
-
 [2022-10-12-Stephen-fry-on-god]
 submitter = "curlpipe"
 quote = """I say; bone cancer in children, what's that about?  How dare you, how dare you create a world in which, in which there is such misery that is not our fault, it's not right, it's utterly, utterly evil.  Why should I respect a capricious, mean minded, stupid God who creates a world which is so full of injustice and pain?  That's what I would say.  And you think you're going to get in, know what, I wouldn't want to.  I wouldn't want to get in on his terms, they're wrong.
@@ -4286,15 +4281,17 @@ submitter = "Gnome"
 #725
 
 [2023-01-29-look-if-we-added-embeds]
-quote = "https://www.youtube.com/watch?v=q3G4EPGH2r0"
+quote = ""
 attribution = "Dylan Beattie, Flatscreen (a Everybody's Free (To Wear Sunscreen) parody)"
 source = "https://www.youtube.com/watch?v=q3G4EPGH2r0"
 submitter = "segfault"
+embed = true
 
 [2023-01-29-we-should-use-them-sparingly]
-quote = "https://www.youtube.com/watch?v=jxi0ETwDvws"
+quote = ""
 attribution = "Dylan Beattie, Bug in the Javascript (a Piano Man parody)"
 source = "https://www.youtube.com/watch?v=jxi0ETwDvws"
 submitter = "segfault"
+embed = true
 
 #727 - Remember to update this, in counts of five!

@@ -183,12 +183,11 @@ async def send_quote(pre: str = "Quote", title: Optional[str] = None, which: Opt
     quote, i = pull_random_quote(quotes) if which is None else pull_specific_quote(which, quotes)
     title = calculate_swack_level() if title is None else title
 
-    quote_is_url = is_url(quote.quote)
-    quote_text = format_quote_text(quote, attribution_only = quote_is_url)
+    quote_text = format_quote_text(quote)
 
     # Build the quote embed
     embedVar = discord.Embed(title = title, colour = random_colour(), description = quote_text)
-    if quote.source and re.match(RE_IS_URL, quote.source):
+    if quote.source and is_url(quote.source):
         embedVar.url = quote.source
     embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nQuote {i}/{len(quotes)}, Submitted by {quote.submitter}")
 
@@ -196,8 +195,8 @@ async def send_quote(pre: str = "Quote", title: Optional[str] = None, which: Opt
     logger.info(f"Attempting to send quote #{i}, submitted by {quote.submitter}")
     try:
         await client.get_channel(CHANNEL).send(embed = embedVar)
-        if quote_is_url:
-            await client.get_channel(CHANNEL).send(content = quote.quote)
+        if quote.embed and quote.source and is_url(quote.source):
+            await client.get_channel(CHANNEL).send(content = quote.source)
     except Exception:
         logger.exception(f"Error sending quote #{i}")
     finally:

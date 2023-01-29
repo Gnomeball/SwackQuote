@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import NamedTuple, Optional, Union
+from typing import Any, NamedTuple, Optional, Union
 import logging
 import random
 
@@ -20,14 +20,14 @@ class Quote(NamedTuple):
     quote: str
     attribution: Optional[str] = None
     source: Optional[str] = None
-    embed: Optional[bool] = False
+    embed: bool = False
 
 QUOTE_ACCEPTED_TYPES = { # required for Python 3.9 and below
     "submitter": [str],
     "quote": [str],
     "attribution": [str, None],
     "source": [str, None],
-    "embed": [bool, None]
+    "embed": [bool]
 }
 
 def quote_compliant(quote: dict) -> bool:
@@ -58,15 +58,19 @@ def quote_compliant(quote: dict) -> bool:
         return False # discord has limits
     return True
 
-def as_quotes(quotes: str, logger: logging.Logger) -> tuple[dict[str, Quote], dict[str, Quote]]:
+def as_quotes(quotes: str, logger: logging.Logger) -> tuple[dict[str, Quote], dict[str, dict[str, Any]]]:
     """
     Converts a TOML-format string to a dict[str, Quote] of identifier -> Quote
     :returns: Dictionary of Quote identifiers to Quote.
     :rtype: dict[str, Quote], dict[str, Quote]
     """
     loaded_quotes = tomli.loads(quotes)
-    quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
-    non_compliant = {i: q for i, q in loaded_quotes.items() if not quote_compliant(q)}
+    quote_dict, non_compliant = {}, {}
+    for i, q in loaded_quotes.items():
+        if quote_compliant(q):
+            quote_dict[i] = Quote(**q)
+        else:
+            non_compliant[i] = q
     if len(non_compliant):
         logger.error(f"Received non compliant quotes:\n {non_compliant}")
     return quote_dict, non_compliant
@@ -103,13 +107,13 @@ def calculate_swack_level() -> str:
     ]
     return random.choice(swack_levels)
 
-def format_quote_text(quote: Quote, attribution_only = False) -> str:
+def format_quote_text(quote: Quote) -> str:
     """
     Formats a Quote into our preferred string output.
     :returns: A string containing the quote, its attribution, and with any affordances we have for accessibility.
     :rtype: str
     """
-    quote_text = quote.quote if not attribution_only else ""
+    quote_text = quote.quote
     if quote.attribution is not None:
         quote_text += f" ~{quote.attribution}"
     if "'''" not in quote_text:
@@ -148,7 +152,7 @@ def pull_random_quote(quotes: dict[str, Quote]) -> tuple[Quote, int]:
 
     return quotes[quote], quote_index
 
-def pull_quotes_from_file() -> tuple[dict[str, Quote], dict[str, Quote]]:
+def pull_quotes_from_file() -> tuple[dict[str, Quote], dict[str, dict[str, Any]]]:
     """
     Pulls the quotes from a local file at QUOTE_FILE_PATH.
     :returns: The dictionary of quotes and a dictionary of not-quite quotes
@@ -156,7 +160,7 @@ def pull_quotes_from_file() -> tuple[dict[str, Quote], dict[str, Quote]]:
     """
     return as_quotes(QUOTE_FILE_PATH.read_text(), logging.getLogger("pull_quotes_from_file"))
 
-def pull_quotes_from_repo() -> tuple[dict[str, Quote], dict[str, Quote]]:
+def pull_quotes_from_repo() -> tuple[dict[str, Quote], dict[str, dict[str, Any]]]:
     """
     Pulls updated quotes from the repository.
     :returns: Updated quotes as a dictionary of quotes and a dictionary of not-quite quotes.
@@ -191,7 +195,7 @@ async def refresh_quotes() -> dict[str, Quote]:
     if len(duds):
         logger.error(f"We have {len(duds)} dud quotes, adding to {QUOTE_DUD_PATH}")
         with open(QUOTE_DUD_PATH, "wb") as f:
-            tomli_w.dump(as_dicts(duds), f)
+            tomli_w.dump(duds, f)
     if updated_quotes == {}:
         logger.info(f"{QUOTE_FILE_ADDRESS} was empty")
         return quotes

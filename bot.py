@@ -8,7 +8,6 @@ import colorsys
 import logging
 import asyncio
 import random
-import sys
 import re
 
 import discord
@@ -25,15 +24,14 @@ from quotes import (
     QUOTE_DECK_PATH,
     QUOTE_DUD_PATH,
 )
-
-# Logging boilerplate
-fmt = "[%(asctime)s: %(name)s %(levelname)s]: %(message)s"
-logging.basicConfig(level = logging.INFO, stream = sys.stdout, format = fmt)
+import logs
 
 # Variables and stuff
 intents = discord.Intents.default()
 intents.message_content = True
 
+# Prepare the client and logging
+logs.init()
 client = discord.Client(intents = intents)
 logger = logging.getLogger("QuoteBot")
 
@@ -80,10 +78,10 @@ async def on_message(message: discord.Message):
     if message.channel.id == CHANNEL:
         if message.author.id in ADMINS:
             if message.content == "#reroll":
-                logger.info(f"Requesting quote re-roll")
+                logger.info("Requesting quote re-roll")
                 await send_quote("Re-rolled Quote", log="quote_request")
             if message.content[:5] == "#test":
-                logger.info(f"Requesting test quote")
+                logger.info("Requesting test quote")
                 await test_quote(message.content[5:].strip(), log="quote_request")
         if message.content == "#repo":
             await client.get_channel(CHANNEL).send(content = REPO_LINK)
@@ -150,7 +148,7 @@ async def dud_quotes():
         logger.info(f"Sending dud quotes: \n{duds}")
         embedVar = discord.Embed(title = "These quotes need fixing", description = f"```toml\n{duds[:4000]}\n```", colour = random_colour())
         await client.get_channel(CHANNEL).send(embed = embedVar)
-        logger.info(f"Dud quotes have been sent")
+        logger.info("Dud quotes have been sent")
     else:
         logger.info("There were no dud quotes today")
 
@@ -200,7 +198,7 @@ async def send_quote(pre: str = "Quote", title: Optional[str] = None, which: Opt
     except Exception as e:
         logger.info(f"Error sending quote #{i}: {e}")
     finally:
-        logger.info(f"Quote sent successfully")
+        logger.info("Quote sent successfully")
 
 @client.event
 async def test_quote(which = "pre-toml-255", log: str = "test_quote"):

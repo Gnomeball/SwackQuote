@@ -28,27 +28,29 @@ def quote_compliant(quote: dict) -> bool:
     :returns: Is quote a valid Quote?
     :rtype: bool
     """
-    if not isinstance(quote, dict): return False # we must start with a dictionary
+    logger = logging.getLogger("quote_compliant")
+    logger.info("Checking if the quote is valid")
+    if not isinstance(quote, dict):
+        logger.error(f"Quote must be a dictionary, received {type(quote)}({quote})")
+        return False
     for key, val in quote.items():
-        if key not in Quote.__annotations__ or not isinstance(val, Quote.__annotations__[key]):
-            return False # field not in Quote or is not the correct type
-    if "quote" not in quote or "submitter" not in quote: return False # missing required fields
-    if len(quote["quote"]) > 4000: return False # discord has limits
+        if key not in Quote.__annotations__:
+            logger.warning(f"{key} is not valid field for Quote, must be one of {', '.join(Quote.__annotations__)}")
+            return False
+        elif not isinstance(val, Quote.__annotations__[key]):
+            logger.warning(f"Field {key} is not of the correct type, must be {Quote.__annotations__[key]}, received {type(val)}({val})")
+            return False # or is not the correct type
+    if "quote" not in quote:
+        logger.warning(f"Missing 'quote' field from quote {quote}")
+        return False
+    elif "submitter" not in quote:
+        logger.warning(f"Missing 'submitter' field from quote {quote}")
+        return False # missing required fields
+    if len(quote["quote"]) > 4000:
+        logger.warning(f"Quote is too long, must be less than 4000 bytes (UTF-8), but is {len(quote['quote'])} bytes long")
+        return False # discord has limits
+    logger.info("Quote is valid")
     return True
-
-# def quote_compliant(quote: dict):
-#     """
-#     Checks whether a dict would make a valid Quote.
-#     :returns: Is quote a valid Quote?
-#     :rtype: bool
-#     """
-#     match quote:
-#         case {"submitter": str(_), "quote": str(text), **optional} if len(text) < 4000:
-#             for key, val in optional.items():
-#                 if key not in Quote.__annotations__ or not isinstance(val, Quote.__annotations__[key]):
-#                     return False # field not in Quote or is not the correct type
-#             return True
-#     return False
 
 def as_quotes(quotes: str) -> tuple[dict[str, Quote], dict[str, Quote]]:
     """
@@ -152,7 +154,7 @@ def pull_quotes_from_repo() -> tuple[dict[str, Quote], dict[str, Quote]]:
     :returns: Updated quotes as a dictionary of quotes and a dictionary of not-quite quotes.
     :rtype: dict[str, Quote], dict[str, Quote]
     """
-    logger = logging.getLogger("pull_from_repo")
+    logger = logging.getLogger("pull_quotes_from_repo")
     updated_quotes = ""
     try:
         logger.info(f"Updating quotes from: {QUOTE_FILE_ADDRESS}")

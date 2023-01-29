@@ -37,27 +37,25 @@ def quote_compliant(quote: dict) -> bool:
     :rtype: bool
     """
     logger = logging.getLogger("quote_compliant")
-    logger.info("Checking if the quote is valid")
     if not isinstance(quote, dict):
         logger.error(f"Quote must be a dictionary, received {type(quote)}({quote})")
         return False
     for key, val in quote.items():
         if key not in Quote.__annotations__:
-            logger.warning(f"{key} is not valid field for Quote, must be one of {', '.join(Quote.__annotations__)}")
+            logger.error(f"{key} is not valid field for Quote, must be one of {', '.join(Quote.__annotations__)}")
             return False
         elif not any(val is None if T is None else isinstance(val, T) for T in QUOTE_ACCEPTED_TYPES[key]):
-            logger.warning(f"Field {key} is not of the correct type, must be {Quote.__annotations__[key]}, received {type(val)}({val})")
+            logger.error(f"Field {key} is not of the correct type, must be {Quote.__annotations__[key]}, received {type(val)}({val})")
             return False # or is not the correct type
     if "quote" not in quote:
-        logger.warning(f"Missing 'quote' field from quote {quote}")
+        logger.error(f"Missing 'quote' field from quote {quote}")
         return False
     elif "submitter" not in quote:
-        logger.warning(f"Missing 'submitter' field from quote {quote}")
+        logger.error(f"Missing 'submitter' field from quote {quote}")
         return False # missing required fields
     if len(quote["quote"]) > 4000:
-        logger.warning(f"Quote is too long, must be less than 4000 bytes (UTF-8), but is {len(quote['quote'])} bytes long")
+        logger.error(f"Quote is too long, must be less than 4000 bytes (UTF-8), but is {len(quote['quote'])} bytes long")
         return False # discord has limits
-    logger.info("Quote is valid")
     return True
 
 def as_quotes(quotes: str, logger: logging.Logger) -> tuple[dict[str, Quote], dict[str, Quote]]:

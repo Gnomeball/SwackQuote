@@ -1,9 +1,9 @@
-from datetime import datetime
-from pathlib import Path
-from typing import Optional
 from operator import attrgetter
 from operator import itemgetter
 from collections import Counter
+from datetime import datetime
+from typing import Optional
+from pathlib import Path
 import colorsys
 import logging
 import asyncio
@@ -12,6 +12,7 @@ import re
 
 import discord
 import tomli
+import logs
 
 from quotes import (
     calculate_swack_level,
@@ -24,7 +25,6 @@ from quotes import (
     QUOTE_DECK_PATH,
     QUOTE_DUD_PATH,
 )
-import logs
 
 # Variables and stuff
 intents = discord.Intents.default()
@@ -49,7 +49,9 @@ RE_IS_URL = re.compile(r"^https?://[^\s/$.?#].[^\s]*$", flags = re.I | re.M | re
 
 def is_url(url: str) -> bool:
   """
-  Check if a string is a valid URL for Discord. Some invalid URLs may get through, but all valid URLs will pass. Things that are absolutely not URLs will fail.
+  Check if a string is a valid URL for Discord.
+  Some invalid URLs may get through, but all valid URLs will pass.
+  Things that are absolutely not URLs will fail.
   :returns: whether the given string is a valid URL.
   :rtype: bool
   """
@@ -79,10 +81,10 @@ async def on_message(message: discord.Message):
         if message.author.id in ADMINS:
             if message.content == "#reroll":
                 logger.info("Requesting quote re-roll")
-                await send_quote("Re-rolled Quote", log="quote_request")
+                await send_quote("Re-rolled Quote", log = "quote_request")
             if message.content[:5] == "#test":
                 logger.info("Requesting test quote")
-                await test_quote(message.content[5:].strip(), log="quote_request")
+                await test_quote(message.content[5:].strip(), log = "quote_request")
         if message.content == "#repo":
             await client.get_channel(CHANNEL).send(content = REPO_LINK)
         if message.content == "#authors":
@@ -127,7 +129,7 @@ How to add a Quote:
 @client.event
 async def author_counts():
     quotes = await refresh_quotes() # This way we have access to the latest quotes
-    authors = dict(sorted(Counter(map(attrgetter("submitter"), quotes.values())).items(), key=itemgetter(1), reverse=True))
+    authors = dict(sorted(Counter(map(attrgetter("submitter"), quotes.values())).items(), key = itemgetter(1), reverse = True))
     pad = max(len(a) for a in authors)
 
     author_string = "```\n"
@@ -142,7 +144,7 @@ async def author_counts():
 @client.event
 async def dud_quotes():
     logger = logging.getLogger("dud_quotes")
-    # * We just print verbatim, no need to parse
+    # We just print verbatim, no need to parse
     duds = Path(QUOTE_DUD_PATH).read_text().strip()
     if len(duds):
         logger.info(f"Sending dud quotes: \n{duds}")
@@ -167,7 +169,8 @@ async def quote_loop():
 @client.event
 async def current_date_time():
     day_n = datetime.now().day
-    day_ord = {1: "st", 21: "st", 31: "st", 2: "nd", 22: "nd", 3: "rd", 23: "rd", 7: "nth", 17: "nth", 27: "nth"}.get(day_n, "th")
+    day_ord = { 1: "st",  2: "nd",  3: "rd",  7: "nth", 17: "nth",
+               21: "st", 22: "nd", 23: "rd", 27: "nth", 31: "st"}.get(day_n, "th")
     return datetime.now().strftime("%A %-d# %B %Y").replace("#", day_ord)
 
 @client.event

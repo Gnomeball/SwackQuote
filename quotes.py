@@ -195,7 +195,7 @@ async def refresh_quotes() -> dict[str, Quote]:
     if len(duds):
         logger.error(f"We have {len(duds)} dud quotes, adding to {QUOTE_DUD_PATH}")
         with open(QUOTE_DUD_PATH, "wb") as f:
-            tomli_w.dump(as_dicts(duds), f)
+            tomli_w.dump(duds, f)
     if updated_quotes == {}:
         logger.info(f"{QUOTE_FILE_ADDRESS} was empty")
         return quotes

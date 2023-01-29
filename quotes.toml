@@ -3926,12 +3926,12 @@ with a_gift() as apologies:
 ```"""
 attribution = "segfault"
 
-#665
-
 [2022-10-26-Oops]
 submitter = "Gnome"
 quote = "I don't have all the answers, I've never been dead before."
 attribution = "Ensign Ro Laren, The Next Phase"
+
+#665
 
 [2022-11-1-Human-Addition]
 submitter = "Gnome"
@@ -3955,12 +3955,12 @@ quote = "Give someone state and they'll have a bug one day, but teach them how t
 attribution = "Fabian \"ryg\" Giesen"
 source = "https://twitter.com/rygorous/status/1507178315886444544"
 
-#670
-
 [2022-11-16-Einstein]
 submitter = "Gnome"
 quote = "All our science, measured against reality, is primitive and childlike - and yet it is the most precious thing we have."
 attribution = "Albert Einstein"
+
+#670
 
 [2022-11-16-Sherlock]
 submitter = "Gnome"
@@ -3988,13 +3988,13 @@ quote = "We ain't a sharp species. We kill each other over arguments about what 
 attribution = "Justin's Dad"
 source = "https://nitter.ca/shitmydadsays/status/209705033204371457#m"
 
-#675
-
 [2022-12-02-Jungle-Lizard-Advent]
 submitter = "SatanicWomble"
 quote = "My solution today is far from elegant .. and my first question was \"If this is a jungle.. why no Lizard?\""
 attribution = "Advent of Code 2022, Day 2, Gnome"
 source = "https://discord.com/channels/402480186312097803/1035536278671859713/1048185250573979668"
+
+#675
 
 [2022-12-02-Doctor-Destination-Dreaming]
 submitter = "SatanicWomble"
@@ -4025,12 +4025,12 @@ Data: Please!
 """
 attribution = "Lt. Cmdr. Data, and Guinan, Generations"
 
-#680
-
 [2022-12-20-Slowly]
 submitter = "Gnome"
 quote = "Slowly is the fastest way to get where you want to be"
 attribution = "André De Shields"
+
+#680
 
 [2022-12-21-frank-1]
 submitter = "Victor"
@@ -4052,12 +4052,12 @@ submitter = "Victor"
 quote = "Try to be a rainbow in someone's cloud."
 attribution = "Maya Angelou"
 
-#685
-
 [2022-12-21-plato]
 submitter = "Victor"
 quote = "Be kind, for everyone you meet is fighting a harder battle."
 attribution = "Plato (428/427 or 424/423 – 348/347 BCE)"
+
+#685
 
 [2022-12-21-frank-2]
 submitter = "Victor"
@@ -4079,12 +4079,12 @@ submitter = "Victor"
 quote = "When each day is the same as the next, it's because people fail to recognize the good things that happen in their lives every time the sun rises."
 attribution = "Paulo Coelho"
 
-#690
-
 [2022-12-21-fitzmaurice]
 submitter = "Victor"
 quote = "Letting go doesn't have to mean walking away. It means the things that hurt you don't hurt you anymore."
 attribution = "Sue Fitzmaurice"
+
+#690
 
 [2022-12-21-thoreau]
 submitter = "Victor"
@@ -4106,12 +4106,12 @@ submitter = "Victor"
 quote = "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough."
 attribution = "Oprah Winfrey"
 
-#695
-
 [2022-12-21-einstein]
 submitter = "Victor"
 quote = "A calm and modest life brings more happiness than the pursuit of success combined with constant restlessness."
 attribution = "Albert Einstein"
+
+#695
 
 [2022-12-21-west]
 submitter = "Victor"
@@ -4133,12 +4133,12 @@ submitter = "Victor"
 quote = "Don't cry because it's over, smile because it happened."
 attribution = "Dr. Seuss"
 
-#700
-
 [2022-12-21-hemingway]
 submitter = "Victor"
 quote = "Night is always darker before the dawn and life is the same, everything will get better and sun will shine brighter than ever."
 attribution = "Ernest Hemingway"
+
+#700
 
 [2022-12-21-homer]
 submitter = "Victor"
@@ -4160,12 +4160,12 @@ submitter = "Victor"
 quote = "Don't judge each day by the harvest you reap but by the seeds that you plant."
 attribution = "Robert Louis Stevenson"
 
-#705
-
 [2022-12-21-rohn]
 submitter = "Victor"
 quote = "Happiness is not something you postpone for the future; it is something you design for the present."
 attribution = "Jim Rohn"
+
+#705
 
 [2022-12-21-willson]
 submitter = "Victor"
@@ -4194,12 +4194,12 @@ submitter = "Gnome"
 quote = "Well it's uhm... it's green"
 attribution = "Lieutenant Montgomery Scott, By Any Other Name"
 
-#710
-
 [2023-01-13-Gnome-has-experienced-this-now]
 submitter = "segfault"
 quote = "Java is the new COBOL."
 attribution = "Jonathan Edwards"
+
+#710
 
 [2023-01-18-threat-modelling]
 submitter = "Victor"
@@ -4224,12 +4224,12 @@ attribution = "Jonathan Decker (Cinema Therapy) on the _Toy Story_ franchise"
 source = "https://www.youtube.com/watch?v=EO489MtqUNw"
 submitter = "Victor"
 
-#715
-
 [2023-01-18-twain]
 quote = "Give every day the chance to become the most beautiful day of your life."
 attribution = "Mark Twain"
 submitter = "Victor"
+
+#715
 
 [2023-01-18-picasso]
 quote = "When I was a child my mother said to me, 'If you become a soldier, you'll be a general. If you become a monk, you'll be the pope.' Instead I became a painter and wound up as Picasso."
@@ -4251,12 +4251,12 @@ quote = "If the point of having a society isn't to care for each other, to ease 
 attribution = "Apocryphal"
 submitter = "segfault"
 
-#720
-
 [2023-01-21-because-lets-be-honest-its-true]
 quote = "I am, somehow, less interested in the weight and convolutions of Einstein's brain than in the near certainty that people of equal talent have lived and died in cotton fields and sweatshops."
 attribution = "Steven Jay Gould"
 submitter = "segfault"
+
+#720
 
 [2023-01-21-the-erlang-guy-seems-to-know-a-thing-or-two]
 quote = "Make it work, then make it beautiful. Then, if you really, *really* have to, make it fast. 90% of the time, if you make it beautiful, it will already be fast. So, really, just make it beautiful."
@@ -4278,14 +4278,14 @@ quote = "Which isn't a lot, but it's weird that it happened twice."
 attribution = "Phineas, from a show I've never watched"
 submitter = "Gnome"
 
-#725
-
 [2023-01-29-look-if-we-added-embeds]
 quote = ""
 attribution = "Dylan Beattie, Flatscreen (a Everybody's Free (To Wear Sunscreen) parody)"
 source = "https://www.youtube.com/watch?v=q3G4EPGH2r0"
 submitter = "segfault"
 embed = true
+
+#725
 
 [2023-01-29-we-should-use-them-sparingly]
 quote = ""
@@ -4294,4 +4294,4 @@ source = "https://www.youtube.com/watch?v=jxi0ETwDvws"
 submitter = "segfault"
 embed = true
 
-#727 - Remember to update this, in counts of five!
+#726 - Remember to update this, in counts of five!

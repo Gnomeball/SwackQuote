@@ -21,18 +21,11 @@ LOG_CONFIG = {
             "style": "{"
         }
     },
-    "filters": {
-        "warnings_and_below": {
-            "()": "__main__.filter_below",
-            "level": "WARNING"
-        }
-    },
     "handlers": {
         "outfile": {
             "class": "logging.handlers.RotatingFileHandler",
             "level": "INFO",
             "filename": "/home/SwackQuote/out.log",
-            # "filters": ["warnings_and_below"], # not used for now
             **FILE_CONFIG
         },
         "errfile": {
@@ -53,18 +46,3 @@ LOG_CONFIG = {
         "handlers": ["outfile", "errfile", "debugfile"]
     }
 }
-
-def filter_below(level):
-    """
-    Create a filter to not include higher level/severity logs than the given `level`.
-    
-    A `filter_below(WARNING)` applied to an `INFO` level logger will only contain `INFO` and `WARNING` logs, and ignores `DEBUG`, `ERROR`, and `CRITICAL` logs.
-    
-    This makes multi-file logging less redundant, though is best used with tools that can sync up multiple files for easy reading.
-    """
-    level: int = getattr(logging, level)
-    
-    def filter(record: logging.LogRecord) -> bool:
-        return record.levelno <= level
-    
-    return filter

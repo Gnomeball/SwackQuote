@@ -195,8 +195,8 @@ async def send_quote(pre: str = "Quote", title: Optional[str] = None, which: Opt
         await client.get_channel(CHANNEL).send(embed = embedVar)
         if quote_is_url:
             await client.get_channel(CHANNEL).send(content = quote.quote)
-    except Exception as e:
-        logger.info(f"Error sending quote #{i}: {e}")
+    except Exception:
+        logger.exception(f"Error sending quote #{i}")
     finally:
         logger.info("Quote sent successfully")
 

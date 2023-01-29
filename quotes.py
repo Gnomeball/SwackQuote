@@ -62,7 +62,7 @@ def as_quotes(quotes: str, logger: logging.Logger) -> tuple[dict[str, Quote], di
     quote_dict = {i: Quote(**q) for i, q in loaded_quotes.items() if quote_compliant(q)}
     non_compliant = {i: q for i, q in loaded_quotes.items() if not quote_compliant(q)}
     if len(non_compliant):
-        logger.error(f"Received non compliant quotes: {non_compliant}")
+        logger.error(f"Received non compliant quotes:\n {non_compliant}")
     return quote_dict, non_compliant
 
 def as_dicts(quotes: dict[str, Quote]) -> dict[str, dict[str, str]]:
@@ -182,8 +182,8 @@ async def refresh_quotes() -> dict[str, Quote]:
     quotes, duds = pull_quotes_from_file()
     updated_quotes, updated_duds = pull_quotes_from_repo()
     duds |= updated_duds
-    if duds != {}:
-        logger.info(f"We have recorded dud quotes to {QUOTE_DUD_PATH}")
+    if len(duds):
+        logger.error(f"We have {len(duds)} dud quotes, adding to {QUOTE_DUD_PATH}")
         with open(QUOTE_DUD_PATH, "wb") as f:
             tomli_w.dump(as_dicts(duds), f)
     if updated_quotes == {}:

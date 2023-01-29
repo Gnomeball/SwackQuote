@@ -33,19 +33,21 @@ source = "a URL for the quote or source, if you have it"
 
 **You must include your name as the `submitter`, and the `quote`, these are _required_.**
 
-Currently, `attribution` and `source` are optional fields.
+Currently, the `attribution`, `source`, and `embed` field are optional.
 
-However, the `attribution` field will appear after the quote, behind a `~`, if given.
+If given, the `attribution` field will appear after the quote, separated by a `~`. If given, the `source` field will be linked to by the quote. When `embed` is given as `embed = true` and a `source` has been provided, the source will be embedded beneath the quote (such as a YouTube video).
 
 If you do not know who, or cannot find the original attribution, please use `Unknown`, or `Various`. If many have said it, use `Apocryphal`. But, if you're having trouble, you can always ask others who may know it themselves or know where to check.
 
-If citing both a person and a work, please do this in a format that is sensible, perhaps `person, work`, inside the `attribution` field --- with a URL (i.e. for Tweets, videos, or articles) in the `source` field. We tend to prefer this is included in the `attribution`, so use `source` for HTTP/HTTPS URLs (where relevant). If the year or edition is relevant, include this either parenthesised `(3rd edition)`, or following it like, say, `Unix Epoch, 1970`. With dating, we prefer and assume [Common Era](https://en.wikipedia.org/wiki/Common_Era), such as `Julius Caesar (100 - 44 BCE)` or `de Finibus Bonorum et Malorum, 45 BCE`.
+If citing both a person and a work, please do this in a format that is sensible, perhaps `Person, Work`, inside the `attribution` field - with a URL (i.e. for Tweets, videos, or articles) in the `source` field. We tend to prefer this is included in the `attribution`, so use `source` for HTTP/HTTPS URLs (where relevant). If the year or edition is relevant, include this either parenthesised `(3rd edition)`, or following it like, say, `Unix Epoch, 1970`. With dating, we prefer and assume [Common Era](https://en.wikipedia.org/wiki/Common_Era), such as `Julius Caesar (100 - 44 BCE)` or `de Finibus Bonorum et Malorum, 45 BCE`.
 
 When citing something said by a character, use a simple rule of thumb: if you know who wrote it, cite as `Author, Character`, otherwise cite the character directly. For example, `The Doctor` or `Jean-Luc Picard` are cited as themselves, because various scriptwriters and actors are involved, whereas Macbeth is cited as `William Shakespeare, Macbeth`, as we're quoting his script (the character should be listed, though in the case of Macbeth, it would be redundant). Other examples, such as `Sherlock Holmes`, may be context dependent, such as the books will be cited as `Arthur Conan Doyle, Sherlock Holmes`, whereas film or show adaptations are cited accordingly (`Character, Film/Show, Year`). Shows may include the specific episode by name and perhaps number, where relevant, but further details (timestamps etc.) should not be included (but may be part of a `source` URL, such as timestamped links to YouTube).
 
 So, when done properly, attributions should use the order **`"Author, Character, Work, Edition, Year"`**. These may be omitted where redundant or unknown (though we prefer an unknown author to be cited as such, except as in such cases as the examples above). Commas separate for clarity, and where clear may be removed or instead parenthesised (as in above examples). Additional context or aspects of the attribution may be included if it is felt to improve the quote, preferably after the above ordering.
 
-For now, do not put URLs in the attribution; Markdown links may be accepted, but lengthy raw URLs likely will not be. A single URL may be included in the `source`, however for embedding then the quote should *currently* also only contain the URL, such as `quote = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"`. The `source` should include the URL in this case, as a future update may permit direct embedding from the `source` field and free up the `quote`, however for now this is not done. The embedding is janky, not visually appealing, and not what we desired; if you can improve this, please contribute!
+Do not put URLs in the attribution; Markdown links may be accepted, but lengthy raw URLs likely will not be. A single URL may be included in the `source` (i.e. `source = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"`), and if `embed = true` is set for that quote, the URL will have an embed displayed alongside the quote. The embedding is janky, not visually appealing, and not what we desired; if you can improve this, please contribute!
+
+We do not recommend you set `embed` whenever you have a URL, as it may lead to duplication of the quote and visual clutter. Also, if it is a link to a video or audio, and it includes more than the listed quote, it should probably not be embedded, as the video/audio is not specifically a form of that quote.
 
 For quotes that span multiple lines, use `"""` at the beginning and end, on separate lines.
 

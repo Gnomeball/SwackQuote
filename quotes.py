@@ -20,7 +20,15 @@ class Quote(NamedTuple):
     quote: str
     attribution: Optional[str] = None
     source: Optional[str] = None
-    embed: bool = False
+    embed: Optional[bool] = False
+
+QUOTE_ACCEPTED_TYPES = { # required for Python 3.9 and below
+    "submitter": [str],
+    "quote": [str],
+    "attribution": [str, None],
+    "source": [str, None],
+    "embed": [bool, None]
+}
 
 def quote_compliant(quote: dict) -> bool:
     """
@@ -37,7 +45,7 @@ def quote_compliant(quote: dict) -> bool:
         if key not in Quote.__annotations__:
             logger.warning(f"{key} is not valid field for Quote, must be one of {', '.join(Quote.__annotations__)}")
             return False
-        elif not isinstance(val, Quote.__annotations__[key]):
+        elif not any(val is None if T is None else isinstance(val, T) for T in QUOTE_ACCEPTED_TYPES[key]):
             logger.warning(f"Field {key} is not of the correct type, must be {Quote.__annotations__[key]}, received {type(val)}({val})")
             return False # or is not the correct type
     if "quote" not in quote:

@@ -46,7 +46,7 @@ def quote_compliant(quote: dict) -> bool:
 #         case {"submitter": str(_), "quote": str(text), **optional} if len(text) < 4000:
 #             for key, val in optional.items():
 #                 if key not in Quote.__annotations__ or not isinstance(val, Quote.__annotations__[key]):
-#                     return False # field not in Quote or not a str
+#                     return False # field not in Quote or is not the correct type
 #             return True
 #     return False
 

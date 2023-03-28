@@ -4294,7 +4294,7 @@ source = "https://www.youtube.com/watch?v=jxi0ETwDvws"
 submitter = "segfault"
 embed = true
 
-[2023-03-18-Brian-needs-cheese]
+[2023-02-18-Brian-needs-cheese]
 quote = """Dear Mr. Swack,
 
 It is with the utmost disappointment and dismay that I write to you today to express my profound dissatisfaction with the manner in which you have failed to provide Brian, our esteemed colleague, with the appropriate and requisite quantity of cheese.  As you are no doubt aware, cheese is a most indispensable commodity, particularly within the context of our organizational culture.  It serves as a staple for both sustenance and morale-boosting within the workplace, and it is therefore unacceptable that Brian should be deprived of its many benefits.  The inadequacy of your provision of cheese to Brian has been glaringly apparent, and it is most distressing to witness the deleterious effects that this has had upon his well-being. His countenance has become sallow and despondent, and his productivity has diminished to an alarming degree. It is a sad state of affairs indeed, and one that is entirely attributable to your neglectful conduct.
@@ -4306,9 +4306,19 @@ Yours faithfully
 attribution = "ChatGPT"
 submitter = "Charlotte"
 
-[2023-03-18-ChatGPT-gone-norfern]
+[2023-02-18-ChatGPT-gone-norfern]
 quote = "Oi Swack, what's the bleedin' deal with the lack of proper cheese for our Brian? Can't have him goin' without his daily dose of cheesy goodness, now can we? Sort it out, mate. Cheese cheese cheese."
 attribution = "ChatGPT, if it were more norfern"
 submitter = "Charlotte"
 
-#728 - Remember to update this, in counts of five!
+[2023-02-24-braincell-hyperthreading]
+submitter = "SatanicWomble"
+quote = "We're all hyperthreading the same braincell tonight."
+attribution = "segfault"
+
+[2023-03-21-artificial-vs-adaptive]
+submitter = "Greenfoot5"
+quote = "It's artificial intelligence because it's not real. It's far from adaptive intelligence"
+attribution = "Greenfoot5"
+
+#730 - Remember to update this, in counts of five!

@@ -53,7 +53,7 @@ For quotes that span multiple lines, use `"""` at the beginning and end, on sepa
 
 For quotes containing code, use `'''` for raw multi-line strings, and then use ` ``` ` to create a code block, remembering to close them both afterwards.
 
-All discord-accepted markdown should be rendered properly. Individual quotes must be less than 4000 bytes long (UTF-8).
+All discord-accepted markdown should be rendered properly. Individual quotes must be less than 4000 bytes long (UTF-8). In practice, we recommend quotes be less than 1500 bytes (UTF-8), as with most character sets this would fill the screen on many mobile displays. Most of the time, they are much shorter anyway, just a couple sentences at most. When in doubt, keep it concise.
 
 When adding quotes, please take care to update the trailing count comments, spaced out in groups of 5 quotes before a comment (so `#5` if followed by `#10` and so on). The one at the bottom should have the exact number of quotes, but if you round up to the nearest 5 then it's unlikely anyone will complain.
 

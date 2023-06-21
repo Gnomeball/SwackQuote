@@ -189,6 +189,7 @@ async def send_quote(pre: str = "Quote", title: Optional[str] = None, which: Opt
     embedVar = discord.Embed(title = title, colour = random_colour(), description = quote_text)
     if quote.source and is_url(quote.source):
         embedVar.url = quote.source
+        embedVar.title += " 🔗"
     embedVar.set_footer(text = f"{pre} for {await current_date_time()}\nQuote {i}/{len(quotes)}, Submitted by {quote.submitter}")
 
     # Try and send the quote

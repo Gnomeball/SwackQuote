@@ -54,7 +54,7 @@ Do not put URLs in the attribution; Markdown links may be accepted, but lengthy 
 
 We do not recommend you set `embed` whenever you have a URL, as it may lead to duplication of the quote and visual clutter. Also, if it is a link to a video or audio, and it includes more than the listed quote, it should probably not be embedded, as the video/audio is not specifically a form of that quote.
 
-For quotes that span multiple lines, use `"""` at the beginning and end, on separate lines. The additional newlines introduced by this are ignored. If your quote contains `"`, you may wish to try using a `'raw string'`, which are also useful for quotes that contain inline code like `'print("hello, world")'`, which can use a single backtick. If your quote contains both `"` and `'`, then a raw multi-line string can be used with `'''`, even on a single line (the TOML documentation recommends this approach).
+For quotes that span multiple lines, use `"""` at the beginning and end, on separate lines. The additional newlines introduced by this are ignored. If your quote contains `"`, you may wish to try using a `'raw string'`, which are also useful for quotes that contain inline code like `'print("hello, world")'`. If your quote contains both `"` and `'`, then a raw multi-line string can be used with `'''`, even on a single line (the TOML documentation recommends this approach).
 
 For quotes containing blocks of code, use `'''` for raw multi-line strings, and then use ` ``` ` to create a code block, remembering to close them both afterwards. These should open together on the same line and close together on the same line, in the proper order.
 

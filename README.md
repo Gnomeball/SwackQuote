@@ -4,7 +4,7 @@ A repository for the QOTD bot on the swan_hack Discord server.
 
 To add a quote, fork, add it to `quotes.toml`, and make a pull request... hopefully it provides you less pain than it did me!
 
-### Requirements
+## Requirements
 
 First and foremost, if you're wishing to run this bot on your own server, you must provide:
 - [your own bot token](https://discordapp.com/developers/applications/) in `token.txt`
@@ -19,7 +19,7 @@ Requirements:
 
 We have a [poetry](https://python-poetry.org/) `pyproject.toml` setup for easy installation.  Just run `poetry install`!
 
-### Formatting for Quotes
+## Formatting for Quotes
 
 The flat-file uses the TOML specification for storing quotes.  Quotes are formatted like so:
 
@@ -29,7 +29,7 @@ submitter = "the name of who submitted it (aka, your discord handle/nickname)"
 quote = "the quote you're adding"
 attribution = "whoever said or wrote it, optionally where it was said or written"
 source = "a URL for the quote or source, if you have it"
-embed = true or false # whether the source should have an embed, such as a video
+embed = false # true whenever the source should have an embed, such as a video
 ```
 
 **You must include your name as the `submitter`, and the `quote`, these are _required_.**
@@ -38,7 +38,7 @@ Currently, the `attribution`, `source`, and `embed` field are optional.
 
 If given, the `attribution` field will appear after the quote, separated by a `~`. If given, the `source` field will be linked to by the quote. When `embed` is given as `embed = true` and a `source` has been provided, the source will be embedded beneath the quote (such as a YouTube video).
 
-If you do not know who, or cannot find the original attribution, please use `Unknown`, or `Various`. If many have said it, use `Apocryphal`. But, if you're having trouble, you can always ask others who may know it themselves or know where to check.
+If you do not know who, or cannot find the original attribution, please use `Unknown`, or `Various`. If many have said it, use `Apocryphal`. But, if you're having trouble, you can always ask others who may know it themselves or know where to check (such as [Wikiquote](https://en.wikiquote.org/wiki/Main_Page) or your favourite search engine, these are particularly good at finding and dealing with misquotes or misattributions).
 
 When citing someone, particularly with long middle names, please provide a reasonable version as they would have likely signed it, such as `<Title> <First Name> <Middle Initial>. <Middle Initial>. <Last Name>`, such as `Lord William T. Kelvin` or `W. E. B. de Bois`, though some names are to be given "in full" like `Arthur Conan Doyle`. Where possible give whichever form of their name that person prefers, including any stage name, online handle, other pseudonym/alias, or simply their preferred name. Do not deadname people. Do not unmask pseudonyms except where it is of a public figure that has already unveiled it (e.g. `Alice's Adventures in Wonderland` would be attributed to `Lewis Carroll`, not `Charles Dodgson`, as while Dodgson is the author, Lewis Carroll is the pen name attached to the publication of the book, and Dodgson never confirmed authorship in public). Beyond being decent, it is often simply not necessary to do so, as people can always look things up, after all.
 
@@ -47,6 +47,8 @@ If citing both a person and a work, please do this in a format that is sensible,
 When citing something said by a character, use a simple rule of thumb: if you know who wrote it, cite as `Author, Character`, otherwise cite the character directly. For example, `The Doctor` or `Jean-Luc Picard` are cited as themselves, because various scriptwriters and actors are involved, whereas Macbeth is cited as `William Shakespeare, Macbeth`, as we're quoting his script (the character should be listed, though it would be redundant in the case of Macbeth himself). Other examples may be context dependent, such as `Sherlock Holmes`, the books should be cited like `Arthur Conan Doyle, Sherlock Holmes, A Study in Scarlet`, whereas film or show adaptations may be cited  `Sherlock Holmes, Mr. Holmes` or `Sherlock Holmes, Sherlock` (according to `Character, Film/Show, Edition/Episode, Year`). Shows may include the specific episode by name and perhaps number, where relevant, but further details (timestamps etc.) should not be included (but timestamped URLs for YouTube, say, may be used in the `source`). Redundancy is hard to judge in some cases, for example `The Doctor` is widely known for `Doctor Who`, but not everyone has seen it, so listing `The Doctor, Doctor Who` is not redundant, so unless the character's name is literally the name of the show/movie (**in full**, so `Sherlock Holmes, Sherlock` isn't redundant), keep the title in. Just because some of us know it, doesn't mean all of us do.
 
 So, when done properly, attributions should follow the order **`Author, Character, Work/Title, Edition/Episode, Year`**. These may be omitted where redundant or unknown (though we prefer an unknown author to be cited as such, except as in such cases as the examples above). Commas separate for clarity, and where clear may be removed or instead parenthesised (as in above examples). Additional context or aspects of the attribution may be included if it is felt to improve the quote, preferably after the above ordering. While we appreciate the work of actors of characters (fictional or otherwise), they are generally not specific to the quotation as attribution generally goes to a creator via character (hence `Author, Character` ordering), though if the creator happens to be the actor (such as persona characters) then please follow `Author, Character` accordingly. If you have evidence that a specific line was a particular person's creation, feel free to include that after the normal attribution (e.g. `Roy Batty, Blade Runner, ad-libbed by Rutger Hauer`).
+
+Things like plays are often quoted with `Act, Scene`, such as `William Shakespeare, Macbeth, Act V, Scene V`, however this is not a hard requirement.
 
 Do not put URLs in the attribution; Markdown links may be accepted, but lengthy raw URLs likely will not be. A single URL may be included in the `source` (i.e. `source = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"`), and if `embed = true` is set for that quote, the URL will have an embed displayed alongside the quote. The embedding is janky, not visually appealing, and not what we desired; if you can improve this, please contribute!
 
@@ -110,14 +112,14 @@ Example:
 ```toml
 [pre-toml-300]
 submitter = "Gnome"
-quote = """```python
-def isprime(n): return not re.match(r\"^1?$|^(11+?)\\1+$\", \"1\"*n)
-```"""
+quote = '''```python
+def isprime(n): return not re.match(r"^1?$|^(11+?)\1+$", "1"*n)
+```'''
 attribution = "segfault"
 ```
 
-### Further Reading
+### Formatting Specification
 
-For further reading, see:
+Discord uses a dialect of Markdown, which we must encode in TOML accordingly, so when in doubt, RTFM:
 - [The TOML documentation for how strings work](https://toml.io/en/)
 - [The Discord Markdown documentation for formatting](https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101)

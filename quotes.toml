@@ -54,7 +54,7 @@ attribution = "Alan Kay"
 
 [pre-toml-11]
 submitter = "Gnome"
-quote = "There are 10 types of people - those who understand binary and those who do not."
+quote = "There are 10 types of people — those who understand binary and those who do not."
 attribution = "Apocryphal"
 
 [pre-toml-12]
@@ -86,7 +86,7 @@ attribution = "Alan Perlis"
 
 [pre-toml-17]
 submitter = "Gnome"
-quote = "It's not a bug - it's an undocumented feature."
+quote = "It's not a bug — it's an undocumented feature."
 attribution = "Will J. Doors"
 
 [pre-toml-18]
@@ -420,7 +420,7 @@ attribution = "argon on #Linux"
 
 [pre-toml-80]
 submitter = "Gnome"
-quote = "I haven't lost my mind - it's backed up on tape somewhere."
+quote = "I haven't lost my mind — it's backed up on tape somewhere."
 attribution = "Unknown"
 
 [pre-toml-81]
@@ -432,7 +432,7 @@ attribution = "Muriel Rukeyser"
 
 [pre-toml-82]
 submitter = "Gnome"
-quote = "Don't guess - check your security regulations."
+quote = "Don't guess — check your security regulations."
 attribution = "Unknown"
 
 [pre-toml-83]
@@ -636,7 +636,7 @@ attribution = "Theodore Roosevelt"
 
 [pre-toml-120]
 submitter = "Gnome"
-quote = "Your reasoning is excellent - it's only your basic assumptions that are wrong."
+quote = "Your reasoning is excellent — it's only your basic assumptions that are wrong."
 attribution = "Ashleigh Brilliant"
 
 [pre-toml-121]
@@ -664,7 +664,7 @@ attribution = "Unknown"
 [pre-toml-125]
 submitter = "Gnome"
 quote = "It is the quality rather than the quantity that matters."
-attribution = "Lucius Annaeus Seneca (4 BCE - 65 CE)"
+attribution = "Lucius Annaeus Seneca (4 BCE – 65 CE)"
 
 [pre-toml-126]
 submitter = "Gnome"
@@ -690,7 +690,7 @@ attribution = "Various"
 
 [pre-toml-130]
 submitter = "Gnome"
-quote = "In the strict scientific sense we all feed on death - even vegetarians."
+quote = "In the strict scientific sense we all feed on death — even vegetarians."
 attribution = "Spock, Star Trek: The Original Series, Wolf in the Fold, stardate 3615.4"
 
 [pre-toml-131]
@@ -717,7 +717,7 @@ attribution = "Various"
 
 [pre-toml-135]
 submitter = "Gnome"
-quote = "With/Without - and who'll deny it's what the fighting's all about?"
+quote = "With/Without — and who'll deny it's what the fighting's all about?"
 attribution = "Pink Floyd"
 
 [pre-toml-136]
@@ -837,7 +837,7 @@ attribution = "Unknown"
 
 [pre-toml-157]
 submitter = "Gnome"
-quote = "Failure is not an option - it comes bundled with Windows."
+quote = "Failure is not an option — it comes bundled with Windows."
 attribution = "Unknown"
 
 [pre-toml-158]
@@ -1134,7 +1134,7 @@ attribution = "David Gardner"
 
 [pre-toml-212]
 submitter = "Gnome"
-quote = "A computer lets you make more mistakes faster than any invention in human history - with the possible exceptions of handguns and tequila."
+quote = "A computer lets you make more mistakes faster than any invention in human history — with the possible exceptions of handguns and tequila."
 attribution = "Mitch Ratcliffe"
 
 [pre-toml-213]
@@ -1382,9 +1382,9 @@ submitter = "Victor"
 quote = """
 Is Windows a Virus?
 No, Windows is not a virus.  Here's what viruses do:
-n1.  They replicate quickly - okay, Windows does that.
-n2.  Viruses use up valuable system resources, slowing down the system as they do so - okay, Windows does that.
-n3.  Viruses will, from time to time, trash your hard disk - okay, Windows does that too.
+n1.  They replicate quickly — okay, Windows does that.
+n2.  Viruses use up valuable system resources, slowing down the system as they do so — okay, Windows does that.
+n3.  Viruses will, from time to time, trash your hard disk — okay, Windows does that too.
 n4.  Viruses are usually carried, unknown to the user, along with valuable programs and systems.  Sigh... Windows does that, too.
 n5.  Viruses will occasionally make the user suspect their system is too slow (see 2) and the user will buy new hardware.  Yup, that's with Windows, too.
 Until now it seems Windows is a virus but there are fundamental differences: Viruses are well supported by their authors, are running on most systems, their program code is fast, compact and efficient and they tend to become more sophisticated as they mature.  So Windows is not a virus.
@@ -1506,7 +1506,7 @@ attribution = "Brian Cox, The Planets"
 
 [pre-toml-275]
 submitter = "Gnome"
-quote = "We need to shift our focus.  We live in a solar system of wonders, of planets of storms and moons of ice, of landscapes and vistas that stir the imagination and enrich the soul - a system of limitless resources, limitless beauty, and limitless potential.  If we don't go there, we'll never go anywhere.  And if we go nowhere, then we'll have no future at all."
+quote = "We need to shift our focus.  We live in a solar system of wonders, of planets of storms and moons of ice, of landscapes and vistas that stir the imagination and enrich the soul — a system of limitless resources, limitless beauty, and limitless potential.  If we don't go there, we'll never go anywhere.  And if we go nowhere, then we'll have no future at all."
 attribution = "Brian Cox, The Planets"
 
 [pre-toml-276]
@@ -1524,7 +1524,7 @@ attribution = "Neil DeGrasse Tyson"
 [pre-toml-278]
 submitter = "Gnome"
 quote = "There is nothing new to be discovered in physics now.  All that remains is more and more precise measurement."
-attribution = "paraphrasing of Philipp von Jolly and Albert A. Michelson, 1878 and 1894 CE resp., misattributed to Lord William T. Kelvin (1824-1907 CE) from his speech to the Royal Institution, 1900 CE, where he expressed the exact opposite claim"
+attribution = "paraphrasing of Philipp von Jolly and Albert A. Michelson, 1878 and 1894 CE resp., misattributed to Lord William T. Kelvin (1824–1907 CE) from his speech to the Royal Institution, 1900 CE, where he expressed the exact opposite claim"
 
 [pre-toml-279]
 submitter = "Gnome"
@@ -1561,7 +1561,7 @@ attribution = "T. H. Huxley, On the reception of the 'Origin of Species', 1887"
 [pre-toml-285]
 submitter = "Gnome"
 quote = "Do there exist many worlds, or is there but a single world?  This is one of the most noble and exalted questions in the study of Nature."
-attribution = "Albertus Magnus (1200-1280 CE)"
+attribution = "Albertus Magnus (1200–1280 CE)"
 
 [pre-toml-286]
 submitter = "Gnome"
@@ -1572,7 +1572,7 @@ attribution = "Volanti"
 
 [pre-toml-287]
 submitter = "segfault"
-quote = "Honestly, a lot of free software is free as in piano - It's right there.  Nobody is stopping you.  You could totally spend hours of painstaking labor getting it carried up your front steps or built from a clusterfuck of diffs and patches or whatever.  Everyone knows you won't."
+quote = "Honestly, a lot of free software is free as in piano — It's right there.  Nobody is stopping you.  You could totally spend hours of painstaking labor getting it carried up your front steps or built from a clusterfuck of diffs and patches or whatever.  Everyone knows you won't."
 attribution = "Leah Velleman"
 source = "https://twitter.com/leahvelleman/status/1377829865504833536"
 
@@ -1600,7 +1600,7 @@ attribution = "Pwn All The Things"
 
 [pre-toml-292]
 submitter = "Victor"
-quote = "Okay, Okay - I admit it.  You didn't change that program that worked just a little while ago; I inserted some random characters into the executable.  Please forgive me.  You can recover the file by typing in the code over again, since I also removed the source."
+quote = "Okay, Okay — I admit it.  You didn't change that program that worked just a little while ago; I inserted some random characters into the executable.  Please forgive me.  You can recover the file by typing in the code over again, since I also removed the source."
 attribution = "`fortune`"
 
 [pre-toml-293]
@@ -1762,7 +1762,7 @@ submitter = "segfault"
 quote = """
 What does it mean to have a human brain?
 
-I act on impulse most of the time, and otherwise do what I can to design a life that rewards my impulses with beautiful outcomes.  I think designing games is like that: designing little spaces that reward my avatar's impulses with beautiful outcomes.  Only, when I make a game I can share the experience with you; you can inhabit the same space, embody the same avatar, perhaps act on the same impulses, and - if serendipity allows - behold the same beautiful outcomes.
+I act on impulse most of the time, and otherwise do what I can to design a life that rewards my impulses with beautiful outcomes.  I think designing games is like that: designing little spaces that reward my avatar's impulses with beautiful outcomes.  Only, when I make a game I can share the experience with you; you can inhabit the same space, embody the same avatar, perhaps act on the same impulses, and — if serendipity allows — behold the same beautiful outcomes.
 
 Through making and playing with games and other art, I hope to come to some deeper understanding of not the science of my brain, but the experience and meaning of being some specific person.
 """
@@ -1870,7 +1870,7 @@ source = "https://twitter.com/ablative_sasha/status/1428084447879081985"
 
 [2021-10-5-2]
 submitter = "Gnome"
-quote = "Two things in this universe are infinite - The universe, and the amount of people willing to pay for an overpriced phone contract."
+quote = "Two things in this universe are infinite — The universe, and the amount of people willing to pay for an overpriced phone contract."
 attribution = "Amethyst"
 
 [2021-10-8-1]
@@ -1881,12 +1881,12 @@ attribution = "Sakata Gintoki, Gintama"
 [2021-10-8-2]
 submitter = "Gnome"
 quote = "One cannot step twice in the same river."
-attribution = "Heraclitus (535 - 475 BCE)"
+attribution = "Heraclitus (535–475 BCE)"
 
 [2021-10-8-3]
 submitter = "Gnome"
 quote = "The only thing I know is that I know nothing."
-attribution = "Socrates (470 - 399 BCE)"
+attribution = "Socrates (470–399 BCE)"
 
 [2021-10-8-4]
 submitter = "Gnome"
@@ -1963,7 +1963,7 @@ attribution = "MasterMind"
 
 [2021-11-28-1]
 submitter = "segfault"
-quote = "Longer lines are simply useful.  Part of that is that we aren't programming in the 80's any more, and our source code is fundamentally wider as a result.  Yes, local iteration variables are still called 'i', because more context just isn't helpful for some anonymous counter.  Being concise is still a good thing, and overly verbose names are not inherently better.  But still - it's entirely reasonable to have variable names that are 10-15 characters and it makes the code more legible.  Writing things out instead of using abbreviations etc."
+quote = "Longer lines are simply useful.  Part of that is that we aren't programming in the 80's any more, and our source code is fundamentally wider as a result.  Yes, local iteration variables are still called 'i', because more context just isn't helpful for some anonymous counter.  Being concise is still a good thing, and overly verbose names are not inherently better.  But still — it's entirely reasonable to have variable names that are 10-15 characters and it makes the code more legible.  Writing things out instead of using abbreviations etc."
 attribution = "Linus Torvalds"
 source = "https://lkml.org/lkml/2020/5/29/1038"
 
@@ -2228,7 +2228,7 @@ source = "https://manhattanprojectbreactor.hanford.gov/files.cfm/AlbertEinstein.
 [2022-02-28-4]
 submitter = "Gnome"
 quote = """
-Look again at that dot.  That's here.  That's home.  That's us.  On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives.  The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilisation, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every \"superstar\", every \"supreme leader\", every saint and sinner in the history of our species lived there - on a mote of dust suspended in a sunbeam.
+Look again at that dot.  That's here.  That's home.  That's us.  On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives.  The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilisation, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every \"superstar\", every \"supreme leader\", every saint and sinner in the history of our species lived there — on a mote of dust suspended in a sunbeam.
 
 The Earth is a very small stage in a vast cosmic arena.  Think of the rivers of blood spilled by all those generals and emperors so that, in glory and triumph, they could become the momentary masters of a fraction of a dot.  Think of the endless cruelties visited by the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some other corner, how frequent their misunderstandings, how eager they are to kill one another, how fervent their hatreds.
 
@@ -2245,7 +2245,7 @@ embed = true
 [2022-02-28-5]
 submitter = "Gnome"
 quote = "The entire Earth is but a point, and the place of our own inhabitance but a minute corner of it."
-attribution = "Marcus Aurelius (121-180 CE)"
+attribution = "Marcus Aurelius (121–180 CE)"
 
 [2022-02-28-6]
 submitter = "Gnome"
@@ -2261,7 +2261,7 @@ attribution = "Robert H. Goddard, 1907"
 
 [2022-02-28-8]
 submitter = "Gnome"
-quote = "For the first time in my life, I saw the horizon as a curved line.  It was accentuated by a thin seam of dark blue light - our atmosphere.  Obviously, this was not the \"ocean\" of air I had been told it was so many times in my life.  I was terrified by its fragile appearance."
+quote = "For the first time in my life, I saw the horizon as a curved line.  It was accentuated by a thin seam of dark blue light — our atmosphere.  Obviously, this was not the \"ocean\" of air I had been told it was so many times in my life.  I was terrified by its fragile appearance."
 attribution = "Ulf Merbold, 1988"
 
 [2022-02-28-9]
@@ -2443,7 +2443,7 @@ attribution = "Mario Andretti"
 [2022-04-07-5]
 submitter = "Gnome"
 quote = "High thoughts need a high language."
-attribution = "Aristophanes (448 - 380 BCE)"
+attribution = "Aristophanes (448–380 BCE)"
 
 [Im-a-teapot]
 submitter = "Gnome"
@@ -2730,7 +2730,7 @@ attribution = "Richard Dawkins"
 
 [2022-05-02-And-we-definitely-dream-of-electric-sheep-too]
 submitter = "Gnome"
-quote = "We are survival machines - robot vehicles blindly programmed to preserve the selfish molecules known as genes.  This is a truth which still fills me with astonishment."
+quote = "We are survival machines — robot vehicles blindly programmed to preserve the selfish molecules known as genes.  This is a truth which still fills me with astonishment."
 attribution = "Richard Dawkins, The Selfish Gene"
 
 [2022-05-03-English-is-a-trenchcoat]
@@ -2747,7 +2747,7 @@ attribution = "Red Saber, Fate/EXTRA Last Encore, Season 2, Episode 2"
 
 [2022-05-05-A-quote-from-Hamlet]
 submitter = "Gnome"
-quote = "What a piece of worke is a man!  How Noble in reason!  How infinite in faculty!  In forme and mouing how expresse and admirable!  In Action, how like an Angel in apprehension, how like a God!  The beauty of the world, the paragon of animals - and yet, to me, what is this quintessence of dust?  Man delights not me - nor woman neither, though by your smiling you seem to say so."
+quote = "What a piece of worke is a man!  How Noble in reason!  How infinite in faculty!  In forme and mouing how expresse and admirable!  In Action, how like an Angel in apprehension, how like a God!  The beauty of the world, the paragon of animals — and yet, to me, what is this quintessence of dust?  Man delights not me — nor woman neither, though by your smiling you seem to say so."
 attribution = "William Shakespeare, Hamlet, Act II, Scene II"
 
 [2022-05-05-A-quote-from-the-Scottish-Play]
@@ -2844,7 +2844,7 @@ attribution = "Lao Tzu"
 [2022-05-05-Yet-another-Greek-philosopher]
 submitter = "Gnome"
 quote = "There is nothing permanent except change."
-attribution = "Heraclitus (535 - 475 BCE)"
+attribution = "Heraclitus (535–475 BCE)"
 
 [2022-05-05-Somehow-the-first-Obama-quote]
 submitter = "Gnome"
@@ -3032,7 +3032,7 @@ attribution = "Brian Cox, Human Universe"
 
 [2022-05-09-yep-we-just-guess]
 submitter = "Gnome"
-quote = "First we guess it.  Then we - now don't laugh, that's really true - then we compute the consequences of the guess to see what, if this is right, if this law that we guessed is right, to see what it would imply.  And then we compare the computation results to nature, or we say compare to experiment or experience, compare it directly with observations to see if it works.  If it disagrees with experiment, it's wrong."
+quote = "First we guess it.  Then we — now don't laugh, that's really true — then we compute the consequences of the guess to see what, if this is right, if this law that we guessed is right, to see what it would imply.  And then we compare the computation results to nature, or we say compare to experiment or experience, compare it directly with observations to see if it works.  If it disagrees with experiment, it's wrong."
 attribution = "Brian Cox, Human Universe"
 
 [2022-05-09-sit-down-and-talk]
@@ -3048,7 +3048,7 @@ attribution = "Theodore Isaac Rubin"
 [2022-05-11-sophocles-kindness-friend]
 submitter = "Victor"
 quote = "One who knows how to show and to accept kindness will be a friend better than any possession."
-attribution = "Sophocles (496 - 405 BCE)"
+attribution = "Sophocles (496–405 BCE)"
 
 [2022-05-11-faulkner-swim-for-new-horizons]
 submitter = "Victor"
@@ -3065,7 +3065,7 @@ attribution = "Helen Keller"
 [2022-05-11-epicurus-desiring-what-you-have-not]
 submitter = "Victor"
 quote = "Do not spoil what you have by desiring what you have not; remember that what you now have was once among the things you only hoped for."
-attribution = "Epicurus (341 - 270 BCE)"
+attribution = "Epicurus (341–270 BCE)"
 
 [2022-05-11-satisfaction]
 submitter = "Victor"
@@ -3290,11 +3290,11 @@ attribution = "Apocryphal"
 [2022-04-07-6]
 submitter = "Gnome"
 quote = "Neither can embellishments of language be found without arrangement and expression of thoughts, nor can thoughts be made to shine without the light of language."
-attribution = "Cicero (106 - 43 BCE)"
+attribution = "Cicero (106–43 BCE)"
 
 [2022-05-14-just-another-monologue]
 submitter = "Gnome"
-quote = "Can you hear them?  All these people who lived in terror of you and your judgement.  All these people who's ancestors devoted and sacrificed themselves to you.  Can you hear them singing?  Oh, you like to think you're a god, but you're not a god.  You're just a parasite eating out the jealousy and envy and longing for the lives of others.  You feed on them.  On the memory of love and lost and birth and death and joy and sorrow.  So, so come on then.  Take mine.  Take my memories.  And I hope you've got a big appetite because I have lived a long life and I have seen a few things.  I walked away from the last Great Time War.  I marked the passing of the Time Lords.  I saw the birth of the universe and watched as time ran out.  Moment by moment until nothing remained - no time, no space, just me.  I walked in universes where the laws of physics where devised by the mind of a mad man.  I watched universes freeze and creations burn.  I have seen things you wouldn't believe.  I have lost things you will never understand.  And I know things.  Secrets that must never be told.  Knowledge that must never be spoken.  Knowledge that will make parasite gods blaze.  So come on then!  Take it!  Take it all, baby!  Have it!  You have it all!"
+quote = "Can you hear them?  All these people who lived in terror of you and your judgement.  All these people who's ancestors devoted and sacrificed themselves to you.  Can you hear them singing?  Oh, you like to think you're a god, but you're not a god.  You're just a parasite eating out the jealousy and envy and longing for the lives of others.  You feed on them.  On the memory of love and lost and birth and death and joy and sorrow.  So, so come on then.  Take mine.  Take my memories.  And I hope you've got a big appetite because I have lived a long life and I have seen a few things.  I walked away from the last Great Time War.  I marked the passing of the Time Lords.  I saw the birth of the universe and watched as time ran out.  Moment by moment until nothing remained — no time, no space, just me.  I walked in universes where the laws of physics where devised by the mind of a mad man.  I watched universes freeze and creations burn.  I have seen things you wouldn't believe.  I have lost things you will never understand.  And I know things.  Secrets that must never be told.  Knowledge that must never be spoken.  Knowledge that will make parasite gods blaze.  So come on then!  Take it!  Take it all, baby!  Have it!  You have it all!"
 attribution = "The Doctor, Doctor Who, The Rings of Akhaten, 2013"
 
 [2022-04-14-1]
@@ -3442,15 +3442,15 @@ Although practicality beats purity.
 Errors should never pass silently.
 Unless explicitly silenced.
 In the face of ambiguity, refuse the temptation to guess.
-There should be one - and preferably only one - obvious way to do it.
+There should be one — and preferably only one — obvious way to do it.
 Although that way may not be obvious at first unless you're Dutch.
 Now is better than never.
 Although never is often better than right now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea - let's do more of those!
+Namespaces are one honking great idea — let's do more of those!
 """
-attribution = "Tim Peters, PEP 20 --- Zen of Python, `>>> import this`"
+attribution = "Tim Peters, PEP 20 — Zen of Python, `>>> import this`"
 
 #580
 
@@ -3877,7 +3877,7 @@ attribution = "misattributed to Winston Churchill"
 
 [2022-09-19-Limited-Time]
 submitter = "Gnome"
-quote = "Your time is limited, so don't waste it living someone else's life.  Don't be trapped by dogma - which is living with the results of other people's thinking.  Don't let the noise of others' opinions drown out your own inner voice.  And most important, have the courage to follow your heart and intuition."
+quote = "Your time is limited, so don't waste it living someone else's life.  Don't be trapped by dogma — which is living with the results of other people's thinking.  Don't let the noise of others' opinions drown out your own inner voice.  And most important, have the courage to follow your heart and intuition."
 attribution = "Steve Jobs"
 
 #655
@@ -3889,7 +3889,7 @@ attribution = "Steve Jobs"
 
 [2022-09-19-Thats-all-it-does]
 submitter = "Gnome"
-quote = "It takes these very simple-minded instructions - 'Go fetch a number, add it to this number, put the result there, perceive if it's greater than this other number' - but executes them at a rate of, let's say, 1,000,000 per second.  At 1,000,000 per second, the results appear to be magic."
+quote = "It takes these very simple-minded instructions — 'Go fetch a number, add it to this number, put the result there, perceive if it's greater than this other number' — but executes them at a rate of, let's say, 1,000,000 per second.  At 1,000,000 per second, the results appear to be magic."
 attribution = "Steve Jobs"
 
 [2022-09-19-Cheese]
@@ -3967,8 +3967,8 @@ source = "https://www.lesswrong.com/posts/YhgjmCxcQXixStWMC/artificial-addition"
 
 [2022-11-14-Unknown-unknowns]
 submitter = "Gnome"
-quote = "Reports that say that something hasn't happened are always interesting to me, because as we know, there are known knowns; there are things we know we know.  We also know there are known unknowns; that is to say we know there are some things we do not know.  But there are also unknown unknowns - the ones we don't know we don't know.  And if one looks throughout the history of our country and other free countries, it is the latter category that tends to be the difficult ones."
-attribution = "Donald Rumsfeld, United States Secretary of Defense (2001 - 2006)"
+quote = "Reports that say that something hasn't happened are always interesting to me, because as we know, there are known knowns; there are things we know we know.  We also know there are known unknowns; that is to say we know there are some things we do not know.  But there are also unknown unknowns — the ones we don't know we don't know.  And if one looks throughout the history of our country and other free countries, it is the latter category that tends to be the difficult ones."
+attribution = "Donald Rumsfeld, United States Secretary of Defense (2001–2006)"
 
 [2022-11-14-Regular-expressions]
 submitter = "Asher"
@@ -3983,7 +3983,7 @@ source = "https://twitter.com/rygorous/status/1507178315886444544"
 
 [2022-11-16-Einstein]
 submitter = "Gnome"
-quote = "All our science, measured against reality, is primitive and childlike - and yet it is the most precious thing we have."
+quote = "All our science, measured against reality, is primitive and childlike — and yet it is the most precious thing we have."
 attribution = "Albert Einstein"
 
 #670
@@ -3995,7 +3995,7 @@ attribution = "Arthur Conan Doyle, Sherlock Holmes, A Scandal in Bohemia"
 
 [2022-11-24-This-will-be-hard]
 submitter = "Gnome"
-quote = "To sum up: We need to do something gigantic we have never done before, much faster than we have ever done anything similar.  To do it, we need lots of breakthroughs in science and engineering.  We need to build a consensus that doesn't exist and create public policies to push a transition that would not happen otherwise.  We need the energy system to stop doing all the things we don't like and keep doing all the things we do like - in other words, to change completely and also stay the same."
+quote = "To sum up: We need to do something gigantic we have never done before, much faster than we have ever done anything similar.  To do it, we need lots of breakthroughs in science and engineering.  We need to build a consensus that doesn't exist and create public policies to push a transition that would not happen otherwise.  We need the energy system to stop doing all the things we don't like and keep doing all the things we do like — in other words, to change completely and also stay the same."
 attribution = "Bill Gates, How to Avoid a Climate Disaster" # shame he's not really doing anything to actually help
 
 [2022-11-29-Knuth-quote-in-full-for-once]
@@ -4037,7 +4037,7 @@ attribution = "The Doctor, Doctor Who, The Day of the Doctor, 2013"
 
 [2022-12-02-anyone-for-chess]
 submitter = "segfault"
-quote = "Four minutes?  That's ages!  What if I get bored?  I need a television - a couple of books - anyone for chess?"
+quote = "Four minutes?  That's ages!  What if I get bored?  I need a television — a couple of books — anyone for chess?"
 attribution = "The Doctor, Doctor Who, The Night of the Doctor, 2013"
 
 [2022-12-08-humble-pie]
@@ -4154,7 +4154,7 @@ attribution = "Morris West"
 [2022-12-21-marcus-aurelius]
 submitter = "Victor"
 quote = "When you arise in the morning think of what a privilege it is to be alive, to think, to enjoy, to love."
-attribution = "Marcus Aurelius (121-180 CE)"
+attribution = "Marcus Aurelius (121–180 CE)"
 
 [2022-12-21-gide]
 submitter = "Victor"
@@ -4357,7 +4357,7 @@ submitter = "Greenfoot5"
 quote = "It's artificial intelligence because it's not real.  It's far from adaptive intelligence"
 attribution = "Greenfoot5"
 
-#730 - Remember to update this, in counts of five!
+#730 — Remember to update this, in counts of five!
 
 [2023-04-18-coffee]
 submitter = "Gnome"

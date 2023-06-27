@@ -129,7 +129,7 @@ attribution = "Bjarne Stroustrup"
 [pre-toml-25]
 submitter = "Gnome"
 quote = "To err is human but to really foul things up you need a computer."
-attribution = "Paul Ehrlich"
+attribution = "Paul R. Ehrlich" # @TODO, this is a pseudo-dupe in 3 places, pre-toml-25, pre-toml-161, and pre-toml-290
 
 #25
 
@@ -858,7 +858,7 @@ attribution = "Unknown"
 [pre-toml-161]
 submitter = "Gnome"
 quote = "To err is human... to really foul up requires the root password."
-attribution = "Paul R. Ehrlich"
+attribution = "Paul R. Ehrlich" # @TODO, this is a pseudo-dupe in 3 places, pre-toml-25, pre-toml-161, and pre-toml-290
 
 #160
 
@@ -1589,7 +1589,7 @@ attribution = "Bjarne Stroustrup"
 [pre-toml-290]
 submitter = "segfault"
 quote = "To err is human... to really mess up requires root or undefined behaviour"
-attribution = "Paul R. Ehrlich" # @TODO, we have pseudo-dupes, they're two variants of this quote
+attribution = "Paul R. Ehrlich" # @TODO, this is a pseudo-dupe in 3 places, pre-toml-25, pre-toml-161, and pre-toml-290
 
 [pre-toml-291]
 submitter = "meetowl"
@@ -2915,7 +2915,7 @@ attribution = "Mordred, Fate/EXTRA Last Encore"
 [2022-05-08-the-student-becomes-the-master]
 submitter = "Gnome"
 quote = "A student who is too loyal to his master has no chance of surpassing that master... A mutinous spirit is the source of independence."
-attribution = "Boris Konev, Legend of Galactic Heroes" # @TODO, is this the cs professor at liverpool or from the merchant from legend of galactic heroes?
+attribution = "Boris Konev, Legend of Galactic Heroes"
 
 [2022-05-08-nothing-lasts-forever]
 submitter = "Gnome"
@@ -3357,7 +3357,7 @@ attribution = "Paramahansa Yogananda"
 [2022-06-03-storm]
 submitter = "Victor"
 quote = "And once the storm is over, you won't remember how you made it through.  But one thing is certain.  When you come out of the storm, you won't be the same person who walked in.  That's what this storm's all about."
-attribution = "Haruki Murakami" # @TODO, is this from one of his books?
+attribution = "Haruki Murakami" # @TODO, is this from one of his books, or just something he said?
 
 [2022-06-03-start]
 submitter = "Victor"

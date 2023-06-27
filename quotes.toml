@@ -4334,3 +4334,10 @@ quote = "He was more than a hero.  He was a union man."
 attribution = "Miles O'Brien, Bar Association"
 source = "https://www.youtube.com/watch?v=-4BRe0ZKTAc"
 embed = true
+
+[2023-06-27-spambot]
+submitter = "segfault"
+quote = "I am kinda interested in everything that is unknown to me."
+attribution = "A random spam bot"
+source = "https://twitter.com/leyawn/status/1670648343112892418"
+embed = true

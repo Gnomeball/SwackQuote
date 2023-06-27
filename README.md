@@ -54,9 +54,9 @@ Do not put URLs in the attribution; Markdown links may be accepted, but lengthy 
 
 We do not recommend you set `embed` whenever you have a URL, as it may lead to duplication of the quote and visual clutter. Also, if it is a link to a video or audio, and it includes more than the listed quote, it should probably not be embedded, as the video/audio is not specifically a form of that quote.
 
-For quotes that span multiple lines, use `"""` at the beginning and end, on separate lines. The additional newlines introduced by this are ignored.
+For quotes that span multiple lines, use `"""` at the beginning and end, on separate lines. The additional newlines introduced by this are ignored. If your quote contains `"`, you may wish to try using a `'raw string'`, which are also useful for quotes that contain inline code like `'print("hello, world")'`, which can use a single backtick. If your quote contains both `"` and `'`, then a raw multi-line string can be used with `'''`, even on a single line (the TOML documentation recommends this approach).
 
-For quotes containing code, use `'''` for raw multi-line strings, and then use ` ``` ` to create a code block, remembering to close them both afterwards. These should open together on the same line and close together on the same line, in the proper order.
+For quotes containing blocks of code, use `'''` for raw multi-line strings, and then use ` ``` ` to create a code block, remembering to close them both afterwards. These should open together on the same line and close together on the same line, in the proper order.
 
 All discord-accepted markdown should be rendered properly. Individual quotes must be less than 4000 bytes long (UTF-8). In practice, we recommend quotes be less than 1500 bytes (UTF-8), as with most character sets this would fill the screen on many mobile displays. Most of the time, they are much shorter anyway, just a couple sentences at most. When in doubt, keep it concise. You can always link a source for those who want to see/hear more.
 
@@ -100,7 +100,7 @@ Example:
 [2022-05-05-Yet-another-Greek-philosopher]
 submitter = "Gnome"
 quote = "There is nothing permanent except change."
-attribution = "Heraclitus (535-475 BCE)"
+attribution = "Heraclitus (535–475 BCE)"
 ```
 
 ### Quotes from Code

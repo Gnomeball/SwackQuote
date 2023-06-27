@@ -101,7 +101,7 @@ attribution = "Edsger W. Dijkstra"
 
 [pre-toml-20]
 submitter = "Gnome"
-quote = "Software undergoes beta testing shortly before it's released; beta is Latin for \"still doesn't work\"."
+quote = '''Software undergoes beta testing shortly before it's released; beta is Latin for "still doesn't work".'''
 attribution = "Unknown"
 
 #20
@@ -199,7 +199,7 @@ attribution = "Kreitzberg & Shneiderman"
 
 [pre-toml-38]
 submitter = "Gnome"
-quote = "Good code is its own best documentation.  As you're about to add a comment, ask yourself, \"How can I improve the code so that this comment isn't needed?\" Improve the code and then document it to make it even clearer."
+quote = '''Good code is its own best documentation.  As you're about to add a comment, ask yourself, "How can I improve the code so that this comment isn't needed?" Improve the code and then document it to make it even clearer.'''
 attribution = "Steve McConnell"
 
 [pre-toml-39]
@@ -1262,7 +1262,7 @@ attribution = "Artemis"
 
 [pre-toml-236]
 submitter = "Gnome"
-quote = "Latin doesn't automatically mean \"I win this argument\""
+quote = '''Latin doesn't automatically mean "I win this argument"'''
 attribution = "unreturnable"
 
 #235
@@ -1369,7 +1369,7 @@ attribution = "SinDemon"
 
 [pre-toml-253]
 submitter = "Victor"
-quote = "A \"goto\" in Perl falls into the category of hard things that should be possible, not easy things that should be easy."
+quote = '''A "goto" in Perl falls into the category of hard things that should be possible, not easy things that should be easy.'''
 attribution = "Larry Wall, <199709041935.MAA27136@wall.org>"
 
 [pre-toml-254]
@@ -1406,7 +1406,7 @@ attribution = "Unknown"
 
 [pre-toml-258]
 submitter = "Gnome"
-quote = "Monads are easy to understand, they're just the crystallisation of: \"we're scared of side-effects so we sweep them under the rug and pretend they're not eating the floorboards\""
+quote = '''Monads are easy to understand, they're just the crystallisation of: "we're scared of side-effects so we sweep them under the rug and pretend they're not eating the floorboards"'''
 attribution = "segfault"
 
 [pre-toml-259]
@@ -1436,12 +1436,12 @@ attribution = "Kris"
 
 [pre-toml-263]
 submitter = "IrrelevantSwack"
-quote = "Overloading, also known as \"lets just make every single time you call that operator now unclear as to what exactly it does\""
+quote = '''Overloading, also known as "lets just make every single time you call that operator now unclear as to what exactly it does"'''
 attribution = "Gnome"
 
 [pre-toml-264]
 submitter = "Gnome"
-quote = "Overloading, aka \"you best hope your editor can figure out what this actually is when you're fifteen files deep, otherwise good luck\""
+quote = '''Overloading, aka "you best hope your editor can figure out what this actually is when you're fifteen files deep, otherwise good luck"'''
 attribution = "segfault"
 
 [pre-toml-265]
@@ -1610,7 +1610,7 @@ attribution = "unreturnable, in reference to Cryptocurrency"
 
 [pre-toml-294]
 submitter = "Gnome"
-quote = "In general, it's not in human nature to understand the concept of \"short-term loss for long-term gain\""
+quote = '''In general, it's not in human nature to understand the concept of "short-term loss for long-term gain"'''
 attribution = "meetowl, in reference to Cryptocurrency"
 
 [pre-toml-295]
@@ -1732,7 +1732,7 @@ source = "https://twitter.com/alisa_tao/status/1181193451330768897"
 [2021-08-27-1]
 submitter = "segfault"
 quote = "There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies.  The other way is to make it so complicated that there are no obvious deficiencies."
-attribution = "Charles \"Tony\" Hoare, The Emperor's Old Clothes (1980 Turing Award Lecture)"
+attribution = '''Charles "Tony" Hoare, The Emperor's Old Clothes (1980 Turing Award Lecture)'''
 
 [2021-08-27-2]
 submitter = "segfault"
@@ -1815,16 +1815,16 @@ source = "http://www.sophilos.net/GrooksofPietHein"
 
 [2021-09-22-1]
 submitter = "segfault"
-quote = """
+quote = '''
 data structure optimization protips:
 - constant factors are always bigger than you think they are
 - _n_ will always be smaller than you think it's gonna be
 - arrays stay winning
-- the hardest problem in computer science is \"how to malloc just the right amount of array\"
+- the hardest problem in computer science is "how to malloc just the right amount of array"
 - malloc is the second-biggest constant factor
 - but the constant factor that matters the most is bounds checking
 - the only thing worse than doing a lot of bounds checking is doing an OOB read/write
-"""
+'''
 attribution = "Eliza Weisman"
 source = "https://twitter.com/mycoliza/status/1440702345168388101"
 
@@ -1856,7 +1856,7 @@ as the name is changed.
                  THE STRONGEST PUBLIC LICENSE
   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
- ⑨.  This licence document permits you to DO WHAT THE FUCK YOU WANT TO
+ ⑨. This licence document permits you to DO WHAT THE FUCK YOU WANT TO
     as long as you APPRECIATE CIRNO AS THE STRONGEST IN GENSOKYO.
 
 This program is distributed in the hope that it will be THE STRONGEST,
@@ -1950,7 +1950,7 @@ attribution = "Asher"
 
 [2021-11-24-1]
 submitter = "Asher"
-quote = "The men who program in C++ are Real Men.  The women who program in C++ are Real Men too.  You can spot a C++ programmer from their testosterone fuelled swagger, and the unbelievable amount of contempt they inject into the phrase Java \"programmer\".  They'll probably do the air quotes and all."
+quote = '''The men who program in C++ are Real Men.  The women who program in C++ are Real Men too.  You can spot a C++ programmer from their testosterone fuelled swagger, and the unbelievable amount of contempt they inject into the phrase Java "programmer".  They'll probably do the air quotes and all.'''
 attribution = "JamesTK, Urban Dictionary"
 source = "https://www.urbandictionary.com/define.php?term=C%2B%2B"
 
@@ -1969,7 +1969,7 @@ source = "https://lkml.org/lkml/2020/5/29/1038"
 
 [2021-11-28-2]
 submitter = "segfault"
-quote = "I find it completely irrelevant if somebody says that their kernel compile takes 10 hours because they are doing kernel development on a Raspberry PI with 4GB of RAM.  People with restrictive hardware shouldn't make it more inconvenient for people who have better resources.  Yes, we'll accommodate things to within reasonable limits.  But no, 80-column terminals in 2020 isn't \"reasonable\" any more as far as I'm concerned.  People commonly used 132-column terminals even back in the 80's, for chrissake, don't try to make 80 columns some immovable standard."
+quote = '''I find it completely irrelevant if somebody says that their kernel compile takes 10 hours because they are doing kernel development on a Raspberry PI with 4GB of RAM.  People with restrictive hardware shouldn't make it more inconvenient for people who have better resources.  Yes, we'll accommodate things to within reasonable limits.  But no, 80-column terminals in 2020 isn't "reasonable" any more as far as I'm concerned.  People commonly used 132-column terminals even back in the 80's, for chrissake, don't try to make 80 columns some immovable standard.'''
 attribution = "Linus Torvalds"
 source = "https://lkml.org/lkml/2020/5/29/1038"
 
@@ -2047,7 +2047,7 @@ attribution = "Neil DeGrasse Tyson, Death by Black Hole"
 
 [2022-02-02-1]
 submitter = "segfault"
-quote = "Antoine de Saint-Exupery, the French writer and aircraft designer, said that, \"A designer knows he has arrived at perfection not when there is no longer anything to add, but when there is no longer anything to take away.\" More programmers should judge their work by this criterion.  Simple programs are usually more reliable, secure, robust and efficient than their complex cousins, and easier to build and to maintain."
+quote = 'Antoine de Saint-Exupery, the French writer and aircraft designer, said that, "A designer knows he has arrived at perfection not when there is no longer anything to add, but when there is no longer anything to take away." More programmers should judge their work by this criterion.  Simple programs are usually more reliable, secure, robust and efficient than their complex cousins, and easier to build and to maintain.'
 attribution = "Jon Bentley, Programming Pearls (2nd Edition)"
 
 #355
@@ -2227,8 +2227,8 @@ source = "https://manhattanprojectbreactor.hanford.gov/files.cfm/AlbertEinstein.
 
 [2022-02-28-4]
 submitter = "Gnome"
-quote = """
-Look again at that dot.  That's here.  That's home.  That's us.  On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives.  The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilisation, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every \"superstar\", every \"supreme leader\", every saint and sinner in the history of our species lived there — on a mote of dust suspended in a sunbeam.
+quote = '''
+Look again at that dot.  That's here.  That's home.  That's us.  On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives.  The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilisation, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar", every "supreme leader", every saint and sinner in the history of our species lived there — on a mote of dust suspended in a sunbeam.
 
 The Earth is a very small stage in a vast cosmic arena.  Think of the rivers of blood spilled by all those generals and emperors so that, in glory and triumph, they could become the momentary masters of a fraction of a dot.  Think of the endless cruelties visited by the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some other corner, how frequent their misunderstandings, how eager they are to kill one another, how fervent their hatreds.
 
@@ -2237,7 +2237,7 @@ Our posturings, our imagined self-importance, the delusion that we have some pri
 The Earth is the only world known so far to harbor life.  There is nowhere else, at least in the near future, to which our species could migrate.  Visit, yes.  Settle, not yet.  Like it or not, for the moment the Earth is where we make our stand.
 
 It has been said that astronomy is a humbling and character-building experience.  There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world.  To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known.
-"""
+'''
 attribution = "Carl Sagan, Pale Blue Dot, 1994"
 source = "https://www.youtube.com/watch?v=GO5FwsblpT8"
 embed = true
@@ -2261,7 +2261,7 @@ attribution = "Robert H. Goddard, 1907"
 
 [2022-02-28-8]
 submitter = "Gnome"
-quote = "For the first time in my life, I saw the horizon as a curved line.  It was accentuated by a thin seam of dark blue light — our atmosphere.  Obviously, this was not the \"ocean\" of air I had been told it was so many times in my life.  I was terrified by its fragile appearance."
+quote = 'For the first time in my life, I saw the horizon as a curved line.  It was accentuated by a thin seam of dark blue light — our atmosphere.  Obviously, this was not the "ocean" of air I had been told it was so many times in my life.  I was terrified by its fragile appearance.'
 attribution = "Ulf Merbold, 1988"
 
 [2022-02-28-9]
@@ -2371,7 +2371,7 @@ source = "https://www.reddit.com/r/dyspraxia/comments/t8tm5v/i_really_fucking_ha
 submitter = "Gnome"
 quote = "Unexpected call for quote, try again in 24 hours."
 attribution = "SwackQuote"
-source = "http://patorjk.com/software/taag/#p=display&f=Big&t=We're%20sorry%2C%0Abut%20the%20quote%0Ayou%20requested%0Ais%20not%20here.%0AMaybe%20you%20should%0Atry%20someplace%20else."
+source = '''http://patorjk.com/software/taag/#p=display&f=Big&t=We're%20sorry%2C%0Abut%20the%20quote%0Ayou%20requested%0Ais%20not%20here.%0AMaybe%20you%20should%0Atry%20someplace%20else.'''
 
 [2022-05-22-banhammer]
 submitter = "Gnome"
@@ -2589,7 +2589,7 @@ quote = """
 Tech Support
 
 [tek suh-**pohrt**] *noun*
-1.  A person who does precision guesswork based on unreliable data provided by those of questionable knowledge
+1. A person who does precision guesswork based on unreliable data provided by those of questionable knowledge
 
 See also: ***Wizard***, ***Magician***
 """
@@ -2642,9 +2642,11 @@ attribution = "Windows"
 
 [2021-09-03-1]
 submitter = "segfault"
-quote = """```http
+quote = '''```http
 HTTP/1.1 451 Unavailable For Legal Reasons
-Link: <https://search.example.net/legal>; rel=\"blocked-by\"\nContent-Type: text/html
+Link: <https://search.example.net/legal>; rel="blocked-by"
+Content-Type: text/html
+
 <html>
  <head><title>Unavailable For Legal Reasons</title></head>
  <body>
@@ -2655,7 +2657,7 @@ Link: <https://search.example.net/legal>; rel=\"blocked-by\"\nContent-Type: text
   operated by the People's Front of Judea.</p>
  </body>
 </html>
-```"""
+```'''
 attribution = "HTTP 451 Unavailable For Legal Reasons"
 source = "https://en.wikipedia.org/wiki/HTTP_451"
 
@@ -2903,14 +2905,14 @@ attribution = "Princess Bean, Disenchantment"
 [2022-05-08-in-it-for-the-mischief]
 submitter = "Gnome"
 quote = "I don't wanna brag or anything, but when it comes to being the worst, I'm pretty much the best."
-attribution = "Astolfo, Fate/Apocrypha, 2017" # so I read/skimmed the entirety of Fate/Apocrypha before learning there was an anime adaptation because of course I'm the only one that thinks of light novels when Fate/Apocrypha is mentioned, so yeah I guess it's probably in the show but I'm not gonna watch that now just to confirm
+attribution = "Astolfo, Fate/Apocrypha, 2017" # so I read/skimmed the entirety of Fate/Apocrypha to find it wasn't said before learning there was an anime adaptation, because of course I'm the only one that thinks of light novels when Fate/Apocrypha is mentioned, so yeah I guess it's probably in the show but I'm not gonna watch that now just to confirm
 
 #495
 
 [2022-05-08-just-like-a-sponge]
 submitter = "Gnome"
 quote = "Such self-absorbed idiots aren't worth protecting if you ask me."
-attribution = "Mordred, Fate/EXTRA Last Encore"
+attribution = "Mordred, Fate/EXTRA Last Encore" # @TODO, is it from Fate/EXTRA or the Fate/Apocrypha show?
 
 [2022-05-08-the-student-becomes-the-master]
 submitter = "Gnome"
@@ -2924,20 +2926,20 @@ attribution = "Reinhard Von Lohengramm, Legend of Galactic Heroes"
 
 [2022-05-08-words]
 submitter = "Gnome"
-quote = "There certainly are things that cannot be told in words, but that can only be said by people who have exhausted their use of words.  Words are like icebergs that are floating on the ocean called \"heart\".  The parts that show above the sea surface are small, but they still let us perceive the larger parts that are hidden below the water.  Use words deliberately.  If you do, you'll be able to convey more things more accurately than if you were to keep silent.  Right judgement can only be made with right information and right analyses."
-attribution = "Yang Wenli, Legend of Galactic Heroes"
+quote = '''There certainly are things that cannot be told in words, but that can only be said by people who have exhausted their use of words.  Words are like icebergs that are floating on the ocean called "heart".  The parts that show above the sea surface are small, but they still let us perceive the larger parts that are hidden below the water.  Use words deliberately.  If you do, you'll be able to convey more things more accurately than if you were to keep silent.  Right judgement can only be made with right information and right analyses.'''
+attribution = "Yang Wen-li, Legend of Galactic Heroes"
 
 [2022-05-08-we-are-our-history]
 submitter = "Gnome"
 quote = "For as long as human history goes on, the past will continue to accumulate.  History isn't just records of the past.  It's also proof that civilisation has continued to advance to the present.  Our present civilisation is the result of our past."
-attribution = "Yang Wenli, Legend of Galactic Heroes"
+attribution = "Yang Wen-li, Legend of Galactic Heroes"
 
 #500
 
 [2022-05-08-staying-out-of-it-is-often-the-best-option]
 submitter = "Gnome"
 quote = "The greatest freedom is the freedom not to get involved."
-attribution = "Yang Wenli, Legend of Galactic Heroes"
+attribution = "Yang Wen-li, Legend of Galactic Heroes"
 
 [pre-toml-74]
 submitter = "Gnome"
@@ -2948,12 +2950,12 @@ source = "https://datatracker.ietf.org/doc/html/rfc9110"
 [2022-05-08-to-alcohol-the-cause-of-and-solution-to-all-of-lifes-problems]
 submitter = "Gnome"
 quote = "Alcohol is humanity's friend.  How can I abandon a friend?"
-attribution = "Yang Wenli, Legend of Galactic Heroes"
+attribution = "Yang Wen-li, Legend of Galactic Heroes"
 
 [2022-05-08-even-democracy-can-be-evil]
 submitter = "Gnome"
 quote = "Dictatorship itself isn't absolutely evil, it's just another form of government.  The point is how you can run it for the benefit of society."
-attribution = "Yang Wenli, Legend of Galactic Heroes"
+attribution = "Yang Wen-li, Legend of Galactic Heroes"
 
 [2022-05-08-no-not-that-Attenborough]
 submitter = "Gnome"
@@ -2969,7 +2971,7 @@ attribution = "Homer Simpson, The Simpsons"
 
 [2022-05-08-what-even-is-a-glass]
 submitter = "Gnome"
-quote = """
+quote = '''
 Optimist: The glass is 1/2 full.
 Pessimist: The glass is 1/2 empty.
 Excel: The glass is January 2nd.
@@ -2979,11 +2981,11 @@ Alcoholic: Shucks, drinks nearly gone, lets order another round!
 Dr Strange: Half full?  Check again.
 Mathematician: The glass isn't a platonic solid.
 Topologist: The glass has no holes.
-Philosopher: What does it mean, to be \"full\"?
+Philosopher: What does it mean, to be "full"?
 Me: I dunno but I'm hungry.
 Early Career Developer: uh, I don't know what happened, but there's an overflow.
 Late Career Developer: Huh.  Just double the memory requirements and ship it.
-"""
+'''
 attribution = "Various"
 
 [2022-05-09-little-boy]
@@ -3212,7 +3214,7 @@ attribution = "Frank Borman, Apollo 8"
 [2022-05-20-earthrise]
 submitter = "Gnome"
 quote = "We set out to explore the moon and instead discovered the Earth."
-attribution = "William Anders, Apollo 8, in reference to the [Earthrise](https://en.wikipedia.org/wiki/Earthrise)" # I really hope that link works
+attribution = "William Anders, Apollo 8, in reference to [Earthrise](https://en.wikipedia.org/wiki/Earthrise)" # I really hope that link works
 
 [2022-05-20-WALES]
 submitter = "Gnome"
@@ -3414,7 +3416,7 @@ attribution = "IrrelevantSwack, 2018"
 
 [2022-06-13-Transition]
 submitter = "Gnome"
-quote = "Next committee: \"I wonder what they talked about when they worked hard on the transition?\""
+quote = 'Next committee: "I wonder what they talked about when they worked hard on the transition?"'
 attribution = "Victor"
 
 [2022-06-13-despacito]
@@ -3775,7 +3777,7 @@ attribution = "A. C. Hobbs, 1853"
 
 [2022-09-01-Haskell]
 submitter = "IrrelevantSwack"
-quote = "Haskell be like \"we spent 15 years perfecting our language before the initial 1.0 release but nah we don't need an installer they'll figure it out kek\""
+quote = '''Haskell be like "we spent 15 years perfecting our language before the initial 1.0 release but nah we don't need an installer they'll figure it out kek"'''
 attribution = "Lewigi"
 
 [2022-09-02-Stories]
@@ -3823,7 +3825,7 @@ attribution = "John Elder Robinson,  Be Different: Adventures of a Free-Range As
 
 [2022-09-16-What-a-mess]
 submitter = "Gnome"
-quote = "\"This is a fucking mess\", I said tactfully."
+quote = '"This is a fucking mess", I said tactfully.'
 attribution = "John Elder Robinson"
 
 #645
@@ -3978,7 +3980,7 @@ attribution = "Jamie Zawinski"
 [2022-11-16-javafx-was-mentioned-and-i-was-reminded-of-this-so-i-added-it]
 submitter = "segfault"
 quote = "Give someone state and they'll have a bug one day, but teach them how to represent state in two separate locations that have to be kept in sync and they'll have bugs for a lifetime."
-attribution = "Fabian \"ryg\" Giesen"
+attribution = 'Fabian "ryg" Giesen'
 source = "https://twitter.com/rygorous/status/1507178315886444544"
 
 [2022-11-16-Einstein]
@@ -4016,7 +4018,7 @@ source = "https://twitter.com/shitmydadsays/status/209705033204371457"
 
 [2022-12-02-Jungle-Lizard-Advent]
 submitter = "SatanicWomble"
-quote = "My solution today is far from elegant ... and my first question was \"If this is a jungle...  why no Lizard?\""
+quote = 'My solution today is far from elegant .. and my first question was "If this is a jungle..  why no Lizard?"'
 attribution = "Gnome, Advent of Code 2022, Day 2"
 source = "https://discord.com/channels/402480186312097803/1035536278671859713/1048185250573979668"
 
@@ -4024,15 +4026,15 @@ source = "https://discord.com/channels/402480186312097803/1035536278671859713/10
 
 [2022-12-02-Doctor-Destination-Dreaming]
 submitter = "SatanicWomble"
-quote = """
+quote = '''
 Clara sometimes asks me if I dream.
-\"Of course I dream\", I tell her.  \"Everybody dreams.\"
-\"But what do you dream about?\", she'll ask.
-\"The same thing everybody dreams about\", I tell her.  \"I dream about where I'm going.\"
-She always laughs at that.  \"But you're not going anywhere, you're just wandering about.\"
+"Of course I dream", I tell her. "Everybody dreams."
+"But what do you dream about?", she'll ask.
+"The same thing everybody dreams about", I tell her. "I dream about where I'm going."
+She always laughs at that. "But you're not going anywhere, you're just wandering about."
 
 That's not true.  Not anymore.  I have a new destination.  My journey is the same as yours, the same as anyone's.  It's taken me so many years, so many lifetimes, but at last I know where I'm going.  Where I've always been going.  Home.  The long way around.
-"""
+'''
 attribution = "The Doctor, Doctor Who, The Day of the Doctor, 2013"
 
 [2022-12-02-anyone-for-chess]
@@ -4126,7 +4128,7 @@ attribution = "Henry David Thoreau"
 
 [2022-12-21-radmacher]
 submitter = "Victor"
-quote = "Courage doesn't always roar.  Sometimes courage is the little voice at the end of the day that says \"I'll try again tomorrow.\""
+quote = '''Courage doesn't always roar.  Sometimes courage is the little voice at the end of the day that says "I'll try again tomorrow."'''
 attribution = "Mary Anne Radmacher"
 
 [2022-12-21-hawking]
@@ -4244,13 +4246,13 @@ source = "https://twitter.com/ryiron/status/1150924668020203521"
 
 [2023-01-18-beyond-ghibli]
 quote = "Loss isn't losing; it's just a part of the ebb and flow of life, sometimes cruel in its wonder, sometimes wonderful in its cruelty."
-attribution = "Beyond Ghibli on _Maquia_"
+attribution = "Beyond Ghibli on Maquia"
 source = "https://www.youtube.com/watch?v=4KXqvVEdgqs"
 submitter = "Victor"
 
 [2023-01-18-maquia]
 quote ="If you ever meet anyone from the outside, you mustn't fall in love.  If you do, you'll truly become alone."
-attribution = "Racine (Iorph elder), _Maquia_"
+attribution = "Racine (Iorph elder), Maquia"
 submitter = "Victor"
 
 [2023-01-18-toy-story]
@@ -4267,7 +4269,7 @@ submitter = "Victor"
 #715
 
 [2023-01-18-picasso]
-quote = "When I was a child my mother said to me, 'If you become a soldier, you'll be a general.  If you become a monk, you'll be the pope.' Instead I became a painter and wound up as Picasso."
+quote = '''When I was a child my mother said to me, "If you become a soldier, you'll be a general.  If you become a monk, you'll be the pope." Instead I became a painter and wound up as Picasso.'''
 attribution = "Pablo Picasso"
 submitter = "Victor"
 

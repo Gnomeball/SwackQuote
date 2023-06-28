@@ -129,7 +129,7 @@ attribution = "Bjarne Stroustrup"
 [pre-toml-25]
 submitter = "Gnome"
 quote = "To err is human but to really foul things up you need a computer."
-attribution = "Paul R. Ehrlich" # @TODO, this is a pseudo-dupe in 3 places, pre-toml-25, pre-toml-161, and pre-toml-290
+attribution = "Paul R. Ehrlich" # @TODO, this is a pseudo-dupe in 3 places, pre-toml-25, pre-toml-161, and pre-toml-290 - I have replaced the other two
 
 #25
 
@@ -857,8 +857,8 @@ attribution = "Unknown"
 
 [pre-toml-161]
 submitter = "Gnome"
-quote = "To err is human... to really foul up requires the root password."
-attribution = "Paul R. Ehrlich" # @TODO, this is a pseudo-dupe in 3 places, pre-toml-25, pre-toml-161, and pre-toml-290
+quote = "A crust eaten in peace is better than a banquet partaken in anxiety."
+attribution = "Widely attributed to Aesop (620 BCE – 564 BCE)" # Replaced
 
 #160
 
@@ -1588,8 +1588,8 @@ attribution = "Bjarne Stroustrup"
 
 [pre-toml-290]
 submitter = "segfault"
-quote = "To err is human... to really mess up requires root or undefined behaviour"
-attribution = "Paul R. Ehrlich" # @TODO, this is a pseudo-dupe in 3 places, pre-toml-25, pre-toml-161, and pre-toml-290
+quote = "My fake plants died because I did not pretend to water them."
+attribution = "Mitch Hedberg" # Replaced
 
 [pre-toml-291]
 submitter = "meetowl"
@@ -2895,7 +2895,7 @@ attribution = "Elfo, Disenchantment"
 [2022-05-08-the-true-revolving-shift]
 submitter = "Gnome"
 quote = "I'm just about at the end of my 24-hour shift.  There it is.  Well, back to work."
-attribution = "Jerry" # @TODO
+attribution = "Jerry" # @TODO - this one is from Disenchantment, I do not remember which episode or season.. but that os a good an excuse as any to rewatch it I guess (gnome)
 
 [2022-05-08-the-floor]
 submitter = "Gnome"
@@ -2912,7 +2912,7 @@ attribution = "Astolfo, Fate/Apocrypha, 2017" # so I read/skimmed the entirety o
 [2022-05-08-just-like-a-sponge]
 submitter = "Gnome"
 quote = "Such self-absorbed idiots aren't worth protecting if you ask me."
-attribution = "Mordred, Fate/EXTRA Last Encore" # @TODO, is it from Fate/EXTRA or the Fate/Apocrypha show?
+attribution = "Mordred, Fate/EXTRA Last Encore" # @TODO, is it from Fate/EXTRA or the Fate/Apocrypha show? - Technically EXTRA I think, here's a link https://anilist.co/anime/21717/FateEXTRA-Last-Encore/
 
 [2022-05-08-the-student-becomes-the-master]
 submitter = "Gnome"
@@ -3167,7 +3167,7 @@ attribution = "James Sherman"
 [2022-05-18-christopher-robin]
 submitter = "Victor"
 quote = "Promise me you'll always remember — you're braver than you believe, and stronger than you seem, and smarter than you think."
-attribution = "Christopher Robin" # @TODO, which Winnie-the-Pooh piece is this from? are we attributing to A. A. Milne, David Benedictus, someone else, nobody?
+attribution = "Christopher Robin" # @TODO, which Winnie-the-Pooh piece is this from? are we attributing to A. A. Milne, David Benedictus, someone else, nobody? - I believe it is from one of the Walt Disney adaptations, possibly the 1977 edition
 
 [2022-05-18-monet-understand-vs-love]
 submitter = "Victor"
@@ -3359,7 +3359,7 @@ attribution = "Paramahansa Yogananda"
 [2022-06-03-storm]
 submitter = "Victor"
 quote = "And once the storm is over, you won't remember how you made it through.  But one thing is certain.  When you come out of the storm, you won't be the same person who walked in.  That's what this storm's all about."
-attribution = "Haruki Murakami" # @TODO, is this from one of his books, or just something he said?
+attribution = "Haruki Murakami" # @TODO, is this from one of his books, or just something he said? - possibly "Kafka on the Shore", https://www.goodreads.com/work/quotes/6191072-umibe-no-kafuka
 
 [2022-06-03-start]
 submitter = "Victor"
@@ -3378,7 +3378,7 @@ attribution = "Unknown"
 [2022-06-03-nothing]
 submitter = "Victor"
 quote = "People say nothing is impossible, but I do nothing every day."
-attribution = "Winnie the Pooh" # @TODO, is this from A. A. Milne, or someone else?
+attribution = "Winnie the Pooh" # @TODO, is this from A. A. Milne, or someone else? - I would hazard a guess at the original novel, but without more than a few seconds googling, no real idea 
 
 #570
 
@@ -3395,7 +3395,7 @@ attribution = "Paulo Coelho"
 [2022-06-04-Right]
 submitter = "Gnome"
 quote = "If we're kind and polite, the world will be right."
-attribution = "Paddington Bear" # @TODO, is this from Michael Bond, if so which, or an adaptation?
+attribution = "Paddington Bear" # @TODO, is this from Michael Bond, if so which, or an adaptation? - one of the films, https://youtu.be/wBsLPrKcZWg?t=97
 
 [2022-06-10-Right]
 submitter = "Gnome"
@@ -4378,3 +4378,10 @@ submitter = "segfault"
 quote = "I am kinda interested in everything that is unknown to me."
 attribution = "A random spam bot"
 source = "https://twitter.com/leyawn/status/1670648343112892418"
+
+[2023-06-28-memberships]
+submitter = "Gnome"
+quote = "I don’t want to belong to any club that would have me as a member"
+attribution = "Groucho Marx"
+source = "https://quoteinvestigator.com/2011/04/18/groucho-resigns/"
+

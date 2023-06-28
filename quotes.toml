@@ -129,7 +129,7 @@ attribution = "Bjarne Stroustrup"
 [pre-toml-25]
 submitter = "Gnome"
 quote = "To err is human but to really foul things up you need a computer."
-attribution = "Paul R. Ehrlich" # @TODO, this is a pseudo-dupe in 3 places, pre-toml-25, pre-toml-161, and pre-toml-290 - I have replaced the other two
+attribution = "Paul R. Ehrlich"
 
 #25
 
@@ -858,7 +858,7 @@ attribution = "Unknown"
 [pre-toml-161]
 submitter = "Gnome"
 quote = "A crust eaten in peace is better than a banquet partaken in anxiety."
-attribution = "Widely attributed to Aesop (620 BCE – 564 BCE)" # Replaced
+attribution = "Widely attributed to Aesop (620–564 BCE)"
 
 #160
 
@@ -1589,7 +1589,7 @@ attribution = "Bjarne Stroustrup"
 [pre-toml-290]
 submitter = "segfault"
 quote = "My fake plants died because I did not pretend to water them."
-attribution = "Mitch Hedberg" # Replaced
+attribution = "Mitch Hedberg"
 
 [pre-toml-291]
 submitter = "meetowl"
@@ -2895,7 +2895,7 @@ attribution = "Elfo, Disenchantment"
 [2022-05-08-the-true-revolving-shift]
 submitter = "Gnome"
 quote = "I'm just about at the end of my 24-hour shift.  There it is.  Well, back to work."
-attribution = "Jerry" # @TODO - this one is from Disenchantment, I do not remember which episode or season.. but that os a good an excuse as any to rewatch it I guess (gnome)
+attribution = "Jerry, Disenchantment"
 
 [2022-05-08-the-floor]
 submitter = "Gnome"
@@ -2912,7 +2912,7 @@ attribution = "Astolfo, Fate/Apocrypha, 2017" # so I read/skimmed the entirety o
 [2022-05-08-just-like-a-sponge]
 submitter = "Gnome"
 quote = "Such self-absorbed idiots aren't worth protecting if you ask me."
-attribution = "Mordred, Fate/EXTRA Last Encore" # @TODO, is it from Fate/EXTRA or the Fate/Apocrypha show? - Technically EXTRA I think, here's a link https://anilist.co/anime/21717/FateEXTRA-Last-Encore/
+attribution = "Mordred, Fate/Apocrypha, 2017" # Mordred wasn't in Fate/EXTRA Last Encore, was in Apocrypha
 
 [2022-05-08-the-student-becomes-the-master]
 submitter = "Gnome"
@@ -3359,7 +3359,7 @@ attribution = "Paramahansa Yogananda"
 [2022-06-03-storm]
 submitter = "Victor"
 quote = "And once the storm is over, you won't remember how you made it through.  But one thing is certain.  When you come out of the storm, you won't be the same person who walked in.  That's what this storm's all about."
-attribution = "Haruki Murakami" # @TODO, is this from one of his books, or just something he said? - possibly "Kafka on the Shore", https://www.goodreads.com/work/quotes/6191072-umibe-no-kafuka
+attribution = "Haruki Murakami, Kafka on the Shore"
 
 [2022-06-03-start]
 submitter = "Victor"
@@ -3395,7 +3395,7 @@ attribution = "Paulo Coelho"
 [2022-06-04-Right]
 submitter = "Gnome"
 quote = "If we're kind and polite, the world will be right."
-attribution = "Paddington Bear" # @TODO, is this from Michael Bond, if so which, or an adaptation? - one of the films, https://youtu.be/wBsLPrKcZWg?t=97
+attribution = "Paddington Bear, Paddington 2, 2017"
 
 [2022-06-10-Right]
 submitter = "Gnome"

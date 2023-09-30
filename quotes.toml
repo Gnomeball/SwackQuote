@@ -264,7 +264,7 @@ attribution = "Bill Gates"
 [pre-toml-50]
 submitter = "Gnome"
 quote = "The question of whether computers can think is like the question of whether submarines can swim."
-attribution = "Edsger W. Dijkstra."
+attribution = "Edsger W. Dijkstra"
 
 #50
 
@@ -367,7 +367,7 @@ attribution = "Larry Wall"
 [pre-toml-69]
 submitter = "Gnome"
 quote = "The use of COBOL cripples the mind; its teaching should therefore be regarded as a criminal offense."
-attribution = "Edsger W. Dijkstra"
+attribution = "Edsger W. Dijkstra, EWD498: 'How do we tell truths that might hurt?', 1975"
 
 [pre-toml-70]
 submitter = "Gnome"

@@ -264,7 +264,7 @@ attribution = "Bill Gates"
 [pre-toml-50]
 submitter = "Gnome"
 quote = "The question of whether computers can think is like the question of whether submarines can swim."
-attribution = "Edsger W. Dijkstra."
+attribution = "paraphrasing Edsger W. Dijkstra, Science fiction and science reality in computing, EWD 952"
 
 #50
 
@@ -366,8 +366,8 @@ attribution = "Larry Wall"
 
 [pre-toml-69]
 submitter = "Gnome"
-quote = "The use of COBOL cripples the mind; its teaching should therefore be regarded as a criminal offense."
-attribution = "Edsger W. Dijkstra"
+quote = "The use of COBOL cripples the mind; its teaching should, therefore, be regarded as a criminal offence."
+attribution = "Edsger W. Dijkstra, How do we tell truths that might hurt?, EWD498, 1975"
 
 [pre-toml-70]
 submitter = "Gnome"
@@ -1673,10 +1673,10 @@ submitter = "segfault"
 quote = "Destroying the privacy of several billion people is not an adequate price to pay for capturing a dozen or even a hundred bad guys.  Sure it did get them some.  So would carpet-bombing New York City.  Success alone is a worthless measure without taking cost into account."
 attribution = "Some comment on slashdot"
 
-[2021-08-06]
+[2021-08-06-0]
 submitter = "segfault"
 quote = "Computer Science is no more about computers than Astronomy is about telescopes."
-attribution = "Edsger W. Dijkstra"
+attribution = "paraphrasing of Michael R. Fellows, Alan Perlis, Anthony Ralston, or George Johnson, potentially misattributed to Edsger W. Dijkstra, first occurrence of exact phrasing by Haines (1993, citing Dijkstra)"
 
 [2021-08-06-1]
 submitter = "Victor"
@@ -1828,7 +1828,7 @@ data structure optimization protips:
 attribution = "Eliza Weisman"
 source = "https://twitter.com/mycoliza/status/1440702345168388101"
 
-[2021-09-30]
+[2021-09-30-0]
 submitter = "Gnome"
 quote = "turns out finding the average internal volume of a sheep is pretty hard."
 attribution = "Amethyst"
@@ -2062,17 +2062,17 @@ submitter = "Victor"
 quote = "I understand that scissors can beat paper, and I get how rock can beat scissors, but there's no way paper can beat rock.  Paper is supposed to magically wrap around rock leaving it immobile?  Why can't paper do this to scissors?  Screw scissors, why can't paper do this to people?  Why aren't sheets of college ruled notebook paper constantly suffocating students as they attempt to take notes in class?  I'll tell you why.  Because paper can't beat anybody, a rock would tear it up in two seconds.  When I play rock paper scissors, I always choose rock.  Then when somebody claims to have beaten me with their paper I can punch them in the face with my already clenched fist and say, oh sorry, I thought paper would protect you."
 attribution = "Unknown"
 
-[2022-02-13]
+[2022-02-13-1]
 submitter = "Gnome"
 quote = "You can be creative, or productive, but not both."
 attribution = "Various"
 
-[2022-02-15]
+[2022-02-15-1]
 submitter = "Gnome"
 quote = "We are in the process of inadvertently altering our climate through exhaustion of fossil fuels."
 attribution = "Carl Sagan, The Tonight Show with Johnny Carson, March 2nd 1978"
 
-[2022-02-16]
+[2022-02-16-1]
 submitter = "Gnome"
 quote = """
 Consider the following declarations.

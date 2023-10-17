@@ -7,7 +7,8 @@ To add a quote, [make an account](https://github.com/signup) on GitHub and [you 
 If you'd rather do it locally or step by step:
 1. [fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository)
 2. [add the quote to `quotes.toml` (please read the formatting guide below)](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)
-3. [make a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
+3. [update the trailing count comments](/README.md#formatting-for-quotes)
+4. [make a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
 
 ## Formatting for Quotes
 

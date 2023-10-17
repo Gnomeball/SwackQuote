@@ -27,21 +27,23 @@ embed = false # true whenever the source should have an embed, such as a video
 Currently, the `attribution`, `source`, and `embed` fields are optional, and default to empty/`false` when not set:
 - If given, the `attribution` field will appear after the quote, separated by a `~`.
 - If given, the `source` field will be linked to by the quote.
-  - When `embed` is also set to `embed = true`, the `source` will be embedded beneath the quote (such as a YouTube video).
+  - When `embed = true`, the `source` will be embedded beneath the quote (i.e. showing a YouTube video).
 
 When adding quotes, **please** take care to update the trailing count comments, spaced out in groups of 5 quotes before a comment (so `#5` is followed by `#10` and so on). The one at the bottom should have the exact number of quotes, but if you round up to the nearest 5, then it's unlikely anyone will complain. **This is important!**
 
 [All Discord-accepted markdown will be rendered properly](https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101). Individual quotes **must** be less than 4000 bytes in size (encoded as UTF-8, total across all fields). In practice, we recommend quotes be less than 1500 bytes (UTF-8) anyway, as this would fill the screen on most mobile displays. Usually, a quote is much shorter anyway, just a couple of sentences at most. **When in doubt, keep it concise**, you can always link a `source` for those who want to see/hear more.
 
-So, when required, attributions should follow the order: **`Author, Character, Work/Title, Edition/Episode, Year`**. These may be omitted where redundant or unknown (though we prefer an unknown author to be cited as such). Commas separate for clarity, and where clear may be removed or instead parenthesised.
+When required, attributions should follow the order: **`Author, Character, Work/Title, Edition/Episode, Year`**. These may be omitted where redundant or unknown (though we prefer an unknown author to be cited as such). Commas separate for clarity, and where clear may be removed or instead parenthesised.
 
 Additional context or aspects of the attribution may be included if it is felt to improve the quote, preferably after the above ordering.
 
 Due to the limitations of TOML and a desire for readability, we do not suggest or require quotation marks within the attribution; these are attributions, not citations, and it's easier for most people to just not worry about whether to use `"` or `'` and how to get that working within the TOML strings, so if you were to just write `attribution = "Terry Pratchet, The Colour of Magic"`, this would suffice.
 
+When in doubt, ask someone, or look through the existing quotes for templates to follow!
+
 ### Quotes with unknown attribution
 
-If you do not know who said/wrote the quote, or cannot find the original attribution, please use `Unknown`, or `Various` if likely disputed. If many have said it in one form or another, use `Apocryphal`.
+If you do not know who said/wrote the quote, or cannot find the original attribution, please use `Unknown` (or `Various` if likely disputed). If many have said it in one form or another, so there's no clear original/canonical form, use `Apocryphal`.
 
 However, if you're having trouble finding the attribution, you can always ask others! They may know it themselves or know where to check (such as [Wikiquote](https://en.wikiquote.org/wiki/Main_Page) or your favourite search engine, these are particularly good at finding and dealing with misquotes or misattributions).
 
@@ -49,7 +51,7 @@ However, if you're having trouble finding the attribution, you can always ask ot
 
 If citing both a person and a work, please do this in a format that is sensible, perhaps `Person, Work`, inside the `attribution` field.
 
-If the year or edition is relevant, include this either parenthesised `(3rd edition)`, or following it like, say, `Unix Epoch, 1970`. With dating, we prefer and assume [Common Era](https://en.wikipedia.org/wiki/Common_Era), such as `Julius Caesar (100 - 44 BCE)` or `de Finibus Bonorum et Malorum, 45 BCE`.
+If the year or edition is relevant, include this either parenthesised `(3rd edition)` or following it `Unix Epoch, 1970`. With dating, we prefer and assume [Common Era](https://en.wikipedia.org/wiki/Common_Era), such as `Julius Caesar (100 - 44 BCE)` or `de Finibus Bonorum et Malorum, 45 BCE` (note that it is often implicit and omitted with modern dates).
 
 Shows may include the specific episode by name and perhaps number, where relevant, but further details (such as timestamps) should not be included (but timestamped URLs for YouTube, say, may be used in the `source`).
 
@@ -82,6 +84,14 @@ attribution = "Spock, Star Trek, Wolf in the Fold, stardate 3615.4"
 
 Quotes taken from antiquity should use [Common Era](https://en.wikipedia.org/wiki/Common_Era) dating, though this may be omitted outside uses of `BCE`, so dates like `1970` (implicit) and `400 BCE` (explicit) are the recommendation.
 
+Once a date gets old enough that calendar changes become likely, please try to find the correct Common Era dating, though some antiquity calenders (such as various ancient Chinese calendars) might not have exact year-to-year matches (in which case, express it as a commonly agreed upon range in CE/BCE).
+
+If a date is contested and given as a range, such as when a text was written, it is usually better to avoid including it, for concision. However, some texts are notably written over longer periods and are often given as a range, in which case this may be included if more significant than a later publishing date (such as accounts of protracted events).
+
+Quotes specifically attributed to **someone** rather than to any of their given works may be given alongside the period in which they lived, as it is rare that more accurate dating is available, which would then follow as a range after their name, `Person, From–To` or `Person (From–To)`.
+
+We recommend that date ranges use the `–` character to separate, as it is semantically the correct one, however this is not strictly enforced.
+
 On the rare occasion it is available, more precise dating is usually not recommended (so no months or days), except when specifically relevant to the content of the quote (say about an astronomical event).
 
 Example:
@@ -110,19 +120,24 @@ For quotes containing blocks of code, use `'''` for raw multi-line strings, and 
 Example:
 
 ```toml
-[pre-toml-300]
-submitter = "Gnome"
-quote = '''```python
-def isprime(n): return not re.match(r"^1?$|^(11+?)\1+$", "1"*n)
+[2022-08-13-sudo]
+submitter = "segfault"
+quote = '''```bash
+We trust you have received the usual lecture from the local System
+Administrator.  It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
 ```'''
-attribution = "segfault"
+attribution = "Todd C. Miller, `sudo`"
 ```
 
 ### Quotes with substitutions
 
 Quotes where a word or phrase has been amended for clarity should surround that amendment in square brackets, such as `[We]`, while any omissions should use three periods for an ellipsis `...` either between fragments `"they would find ... just a single fruit"` or in place of the full stop ending a sentence `"Tell me... How many points did you get?"`. Any ellipsis used in the quote as typical punctuation (such as trailing off or extended pauses) is still accepted. Only if **both** a typical ellipsis and an omission would be present and ambiguous should you surround the omission with square brackets accordingly, like `[...]`.
 
-There is no need to signify an amendment for the staring letter of a quote, even if it's starting mid-way through a sentence. You can just capitalise it at the start as normal, so `"Hello, world!"` is correct, though specifically lower-case words or code should retain its original capitalisation. We recommend that all other capitalisation in the quote remain unchanged (unless relevant or needed for clarity).
+There is no need to surround the staring letter of a quote if you capitalise it, even if it's starting mid-way through a sentence. Just capitalise it at the start as normal, so `"Hello, world!"` and `"Just a single fruit"` are correct, though specifically lower-case names or code should retain its original capitalisation (such as `"print(42)"`). We recommend that all other capitalisation in the quote remain unchanged (unless relevant or needed for clarity).
 
 Example:
 
@@ -133,13 +148,17 @@ quote = "They journeyed a long time and found nothing.  At length they discerned
 attribution = "Voltaire, Micromégas"
 ```
 
-### Quotes you can link to
+### Quotes with a valid URL
 
 A single URL may be included in the `source` where relevant, i.e. for Tweets, videos, or articles (such as `source = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"`), and if `embed = true` is set for that quote, the URL will have an embed displayed alongside the quote. The embedding is janky, not visually appealing, and not what we desired; if you can improve this, please contribute!
 
-Please only use `source` for HTTP/HTTPS URLs, **do not** put URLs in the `attribution`. Markdown links may be accepted, but lengthy raw URLs likely will not be, as they are often not very readable.
+Please only use `source` for HTTP/HTTPS URLs, so `source = "https://` and so on. We do not accept other URL formats at this time.
 
-We do not recommend you set `embed` for most quotes that have a `source` URL, as it may lead to duplication of the quote when displayed and adds visual clutter. Also, if it is a link to a video or audio, but it includes substantially more than the listed quote, it should probably not be embedded, as the video/audio is not specifically a form of that quote (so no links to full episodes), except when appropriately timestamped (ideally also working in the embed).
+**Do not** put URLs in the `attribution`; Markdown links may be accepted, but lengthy raw URLs likely will not be, as they are often not very readable.
+
+We recommend you **do not** set `embed = true` for most quotes that have a `source` URL, as the embed often duplicates the quote, adding visual clutter. A link to a video or audio recording is usually fine. This has great power, so use it wisely!
+
+If `source` is a link to a video or audio, but it includes substantially more than the listed quote, we recommend you do not embed it, as the video/audio is not specifically of that quote (please no links to full episodes). This can be worked around when appropriately timestamped, such as with YouTube videos (ideally also working in the embed), in which case it may be accepted (again, no full episodes, please).
 
 ### Formatting Specification
 

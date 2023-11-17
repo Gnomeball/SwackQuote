@@ -3378,7 +3378,7 @@ attribution = "Unknown"
 [2022-06-03-nothing]
 submitter = "Victor"
 quote = "People say nothing is impossible, but I do nothing every day."
-attribution = "Winnie the Pooh" # @TODO, is this from A. A. Milne, or someone else? - I would hazard a guess at the original novel, but without more than a few seconds googling, no real idea 
+attribution = "Winnie the Pooh" # @TODO, is this from A. A. Milne, or someone else? - I would hazard a guess at the original novel, but without more than a few seconds googling, no real idea
 
 #570
 
@@ -4390,11 +4390,16 @@ submitter = "ToothpasteFan"
 quote = "Free will is a myth. Religion is a joke. We are all pawns, controlled by something greater: Memes. The DNA of the soul. They shape our will. They are the culture. They are everything we pass on."
 attribution = "Monsoon, Metal Gear Rising: Revengeance"
 
-#735 
+#735
 
 [2023-10-27-identity]
 submitter = "Ben Wager"
 quote = "What are we if we aren't a coallition of people who struggle to communicate, communicating"
 attribution = "Ben Wager"
 
-#736 — Remember to update this, in counts of five!
+[2023-11-17-oops]
+submitter = "Gnome"
+quote = "We're running a very dangerous experiment right now, we've given Elon Musk free reign with his money and... well, history speaks for itself."
+attribution = "Greenfoot5"
+
+#737 — Remember to update this, in counts of five!

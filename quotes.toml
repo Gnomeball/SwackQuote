@@ -4421,11 +4421,7 @@ attribution = "Gustavo Petro"
 
 [2024-01-01-already-sober]
 submitter = "Gnome"
-<<<<<<< HEAD
 quote = """```python
-=======
-quote = """```
->>>>>>> f8a88f9c1ddd7a189af4362674ee6c7416ddce29
 new year(2024).init();
 ```"""
 attribution = "segfault"

@@ -4417,4 +4417,13 @@ submitter = "Gnome"
 quote = "A developed country is not a place where the poor have cars. It's where the rich use public transportation."
 attribution = "Gustavo Petro"
 
-#740 — Remember to update this, in counts of five!
+#740
+
+[2024-01-01-already-sober]
+submitter = "Gnome"
+quote = """```
+new year(2024).init();
+```"""
+attribution = "segfault"
+
+#741 — Remember to update this, in counts of five!

@@ -4459,3 +4459,16 @@ submitter = "segfault"
 quote = "in a job interview, it's ML. in a product, it's AI."
 attribution = "notatoad"
 source = "https://news.ycombinator.com/item?id=39340282"
+
+[2024-02-13-Sisyphus]
+submitter = "Gnome"
+quote = "One must imagine Sisyphus happy."
+attribution = "Albert Camus, the Myth of Sisyphus"
+
+[2024-02-13-Staring-into-the-abyss]
+submitter = "Gnome"
+quote = "I won't just gaze into the abyss, I'll maintain uncomfortable eye contact with it"
+attribution = "exurb1a, How to Party at the End of Meaning"
+source = "https://www.youtube.com/watch?v=Jv79l1b-eoI"
+
+#749

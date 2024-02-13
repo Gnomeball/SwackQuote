@@ -4453,3 +4453,9 @@ source = "https://forums.factorio.com/viewtopic.php?p=144955#p144955"
 submitter = "Charlotte"
 quote = "You are poorly optimised meat."
 attribution = "Irrelevant"
+
+[2024-02-12-know-when-to-say-which]
+submitter = "segfault"
+quote = "in a job interview, it's ML. in a product, it's AI."
+attribution = "notatoad"
+source = "https://news.ycombinator.com/item?id=39340282"

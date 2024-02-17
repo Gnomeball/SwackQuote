@@ -8,10 +8,11 @@ import tomli_w
 import tomli
 
 QUOTE_FILE_ADDRESS = "https://raw.githubusercontent.com/Gnomeball/SwackQuote/main/quotes.toml"
-QUOTE_FILE_PATH    = Path("quotes.toml") # The collection of all quotes
-QUOTE_DUD_PATH     = Path("quote_duds.toml") # Any quotes that aren't `quote_compliant()`
-QUOTE_DECK_PATH    = Path("quote_deck.txt") # The current deck of quotes we're using
-QUOTE_HISTORY_PATH = Path("quote_history.txt") # The logged appearances of each quote
+LOCAL_DIR = Path(__file__).parent.resolve()
+QUOTE_FILE_PATH    = LOCAL_DIR / "quotes.toml" # The collection of all quotes
+QUOTE_DUD_PATH     = LOCAL_DIR / "quote_duds.toml" # Any quotes that aren't `quote_compliant()`
+QUOTE_DECK_PATH    = LOCAL_DIR / "quote_deck.txt" # The current deck of quotes we're using
+QUOTE_HISTORY_PATH = LOCAL_DIR / "quote_history.txt" # The logged appearances of each quote
 QUOTE_REPEAT_DELAY = 200 # How many days must pass before a repeated quote should be allowed
 
 # Our Quote type, has optional attribution & source, requires submitter & quote

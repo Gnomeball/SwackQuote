@@ -63,6 +63,15 @@ RE_IS_URL = re.compile(r"^https?://[^\s/$.?#].[^\s]*$", flags=re.I | re.M | re.U
 MINUTE = 60
 "How long is a minute?"
 
+# Variables and stuff
+intents = discord.Intents.default()
+intents.message_content = True
+client = discord.Client(intents=intents)
+
+# Prepare the client and logging
+logs.init()
+logger = logging.getLogger("SwackQuote")
+
 
 def is_url(url: str) -> bool:
     """
@@ -232,15 +241,6 @@ async def test_quote(which: str = "pre-toml-255", log: str = "test_quote") -> No
 
 
 if __name__ == "__main__":
-    # Variables and stuff
-    intents = discord.Intents.default()
-    intents.message_content = True
-
-    # Prepare the client and logging
-    logs.init()
-    client = discord.Client(intents=intents)
-    logger = logging.getLogger("SwackQuote")
-
     # Permissions and directions for SwackQuote
     ADMINS = set(tomllib.loads(Path("admins.toml").read_text()).values())
     "Those able to send commands to Swackquote."

@@ -31,6 +31,9 @@ from quotes import (
     refresh_quotes,
 )
 
+LOCAL_DIR = Path(__file__).parent
+"Where this file and other files are placed"
+
 REPO_LINK = "https://github.com/Gnomeball/SwackQuote"
 "Where is this repo, in case anybody asks?"
 
@@ -162,7 +165,7 @@ async def dud_quotes() -> None:
     """For when things go less than correct, try to let us know."""
     logger = logging.getLogger("dud_quotes")
     # We just print verbatim, no need to parse
-    duds = Path(QUOTE_DUD_PATH).read_text().strip()
+    duds = QUOTE_DUD_PATH.read_text().strip()
     if len(duds):
         logger.info(f"Sending dud quotes: \n{duds}")
         embed_msg = discord.Embed(
@@ -242,9 +245,9 @@ async def test_quote(which: str = "pre-toml-255", log: str = "test_quote") -> No
 
 if __name__ == "__main__":
     # Permissions and directions for SwackQuote
-    ADMINS = set(tomllib.loads(Path("admins.toml").read_text()).values())
+    ADMINS = set(tomllib.loads((LOCAL_DIR / "admins.toml").read_text()).values())
     "Those able to send commands to Swackquote."
-    CHANNEL = int(Path("channel.txt").read_text())
+    CHANNEL = int((LOCAL_DIR / "channel.txt").read_text())
     "Which channel SwackQuote will move to, place quotes in, and monitor for commands."
 
     # Ensure necessary files exist
@@ -254,4 +257,4 @@ if __name__ == "__main__":
     QUOTE_HISTORY_PATH.touch()
 
     client.loop.create_task(quote_loop())
-    client.run(Path("token.txt").read_text())
+    client.run((LOCAL_DIR / "token.txt").read_text())

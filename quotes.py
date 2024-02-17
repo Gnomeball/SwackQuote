@@ -16,16 +16,19 @@ import tomli_w
 QUOTE_FILE_ADDRESS = "https://raw.githubusercontent.com/Gnomeball/SwackQuote/main/quotes.toml"
 "Where to check for the latest quotes."
 
-QUOTE_FILE_PATH = Path("quotes.toml")
+LOCAL_DIR = Path(__file__).parent
+"Where this file and other files are placed"
+
+QUOTE_FILE_PATH = LOCAL_DIR / "quotes.toml"
 "The collection of all quotes."
 
-QUOTE_DUD_PATH = Path("quote_duds.toml")
+QUOTE_DUD_PATH = LOCAL_DIR / "quote_duds.toml"
 "Any quotes that aren't `quote_compliant()`."
 
-QUOTE_DECK_PATH = Path("quote_deck.txt")
+QUOTE_DECK_PATH = LOCAL_DIR / "quote_deck.txt"
 "The current deck of quotes we're using."
 
-QUOTE_HISTORY_PATH = Path("quote_history.txt")
+QUOTE_HISTORY_PATH = LOCAL_DIR / "quote_history.txt"
 "The logged appearances of each quote."
 
 QUOTE_REPEAT_DELAY = 200

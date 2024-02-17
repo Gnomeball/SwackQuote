@@ -149,8 +149,11 @@ async def author_counts() -> None:
     pad_name = max(map(len, authors)) + 1
     pad_num = max(map(len, map(str, authors.values()))) + 1
 
-    # in py312 we can use f"{f"{a} ".ljust(pad_name, ".")}.{f" {authors[a]}".rjust(pad_num, ".")}"
-    author_list = [".".join([f"{a} ".ljust(pad_name, "."), f" {authors[a]}".rjust(pad_num, ".")]) for a in authors]
+    # in py312 we can use f"{f"{author} ".ljust(pad_name, ".")}.{f" {count}".rjust(pad_num, ".")}"
+    author_list = [
+        ".".join([f"{author} ".ljust(pad_name, "."), f" {count}".rjust(pad_num, ".")])
+        for author, count in authors.items()
+    ]
     "Their name and number of submitted quotes, with our fun dot-based padding."
     author_string = "\n".join(["```", *author_list, "```"])
     "Formatted as a fenced block, so everything lines up nicely."

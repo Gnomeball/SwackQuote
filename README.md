@@ -181,4 +181,4 @@ Requirements:
 - [tomli-w](https://pypi.org/project/tomli-w)
 - [requests](https://pypi.org/project/requests)
 
-We have a [poetry](https://python-poetry.org/) `pyproject.toml` setup for easy installation.  Just run `poetry install`!
+We have a [poetry](https://python-poetry.org/) `pyproject.toml` setup for easy installation.  Just run `poetry update`!

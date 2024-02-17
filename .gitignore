@@ -3,6 +3,9 @@ token.txt
 admins.toml
 channel.txt
 
+# Backups
+backup/
+
 # Misc. files
 out.log.*
 err.log.*

@@ -1,6 +1,6 @@
 # SwackQuote
 
-A repository for the QOTD bot on the swan_hack Discord server.
+A repository for the QOTD bot on the **swack** Discord server.
 
 To add a quote, [make an account](https://github.com/signup) on GitHub and [you can just edit the `quotes.toml` file in your browser](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-another-users-repository), and GitHub will walk you through the rest!
 
@@ -174,9 +174,10 @@ First and foremost, if you're wishing to run this bot on your own server, you mu
 - [your user ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) in `admins.toml` (with a nice handle in the format `<name> = <id>`, such as `gnome = 356467595177885696`)
 - the [ID of the channel you](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) wish the bot to use in `channel.txt`.
 
+**WARNING:** Your bot token must be kept private and secret, otherwise it can be hijacked! We have the `token.txt` file in the `.gitignore`, but please exercise caution!
+
 Requirements:
 - [py-cord](https://pypi.org/project/py-cord/)
-- [tomli](https://pypi.org/project/tomli)
 - [tomli-w](https://pypi.org/project/tomli-w)
 - [requests](https://pypi.org/project/requests)
 

@@ -36,8 +36,9 @@ client = discord.Client(intents = intents)
 logger = logging.getLogger("QuoteBot")
 
 # Those able to send commands to the bot and which channel it must be in
-ADMINS  = set(tomli.loads(Path("admins.toml").read_text()).values())
-CHANNEL = int(Path("channel.txt").read_text())
+LOCAL_DIR = Path(__file__).parent.resolve()
+ADMINS  = set(tomli.loads((LOCAL_DIR/"admins.toml").read_text()).values())
+CHANNEL = int((LOCAL_DIR/"channel.txt").read_text())
 
 MINUTE = 60
 REPO_LINK = "https://github.com/Gnomeball/SwackQuote"
@@ -215,4 +216,4 @@ QUOTE_DECK_PATH.touch()
 QUOTE_HISTORY_PATH.touch()
 
 client.loop.create_task(quote_loop())
-client.run(Path("token.txt").read_text())
+client.run((LOCAL_DIR / "token.txt").read_text())

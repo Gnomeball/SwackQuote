@@ -1,22 +1,39 @@
 [tool.poetry]
-name = "QuoteBotRepo"
-version = "1.2.0"
-description = "A repository for the QOTD bot on the swan_hack Discord server"
+name = "SwackQuote"
+version = "1.3.0"
+description = "A repository for the QOTD bot on the swack Discord server"
 authors = ["Gnomeball", "AlexBlandin", "KrisRalph", "dedbepole"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-py-cord = "^2.0.0"
-tomli = "^2.0.1"
+python = "^3.11"
+py-cord = "^2.4.1"
 tomli_w = "^1.0.0"
-requests = "^2.27.0"
+requests = "^2.31.0"
 
 [tool.poetry.group.dev.dependencies]
-isort = "^5.10.1"
+ruff = "^0.2.1"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+indent-width = 4
+target-version = "py311"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["CPY", "G004", "TD003", "S311", "T201", "ANN401", "PLR2004", "W191", "E111", "E114", "E117", "E203", "D206", "D212", "D300", "Q000", "Q001", "Q002", "Q003", "COM812", "COM819", "ISC001", "ISC002"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+quote-style = "double"
+line-ending = "lf"
+indent-style = "space"
+skip-magic-trailing-comma = false
 
 [tool.isort]
 ensure_newline_before_comments = true

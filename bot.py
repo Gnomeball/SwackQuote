@@ -31,7 +31,7 @@ from quotes import (
     refresh_quotes,
 )
 
-LOCAL_DIR = Path(__file__).parent
+LOCAL_DIR = Path(__file__).parent.resolve()
 "Where this file and other files are placed"
 
 REPO_LINK = "https://github.com/Gnomeball/SwackQuote"

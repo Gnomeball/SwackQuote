@@ -118,7 +118,7 @@ async def on_message(message: discord.Message) -> None:
             logger.info("Requesting test quote")
             await test_quote()
         case user, ["#test", which, *_] if user in ADMINS:
-            logger.info("Requesting test quote")
+            logger.info(f"Requesting test quote '{which}'")
             await test_quote(which)
         case _, ["#repo", *_]:
             await client.get_channel(CHANNEL).send(content=REPO_LINK)

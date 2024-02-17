@@ -201,7 +201,7 @@ def pull_random_quote(quotes: dict[str, Quote]) -> tuple[Quote, int]:
     :rtype: Quote, int
     """
     recent = QUOTE_HISTORY_PATH.read_text(encoding="utf8").splitlines()[-QUOTE_REPEAT_DELAY:]
-    rs, deck = set(recent), set(QUOTE_DECK_PATH.read_text(encoding="utf8").splitlines())
+    rs, deck = set(recent), current_deck()
     good_q = [(i, k) for i, k in enumerate(quotes, 1) if k not in rs and k in deck]
 
     quote_index, quote = random.choice(good_q)
@@ -246,6 +246,16 @@ def pull_quotes_from_repo() -> tuple[dict[str, Quote], dict[str, dict[str, Any]]
     return as_quotes(updated_quotes, logger)
 
 
+def current_deck() -> set[str]:
+    """Get the deck of quotes we can use next."""
+    deck = set(QUOTE_DECK_PATH.read_text(encoding="utf8").splitlines())
+    if not deck:
+        quotes, _ = pull_quotes_from_file()
+        deck.update(quotes)
+        QUOTE_DECK_PATH.write_text("\n".join(deck), encoding="utf8")
+    return deck
+
+
 async def refresh_quotes() -> dict[str, Quote]:
     """
     Overwrites QUOTE_FILE_PATH with any updates.
@@ -256,6 +266,7 @@ async def refresh_quotes() -> dict[str, Quote]:
     :rtype: dict[str, Quote]
     """
     logger = logging.getLogger("refresh_quotes")
+    deck = current_deck()
     quotes, duds = pull_quotes_from_file()
     updated_quotes, updated_duds = pull_quotes_from_repo()
     duds |= updated_duds
@@ -288,13 +299,8 @@ async def refresh_quotes() -> dict[str, Quote]:
         with QUOTE_FILE_PATH.open("wb") as f:
             tomli_w.dump(as_dicts(updated_quotes), f)
 
-    deck = set(QUOTE_DECK_PATH.read_text(encoding="utf8").splitlines())
-    if deck:
-        deck -= {k for k, _ in removals}
-        deck |= {k for k, _ in additions}
-    else:
-        deck.update(updated_quotes)  # cycle deck, filling it back up again
-
+    deck -= {k for k, _ in removals}
+    deck |= {k for k, _ in additions}
     QUOTE_DECK_PATH.write_text("\n".join(deck), encoding="utf8")
 
     return updated_quotes

@@ -179,6 +179,8 @@ First and foremost, if you're wishing to run this bot on your own server, you mu
 Requirements:
 - [py-cord](https://pypi.org/project/py-cord/)
 - [tomli-w](https://pypi.org/project/tomli-w)
+  - [python3-tomli-w](https://packages.debian.org/bookworm/python3-tomli-w)
 - [requests](https://pypi.org/project/requests)
+  - [python3-requests](https://packages.debian.org/bookworm/python3-requests)
 
 We have a [poetry](https://python-poetry.org/) `pyproject.toml` setup for easy installation.  Just run `poetry update`!

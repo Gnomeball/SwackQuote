@@ -241,7 +241,7 @@ Quote {i}/{len(quotes)}, Submitted by {quote.submitter}"""
 
 
 @client.event
-async def test_quote(which: str = "pre-toml-255", log: str = "test_quote") -> None:
+async def test_quote(which: str = "<testing>", log: str = "test_quote") -> None:
     """Send our default testing quote, or another one of your choice, marked up so we can tell."""
     await send_quote(pre="Testing", title="Testing the Swack", which=which, log=log)
 

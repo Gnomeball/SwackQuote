@@ -171,10 +171,11 @@ Discord uses a dialect of Markdown, which we must encode in [TOML](https://toml.
 
 First and foremost, if you're wishing to run this bot on your own server, you must provide:
 - [your own bot token](https://discordapp.com/developers/applications/) in `token.txt`
-- [your user ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) in `admins.toml` (with a nice handle in the format `<name> = <id>`, such as `gnome = 356467595177885696`)
-- the [ID of the channel you](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) wish the bot to use in `channel.txt`.
+- [your user ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID) in `admins.toml` (with a nice handle in the format `<name> = <id>`, such as `gnome = 356467595177885696`)
+- the [ID of the channel you](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID) wish the bot to use in `channel.txt`
+- and, optionally, the [ID of your "lucky colour" role](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID) in `lucky_role.txt` (click on the `...` "More" in the Roles page).
 
-**WARNING:** Your bot token must be kept private and secret, otherwise it can be hijacked! We have the `token.txt` file in the `.gitignore`, but please exercise caution!
+**WARNING:** Your bot token must be kept private and secret; otherwise it can be hijacked! We have the `token.txt` file in the `.gitignore`, but please exercise caution!
 
 Requirements:
 - [py-cord](https://pypi.org/project/py-cord/)
@@ -184,3 +185,9 @@ Requirements:
   - [python3-requests](https://packages.debian.org/bookworm/python3-requests)
 
 We have a [poetry](https://python-poetry.org/) `pyproject.toml` setup for easy installation.  Just run `poetry update`!
+
+## Inviting SwackQuote to your Server
+
+Once you've set the bot up for yourself, you need to generate the OAuth2 URL for it, set to the `bot` scope. Our necessary bot permissions are `Read Messages/View Channels`, `Send Messages`, and `Embed Links`, so the OAuth2 URL should end with `&permissions=19456&scope=bot`. To use the Lucky Colour of the Day feature, we also need the `Manage Roles` permission, in which case the OAuth2 URL would end `&permissions=268454912&scope=bot`.
+
+If you are using the Lucky Colour, you need a role setup for it. This role must be below the bot in the server's Roles settings, which if you are using it for messages, will unfortunately mean you have to put the bot's own role up quite high. Please make sure it's still beneath the role of your moderators, they need to be visible! This is a limitation of Discord's linear role hierarchy, but the code is small and clear enough that you can verify all we do is update the role's colour with this feature, and nothing else --- even sending a message about it is optional, just change `silent_update` to `True` when it's called.

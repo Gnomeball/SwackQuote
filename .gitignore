@@ -2,6 +2,7 @@
 token.txt
 admins.toml
 channel.txt
+lucky_role.txt
 
 # Backups
 backup/

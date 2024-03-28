@@ -4447,7 +4447,7 @@ quote = "Premature optimisation is the root of all evil"
 attribution = "Kovarex (Factorio Developer)"
 source = "https://forums.factorio.com/viewtopic.php?p=144955#p144955"
 
-#745 — Remember to update this, in counts of five!
+#745
 
 [2024-02-06-Optimised-Meat]
 submitter = "Charlotte"
@@ -4471,4 +4471,18 @@ quote = "I won't just gaze into the abyss, I'll maintain uncomfortable eye conta
 attribution = "exurb1a, How to Party at the End of Meaning"
 source = "https://www.youtube.com/watch?v=Jv79l1b-eoI"
 
-#749
+[2024-03-28-about-as-long-since-adding-the-last-moral-speech-as-in-the-show-but-then-we-get-the-finale]
+submitter = "segfault"
+quote = "Human progress isn't measured by industry.  It's measured by the value you place on a life.  An unimportant life. A life without privilege.  The boy who died on the river, that boy's value is your value.  That's what defines an age.  That's... what defines a species."
+attribution = "The Doctor, Doctor Who, Thin Ice, 2017"
+source = "https://www.youtube.com/watch?v=DVvHBZcwXS8"
+
+#750
+
+[2024-03-28-tumblr-has-some-pearls-of-wisdom]
+submitter = "segfault"
+quote = "We often speak highly of those who rise to adversity, but we neither admonish those who caused the adversity, nor praise those whose efforts prevent it."
+attribution = "hasufin, in response to a quote from Laurie Penny's \"Tea, Biscuits, and Empire: The Long Con of Britishness\""
+source = "https://www.tumblr.com/hasufin/621629766102073344/probablyasocialecologist-those-working-class"
+
+#751 — Remember to update this, in counts of five!

@@ -138,7 +138,7 @@ attribution = "Todd C. Miller, `sudo`"
 
 Quotes where a word or phrase has been amended for clarity should surround that amendment in square brackets, such as `[We]`, while any omissions should use three periods for an ellipsis `...` either between fragments `"they would find ... just a single fruit"` or in place of the full stop ending a sentence `"Tell me... How many points did you get?"`. Any ellipsis used in the quote as typical punctuation (such as trailing off or extended pauses) is still accepted. Only if **both** a typical ellipsis and an omission would be present and ambiguous should you surround the omission with square brackets accordingly, like `[...]`.
 
-There is no need to surround the staring letter of a quote if you capitalise it, even if it's starting mid-way through a sentence. Just capitalise it at the start as normal, so `"Hello, world!"` and `"Just a single fruit"` are correct, though specifically lower-case names or code should retain its original capitalisation (such as `"print(42)"`). We recommend that all other capitalisation in the quote remain unchanged (unless relevant or needed for clarity).
+There is no need to surround the starting letter of a quote if you capitalise it, even if it's starting mid-way through a sentence. Just capitalise it at the start as normal, so `"Hello, world!"` and `"Just a single fruit"` are correct, though specifically lower-case names or code should retain its original capitalisation (such as `"print(42)"`). We recommend that all other capitalisation in the quote remain unchanged (unless relevant or needed for clarity).
 
 Example:
 

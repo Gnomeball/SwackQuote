@@ -4472,13 +4472,18 @@ quote = "I won't just gaze into the abyss, I'll maintain uncomfortable eye conta
 attribution = "exurb1a, How to Party at the End of Meaning"
 source = "https://www.youtube.com/watch?v=Jv79l1b-eoI"
 
+[2024-04-08-Picard-On-Anger]
+submitter = "Charlotte"
+quote = "I think, when one has been angry for a very long time, one gets used to it. And it becomes comfortable, like old leather. And finally... it becomes so familiar that one can't remember feeling any other way."
+attribution = "Captain Picard, Star Trek TNG S4 E12"
+
+#750
+
 [2024-03-28-about-as-long-since-adding-the-last-moral-speech-as-in-the-show-but-then-we-get-the-finale]
 submitter = "segfault"
 quote = "Human progress isn't measured by industry.  It's measured by the value you place on a life.  An unimportant life.  A life without privilege.  The boy who died on the river, that boy's value is your value.  That's what defines an age.  That's... what defines a species."
 attribution = "The Doctor, Doctor Who, Thin Ice, 2017"
 source = "https://www.youtube.com/watch?v=DVvHBZcwXS8"
-
-#750
 
 [2024-03-28-tumblr-has-some-pearls-of-wisdom]
 submitter = "segfault"
@@ -4501,4 +4506,4 @@ ref latest Big Scary Exploit™ — mitigation is simple, just:
 attribution = 'Sammy "AAA" Fox @theresnotime@fox.nexus'
 source = "https://fox.nexus/@theresnotime/112184231101482232"
 
-#752 — Remember to update this, in counts of five!
+#753 — Remember to update this, in counts of five!

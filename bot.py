@@ -9,6 +9,7 @@ import colorsys
 import logging
 import random
 import re
+import string
 import tomllib
 from collections import Counter
 from datetime import UTC, datetime
@@ -45,8 +46,9 @@ HELP_DOC = """Commands:
 ```
 Admin commands:
 ```js
-#test <ID> - Sends a test quote, ID optional
-#reroll    - Reroll todays quote
+#test <ID>    - Sends a test quote, ID optional
+#reroll       - Reroll todays quote
+#colour <HEX> - Updates the lucky colour, HEX (RRGGBB) optional
 ```
 How to add a Quote:
 ```js
@@ -123,6 +125,10 @@ async def on_message(message: discord.Message) -> None:
         case user, ["#test", which, *_] if user in ADMINS:
             logger.info(f"Requesting test quote '{which}'")
             await test_quote(which)
+        case user, ["#colour" | "#color"] if user in ADMINS and LUCKY_ROLE is not None:
+            await change_lucky_colour(silent_update=False)
+        case user, ["#colour" | "#color", colour, *_] if user in ADMINS and LUCKY_ROLE is not None:
+            await change_lucky_colour(colour, silent_update=False)
         case _, ["#repo", *_]:
             await client.get_channel(CHANNEL).send(content=REPO_LINK)
         case _, ["#authors", *_]:
@@ -192,6 +198,9 @@ async def quote_loop() -> NoReturn:
         if previous.hour != now.now().hour and now.hour == 12:
             await asyncio.sleep(15)
             await send_quote()
+            if LUCKY_ROLE is not None:
+                await asyncio.sleep(15)
+                await change_lucky_colour(silent_update=False)
 
 
 @client.event
@@ -202,6 +211,60 @@ async def current_date_time() -> str:
         day_n, "th"
     )
     return datetime.now(UTC).strftime("%A %-d# %B %Y").replace("#", day_ord)
+
+
+@client.event
+async def change_lucky_colour(pick: str | None = None, *, silent_update: bool = False) -> None:
+    """Change today's colour for the "I'm feeling lucky" role."""
+    if LUCKY_ROLE is None:
+        logger.info("Attempted to change lucky colour, but we have no lucky role.")
+    else:
+        role: discord.Role = client.get_channel(CHANNEL).guild.get_role(LUCKY_ROLE)
+        colour = None
+        logger.info("Time for a new lucky colour!")
+        match pick:
+            case str(colour_str) if len(colour_str) > 1:
+                logger.info(f"Someone wanted {colour_str} to be the lucky colour.")
+
+                # Common prefixes
+                if colour_str.startswith("#"):
+                    colour_str = colour_str.removeprefix("#")
+                elif colour_str.startswith("0x"):
+                    colour_str = colour_str.removeprefix("0x")
+
+                # They might use _ separators
+                if "_" in colour_str:
+                    colour_str = colour_str.replace("_", "")
+
+                # We only accept hex, for now
+                if set(colour_str).issubset(string.hexdigits):
+                    colour = int(colour_str, 16)
+                else:
+                    logger.info("I'm going to ignore that colour as it's not hex.")
+            case _:
+                colour = random_colour()
+        match colour:
+            case int(colour) if 0 <= colour <= 0xFF_FF_FF:
+                logger.info(f"Attempting to set the lucky colour to {hex(colour)}")
+                try:
+                    await role.edit(colour=colour)
+                    logger.info("Quote sent successfully")
+                    if not silent_update:
+                        await client.get_channel(CHANNEL).send(
+                            embed=(
+                                discord.Embed(
+                                    title="Today's lucky colour is...",
+                                    colour=colour,
+                                    description=f"**#{hex(colour).removeprefix('0x').upper()}**",
+                                )
+                            )
+                        )
+                except Exception:
+                    logger.exception("Error setting the lucky colour or sending the update message")
+            case None:
+                logger.info("Colour was not set")
+            case _:
+                logger.info(f"Malformed colour: {colour}")
 
 
 @client.event
@@ -234,10 +297,9 @@ Quote {i}/{len(quotes)}, Submitted by {quote.submitter}"""
         await client.get_channel(CHANNEL).send(embed=embed_msg)
         if quote.embed and quote.source and is_url(quote.source):
             await client.get_channel(CHANNEL).send(content=quote.source)
+        logger.info("Quote sent successfully")
     except Exception:
         logger.exception(f"Error sending quote #{i}")
-    finally:
-        logger.info("Quote sent successfully")
 
 
 @client.event
@@ -249,9 +311,13 @@ async def test_quote(which: str = "<testing>", log: str = "test_quote") -> None:
 if __name__ == "__main__":
     # Permissions and directions for SwackQuote
     ADMINS = set(tomllib.loads((LOCAL_DIR / "admins.toml").read_text()).values())
-    "Those able to send commands to Swackquote."
+    "Those able to send commands to SwackQuote."
     CHANNEL = int((LOCAL_DIR / "channel.txt").read_text())
     "Which channel SwackQuote will move to, place quotes in, and monitor for commands."
+    LUCKY_ROLE = (
+        int((LOCAL_DIR / "lucky_role.txt").read_text()) if (LOCAL_DIR / "lucky_role.txt").is_file() else None
+    ) or None
+    "Which role SwackQuote will change the daily colour of (optional, will do nothing if not present)."
 
     # Ensure necessary files exist
     QUOTE_FILE_PATH.touch()

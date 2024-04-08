@@ -1075,6 +1075,7 @@ attribution = "Douglas Adams"
 submitter = "segfault"
 quote = "Sorry I missed your comment of many months ago.  I no longer build software; I now make furniture out of wood.  The hours are long, the pay sucks, and there's always the opportunity to remove my finger with a table saw, but nobody asks me if I can add an RSS feed to a DBMS, so there's that :)"
 attribution = "Eric Diven"
+source = "https://github.com/docker/cli/issues/267#issuecomment-695149477"
 
 #200
 
@@ -4447,7 +4448,7 @@ quote = "Premature optimisation is the root of all evil"
 attribution = "Kovarex (Factorio Developer)"
 source = "https://forums.factorio.com/viewtopic.php?p=144955#p144955"
 
-#745 — Remember to update this, in counts of five!
+#745
 
 [2024-02-06-Optimised-Meat]
 submitter = "Charlotte"
@@ -4477,3 +4478,32 @@ quote = "I think, when one has been angry for a very long time, one gets used to
 attribution = "Captain Picard, Star Trek TNG S4 E12"
 
 #750
+
+[2024-03-28-about-as-long-since-adding-the-last-moral-speech-as-in-the-show-but-then-we-get-the-finale]
+submitter = "segfault"
+quote = "Human progress isn't measured by industry.  It's measured by the value you place on a life.  An unimportant life.  A life without privilege.  The boy who died on the river, that boy's value is your value.  That's what defines an age.  That's... what defines a species."
+attribution = "The Doctor, Doctor Who, Thin Ice, 2017"
+source = "https://www.youtube.com/watch?v=DVvHBZcwXS8"
+
+[2024-03-28-tumblr-has-some-pearls-of-wisdom]
+submitter = "segfault"
+quote = "We often speak highly of those who rise to adversity, but we neither admonish those who caused the adversity, nor praise those whose efforts prevent it."
+attribution = "hasufin, in response to a quote from Laurie Penny's \"Tea, Biscuits, and Empire: The Long Con of Britishness\""
+source = "https://www.tumblr.com/hasufin/621629766102073344/probablyasocialecologist-those-working-class"
+
+[2024-03-30-well-this-has-been-a-thing]
+submitter = "segfault"
+quote = """
+ref latest Big Scary Exploit™ — mitigation is simple, just: 
+
+1) Turn off computers
+2) Cry a little
+3) Reconsider career choices
+4) Ever tried carving wood? It's fun. 
+5) Buy lathe
+6)
+"""
+attribution = 'Sammy "AAA" Fox @theresnotime@fox.nexus'
+source = "https://fox.nexus/@theresnotime/112184231101482232"
+
+#753 — Remember to update this, in counts of five!

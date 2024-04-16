@@ -177,17 +177,17 @@ First and foremost, if you're wishing to run this bot on your own server, you mu
 
 **WARNING:** Your bot token must be kept private and secret; otherwise it can be hijacked! We have the `token.txt` file in the `.gitignore`, but please exercise caution!
 
-Requirements:
-- [py-cord](https://pypi.org/project/py-cord/)
-- [tomli-w](https://pypi.org/project/tomli-w)
-  - [python3-tomli-w](https://packages.debian.org/bookworm/python3-tomli-w)
-- [requests](https://pypi.org/project/requests)
-  - [python3-requests](https://packages.debian.org/bookworm/python3-requests)
+Requirements `pip install -r requirements.txt` or:
+- [`pip install py-cord`](https://pypi.org/project/py-cord/)
+- [`pip install tomli-w`](https://pypi.org/project/tomli-w)
+  - [`apt install python3-tomli-w`](https://packages.debian.org/bookworm/python3-tomli-w)
+- [`pip install requests`](https://pypi.org/project/requests)
+  - [`apt install python3-requests`](https://packages.debian.org/bookworm/python3-requests)
 
-We have a [poetry](https://python-poetry.org/) `pyproject.toml` setup for easy installation.  Just run `poetry update`!
+We supply `pyproject.toml` and `requirements.txt` for easy installation.  We use [`uv`](https://github.com/astral-sh/uv) to update `requirements.txt` files as it is simple and fast.
 
 ## Inviting SwackQuote to your Server
 
-Once you've set the bot up for yourself, you need to generate the OAuth2 URL for it, set to the `bot` scope. Our necessary bot permissions are `Read Messages/View Channels`, `Send Messages`, and `Embed Links`, so the OAuth2 URL should end with `&permissions=19456&scope=bot`. To use the Lucky Colour of the Day feature, we also need the `Manage Roles` permission, in which case the OAuth2 URL would end `&permissions=268454912&scope=bot`.
+Once you've set the bot up for yourself, you need to generate the OAuth2 URL for it, set to the `bot` scope.  Our necessary bot permissions are `Read Messages/View Channels`, `Send Messages`, and `Embed Links`, so the OAuth2 URL should end with `&permissions=19456&scope=bot`.  To use the Lucky Colour of the Day feature, we also need the `Manage Roles` permission, in which case the OAuth2 URL would end `&permissions=268454912&scope=bot`.
 
-If you are using the Lucky Colour, you need a role setup for it. This role must be below the bot in the server's Roles settings, which if you are using it for messages, will unfortunately mean you have to put the bot's own role up quite high. Please make sure it's still beneath the role of your moderators, they need to be visible! This is a limitation of Discord's linear role hierarchy, but the code is small and clear enough that you can verify all we do is update the role's colour with this feature, and nothing else — even sending a message about it is optional, just change `silent_update` to `True` when it's called.
+If you are using the Lucky Colour, you need a role setup for it.  This role must be below the bot in the server's Roles settings, which if you are using it for messages, will unfortunately mean you have to put the bot's own role up quite high.  Please make sure it's still beneath the role of your moderators, they need to be visible!  This is a limitation of Discord's linear role hierarchy, but the code is small and clear enough that you can verify all we do is update the role's colour with this feature, and nothing else — even sending a message about it is optional, just change `silent_update` to `True` when it's called.

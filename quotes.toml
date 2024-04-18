@@ -3909,8 +3909,7 @@ source = "https://fox.nexus/@theresnotime/112184231101482232"
 [2024-04-18-why-i-write]
 submitter = "Greenfoot5"
 quote = "When I sit down to write a book, I do not say to myself, 'I am going to produce a work of art. ' I write it because there is some lie that I want to expose, some fact to which I want to draw attention, and my initial concern is to get a hearing."
-attribution = "George Orwell"
-source = "https://www.goodreads.com/work/quotes/1070685-why-i-write"
+attribution = "George Orwell, Why I Write"
 
 [2024-04-18-what-if-units]
 submitter = "Greenfoot5"
@@ -3925,7 +3924,7 @@ Your imperial system is a good start. However, many of your units - such as your
 - The Royal Foot: Equal to the current monarch's foot, which would be remeasured every year
 We keep trying to make our units make sense. But the truth is that the world is an absurd place; why not embace it? It's true, unit conversion errors have caused us to lose space probes once in a while. But isn't that a small price to pay for silliness?
 """
-attribution = "Randall Munroe, a note on units in the United Kingdom in What If?"
+attribution = "Randall Munroe, what if?, A note on units in the United Kingdom"
 
 #650
 
@@ -3940,6 +3939,6 @@ It would take about two lines of the chorus (16 beats) to cross the English Chan
 The song's length leads to an odd coincidence. The interval between the start and the end of \"I'm Gonna Be\" is 3 minutes and 30 seconds, and the ISS is moving at 7.66 km/s.
 This means that if an astronaut on the ISS listens to \"I'm Gonna Be,\" in the time between the first beat of the song and the final lines... they will have traveled just about *exactly* 1000 miles.
 """
-attribution = "Randall Munroe on getting into space (and staying there)"
+attribution = "Randall Munroe, what if?, Orbital Speed"
 
 #651 - Remember to update, in counts of 5!

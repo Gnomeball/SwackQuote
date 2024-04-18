@@ -3912,4 +3912,34 @@ quote = "When I sit down to write a book, I do not say to myself, 'I am going to
 attribution = "George Orwell"
 source = "https://www.goodreads.com/work/quotes/1070685-why-i-write"
 
-#649 - Remember to update, in counts of 5!
+[2024-04-18-what-if-units]
+submitter = "Greenfoot5"
+quote = """
+Your imperial system is a good start. However, many of your units - such as your \"feet\" - are far too compatible with our US system. In light of this, I ovver some modest suggestions for alternative definitions for the foot which residents of the UK could adopt:
+- London Foot: Equal to 0.9977 international feet, or exactly one milliShard
+- Compromise Foot: Equal to 2.14 feet, the average of one foot anf one meter
+- Stonehenge-Belgium Foot: Equal to 1.003 feet, or one one-millionth of the distance between Stonehenge and the edge of Belguim (which happens to be just over a million feet from Stonehenge)
+- The Ice Foot: Equal to 0.7759 feet, or the diameter of a sphere of ice weighing one stone
+- The Metric Foot: Equal to 10 inches
+- The Metrical Foot: Equal to 10 inches followed by a stressed syllable
+- The Royal Foot: Equal to the current monarch's foot, which would be remeasured every year
+We keep trying to make our units make sense. But the truth is that the world is an absurd place; why not embace it? It's true, unit conversion errors have caused us to lose space probes once in a while. But isn't that a small price to pay for silliness?
+"""
+attribution = "Randall Munroe, a note on units in the United Kingdom in What If?"
+
+#650
+
+[2024-04-18-iss-speed]
+submitter = "Greenfoot5"
+quote = """
+Let's imagine what it would look like if you were speed-walking across the Earth's surface at 8 km/s.
+To get a better sense of the pace at which you're traveling, let's use the beat of a song to mark the passage of time. Suppose you started playing the 1988 song by The Proclaimers, \"I'm Gonna Be (500 Miles).\" That song is about 131.9 beats per minute, so imagine that with every beat of the song, you move forward more than 2 miles.
+In the time it took to sing the first line of the chorus, you could walk from the Statue of Liberty all the way to the Bronx.
+You'd be moving at about 15 subway stops per second.
+It would take about two lines of the chorus (16 beats) to cross the English Channel between London and France.
+The song's length leads to an odd coincidence. The interval between the start and the end of \"I'm Gonna Be\" is 3 minutes and 30 seconds, and the ISS is moving at 7.66 km/s.
+This means that if an astronaut on the ISS listens to \"I'm Gonna Be,\" in the time between the first beat of the song and the final lines... they will have traveled just about *exactly* 1000 miles.
+"""
+attribution = "Randall Munroe on getting into space (and staying there)"
+
+#651 - Remember to update, in counts of 5!

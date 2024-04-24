@@ -3941,4 +3941,10 @@ This means that if an astronaut on the ISS listens to \"I'm Gonna Be,\" in the t
 """
 attribution = "Randall Munroe, what if?, Orbital Speed"
 
-#651 - Remember to update, in counts of 5!
+[2023-04-24-caught-linux]
+submitter = "Greenfoot5"
+quote = "I'm so sorry to hear you caught linux, I'd hope you get better, but I hear it's terminal"
+attribution = "segfault"
+source = "https://discord.com/channels/402480186312097803/402484750205321217/1232616264669724672"
+
+#652 - Remember to update, in counts of 5!

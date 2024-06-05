@@ -185,7 +185,7 @@ submitter = "Gnome"
 quote = "Computers are good at following instructions, but not at reading your mind."
 attribution = "Donald E. Knuth"
 
-#35 
+#35
 
 [pre-toml-43]
 submitter = "Gnome"
@@ -3965,4 +3965,11 @@ quote = "I have to respect their decision. Even though it can be difficult to un
 attribution = "Tech"
 source = "Star Wars - The Bad Batch Season 2 Episode 9"
 
-#655 - Remember to update, in counts of 5!
+#655
+
+[2024-06-05-Knuckles-being-based]
+submitter = "Gnome"
+quote = "You know, Amy, anytime someone calls attention to the breaking of gender roles, it ultimately undermines the concept of gender equality by implying that this is an exception and not the status quo."
+attribution = "Knuckles - Sonic Boom, Season 2 Episode 38, Eggmans Anti Gravity Ray"
+
+#656 - Remember to update, in counts of 5!

@@ -754,11 +754,10 @@ attribution = "Taki Tachibana, Your Name"
 
 #140
 
-[pre-toml-200]
+[2022-05-08-the-floor]
 submitter = "Gnome"
-quote = "Unexpected call for quote, try again in 24 hours."
-attribution = "SwackQuote"
-source = '''http://patorjk.com/software/taag/#p=display&f=Big&t=We're%20sorry%2C%0Abut%20the%20quote%0Ayou%20requested%0Ais%20not%20here.%0AMaybe%20you%20should%0Atry%20someplace%20else.'''
+quote = "Oh, floor, you're always there for me.  So supportive.  Not like walls and staircases, always getting in my way."
+attribution = "Princess Bean, Disenchantment"
 
 [pre-toml-213]
 submitter = "Gnome"
@@ -2394,10 +2393,11 @@ submitter = "Gnome"
 quote = "I wanna taste something other than sweetness.  I wanna cry salty tears, learn bitter truths.  I wanna take a big, meaty bite out of life and dip it in mustard."
 attribution = "Elfo, Disenchantment"
 
-[2022-05-08-the-floor]
+[pre-toml-200]
 submitter = "Gnome"
-quote = "Oh, floor, you're always there for me.  So supportive.  Not like walls and staircases, always getting in my way."
-attribution = "Princess Bean, Disenchantment"
+quote = "Unexpected call for quote, try again in 24 hours."
+attribution = "SwackQuote"
+source = '''http://patorjk.com/software/taag/#p=display&f=Big&t=We're%20sorry%2C%0Abut%20the%20quote%0Ayou%20requested%0Ais%20not%20here.%0AMaybe%20you%20should%0Atry%20someplace%20else.'''
 
 [2022-05-08-just-like-a-sponge]
 submitter = "Gnome"

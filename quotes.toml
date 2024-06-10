@@ -2484,16 +2484,16 @@ submitter = "Gnome"
 quote = "It seems to me however, that a small planet such as Earth, cannot continue to support an expanding and flourishing civilisation, without a major change in the way we view ourselves.  The division into hundreds of countries whose borders and interests are defined by imagined local differences and arbitrary religious dogma, both of which are utterly irrelevant and meaningless on a galactic scale, must surely be addressed if we are to confront global problems such as mutually assured destruction, asteroid threats, climate change, pandemic disease and who knows what else, and flourish beyond the twenty-first century.  The very fact that the preceding sentence sounds hopelessly utopian might provide a plausible answer to the Great Silence."
 attribution = "Brian Cox, Human Universe"
 
-[2022-05-09-be-very-afraid]
-submitter = "Gnome"
-quote = "Don't be afraid, I am a Soviet citizen like you, who has descended from space and I must find a telephone to call Moscow!"
-attribution = "Yuri Gagarin"
-
 [Im-a-teapot]
 submitter = "Gnome"
 quote = "418 I'm a teapot"
 attribution = "Hyper Text Coffee Pot Control Protocol, RFC 2324"
 source = "https://datatracker.ietf.org/doc/html/rfc2324"
+
+[2022-05-09-be-very-afraid]
+submitter = "Gnome"
+quote = "Don't be afraid, I am a Soviet citizen like you, who has descended from space and I must find a telephone to call Moscow!"
+attribution = "Yuri Gagarin"
 
 [2022-05-09-casually-stealing-from-a-literary-legend]
 submitter = "Gnome"

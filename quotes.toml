@@ -747,11 +747,10 @@ submitter = "Gnome"
 quote = "A computer lets you make more mistakes faster than any invention in human history — with the possible exceptions of handguns and tequila."
 attribution = "Mitch Ratcliffe"
 
-[pre-toml-74]
-submitter = "Gnome"
-quote = "502 Bad Gateway"
-attribution = "IETF, HTTP Status Code, RFC 9110"
-source = "https://datatracker.ietf.org/doc/html/rfc9110"
+[2022-07-30-your-name]
+submitter = "Victor"
+quote = "I came to see you.  It wasn't easy because you were so far away."
+attribution = "Taki Tachibana, Your Name"
 
 #140
 
@@ -2024,11 +2023,10 @@ submitter = "Gnome"
 quote = "High thoughts need a high language."
 attribution = "Aristophanes (448–380 BCE)"
 
-[Im-a-teapot]
+[2022-05-09-I-tend-to-agree]
 submitter = "Gnome"
-quote = "418 I'm a teapot"
-attribution = "Hyper Text Coffee Pot Control Protocol, RFC 2324"
-source = "https://datatracker.ietf.org/doc/html/rfc2324"
+quote = "I think that advanced space faring civilisations are extremely rare, not because of astronomy, but because of biology.  I think the fact that it took almost 4 billion years for a civilisation to appear on Earth, is important.  This is a third of the age of the Universe, which is a very long time.  Coupled with the remarkable contingency of the evolution of the eucaryotic cell, and oxigenic photosyntesis.  Not to mention the half a billion years from the Cambrian explosion to the very recent emergence of Homo Sapiens and civilisation.  I think this implies that technological civilisasions, are stupendously rare, colossaly fortuitious, accidents, that happen on average, in much fewer than one in every 200 billion solar systems.  This is my resolution to the Fermi Paradox.  We are the first civilisation to emerge in the Milky Way, and we are alone.  That is my opinion, and given our cavalier disregard for our own safety, it terrifies me.  What do you think?"
+attribution = "Brian Cox, Human Universe"
 
 #340
 
@@ -2197,26 +2195,10 @@ quote = "http://www.eviloverlord.com/lists/overlord.html (Yes, the entire websit
 attribution = "Peter Anspach"
 source = "http://www.eviloverlord.com/lists/overlord.html"
 
-[2021-09-03-1]
-submitter = "segfault"
-quote = '''```http
-HTTP/1.1 451 Unavailable For Legal Reasons
-Link: <https://search.example.net/legal>; rel="blocked-by"
-Content-Type: text/html
-
-<html>
- <head><title>Unavailable For Legal Reasons</title></head>
- <body>
-  <h1>Unavailable For Legal Reasons</h1>
-  <p>This request may not be serviced in the Roman Province
-  of Judea due to the Lex Julia Majestatis, which disallows
-  access to resources hosted on servers deemed to be
-  operated by the People's Front of Judea.</p>
- </body>
-</html>
-```'''
-attribution = "HTTP 451 Unavailable For Legal Reasons"
-source = "https://en.wikipedia.org/wiki/HTTP_451"
+[2022-05-20-why-indeed]
+submitter = "Gnome"
+quote = "When you're finally up on the moon, looking back at the earth, all these differences and nationalistic traits are pretty well going to blend and you're going to get a concept that maybe this is really one world and why the hell can't we learn to live together like decent people?"
+attribution = "Frank Borman, Apollo 8"
 
 [2022-05-01-take-it-slow-real-slow]
 submitter = "Gnome"
@@ -2502,15 +2484,16 @@ submitter = "Gnome"
 quote = "It seems to me however, that a small planet such as Earth, cannot continue to support an expanding and flourishing civilisation, without a major change in the way we view ourselves.  The division into hundreds of countries whose borders and interests are defined by imagined local differences and arbitrary religious dogma, both of which are utterly irrelevant and meaningless on a galactic scale, must surely be addressed if we are to confront global problems such as mutually assured destruction, asteroid threats, climate change, pandemic disease and who knows what else, and flourish beyond the twenty-first century.  The very fact that the preceding sentence sounds hopelessly utopian might provide a plausible answer to the Great Silence."
 attribution = "Brian Cox, Human Universe"
 
-[2022-05-09-I-tend-to-agree]
-submitter = "Gnome"
-quote = "I think that advanced space faring civilisations are extremely rare, not because of astronomy, but because of biology.  I think the fact that it took almost 4 billion years for a civilisation to appear on Earth, is important.  This is a third of the age of the Universe, which is a very long time.  Coupled with the remarkable contingency of the evolution of the eucaryotic cell, and oxigenic photosyntesis.  Not to mention the half a billion years from the Cambrian explosion to the very recent emergence of Homo Sapiens and civilisation.  I think this implies that technological civilisasions, are stupendously rare, colossaly fortuitious, accidents, that happen on average, in much fewer than one in every 200 billion solar systems.  This is my resolution to the Fermi Paradox.  We are the first civilisation to emerge in the Milky Way, and we are alone.  That is my opinion, and given our cavalier disregard for our own safety, it terrifies me.  What do you think?"
-attribution = "Brian Cox, Human Universe"
-
 [2022-05-09-be-very-afraid]
 submitter = "Gnome"
 quote = "Don't be afraid, I am a Soviet citizen like you, who has descended from space and I must find a telephone to call Moscow!"
 attribution = "Yuri Gagarin"
+
+[Im-a-teapot]
+submitter = "Gnome"
+quote = "418 I'm a teapot"
+attribution = "Hyper Text Coffee Pot Control Protocol, RFC 2324"
+source = "https://datatracker.ietf.org/doc/html/rfc2324"
 
 [2022-05-09-casually-stealing-from-a-literary-legend]
 submitter = "Gnome"
@@ -2710,10 +2693,26 @@ attribution = "Various"
 
 #450
 
-[2022-05-20-why-indeed]
-submitter = "Gnome"
-quote = "When you're finally up on the moon, looking back at the earth, all these differences and nationalistic traits are pretty well going to blend and you're going to get a concept that maybe this is really one world and why the hell can't we learn to live together like decent people?"
-attribution = "Frank Borman, Apollo 8"
+[2021-09-03-1]
+submitter = "segfault"
+quote = '''```http
+HTTP/1.1 451 Unavailable For Legal Reasons
+Link: <https://search.example.net/legal>; rel="blocked-by"
+Content-Type: text/html
+
+<html>
+ <head><title>Unavailable For Legal Reasons</title></head>
+ <body>
+  <h1>Unavailable For Legal Reasons</h1>
+  <p>This request may not be serviced in the Roman Province
+  of Judea due to the Lex Julia Majestatis, which disallows
+  access to resources hosted on servers deemed to be
+  operated by the People's Front of Judea.</p>
+ </body>
+</html>
+```'''
+attribution = "HTTP 451 Unavailable For Legal Reasons"
+source = "https://en.wikipedia.org/wiki/HTTP_451"
 
 [2022-05-20-earthrise]
 submitter = "Gnome"
@@ -3015,10 +3014,11 @@ submitter = "Victor"
 quote = "What you are concerned about may be one of your strengths.  Because of what you are missing, you have experienced many things that an ordinary person never would.  While they may be painful, they will surely help you to clear your own path.  So love everything about yourself."
 attribution = "Despa, Ranking of Kings"
 
-[2022-07-30-your-name]
-submitter = "Victor"
-quote = "I came to see you.  It wasn't easy because you were so far away."
-attribution = "Taki Tachibana, Your Name"
+[pre-toml-74]
+submitter = "Gnome"
+quote = "502 Bad Gateway"
+attribution = "IETF, HTTP Status Code, RFC 9110"
+source = "https://datatracker.ietf.org/doc/html/rfc9110"
 
 [2022-07-30-fruba]
 submitter = "Victor"

@@ -219,7 +219,7 @@ async def current_date_time() -> str:
     day_ord = {1: "st", 2: "nd", 3: "rd", 7: "nth", 17: "nth", 21: "st", 22: "nd", 23: "rd", 27: "nth", 31: "st"}.get(
         day_n, "th"
     )
-    return datetime.now(UTC).strftime("%A %-d# %B %Y").replace("#", day_ord)
+    return datetime.now(UTC).strftime("%A %d# %B %Y").replace("#", day_ord)
 
 
 @client.event

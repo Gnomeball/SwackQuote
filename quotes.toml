@@ -697,6 +697,7 @@ attribution = "Linus Torvalds"
 submitter = "segfault"
 quote = "Sorry I missed your comment of many months ago.  I no longer build software; I now make furniture out of wood.  The hours are long, the pay sucks, and there's always the opportunity to remove my finger with a table saw, but nobody asks me if I can add an RSS feed to a DBMS, so there's that :)"
 attribution = "Eric Diven"
+source = "https://github.com/docker/cli/issues/267#issuecomment-695149477"
 
 #130
 
@@ -3981,7 +3982,7 @@ source = "https://discord.com/channels/402480186312097803/402484750205321217/124
 [2024-06-11-Google-Product-Moment]
 submitter = "SatanicWomble"
 quote = "Stadia died so Youtube could... slowly decay"
-attribution = "Segfault"
+attribution = "segfault"
 source = "https://discord.com/channels/402480186312097803/402484750205321217/1243331175813087242"
 
 [2024-06-11-Radio-Telescopes]
@@ -4007,7 +4008,36 @@ source = "https://discord.com/channels/402480186312097803/767326418572148756/125
 [2024-06-28-Everyone-Is-Wrong-But-Me]
 submitter = "Zoe"
 quote = "A lot of people say a lot of things; they're generally all wrong."
-attribution = "Segfault"
+attribution = "segfault"
 source = "https://discord.com/channels/402480186312097803/767326418572148756/1256304330684760166"
 
-#662 - Remember to update, in counts of 5!
+[2024-07-24-serial-reciprocity]
+submitter = "segfault"
+quote = "You don't pay love back; you pay it forward."
+attribution = "Lily Hardy Hammond, In the Garden of Delight, 1916"
+
+[2024-07-24-and-they-were-lab-partners]
+submitter = "segfault"
+quote = "We live in an uncertain, scary world, and there are so many things telling us that we need to shoulder through. But we're meant to do it together, not alone. We're meant to love, even if it risks losing. We're meant to help each other, support one another."
+attribution = "HerotheHardWay, As long as we stay together (if we just stay together), Epilogue (End Notes)"
+source = "https://archiveofourown.org/works/21439369"
+
+[2024-07-24-good-night-and-good-luck]
+submitter = "segfault"
+quote = "This instrument can teach, it can illuminate; yes, and even it can inspire. But it can do so only to the extent that humans are determined to use it to those ends. Otherwise, it's nothing but wires and lights in a box. There is a great and perhaps decisive battle to be fought against ignorance, intolerance and indifference. This weapon of television could be useful."
+attribution = "Edward R. Murrow, Speech to the 1958 Convention of the Radio Television Digital News Association"
+source = "https://www.rtdna.org/murrows-famous-wires-and-lights-in-a-box"
+
+#665
+
+[2024-07-24-always-punch-up-never-down]
+submitter = "segfault"
+quote = "I swore never to be silent whenever and wherever human beings endure suffering and humiliation. We must always take sides. Neutrality helps the oppressor, never the victim. Silence encourages the tormentor, never the tormented."
+attribution = "Professor Eliezer 'Elie' Wiesel, acceptance speech for the Nobel Peace Prize, 1986"
+
+[2024-07-24-why-not-one-more]
+submitter = "segfault"
+quote = "My commandment is 'Thou shall not stand idly by.' Which means, when you witness an injustice: Don't stand idly by. When you hear of a person or a group being persecuted: Do not stand idly by. When there is something wrong with the community around you or far away: Do not stand idly by. You must intervene. You must interfere. And that is actually the motto of human rights."
+attribution = "Professor Eliezer 'Elie' Wiesel, Commencement ceremony for the Class of 2011 at Washington University"
+
+#667 - Remember to update, in counts of 5!

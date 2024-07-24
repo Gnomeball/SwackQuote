@@ -162,6 +162,7 @@ def calculate_swack_level() -> str:
         "Swæk",
         "The Swack are not what they seem",
         "All your Swack are belong to us",
+        "Swacked, not stirred",
     ]
     return random.choice(swack_levels)
 

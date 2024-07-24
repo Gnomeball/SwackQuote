@@ -12,7 +12,7 @@ dependencies = ["py-cord>=2.4.1","tomli_w>=1.0.0","requests>=2.31.0"]
 requires-python = ">=3.11"
 
 [project.optional-dependencies]
-dev = ["ruff"]
+dev = ["ruff", "ada-url"]
 
 [tool.ruff]
 indent-width = 4

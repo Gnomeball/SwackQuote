@@ -6,6 +6,7 @@ A polite little Discord bot that can send out a quote each day.
 
 import asyncio
 import colorsys
+import contextlib
 import logging
 import random
 import re
@@ -18,6 +19,9 @@ from pathlib import Path
 from typing import NoReturn
 
 import discord
+
+with contextlib.suppress(ModuleNotFoundError):
+    from ada_url import URL
 
 import logs
 from quotes import (
@@ -62,7 +66,7 @@ Each step has a full guide and can be done in browser, no downloads required.
 """
 "What SwackQuote can be asked to do."
 
-RE_IS_URL = re.compile(r"^https?://[^\s/$.?#].[^\s]*$", flags=re.I | re.M | re.U)
+RE_IS_URL = re.compile(r"^https?://[^\s/$.?#].[^\s]*$", flags=re.IGNORECASE | re.MULTILINE | re.UNICODE)
 "Pattern to check if a string is most likely a URL. Credit to @stephenhay."
 
 MINUTE = 60
@@ -87,7 +91,12 @@ def is_url(url: str) -> bool:
     :returns: whether the given string is a valid URL.
     :rtype: bool
     """
-    return re.match(RE_IS_URL, url) is not None
+    try:
+        _ = URL(url)
+    except (NameError, ValueError):
+        return re.match(RE_IS_URL, url) is not None
+    else:
+        return True
 
 
 def random_colour() -> int:

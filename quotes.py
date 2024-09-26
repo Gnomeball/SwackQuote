@@ -13,6 +13,10 @@ from typing import Any, NamedTuple
 import requests
 import tomli_w
 
+from eggs import (
+    egg_hunting,
+)
+
 QUOTE_FILE_ADDRESS = "https://raw.githubusercontent.com/Gnomeball/SwackQuote/main/quotes.toml"
 "Where to check for the latest quotes."
 
@@ -211,6 +215,15 @@ def pull_random_quote(quotes: dict[str, Quote]) -> tuple[Quote, int]:
     quote_index, quote = random.choice(good_q)
     deck.remove(quote)
     recent.append(quote)
+
+    # I think we can actually put reference to the Eggs here?
+
+    # get the eggs
+    # eggs = egg_hunting()
+    # if quote is one of the eggs
+    # if ..
+    # return the id attached to that egg
+    # quote_index =
 
     QUOTE_HISTORY_PATH.write_text("\n".join(recent), encoding="utf8")
     QUOTE_DECK_PATH.write_text("\n".join(deck - rs), encoding="utf8")

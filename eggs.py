@@ -26,12 +26,11 @@ class Egg(NamedTuple):
     notes: str | None = None
 
 
-def egg_hunting() -> set[str]:
-    """Goes Egg hunting."""
-    eggs = set(EGGS.read_text(encoding="uft8").splitlines())
-    return eggs
+def egg_hunting() -> dict[str, Egg]:
+    """
+    Goes Egg hunting.
 
-
-def egg_sorting() -> dict[str, Egg]:
-    """Sorts the Eggs."""
-    # create and return a dictionary of eggs, from the set collected above
+    :returns: A basket of sorted Eggs.
+    :rtype: dict[str, Egg]
+    """
+    return tomllib.loads(EGGS.read_text(encoding="uft8"))

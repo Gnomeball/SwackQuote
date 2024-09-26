@@ -1,7 +1,8 @@
 # Secrets
 token.txt
-admins.toml
 channel.txt
+admins.toml
+eggs.toml
 lucky_role.txt
 
 # Backups

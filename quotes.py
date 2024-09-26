@@ -17,7 +17,7 @@ QUOTE_FILE_ADDRESS = "https://raw.githubusercontent.com/Gnomeball/SwackQuote/mai
 "Where to check for the latest quotes."
 
 LOCAL_DIR = Path(__file__).parent.resolve()
-"Where this file and other files are placed"
+"Where this file and other files are placed."
 
 QUOTE_FILE_PATH = LOCAL_DIR / "quotes.toml"
 "The collection of all quotes."

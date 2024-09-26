@@ -35,6 +35,9 @@ from quotes import (
     pull_specific_quote,
     refresh_quotes,
 )
+from eggs import (
+    egg_hunting,
+)
 
 LOCAL_DIR = Path(__file__).parent.resolve()
 "Where this file and other files are placed"

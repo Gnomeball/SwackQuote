@@ -14,6 +14,9 @@ from typing import Any, NamedTuple
 import tomli_w
 
 
+LOCAL_DIR = Path(__file__).parent.resolve()
+
+
 EGGS = LOCAL_DIR / "eggs.toml"
 "Eggs, of the Easter variety."
 
@@ -33,4 +36,9 @@ def egg_hunting() -> dict[str, Egg]:
     :returns: A basket of sorted Eggs.
     :rtype: dict[str, Egg]
     """
-    return tomllib.loads(EGGS.read_text(encoding="uft8"))
+    raw_eggs = tomllib.loads(EGGS.read_text(encoding="utf8"))
+    # There is a better way to do this.. it sucks!
+    eggs = {}
+    for egg in raw_eggs:
+        eggs[egg] = Egg(**raw_eggs[egg])
+    return eggs

@@ -219,11 +219,12 @@ def pull_random_quote(quotes: dict[str, Quote]) -> tuple[Quote, int]:
     # I think we can actually put reference to the Eggs here?
 
     # get the eggs
-    # eggs = egg_hunting()
+    eggs = egg_hunting()
     # if quote is one of the eggs
-    # if ..
+    for egg in eggs.values():
+        if egg.quote_id == quote:
     # return the id attached to that egg
-    # quote_index =
+            quote_index = egg.quote_num
 
     QUOTE_HISTORY_PATH.write_text("\n".join(recent), encoding="utf8")
     QUOTE_DECK_PATH.write_text("\n".join(deck - rs), encoding="utf8")

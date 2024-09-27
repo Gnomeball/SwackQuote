@@ -25,7 +25,7 @@ class Egg(NamedTuple):
     """Eggs, of the Easter variety"""
 
     quote_id: str
-    quote_num: str
+    quote_num: int
     notes: str | None = None
 
 

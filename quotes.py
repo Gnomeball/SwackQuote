@@ -239,7 +239,7 @@ def pull_quotes_from_file() -> tuple[dict[str, Quote], dict[str, dict[str, Any]]
     :returns: The dictionary of quotes and a dictionary of not-quite quotes
     :rtype: dict[str, Quote], dict[str, Quote]
     """
-    return as_quotes(QUOTE_FILE_PATH.read_text(), logging.getLogger("pull_quotes_from_file"))
+    return as_quotes(QUOTE_FILE_PATH.read_text(encoding="utf8"), logging.getLogger("pull_quotes_from_file"))
 
 
 def pull_quotes_from_repo() -> tuple[dict[str, Quote], dict[str, dict[str, Any]]]:

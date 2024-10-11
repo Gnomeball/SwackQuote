@@ -18,8 +18,6 @@ from operator import attrgetter, itemgetter
 from pathlib import Path
 from typing import NoReturn
 import matplotlib.pyplot as plt
-import numpy as np
-
 import discord
 
 with contextlib.suppress(ModuleNotFoundError):
@@ -164,7 +162,7 @@ async def send_help() -> None:
 
 
 @client.event
-async def author_counts(graph: bool = False, which_graph: str = "line", which_scale: str = "lin") -> None:
+async def author_counts(graph: bool, which_graph: str = "line", which_scale: str = "lin") -> None:
     """Who has contributed quotes (as self-assessed by the submitter field)."""
     quotes = await refresh_quotes()  # This way we have access to the latest quotes
     authors = dict(
@@ -191,11 +189,11 @@ async def author_counts(graph: bool = False, which_graph: str = "line", which_sc
     #Here, we check if a graph was requested
 
     if graph:
-        
+
         #Creates sets from the submitter names and their counts
-        
+
         author_set = [([(author), (count)]) for author, count in authors.items()]
-    
+
         #Determines if the graph is linear or logarithmic, then bar or line
         #then calls a function to generate the graph
 
@@ -225,13 +223,13 @@ async def author_counts(graph: bool = False, which_graph: str = "line", which_sc
             embed_msg.set_footer(text="An invalid graph type has been requested!")
 
             await client.get_channel(CHANNEL).send(embed=embed_msg)
-        
+
 
 @client.event
 async def send_graph(author_set: list[tuple[str, int]], is_bar: bool, is_linear: bool) -> None:
 
         #Define the scaling of the graph
-    
+
         x_size = 0.5 * len(author_set)
         y_size = 0.65 * x_size
         fig_size = plt.rcParams["figure.figsize"]
@@ -241,7 +239,7 @@ async def send_graph(author_set: list[tuple[str, int]], is_bar: bool, is_linear:
         plt.rcParams.update({"font.size": 14})
 
         #Split these into data points
-        
+
         x = [plot_point[0] for plot_point in author_set]
         y = [plot_point[1] for plot_point in author_set]
 
@@ -262,7 +260,7 @@ async def send_graph(author_set: list[tuple[str, int]], is_bar: bool, is_linear:
 
 
         #Make the graph look pretty
-        
+
         plt.xticks(rotation=45, ha="right")
         plt.xlabel ("Name of Submitters")
         plt.ylabel ("Number of Submissions")
@@ -270,21 +268,21 @@ async def send_graph(author_set: list[tuple[str, int]], is_bar: bool, is_linear:
 
 
         #Set the scale of the graph
-        
+
         plt.yscale("linear" if is_linear else "log")
 
-    
+
         plt.savefig(LOCAL_DIR / "authors.png", dpi = 600, bbox_inches = "tight")
         logger.info("Author graph file has been created!")
 
         #Create the embedded content
-        
+
         image_file = discord.File(LOCAL_DIR / "authors.png", filename = "authors.png")
         embed = discord.Embed()
         embed.set_image(url="attachment://authors.png")
 
         #Send the file, then delete it
-        
+
         await client.get_channel(CHANNEL).send(file=image_file, embed = embed)
 
         logger.info("Attempted to remove the graph image")
@@ -335,7 +333,7 @@ async def current_date_time() -> str:
               31: "st"}.get(day_n, "th")
 
     """IF RUNNING ON A WINDOWS MACHINE - Change "%-d#" to "%d#" - Platform dependent implementation shenanigans"""
-    
+
     return datetime.now(UTC).strftime("%A %-d# %B %Y").replace("#", day_ord)
 
 

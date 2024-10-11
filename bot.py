@@ -280,6 +280,9 @@ async def current_date_time() -> str:
                                             17: "nth", 18: "h",
               21: "st", 22: "nd", 23: "rd", 27: "nth", 28: "h",
               31: "st"}.get(day_n, "th")
+
+    """IF RUNNING ON A WINDOWS MACHINE - Change "%-d#" to "%d#" - Platform dependent implementation shenanigans"""
+    
     return datetime.now(UTC).strftime("%A %-d# %B %Y").replace("#", day_ord)
 
 

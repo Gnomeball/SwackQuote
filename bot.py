@@ -188,28 +188,54 @@ async def author_counts(graph: bool = False) -> None:
     """Here, we check if a graph was requested"""
 
     if graph:
+        
         """Creates sets from the submitter names and their counts """
+        
         author_set = [([(author), (count)]) for author, count in authors.items()]
-    
+
+        """Define the scaling of the graph"""
+        
+        x_size = 0.5 * len(author_set)
+        y_size = 0.65* x_size
+        fig_size = plt.rcParams["figure.figsize"]
+        fig_size[0] = x_size
+        fig_size[1] = y_size
+        plt.rcParams["figure.figsize"] = fig_size
+        plt.rcParams.update({'font.size': 14})
+        
         """Split these into data points"""
+        
         x = [plot_point[0] for plot_point in author_set]
         y = [plot_point[1] for plot_point in author_set]
-        """Create the graph and save it"""
+        
+        """Create the graph"""
+        
         plt.scatter(x,y)
-        plt.savefig(LOCAL_DIR / "authors.png")
+        plt.plot(x,y)
 
+        """Make the graph look pretty"""
+        
+        plt.xticks(rotation=45, ha='right')
+        plt.xlabel ("Name of Submitters")
+        plt.ylabel ("Number of Submissions")
+        plt.title ("Chart of Submissions to Swackquote!")
+
+    
+        plt.savefig(LOCAL_DIR / "authors.png", dpi = 600, bbox_inches = "tight")
         logger.info("Author graph file has been created!")
 
         """Create the embedded content"""
+        
         image_file = discord.File(LOCAL_DIR / "authors.png", filename = "authors.png")
         embed = discord.Embed()
         embed.set_image(url="attachment://authors.png")
 
+        """Send the file, then delete it"""
+        
         await client.get_channel(CHANNEL).send(file=image_file, embed = embed)
 
-        os.remove(LOCAL_DIR / "authors.png")
         logger.info("Attempted to remove the graph image")
-    
+        os.remove(LOCAL_DIR / "authors.png")
 
 
 @client.event

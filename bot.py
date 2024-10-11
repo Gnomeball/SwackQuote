@@ -17,6 +17,9 @@ from datetime import UTC, datetime
 from operator import attrgetter, itemgetter
 from pathlib import Path
 from typing import NoReturn
+import matplotlib.pyplot as plt
+import numpy as np
+import os
 
 import discord
 
@@ -46,6 +49,7 @@ HELP_DOC = """Commands:
 ```js
 #repo    - Prints out the URL for the GitHub repository
 #authors - Prints a list of authors, with quote contribution counts
+#authors - Does the same as Authors, but also with a graph of authors by submissions
 #help    - Prints out this message
 ```
 Admin commands:
@@ -141,7 +145,9 @@ async def on_message(message: discord.Message) -> None:
         case _, ["#repo", *_]:
             await client.get_channel(CHANNEL).send(content=REPO_LINK)
         case _, ["#authors", *_]:
-            await author_counts()
+            await author_counts(False)
+        case _, ["#authorsgraph", *_]:
+            await author_counts(True)
         case _, ["#help", *_]:
             await send_help()
 
@@ -155,7 +161,7 @@ async def send_help() -> None:
 
 
 @client.event
-async def author_counts() -> None:
+async def author_counts(graph: bool = False) -> None:
     """Who has contributed quotes (as self-assessed by the submitter field)."""
     quotes = await refresh_quotes()  # This way we have access to the latest quotes
     authors = dict(
@@ -175,7 +181,35 @@ async def author_counts() -> None:
 
     embed_msg = discord.Embed(title="Submitters", colour=random_colour(), description=author_string)
     embed_msg.set_footer(text=f"Submitter table as of {await current_date_time()}")
+
     await client.get_channel(CHANNEL).send(embed=embed_msg)
+    logger.info("Author counts have been sent!")
+
+    """Here, we check if a graph was requested"""
+
+    if graph:
+        """Creates sets from the submitter names and their counts """
+        author_set = [([(author), (count)]) for author, count in authors.items()]
+    
+        """Split these into data points"""
+        x = [plot_point[0] for plot_point in author_set]
+        y = [plot_point[1] for plot_point in author_set]
+        """Create the graph and save it"""
+        plt.scatter(x,y)
+        plt.savefig(LOCAL_DIR / "authors.png")
+
+        logger.info("Author graph file has been created!")
+
+        """Create the embedded content"""
+        image_file = discord.File(LOCAL_DIR / "authors.png", filename = "authors.png")
+        embed = discord.Embed()
+        embed.set_image(url="attachment://authors.png")
+
+        await client.get_channel(CHANNEL).send(file=image_file, embed = embed)
+
+        os.remove(LOCAL_DIR / "authors.png")
+        logger.info("Attempted to remove the graph image")
+    
 
 
 @client.event

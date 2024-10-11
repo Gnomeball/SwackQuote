@@ -38,7 +38,6 @@ multidict==6.0.5
     #   yarl
 numpy==2.1.2
     # via
-    #   swackquote (pyproject.toml)
     #   contourpy
     #   matplotlib
 packaging==24.1

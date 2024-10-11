@@ -49,7 +49,11 @@ HELP_DOC = """Commands:
 ```js
 #repo    - Prints out the URL for the GitHub repository
 #authors - Prints a list of authors, with quote contribution counts
-#authors - Does the same as Authors, but also with a graph of authors by submissions
+
+#authorsgraph <graph_type> <scale_type> - Does the same as #authors, but also with a graph of authors by submissions
+The valid graph types are: "line", "bar".
+The valid scale types are: "log"(arithmic), "linear".
+
 #help    - Prints out this message
 ```
 Admin commands:
@@ -146,8 +150,8 @@ async def on_message(message: discord.Message) -> None:
             await client.get_channel(CHANNEL).send(content=REPO_LINK)
         case _, ["#authors", *_]:
             await author_counts(False)
-        case _, ["#authorsgraph", *_]:
-            await author_counts(True)
+        case _, ["#authorsgraph", which_graph, which_scale, *_]:
+            await author_counts(True, which_graph, which_scale)
         case _, ["#help", *_]:
             await send_help()
 
@@ -161,7 +165,7 @@ async def send_help() -> None:
 
 
 @client.event
-async def author_counts(graph: bool = False) -> None:
+async def author_counts(graph: bool = False, which_graph: str = "line", which_scale: str = "lin") -> None:
     """Who has contributed quotes (as self-assessed by the submitter field)."""
     quotes = await refresh_quotes()  # This way we have access to the latest quotes
     authors = dict(
@@ -192,9 +196,40 @@ async def author_counts(graph: bool = False) -> None:
         """Creates sets from the submitter names and their counts """
         
         author_set = [([(author), (count)]) for author, count in authors.items()]
+    
+        """Determines if the graph is linear or logarithmic, then bar or line
+        then calls a function to generate the graph"""
+
+        is_linear = bool
+        if which_scale == "linear":
+            is_linear = True
+        elif which_scale == "log":
+            is_linear = False
+        else:
+            logger.info("An invalid scale type was requested!")
+            embed_msg = discord.Embed(title="Error", colour=random_colour(), description="error message")
+            embed_msg.set_footer(text="An invalid scale type has been requested!")
+
+            await client.get_channel(CHANNEL).send(embed=embed_msg)
+            return
+        
+        if which_graph == "line":
+            await send_graph(author_set, False, is_linear)
+        elif which_graph == "bar":
+            await send_graph(author_set, True, is_linear)
+        else:
+            logger.info("An invalid graph type was requested!")
+            embed_msg = discord.Embed(title="Error", colour=random_colour(), description="error message")
+            embed_msg.set_footer(text="An invalid graph type has been requested!")
+
+            await client.get_channel(CHANNEL).send(embed=embed_msg)
+        
+
+@client.event
+async def send_graph(author_set: list[tuple[str, int]], is_bar: bool, is_linear: bool) -> None:
 
         """Define the scaling of the graph"""
-        
+    
         x_size = 0.5 * len(author_set)
         y_size = 0.65* x_size
         fig_size = plt.rcParams["figure.figsize"]
@@ -202,30 +237,43 @@ async def author_counts(graph: bool = False) -> None:
         fig_size[1] = y_size
         plt.rcParams["figure.figsize"] = fig_size
         plt.rcParams.update({"font.size": 14})
-        
+
         """Split these into data points"""
         
         x = [plot_point[0] for plot_point in author_set]
         y = [plot_point[1] for plot_point in author_set]
-        
-        """Create the graph"""
-        
-        plt.scatter(x,y)
-        plt.plot(x,y)
 
-        """We annotate the graph, carving out an exception for the first element"""
-        """To prevent the first element exiting the box"""
-        for i, num in enumerate(y):
-            if i > 0:
-                plt.annotate(num, (x[i], y[i]), xycoords ="data", xytext = (4, 4), textcoords="offset points")
-        plt.annotate(y[0], (x[0], y[0]), xycoords ="data", xytext = (4, -2), textcoords="offset points")
+
+        """Plot either a bar or line, and annotate each one appropriately"""
+        if is_bar:
+            plt.bar(x,y)
+            for i, num in enumerate(y):
+                plt.annotate(num, (x[i], y[i]), xycoords ="data", xytext = (-4, 3), textcoords="offset points")
+
+        else:
+            plt.scatter(x,y)
+            plt.plot(x,y)
+            for i, num in enumerate(y):
+                if i > 0:
+                    plt.annotate(num, (x[i], y[i]), xycoords ="data", xytext = (4, 4), textcoords="offset points")
+            plt.annotate(y[0], (x[0], y[0]), xycoords ="data", xytext = (4, -2), textcoords="offset points")
+
+
 
         """Make the graph look pretty"""
         
         plt.xticks(rotation=45, ha="right")
         plt.xlabel ("Name of Submitters")
         plt.ylabel ("Number of Submissions")
-        plt.title ("Chart of Submissions to Swackquote!")
+        plt.title ("Chart of Submissions to SwackQuote!")
+
+
+        """Determine the scale of the graph"""
+        
+        if is_linear:
+            plt.yscale("linear")
+        else:
+            plt.yscale("log")
 
     
         plt.savefig(LOCAL_DIR / "authors.png", dpi = 600, bbox_inches = "tight")
@@ -243,7 +291,7 @@ async def author_counts(graph: bool = False) -> None:
 
         logger.info("Attempted to remove the graph image")
         os.remove(LOCAL_DIR / "authors.png")
-
+        plt.clf()
 
 @client.event
 async def dud_quotes() -> None:

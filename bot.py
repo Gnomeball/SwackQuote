@@ -213,8 +213,12 @@ async def author_counts(graph: bool = False) -> None:
         plt.scatter(x,y)
         plt.plot(x,y)
 
+        """We annotate the graph, carving out an exception for the first element"""
+        """To prevent the first element exiting the box"""
         for i, num in enumerate(y):
-            plt.annotate(num, (x[i], y[i]), xycoords ="data", xytext = (4, 4), textcoords="offset points")
+            if i > 0:
+                plt.annotate(num, (x[i], y[i]), xycoords ="data", xytext = (4, 4), textcoords="offset points")
+        plt.annotate(y[0], (x[0], y[0]), xycoords ="data", xytext = (4, -2), textcoords="offset points")
 
         """Make the graph look pretty"""
         

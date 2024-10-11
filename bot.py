@@ -19,7 +19,6 @@ from pathlib import Path
 from typing import NoReturn
 import matplotlib.pyplot as plt
 import numpy as np
-import os
 
 import discord
 
@@ -189,16 +188,16 @@ async def author_counts(graph: bool = False, which_graph: str = "line", which_sc
     await client.get_channel(CHANNEL).send(embed=embed_msg)
     logger.info("Author counts have been sent!")
 
-    """Here, we check if a graph was requested"""
+    #Here, we check if a graph was requested
 
     if graph:
         
-        """Creates sets from the submitter names and their counts """
+        #Creates sets from the submitter names and their counts
         
         author_set = [([(author), (count)]) for author, count in authors.items()]
     
-        """Determines if the graph is linear or logarithmic, then bar or line
-        then calls a function to generate the graph"""
+        #Determines if the graph is linear or logarithmic, then bar or line
+        #then calls a function to generate the graph
 
         is_linear = bool
         if which_scale == "linear":
@@ -212,11 +211,14 @@ async def author_counts(graph: bool = False, which_graph: str = "line", which_sc
 
             await client.get_channel(CHANNEL).send(embed=embed_msg)
             return
+
+        is_bar = False
         
         if which_graph == "line":
-            await send_graph(author_set, False, is_linear)
+            await send_graph(author_set, is_bar, is_linear)
         elif which_graph == "bar":
-            await send_graph(author_set, True, is_linear)
+            is_bar = True
+            await send_graph(author_set, is_bar, is_linear)
         else:
             logger.info("An invalid graph type was requested!")
             embed_msg = discord.Embed(title="Error", colour=random_colour(), description="error message")
@@ -228,23 +230,22 @@ async def author_counts(graph: bool = False, which_graph: str = "line", which_sc
 @client.event
 async def send_graph(author_set: list[tuple[str, int]], is_bar: bool, is_linear: bool) -> None:
 
-        """Define the scaling of the graph"""
+        #Define the scaling of the graph
     
         x_size = 0.5 * len(author_set)
-        y_size = 0.65* x_size
+        y_size = 0.65 * x_size
         fig_size = plt.rcParams["figure.figsize"]
         fig_size[0] = x_size
         fig_size[1] = y_size
         plt.rcParams["figure.figsize"] = fig_size
         plt.rcParams.update({"font.size": 14})
 
-        """Split these into data points"""
+        #Split these into data points
         
         x = [plot_point[0] for plot_point in author_set]
         y = [plot_point[1] for plot_point in author_set]
 
-
-        """Plot either a bar or line, and annotate each one appropriately"""
+        #Plot either a bar or line, and annotate each one appropriately
         if is_bar:
             plt.bar(x,y)
             for i, num in enumerate(y):
@@ -260,7 +261,7 @@ async def send_graph(author_set: list[tuple[str, int]], is_bar: bool, is_linear:
 
 
 
-        """Make the graph look pretty"""
+        #Make the graph look pretty
         
         plt.xticks(rotation=45, ha="right")
         plt.xlabel ("Name of Submitters")
@@ -268,29 +269,26 @@ async def send_graph(author_set: list[tuple[str, int]], is_bar: bool, is_linear:
         plt.title ("Chart of Submissions to SwackQuote!")
 
 
-        """Determine the scale of the graph"""
+        #Set the scale of the graph
         
-        if is_linear:
-            plt.yscale("linear")
-        else:
-            plt.yscale("log")
+        plt.yscale("linear" if is_linear else "log")
 
     
         plt.savefig(LOCAL_DIR / "authors.png", dpi = 600, bbox_inches = "tight")
         logger.info("Author graph file has been created!")
 
-        """Create the embedded content"""
+        #Create the embedded content
         
         image_file = discord.File(LOCAL_DIR / "authors.png", filename = "authors.png")
         embed = discord.Embed()
         embed.set_image(url="attachment://authors.png")
 
-        """Send the file, then delete it"""
+        #Send the file, then delete it
         
         await client.get_channel(CHANNEL).send(file=image_file, embed = embed)
 
         logger.info("Attempted to remove the graph image")
-        os.remove(LOCAL_DIR / "authors.png")
+        Path.unlink(LOCAL_DIR / "authors.png")
         plt.clf()
 
 @client.event

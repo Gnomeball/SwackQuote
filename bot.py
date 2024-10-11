@@ -201,7 +201,7 @@ async def author_counts(graph: bool = False) -> None:
         fig_size[0] = x_size
         fig_size[1] = y_size
         plt.rcParams["figure.figsize"] = fig_size
-        plt.rcParams.update({'font.size': 14})
+        plt.rcParams.update({"font.size": 14})
         
         """Split these into data points"""
         
@@ -213,9 +213,12 @@ async def author_counts(graph: bool = False) -> None:
         plt.scatter(x,y)
         plt.plot(x,y)
 
+        for i, num in enumerate(y):
+            plt.annotate(num, (x[i], y[i]), xycoords ="data", xytext = (4, 4), textcoords="offset points")
+
         """Make the graph look pretty"""
         
-        plt.xticks(rotation=45, ha='right')
+        plt.xticks(rotation=45, ha="right")
         plt.xlabel ("Name of Submitters")
         plt.ylabel ("Number of Submissions")
         plt.title ("Chart of Submissions to Swackquote!")

@@ -211,7 +211,7 @@ async def author_counts(graph: bool, which_graph: str = "line", which_scale: str
             return
 
         is_bar = False
-        
+
         if which_graph == "line":
             await send_graph(author_set, is_bar, is_linear)
         elif which_graph == "bar":
@@ -227,7 +227,7 @@ async def author_counts(graph: bool, which_graph: str = "line", which_scale: str
 
 @client.event
 async def send_graph(author_set: list[tuple[str, int]], is_bar: bool, is_linear: bool) -> None:
-
+        """Prints a graph of the self assessed submitters to the repo."""
         #Define the scaling of the graph
 
         x_size = 0.5 * len(author_set)

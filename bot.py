@@ -17,7 +17,7 @@ from datetime import UTC, datetime
 from operator import attrgetter, itemgetter
 from pathlib import Path
 from typing import NoReturn
-
+import matplotlib.pyplot as plt
 import discord
 
 with contextlib.suppress(ModuleNotFoundError):
@@ -46,6 +46,11 @@ HELP_DOC = """Commands:
 ```js
 #repo    - Prints out the URL for the GitHub repository
 #authors - Prints a list of authors, with quote contribution counts
+
+#authorsgraph <graph_type> <scale_type> - Does the same as #authors, but also with a graph of authors by submissions
+The valid graph types are: "line", "bar".
+The valid scale types are: "log"(arithmic), "linear".
+
 #help    - Prints out this message
 ```
 Admin commands:
@@ -141,7 +146,9 @@ async def on_message(message: discord.Message) -> None:
         case _, ["#repo", *_]:
             await client.get_channel(CHANNEL).send(content=REPO_LINK)
         case _, ["#authors", *_]:
-            await author_counts()
+            await author_counts() 
+        case _, ["#authorsgraph", which_graph, which_scale, *_]:
+            await author_counts(which_graph, which_scale, graph=True)
         case _, ["#help", *_]:
             await send_help()
 
@@ -155,7 +162,7 @@ async def send_help() -> None:
 
 
 @client.event
-async def author_counts() -> None:
+async def author_counts(which_graph: str = "line", which_scale: str = "lin", *, graph: bool = False) -> None:
     """Who has contributed quotes (as self-assessed by the submitter field)."""
     quotes = await refresh_quotes()  # This way we have access to the latest quotes
     authors = dict(
@@ -175,8 +182,112 @@ async def author_counts() -> None:
 
     embed_msg = discord.Embed(title="Submitters", colour=random_colour(), description=author_string)
     embed_msg.set_footer(text=f"Submitter table as of {await current_date_time()}")
-    await client.get_channel(CHANNEL).send(embed=embed_msg)
 
+    await client.get_channel(CHANNEL).send(embed=embed_msg)
+    logger.info("Author counts have been sent!")
+
+    #Here, we check if a graph was requested
+
+    if graph:
+
+        #Creates sets from the submitter names and their counts
+
+        author_set = [([(author), (count)]) for author, count in authors.items()]
+
+        #Determines if the graph is linear or logarithmic, then bar or line
+        #then calls a function to generate the graph
+
+        is_linear = bool
+        if which_scale == "linear":
+            is_linear = True
+        elif which_scale == "log":
+            is_linear = False
+        else:
+            logger.info("An invalid scale type was requested!")
+            embed_msg = discord.Embed(title="Error", colour=random_colour(), description="error message")
+            embed_msg.set_footer(text="An invalid scale type has been requested!")
+
+            await client.get_channel(CHANNEL).send(embed=embed_msg)
+            return
+
+        is_bar = False
+
+        if which_graph == "line":
+            await send_graph(author_set, is_bar, is_linear)
+        elif which_graph == "bar":
+            is_bar = True
+            await send_graph(author_set, is_bar, is_linear)
+        else:
+            logger.info("An invalid graph type was requested!")
+            embed_msg = discord.Embed(title="Error", colour=random_colour(), description="error message")
+            embed_msg.set_footer(text="An invalid graph type has been requested!")
+
+            await client.get_channel(CHANNEL).send(embed=embed_msg)
+
+
+@client.event
+async def send_graph(author_set: list[tuple[str, int]], is_bar: bool, is_linear: bool) -> None:
+        """Prints a graph of the self assessed submitters to the repo."""
+        #Define the scaling of the graph
+
+        x_size = 0.5 * len(author_set)
+        y_size = 0.65 * x_size
+        fig_size = plt.rcParams["figure.figsize"]
+        fig_size[0] = x_size
+        fig_size[1] = y_size
+        plt.rcParams["figure.figsize"] = fig_size
+        plt.rcParams.update({"font.size": 14})
+
+        #Split these into data points
+
+        x = [plot_point[0] for plot_point in author_set]
+        y = [plot_point[1] for plot_point in author_set]
+
+        #Plot either a bar or line, and annotate each one appropriately
+        if is_bar:
+            plt.bar(x,y)
+            for i, num in enumerate(y):
+                plt.annotate(num, (x[i], y[i]), xycoords ="data", xytext = (-4, 3), textcoords="offset points")
+
+        else:
+            plt.scatter(x,y)
+            plt.plot(x,y)
+            for i, num in enumerate(y):
+                if i > 0:
+                    plt.annotate(num, (x[i], y[i]), xycoords ="data", xytext = (4, 4), textcoords="offset points")
+            plt.annotate(y[0], (x[0], y[0]), xycoords ="data", xytext = (4, -2), textcoords="offset points")
+
+
+
+        #Make the graph look pretty
+
+        plt.xticks(rotation=45, ha="right")
+        plt.xlabel ("Name of Submitters")
+        plt.ylabel ("Number of Submissions")
+        plt.title ("Chart of Submissions to SwackQuote!")
+
+
+        #Set the scale of the graph
+
+        plt.yscale("linear" if is_linear else "log")
+
+
+        plt.savefig(LOCAL_DIR / "authors.png", dpi = 600, bbox_inches = "tight")
+        logger.info("Author graph file has been created!")
+
+        #Create the embedded content
+
+        image_file = discord.File(LOCAL_DIR / "authors.png", filename = "authors.png")
+        embed = discord.Embed()
+        embed.set_image(url="attachment://authors.png")
+
+        #Send the file, then delete it
+
+        await client.get_channel(CHANNEL).send(file=image_file, embed = embed)
+
+        logger.info("Attempted to remove the graph image")
+        Path.unlink(LOCAL_DIR / "authors.png")
+        plt.clf()
 
 @client.event
 async def dud_quotes() -> None:
@@ -220,6 +331,9 @@ async def current_date_time() -> str:
                                             17: "nth", 18: "h",
               21: "st", 22: "nd", 23: "rd", 27: "nth", 28: "h",
               31: "st"}.get(day_n, "th")
+
+    """IF RUNNING ON A WINDOWS MACHINE - Change "%-d#" to "%d#" - Platform dependent implementation shenanigans"""
+
     return datetime.now(UTC).strftime("%A %-d# %B %Y").replace("#", day_ord)
 
 

@@ -221,3 +221,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Image Files
+# These should be deleted at runtime - Included here as precaution
+authors.png

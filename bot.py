@@ -146,9 +146,9 @@ async def on_message(message: discord.Message) -> None:
         case _, ["#repo", *_]:
             await client.get_channel(CHANNEL).send(content=REPO_LINK)
         case _, ["#authors", *_]:
-            await author_counts(False)
+            await author_counts() 
         case _, ["#authorsgraph", which_graph, which_scale, *_]:
-            await author_counts(True, which_graph, which_scale)
+            await author_counts(which_graph, which_scale, graph=True)
         case _, ["#help", *_]:
             await send_help()
 
@@ -162,7 +162,7 @@ async def send_help() -> None:
 
 
 @client.event
-async def author_counts(graph: bool, which_graph: str = "line", which_scale: str = "lin") -> None:
+async def author_counts(which_graph: str = "line", which_scale: str = "lin", *, graph: bool = False) -> None:
     """Who has contributed quotes (as self-assessed by the submitter field)."""
     quotes = await refresh_quotes()  # This way we have access to the latest quotes
     authors = dict(

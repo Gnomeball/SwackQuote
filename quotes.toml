@@ -1067,17 +1067,6 @@ submitter = "Victor"
 quote = "It was great to meet those folks and work with them for a while.  It'll take me some time to get the taste of C++ out of my mouth, though!"
 attribution = "Drew DeVault on working with the KDE team"
 
-[pre-toml-267]
-submitter = "Gnome"
-quote = """
-There was an Indian Chief, and he had three squaws, and kept them in three teepees.  When he would come home late from hunting, he would not know which teepee contained which squaw, being dark and all.  He went hunting one day, and killed a hippopotamus, a bear, and a buffalo.  He put the a hide from each animal into a different teepee, so that when he came home late, he could feel inside the teepee and he would know which squaw was inside.
-
-Well after about a year, all three squaws had children.  The squaw on the bear had a baby boy, the squaw on the buffalo hide had a baby girl.  But the squaw on the hippopotamus had a girl and a boy.  So what is the moral of the story?
-
-The squaw on the hippopotamus is equal to the sum of the squaws on the other two hides.
-"""
-attribution = "Various"
-
 [pre-toml-268]
 submitter = "Gnome"
 quote = "If it was built in Rust your corpse just melts away once it's done being used."

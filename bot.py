@@ -146,7 +146,7 @@ async def on_message(message: discord.Message) -> None:
         case _, ["#repo", *_]:
             await client.get_channel(CHANNEL).send(content=REPO_LINK)
         case _, ["#authors", *_]:
-            await author_counts() 
+            await author_counts()
         case _, ["#authorsgraph", which_graph, which_scale, *_]:
             await author_counts(which_graph, which_scale, graph=True)
         case _, ["#help", *_]:

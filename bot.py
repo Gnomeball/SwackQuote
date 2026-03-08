@@ -327,9 +327,8 @@ async def quote_loop() -> NoReturn:
 async def current_date_time() -> str:
     """Excuse me, could I bother you for the time?"""
     day_n = datetime.now(UTC).day
-    day_ord = {1: "st",  2: "nd",  3: "rd",  7: "nth",  8: "h",
-                                            17: "nth", 18: "h",
-              21: "st", 22: "nd", 23: "rd", 27: "nth", 28: "h",
+    day_ord = {1: "st",  2: "nd",  3: "rd",
+              21: "st", 22: "nd", 23: "rd",
               31: "st"}.get(day_n, "th")
 
     """IF RUNNING ON A WINDOWS MACHINE - Change "%-d#" to "%d#" - Platform dependent implementation shenanigans"""

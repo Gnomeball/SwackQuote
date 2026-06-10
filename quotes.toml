@@ -3796,4 +3796,10 @@ quote = "Are you even good enough to have imposter syndrome?"
 attribution = "Unknown"
 source = "https://discord.com/channels/402480186312097803/403200362108157952/814205099744165898"
 
-# 622 - Remember to update this in 5's, please!
+[2026-06-10-something]
+submitter = "Greenfoot5"
+quote = "Technopolitics are defined by Bruce Schneier's '*security syllogism,*' which goes, '*Something must be done! There, I've done something.*' '*Something*' doesn't have to fix the problem, and '*something*' doesn't have to anticipate what will happen next. So long as '*something*' is done, the issue is resolved and the politician can chalk up a win."
+attribution = "Bruce Schneier"
+source = "https://www.schneier.com/"
+
+# 623 - Remember to update this in 5's, please!
